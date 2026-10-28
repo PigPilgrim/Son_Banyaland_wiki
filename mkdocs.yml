@@ -1,0 +1,68 @@
+site_name: Wiki de Son Banyaland
+site_description: Todo lo que hay en el servidor de Minecraft Son Banyaland, con los datos exactos.
+site_url: https://pigpilgrim.github.io/Son_Banyaland_wiki/
+repo_url: https://github.com/PigPilgrim/Son_Banyaland_wiki
+repo_name: Son_Banyaland_wiki
+edit_uri: edit/main/docs/
+copyright: Son Banyaland · servidor entre amigos de Mallorca
+
+theme:
+  name: material
+  language: es
+  logo: img/icono.png
+  favicon: img/icono.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
+
+exclude_docs: |
+  _generado/
+
+nav:
+  - Inicio: index.md
+  - Empezar:
+      - Dinero: dinero.md
+  - La aldea:
+      - Cómo crece la aldea: aldea.md
+      - Los aldeanos y sus tiendas: aldeanos.md
+      - La Taberna: taberna.md
+      - Proyectos de la Oficina: proyectos.md
+  - Pendientes: pendientes.md
