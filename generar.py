@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -351,9 +351,45 @@ def magia_tablas():
     escribir("varitas.md", tabla(["Varita", "Rareza", "Qué hace", "Recarga", "Se fabrica con"], filas))
 
 
+# ---------------------------------------------------------------- misiones
+def misiones_tablas():
+    cond = {misiones.TAB: "Con la Taberna (aldea nivel 2 o más)", misiones.MAZ: "Con el Guía de las Mazmorras (aldea nivel 3 o más)",
+            f"{misiones.MAZ} {misiones.DOMINGO}": "Solo el 7.º día de cada semana (aldea nivel 3 o más)"}
+    for dif, titulo in (("facil", "fáciles"), ("normal", "normales"), ("dificil", "difíciles")):
+        filas = []
+        for clave, d, txt, _, _, c in misiones.MISIONES:
+            if d != dif: continue
+            if c and "abierto_" in c and c.split("abierto_")[1].split()[0] not in mj_comun.JUEGOS: continue  # juego retirado
+            if c and "abierto" in c: cuando = "Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas"
+            else: cuando = cond.get(c, "Siempre") if c else "Siempre"
+            filas.append((txt, misiones.SELLOS_MISION.get(clave, misiones.SELLOS[dif]), cuando))
+        escribir(f"misiones_{dif}.md", tabla(["Misión", "Sellos", "Puede salir"], filas))
+    escribir("misiones_semana.md", tabla(["Misión de la semana"], [(txt,) for _, txt, _, _, _ in misiones.SEMANALES])
+             + f"\nSi la aldea la cumple, **todos los que hayan aportado algo** reciben **{misiones.SELLOS_SEMANA} sellos**.\n")
+
+
+# ---------------------------------------------------------------- política
+def politica():
+    filas = [("Nombre de la aldea: propuestas", f"{votacion.PROPUESTAS_H} h",
+              f"{votacion.POR_JUGADOR} nombres por jugador; si hay menos de {votacion.MIN_PROPUESTAS}, {votacion.PRORROGA_H} h más"),
+             ("Nombre de la aldea: votación", f"{votacion.VOTACION_H} h", "Puntos 3, 2 y 1; no puedes votar lo tuyo"),
+             ("Elecciones: candidaturas", f"{elecciones.CAMPANA_H} h", f"Si nadie se presenta, {elecciones.PRORROGA_H} h más"),
+             ("Elecciones: votación", f"{elecciones.VOTACION_H} h", f"Un voto secreto; se reparten {elecciones.ESCANOS} escaños"),
+             ("Una ley o proyecto: votación", f"{parlamento.VOTACION_H} h", "Una a la vez"),
+             ("Entre una ley y la siguiente", f"{parlamento.ESPERA_H} h", "Lo que tiene que esperar el Alcalde")]
+    escribir("plazos.md", tabla(["Qué", "Dura", "Detalles"], filas) +
+             "\nLas horas solo cuentan **con el servidor encendido**. Mientras dura, se recuerda en el chat cada "
+             f"{elecciones.RECORDATORIO_MIN} minutos.\n")
+    escribir("modos_ley.md", tabla(["Modo", "Quién vota"], [(f"**{n}**", d[0].upper() + d[1:] + ".") for n, d in parlamento.MODOS.values()]))
+    nombres = {"primero": "Autor del nombre ganador", "segundo": "Autor del 2.º", "tercero": "Autor del 3.º",
+               "pluma": "Quien más puntos sume con todos sus nombres"}
+    escribir("premios_nombre.md", tabla(["Quién", "Premio"], [(nombres[k], f"{n} × Chip {ROMANO[nivel]}")
+                                                            for k, (nivel, n) in votacion.PREMIOS.items()]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
-    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas()
+    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica()
     print("Tablas generadas en", SALIDA)
 
 

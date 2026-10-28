@@ -11,9 +11,6 @@ Lo que aún falta en la wiki. Si sabes algo de esto, avisa al admin.
 
 ## Páginas que vienen
 
-- Misiones del Pregonero, al detalle.
-- Casas, buzones, cartas y familias.
-- Política: elecciones, Alcalde, parlamento y leyes.
 - Justicia (Juzgado y Cárcel), Iglesia, Hacienda y SEPE.
 - Guerra y asedios.
 - Viajes.

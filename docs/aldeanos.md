@@ -34,13 +34,13 @@ El primer aldeano de cada aldea. Con él:
 
 --8<-- "_generado/tienda_secretario.md"
 
-La *Escritura de casa* sirve para hacerte una casa con buzón, y la *Carta de fundación* para
+La *Escritura de casa* sirve para [hacerte una casa con buzón](casas.md), y la *Carta de fundación* para
 [fundar una aldea nueva](aldea.md#fundar-una-aldea-nueva).
 
 ## Pregonero
 
-Cada día reparte **misiones**: fáciles, normales y difíciles. Al cumplirlas te da **Sellos de la Aldea**. Las
-misiones tendrán su página propia más adelante.
+Cada día reparte **misiones**: fáciles, normales y difíciles. Al cumplirlas te da **Sellos de la Aldea**. Todas en
+[Misiones del Pregonero](misiones.md).
 
 ## Barbero
 

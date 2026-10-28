@@ -6,4 +6,4 @@
 | Tamaño | ×1.6 |
 | Al 66 % de vida | ¡El Shōgun se divide en sombras! |
 | Al 33 % de vida | ¡El Shōgun se enfurece y llama a las arañas! Se vuelve más rápido y fuerte. |
-| Además | Cada 6 s aparece **a la espalda de un jugador** al azar. |
+| Desde el 66 % de vida | Cada 6 s aparece **a la espalda de un jugador** al azar. |
