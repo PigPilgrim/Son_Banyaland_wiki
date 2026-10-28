@@ -155,12 +155,12 @@ def taberna():
         if b.get("atributo"):
             a, s = b["atributo"]
             extra.append(f"{ATRIBUTO.get(a, a)} · {s} s")
-        filas.append((f"**{b['nombre']}**", b["rareza"], f"{b['alcohol']} %", "<br>".join([efectos(b["efectos"])] + extra),
+        filas.append((f"**{b['nombre']}**", b["rareza"], b["alcohol"], f"{bebidas.toxinas(b):g}".replace(".", ","), "<br>".join([efectos(b["efectos"])] + extra),
                       efectos(b.get("al_beber", [])), efectos(b.get("resaca", []))))
     nota = ("\nLa duración de los efectos depende de la calidad con la que te salga: mala ×"
             f"{bebidas.CALIDAD['+']:g}, buena ×{bebidas.CALIDAD['++']:g}, excelente ×{bebidas.CALIDAD['+++']:g} "
             "(la tabla muestra la buena). *Al beber* llega en el momento; la *resaca*, cuando se acaba el efecto principal.\n")
-    escribir("bebidas.md", tabla(["Bebida", "Rareza", "Alcohol", "Efectos (calidad buena)", "Al beber", "Resaca"], filas) + nota)
+    escribir("bebidas.md", tabla(["Bebida", "Rareza", "Alcohol", "Toxinas", "Efectos (calidad buena)", "Al beber", "Resaca"], filas) + nota)
     # Probabilidad de cada rareza en la Receta sellada (peso por bebida según su rareza)
     total = sum(bebidas.PESO_SOBRE.get(b["rareza"], 0) for b in bebidas.CARTA.values())
     filas = []

@@ -9,7 +9,6 @@ Lo que aún falta en la wiki. Si sabes algo de esto, avisa al admin.
 - Si se pueden **cambiar 64 chips de un nivel por 1 del siguiente** dentro del juego, y dónde.
 - Qué protege exactamente la **zona segura** de la aldea.
 - Qué puede tocar en el **Encargo a ciegas** y en el **Encargo maestro** del Herrero.
-- Cuánto dura **un año en el barril** de la Taberna y cómo se monta el barril.
 - Cómo se consiguen las recetas de las bebidas **épicas y legendarias**.
 
 ## Páginas que vienen
