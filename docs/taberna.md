@@ -127,8 +127,9 @@ Lo que puede salir en una Receta sellada:
 
 --8<-- "_generado/receta_sellada.md"
 
-!!! warning "⚠️ PENDIENTE"
-    Cómo se consiguen las recetas de las bebidas **épicas y legendarias**, que nunca salen en la Receta sellada.
+Las recetas de las bebidas **épicas y legendarias** no salen en la Receta sellada: solo en **los Tesoros de los jefes**
+de las mazmorras (ver [El Faraón](mazmorras.md#el-jefe-el-faraon) y [El Shōgun](mazmorras.md#el-jefe-el-shogun)).
+Sus ingredientes incluyen **materiales de mazmorra**.
 
 ---
 

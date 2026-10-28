@@ -41,8 +41,9 @@ pones, cae a tus pies, y solo la puede recoger su dueño.
 
 ### Mazmorras y minijuegos
 
-En las mazmorras y en los minijuegos se juega en **modo aventura** (no se pueden romper ni poner bloques). **En los
-minijuegos no pierdes nada al morir.** Las mazmorras y los barcos tendrán su página propia más adelante.
+En las mazmorras y en los minijuegos se juega en **modo aventura** (no se pueden romper ni poner bloques), y **al
+morir no pierdes el inventario** (en el mundo normal, sí). Todo sobre las mazmorras en [Mazmorras](mazmorras.md); los
+barcos tendrán su página más adelante.
 
 ### Normas del servidor
 

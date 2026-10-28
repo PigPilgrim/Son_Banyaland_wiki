@@ -11,9 +11,8 @@ Hay **6 niveles**, y cada uno vale **64 del anterior**:
 
 --8<-- "_generado/chips.md"
 
-!!! warning "⚠️ PENDIENTE"
-    Si de verdad se pueden **cambiar 64 chips de un nivel por 1 del siguiente** dentro del juego (y dónde), está por
-    confirmar.
+**Para cambiarlas** (64 de un nivel ↔ 1 del siguiente) están los **Traders de Chips** del vestíbulo de las
+mazmorras: el **⬆** las sube y el **⬇** las baja. Ver [Mazmorras](mazmorras.md#el-vestibulo).
 
 Las chips también sirven **de llave**: con ellas se abren las cajas de premios.
 

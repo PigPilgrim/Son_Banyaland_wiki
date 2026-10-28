@@ -1,0 +1,3 @@
+| Al morir (lo suelta el jefe) | Tesoro (cada jugador, una vez por partida) |
+|---|---|
+| 3-5 × Chip II<br>Chip III · 12 %<br>3-5 × Acero Tamahagane<br>2-4 × Seda de Tsuchigumo<br>1 × Máscara de Oni | Receta de bebida **épica** · 60 %<br>Receta de bebida **legendaria** · 12 %<br>12-24 × Chip I<br>Chip II · 30 %<br>2-4 × Acero Tamahagane<br>1-2 × Seda de Tsuchigumo · 50 %<br>Plano de la Katana · 25 %<br>Pieza del set Samurái · 35 %<br>Plano épico al azar · 20 %<br>Plano legendario al azar · 6 %<br>Pieza del set del Innombrable · 15 %<br>Grimorio épico al azar · 15 %<br>Grimorio legendario al azar · 5 % |

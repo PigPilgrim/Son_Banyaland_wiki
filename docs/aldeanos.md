@@ -68,9 +68,8 @@ materiales de las mazmorras.
 
 --8<-- "_generado/tienda_herrero.md"
 
-!!! warning "⚠️ PENDIENTE"
-    Qué puede tocar en el *Encargo a ciegas* y en el *Encargo maestro*, y qué hace cada arma: irá en la página de
-    objetos de las mazmorras.
+Qué puede tocar en cada *Encargo*, qué hace cada arma y de dónde salen los planos: en
+[Armas y armaduras](forja.md).
 
 ### Reparaciones
 
@@ -88,7 +87,8 @@ Cuesta:
 ## Guía de las Mazmorras
 
 **Clic derecho y te lleva al momento al vestíbulo de las mazmorras**, donde hay un portal a cada una. Para volver,
-usa la brújula *Volver a casa* del hueco 9 de tu barra. Con la Campana rota no lleva a nadie.
+usa la brújula *Volver a casa* del hueco 9 de tu barra. Con la Campana rota no lleva a nadie. Todo en
+[Mazmorras](mazmorras.md).
 
 ## Funcionario
 
@@ -102,5 +102,4 @@ materiales de las mazmorras.
 
 --8<-- "_generado/tienda_mago.md"
 
-!!! warning "⚠️ PENDIENTE"
-    Qué hace cada pergamino, cada varita y el set de Archimago: irá en la página de magia.
+Qué hace cada pergamino, cada varita y el set de Archimago: en [Magia](magia.md).
