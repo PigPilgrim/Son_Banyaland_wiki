@@ -33,6 +33,8 @@ Se sube de nivel en el Alquimista (**Subir a...**), cuando se cumple todo.
 - **El Alijo** solo lo abren los miembros. No se puede romper (salvo el jefe), ni con explosiones, y las tolvas no
   lo vacían. Si el jefe lo rompe, la organización se queda sin guarida hasta que elija otro cofre.
 - **El Alquimista** solo habla con los miembros. A los demás les dice que no sabe de qué le hablan.
+- Si se funda **una aldea nueva** tan cerca que vuestra guarida queda dentro, os llega un aviso: el jefe tiene que
+  moverla (`/puente crimen` → **Mover la guarida**). Lo que hay en el Alijo hay que pasarlo a mano.
 
 ## Investigar
 
