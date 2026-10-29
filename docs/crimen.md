@@ -1,7 +1,7 @@
 # Bajos fondos
 
 Lejos de las aldeas hay quien fabrica y vende **mercancía ilegal**: hierbas, polvos y cosas peores. Se organizan en
-**organizaciones** con su **guarida**, su **Alquimista** y su contacto, **el Perista**, que paga en **Fichas
+**organizaciones** con su **guarida**, su alquimista, **Walter Brick**, y su contacto, **el Perista**, que paga en **Fichas
 marcadas** (dinero negro). Enfrente está **la Policía** de cada aldea, que cachea, reúne pruebas y organiza
 **redadas**.
 
@@ -15,7 +15,7 @@ Escribe **`/puente crimen`** → **Fundar una organización**:
 
 1. Ponle **nombre** (yunque).
 2. Haz **clic derecho al cofre o barril** que será **el Alijo**: el almacén de la organización.
-3. Al lado aparece **el Alquimista**. Con él se hace todo lo demás.
+3. Al lado aparece **Walter Brick**, el alquimista de la organización. Con él se hace todo lo demás.
 
 --8<-- "_generado/crimen_fundar.md"
 
@@ -26,25 +26,25 @@ también se puede salir de la organización, echar a alguien o **mover la guarid
 
 --8<-- "_generado/crimen_niveles.md"
 
-Se sube de nivel en el Alquimista (**Subir a...**), cuando se cumple todo.
+Se sube de nivel con Walter Brick (**Subir a...**), cuando se cumple todo.
 
 ## La guarida
 
 - **El Alijo** solo lo abren los miembros. No se puede romper (salvo el jefe), ni con explosiones, y las tolvas no
   lo vacían. Si el jefe lo rompe, la organización se queda sin guarida hasta que elija otro cofre.
-- **El Alquimista** solo habla con los miembros. A los demás les dice que no sabe de qué le hablan.
+- **Walter Brick** solo habla con los miembros. A los demás les dice que no sabe de qué le hablan.
 - Si se funda **una aldea nueva** tan cerca que vuestra guarida queda dentro, os llega un aviso: el jefe tiene que
   moverla (`/puente crimen` → **Mover la guarida**). Lo que hay en el Alijo hay que pasarlo a mano.
 
 ## Investigar
 
-En el Alquimista → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
+Con Walter Brick → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
 conectado). Lo que se investiga se queda para siempre.
 
 --8<-- "_generado/crimen_investigacion.md"
 
 !!! info "Las recetas son secretas"
-    Qué hace falta para fabricar cada cosa **no se publica**: el Alquimista os lo enseña cuando lo hayáis
+    Qué hace falta para fabricar cada cosa **no se publica**: Walter Brick os lo enseña cuando lo hayáis
     investigado.
 
 ### Las plantas
@@ -72,13 +72,13 @@ miembro rompiéndola.
 
 ## Producir
 
-En el Alquimista → **Producir**. Cada **tanda** fabrica una cosa (de 1 a 8 lotes de golpe) y tarda un rato en tiempo
+Con Walter Brick → **Producir**. Cada **tanda** fabrica una cosa (de 1 a 8 lotes de golpe) y tarda un rato en tiempo
 real. Cuando está lista, os avisa y la recoge cualquier miembro. Hay un **tope de mercancía al día** según el nivel
 (las armas no cuentan).
 
 ## El Perista y las Fichas marcadas
 
-En el Alquimista → **El Perista**: compra la mercancía y paga en **Fichas marcadas** (FM).
+Con Walter Brick → **El Perista**: compra la mercancía y paga en **Fichas marcadas** (FM).
 
 - **El precio y la demanda son de todo el servidor:** cada venta (de quien sea) baja un poco el precio y cada día
   quiere una cantidad. Se recupera en un día.
@@ -110,7 +110,7 @@ Cada **familia** (Hierbas, Polvos, Premium) lleva su cuenta:
 
 ## Las armas
 
-Se investigan y se fabrican en el Alquimista. Son **ilegales** (la Policía las confisca) y, como las demás armas
+Se investigan y se fabrican con Walter Brick. Son **ilegales** (la Policía las confisca) y, como las demás armas
 épicas y legendarias, **no se pueden usar hasta su edad** (ver [Las edades](index.md#las-edades)).
 
 --8<-- "_generado/crimen_armas.md"
@@ -143,7 +143,7 @@ Funcionan como los [asedios](guerra.md): a la hora acordada, **el Alijo brilla**
 - Si no, hay una zona alrededor del Alijo: **con policías (o vecinos de su aldea) dentro y nadie de la organización,
   avanza la requisa**. Si llega al final, gana la Policía; si se acaba el tiempo, aguanta la organización.
 - **Quien muere en la zona no pierde nada.**
-- Si gana la Policía, **se lleva lo ilegal del Alijo** y **detiene al Alquimista** unas horas. Si aguanta la
+- Si gana la Policía, **se lleva lo ilegal del Alijo** y **detiene a Walter Brick** unas horas. Si aguanta la
   organización, eso cuenta para llegar a **Cartel**.
 
 --8<-- "_generado/crimen_redadas.md"

@@ -625,7 +625,7 @@ def crimen_tablas():
         ("Sin nadie de la organización conectado", "registro sin combate: se requisa la mitad"),
         ("Lo requisado", f"mercancía y fichas al Tesoro a la mitad de su precio ({R['redada_agentes_pct']} % para los agentes); las armas se destruyen; "
                          f"como mucho {R['redada_tope_dia']} chips I al día por aldea"),
-        ("El Alquimista detenido", f"{R['alquimista_pausa_h']} h sin trabajar y la investigación pierde un {R['alquimista_pierde_pct']} %"),
+        ("Walter Brick detenido", f"{R['alquimista_pausa_h']} h sin trabajar y la investigación pierde un {R['alquimista_pierde_pct']} %"),
         ("Después", f"{R['redada_proteccion_h']} h sin redadas, gane quien gane")]))
     escribir("crimen_blanqueo.md", tabla(["Qué", "Cuánto"], [
         ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa esa semana"),
