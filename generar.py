@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -547,10 +547,100 @@ def cabezas_tablas():
              + "\nLos cuartos de chip se guardan y se suman la próxima vez que recicles.\n")
 
 
+def crimen_tablas():
+    """Los bajos fondos (crimen.py). Las recetas del Alquimista no se publican: se ven al investigar cada cosa."""
+    R, niveles = crimen.REGLAS, {n["id"]: n["nombre"] for n in crimen.NIVELES}
+
+    def efectos(lista):
+        return ", ".join(f"{crimen.EFECTOS[e]} {ROMANO[n + 1]} ({s // 60} min)" if s >= 60 and s % 60 == 0 else
+                         f"{crimen.EFECTOS[e]} {ROMANO[n + 1]} ({s} s)" for e, n, s in lista)
+
+    def requisitos(n):
+        r = []
+        if n.get("edad"): r.append(f"edad del {crimen.EDADES[n['edad']]}")
+        if n.get("miembros"): r.append(f"{n['miembros']} miembros")
+        if n.get("ventas"): r.append(f"{n['ventas']} ventas al Perista")
+        if n.get("fm"): r.append(f"pagar {n['fm']} Fichas marcadas")
+        if n.get("fm2"): r.append(f"pagar {n['fm2']} Fichas marcadas II")
+        if n.get("legendario"): r.append(f"{n['legendario']} material legendario de mazmorra")
+        if n.get("dias"): r.append(f"haber aguantado una redada o llevar {n['dias']} días")
+        return ", ".join(r) if r else f"fundarla: {crimen.FUNDAR['chips']} chips I"
+    escribir("crimen_niveles.md", tabla(["Nivel", "Miembros (máx.)", "Tandas a la vez", "Mercancía al día", "Para llegar"], [
+        (f"**{n['nombre']}**", n["max"], n["tandas"], n["produccion"], requisitos(n)) for n in crimen.NIVELES]))
+    invest = {i["id"]: i for i in crimen.INVESTIGACION}
+    escribir("crimen_mercancia.md", tabla(["Mercancía", "Familia", "Efecto", "Bajón (después)", "El Perista paga", "Quiere al día", "Hace falta ser"], [
+        (f"**{d['nombre']}**", crimen.FAMILIAS[d["familia"]], efectos(d["buenos"]), efectos(d["malos"]),
+         f"{d['precio']} FM", d["demanda"], niveles[invest[d["id"]]["nivel"]]) for d in crimen.DROGAS]))
+    edad = {"épica": "hierro", "legendaria": "diamante"}
+    escribir("crimen_armas.md", tabla(["Arma", "Rareza", "Qué hace", "Se puede usar desde", "Hace falta ser"], [
+        (f"**{a['nombre']}**" + (f" (de {a['cantidad']} en {a['cantidad']})" if a["cantidad"] > 1 else ""), a["rareza"].capitalize(),
+         " ".join(a["desc"]), f"la edad del {edad[a['rareza']]}" if a["rareza"] in edad else "siempre", niveles[invest[a["id"]]["nivel"]])
+        for a in crimen.ARMAS]))
+
+    def coste(i):
+        c = []
+        if i["fm"]: c.append(f"{i['fm']} FM")
+        if i["fm2"]: c.append(f"{i['fm2']} FM II")
+        for ing, n in i["materiales"]:
+            t, x = ing.split(":")
+            c.append(f"{n} × " + (build.MATERIALES[x][0] if t == "mazmorra" else crimen.NOMBRES[ing]))
+        return ", ".join(c) if c else "gratis"
+
+    def tiempo(m):
+        return f"{m // 60} h" if m % 60 == 0 else f"{m // 60} h {m % 60} min" if m > 60 else f"{m} min"
+    nombres = {**{d["id"]: d["nombre"] for d in crimen.DROGAS}, **{a["id"]: a["nombre"] for a in crimen.ARMAS}}
+    escribir("crimen_investigacion.md", tabla(["Qué", "Hace falta ser", "Tarda", "Cuesta"], [
+        (f"**{nombres[i['id']]}**", niveles[i["nivel"]], tiempo(i["min"]), coste(i)) for i in crimen.INVESTIGACION]))
+    escribir("crimen_plantas.md", tabla(["Sale", "Al cortar", "Probabilidad", "Hace falta haber investigado"], [
+        (f"**{p['nombre']}**", {"tall_grass": "Hierba alta", "large_fern": "Helecho grande"}[p["de"]], pct(p["prob"]), nombres[p["necesita"]])
+        for p in crimen.PLANTAS]))
+    plural = lambda i: "prueba" if i == 0 else "pruebas"
+    escribir("crimen_cuerpo.md", tabla(["Qué", "Cuánto"], [
+        ("Tolerancia (por familia)", f"+{R['tol_dosis']} por dosis (máx. {R['tol_max']}); baja {R['tol_baja_h']} por hora sin tomar"),
+        ("Con tolerancia", "el efecto dura menos (con 100, un 67 % menos) y el bajón, más (con 100, el doble)"),
+        ("Sobredosis", f"{R['sobredosis_dosis']} dosis en {R['sobredosis_min']} min: Náuseas 10 s y Lentitud 30 s (no mata)"),
+        ("Dependencia (por familia)", f"+{R['dep_dosis']} por dosis a partir de la {R['dep_desde']}.ª en 24 h; baja {R['dep_baja_h']} por hora conectado sin tomar"),
+        ("Mono", f"con {R['mono_dep']} de dependencia o más y {R['mono_tras_min'] // 60} h conectado sin tomar: cada {R['mono_cada_min']} min, "
+                 f"30 s de Hambre o Fatiga minera (desde {R['mono_fuerte']}, Debilidad en vez de Hambre). Nunca quita vida"),
+        ("Fin del mono", f"tomando; con algo más flojo de la misma familia (1 h de calma y −{R['dep_dosis']}); con el Cura; "
+                         f"o solo, a las {R['mono_fin_min'] // 60} h (la dependencia baja a {R['mono_fin_dep']})"),
+        ("Desintoxicación (Cura)", f"{R['desintox_devocion']} de devoción: dependencia a 0 en 1 h, sin mono mientras")]))
+    escribir("crimen_policia.md", tabla(["Qué", "Cuánto"], [
+        ("Agentes", f"hasta {R['agentes']} por aldea (los nombra el Juez)"),
+        ("Cacheos", f"{R['cacheos_dia']} al día por policía; al mismo jugador, uno cada {R['cacheo_mismo_min']} min; a {R['cacheo_distancia']} bloques"),
+        ("Multa del cacheo", f"el doble del precio base de lo que lleve (armas épicas {R['multa_arma_epica']}, legendarias "
+                             f"{R['multa_arma_legendaria']} chips I), al Tesoro"),
+        ("Tomar mercancía en una aldea delante de un policía", f"{R['multa_leve']} chips I"),
+        ("Pistas de la guarida", " · ".join(f"{i + 1} {plural(i)}: círculo de {r} bloques" for i, r in enumerate(R["pistas"]))),
+        ("Orden de registro", f"{R['pruebas_orden']} pruebas (duran {R['pruebas_dias']} días); la organización, con más de {R['redada_org_dias']} días"),
+        ("Soplo acertado", f"cuenta como prueba y, si la redada sale bien, el {R['chivato_pct']} % de lo requisado")]))
+    escribir("crimen_redadas.md", tabla(["Qué", "Cuánto"], [
+        ("Chivatazo a la organización", f"{R['redada_aviso_min']} min antes"),
+        ("Duración", f"{R['redada_min']} min; zona de {R['redada_zona']} bloques alrededor del Alijo"),
+        ("Para ganar la Policía", f"{R['redada_conquista_s'] // 60} min (en total) con policías dentro y nadie de la organización"),
+        ("Sin nadie de la organización conectado", "registro sin combate: se requisa la mitad"),
+        ("Lo requisado", f"mercancía y fichas al Tesoro a la mitad de su precio ({R['redada_agentes_pct']} % para los agentes); las armas se destruyen; "
+                         f"como mucho {R['redada_tope_dia']} chips I al día por aldea"),
+        ("El Alquimista detenido", f"{R['alquimista_pausa_h']} h sin trabajar y la investigación pierde un {R['alquimista_pierde_pct']} %"),
+        ("Después", f"{R['redada_proteccion_h']} h sin redadas, gane quien gane")]))
+    escribir("crimen_blanqueo.md", tabla(["Qué", "Cuánto"], [
+        ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa esa semana"),
+        ("Lo que vuelve", f"el {R['blanqueo_limpio_pct']} % en chips I a la caja ({R['blanqueo_tesoro_pct']} % al Tesoro, el resto se pierde)"),
+        ("La empresa", f"con más de {R['blanqueo_empresa_dias']} días"),
+        ("Si Hacienda la pilla", f"fichas requisadas, empresa precintada {R['blanqueo_cierre_dias']} días y un caso en el Juzgado"),
+        ("En la Iglesia", f"hasta {R['iglesia_fm']} FM a la semana: la mitad vuelve en chips I (y al Innombrable le gustan)")]))
+    escribir("crimen_fundar.md", tabla(["Qué", "Cuánto"], [
+        ("Para fundar o entrar", f"más de {R['horas_miembro']} h jugadas; no ser Juez ni agente"),
+        ("Fundar", f"{crimen.FUNDAR['chips']} chips I y un cofre (el Alijo) a {crimen.FUNDAR['distancia']} bloques o más del centro de cualquier aldea, en el mundo normal"),
+        ("El Perista", f"cada venta baja el precio un {round(R['perista_baja'] * 100)} % (hasta el {round(R['perista_minimo'] * 100)} %); "
+                       f"se recupera en {R['perista_recupera_h']} h. Los precios y la demanda son para todo el servidor"),
+        ("Fichas marcadas", "64 Fichas marcadas = 1 Ficha marcada II")]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas()
     print("Tablas generadas en", SALIDA)
 
 

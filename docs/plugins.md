@@ -76,6 +76,7 @@ siempre** (gratis): `/puente propia`.
 | `/puente album` | Tu álbum de [cabezas coleccionables](minijuegos.md#cabezas-coleccionables) |
 | `/puente cartas` | Leer tus [cartas](casas.md) |
 | `/puente fianza` | Pagar la fianza y [salir de la cárcel](justicia.md#la-carcel) |
+| `/puente crimen` | Tu organización de los [bajos fondos](crimen.md) (o fundar una) |
 | `/puente barcos salir` | Salir de una [regata](minijuegos.md#las-regatas) |
 
 Casi todo lo demás se hace **haciendo clic a los aldeanos** o en los **botones del chat**.

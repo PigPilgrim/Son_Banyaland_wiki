@@ -32,6 +32,14 @@ El **acusado** puede elegir un **abogado** (otro vecino), y él o su abogado esc
 Si el condenado no tiene para pagar la multa, **queda como deuda**: se le va cobrando sola (cada minuto y al
 conectarse) en cuanto tenga dinero.
 
+## La Policía
+
+Con el Juzgado, cada aldea tiene **Policía**: el Juez es el jefe y nombra agentes (Juez → **Policía**). Cachean,
+reúnen pruebas contra las organizaciones de los bajos fondos y piden redadas. En el mismo botón, cualquiera puede dar
+**un soplo anónimo**. Todo en [Bajos fondos](crimen.md#la-policia).
+
+Los cacheos y Hacienda también abren **casos** en el Juzgado, que se deciden como los demás.
+
 ## La Cárcel
 
 El Alcalde marca dónde está **la celda** (desde su Despacho → Justicia).

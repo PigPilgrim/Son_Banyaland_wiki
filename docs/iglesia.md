@@ -23,6 +23,13 @@ Habla con el **Cura** (clic derecho):
 
 --8<-- "_generado/dioses.md"
 
+## Para los de los bajos fondos
+
+- **Desintoxicación:** si tienes dependencia de la [mercancía](crimen.md#tu-cuerpo-tolerancia-dependencia-y-mono),
+  el Cura te la quita a cambio de devoción (botón **Desintoxicación**). En una hora estás limpio, y mientras, sin mono.
+- **Fichas marcadas en las ofrendas:** el Cura acepta unas pocas a la semana y te devuelve la mitad en chips I. Al
+  **Innombrable** le gustan (dan devoción); a los demás dioses, no.
+
 ## Fundar tu propia religión
 
 Cualquier vecino puede **fundar una religión** en el Cura (cuesta lo que pone arriba). Eliges:

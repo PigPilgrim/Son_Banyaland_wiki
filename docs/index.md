@@ -106,9 +106,9 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-bank-outline:</span> [Gobierno y guerra](politica.md)
 
-    Elecciones y leyes, los proyectos de la Oficina, impuestos, juicios, la Iglesia y la guerra entre aldeas.
+    Elecciones y leyes, los proyectos de la Oficina, impuestos, juicios, la Iglesia, la guerra entre aldeas y los bajos fondos.
 
-    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip }
+    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip } [Bajos fondos](crimen.md){ .sb-chip }
 
     [Entrar →](politica.md){ .sb-entrar }
 

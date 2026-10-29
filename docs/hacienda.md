@@ -49,6 +49,8 @@ Cada jugador puede tener **una empresa**.
 - **Solo la abren el dueño y sus empleados.** No se puede romper (ni por explosiones), y las tolvas no la vacían.
 - Encima sale un cartel con el nombre, el tipo, el dueño, lo que hay en la caja y sus estrellas.
 - Lo que hay en la caja es lo que **paga el impuesto a empresas**.
+- Si Hacienda encuentra **Fichas marcadas** en la caja, la **precinta** unos días: nadie la puede abrir. Ver
+  [Blanquear](crimen.md#blanquear).
 
 ### Dueños y empleados
 
