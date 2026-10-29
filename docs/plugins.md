@@ -55,6 +55,15 @@ ofrece un **paquete de recursos**: **acéptalo**, o no oirás las canciones. Los
 !!! warning "⚠️ PENDIENTE"
     Ahora mismo la música todavía no funciona para todos los jugadores. Se arreglará cuando el servidor se mude.
 
+## Mapa del mundo
+
+Hay un **mapa web** del servidor: se abre en el navegador y puedes recorrer el mundo desde arriba o en 3D, con tus
+construcciones y las aldeas. Tiene el **mundo normal, el Nether y el End** (las mazmorras y los minijuegos no salen,
+para no estropear la sorpresa). **Los jugadores no aparecen** en el mapa: nadie puede ver dónde estás.
+
+!!! warning "⚠️ PENDIENTE"
+    El enlace al mapa se pondrá aquí cuando el servidor se mude.
+
 ## Skin
 
 El **Barbero** de la aldea te cambia la skin: ver [Los aldeanos](aldeanos.md#barbero). Para **volver a tu skin de
