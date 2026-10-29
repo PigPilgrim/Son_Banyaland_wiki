@@ -2,7 +2,7 @@
 
 Los aldeanos llegan a la aldea según su nivel (ver [Cómo crece la aldea](aldea.md#los-niveles)). Las tiendas cobran
 casi todo en **diamantes**, tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
-encendido.
+encendido (la **Taberna**, una vez cada **24 horas**).
 
 Si la [Campana](aldea.md#la-campana) de la aldea cae en un asedio, **todos cierran** hasta que se repare.
 

@@ -126,7 +126,9 @@ def tienda(rol):
 
 def tiendas():
     for rol in ("tabernero", "herrero", "barbero", "mago"):
-        escribir(f"tienda_{rol}.md", tienda(rol) + f"\nLas existencias se reponen solas cada {aldea.REPOSICION_MIN} minutos "
+        minutos = aldea.REPOSICION_TABERNA_MIN if rol == "tabernero" else aldea.REPOSICION_MIN
+        cada = f"{minutos // 60} horas" if minutos % 60 == 0 else f"{minutos} minutos"
+        escribir(f"tienda_{rol}.md", tienda(rol) + f"\nLas existencias se reponen solas cada {cada} "
                                                   "con el servidor encendido.\n")
     filas = [(cosa(misiones.sello(1)), f"{misiones.CANJE_CHIPS} × Chip I", "sin límite", "aldea de nivel 1 o más")]
     for o in casas.ofertas():

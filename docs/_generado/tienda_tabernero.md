@@ -14,4 +14,4 @@
 | 4 × Chip II + 32 × Diamante | 1 × Johnnie Walker Blue Label | 1 |
 | 4 × Chip II + 32 × Diamante | 1 × Limoncello de Raúl | 1 |
 
-Las existencias se reponen solas cada 40 minutos con el servidor encendido.
+Las existencias se reponen solas cada 24 horas con el servidor encendido.
