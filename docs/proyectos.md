@@ -20,6 +20,9 @@ edificios públicos construir: Hacienda, SEPE, Juzgado, Cárcel, Iglesia y Cuart
 Cada aldea tiene un **Tesoro** común (chips, diamantes y sellos), que se ve en la Oficina. Cualquiera puede **donar**,
 y se llena también con **los impuestos** si la aldea tiene Hacienda.
 
-!!! warning "⚠️ PENDIENTE"
-    Los impuestos (cuánto se cobra y cómo), el SEPE y las empresas, el Juzgado, la Cárcel, la Iglesia y el Cuartel
-    tendrán sus páginas propias.
+Qué trae cada proyecto, al detalle:
+
+- **Hacienda** y **SEPE**: [Hacienda, Tesoro y empresas](hacienda.md).
+- **Juzgado** y **Cárcel**: [Justicia](justicia.md).
+- **Iglesia**: [La Iglesia](iglesia.md).
+- **Cuartel**: la página de la guerra (próximamente).

@@ -387,9 +387,71 @@ def politica():
                                                             for k, (nivel, n) in votacion.PREMIOS.items()]))
 
 
+# ---------------------------------------------------------------- iglesia, justicia, hacienda (datos en el plugin Puente)
+PUENTE = os.path.join(HERRAMIENTAS, "puente", "src", "es", "servidor", "puente")
+MATERIAL = {"ROTTEN_FLESH": "Carne podrida", "BONE": "Hueso", "SPIDER_EYE": "Ojo de araña", "GUNPOWDER": "Pólvora",
+            "ENDER_PEARL": "Perla de Ender", "WITHER_SKELETON_SKULL": "Cráneo de esqueleto del Wither",
+            "PLAYER_HEAD": "Cabeza de jugador", "DIAMOND": "Diamante", "EMERALD": "Esmeralda", "RABBIT_FOOT": "Pata de conejo",
+            "GOLD_NUGGET": "Pepita de oro", "GOLD_INGOT": "Lingote de oro", "SUNFLOWER": "Girasol", "BREAD": "Pan",
+            "HONEY_BOTTLE": "Botella de miel", "GOLDEN_APPLE": "Manzana dorada", "GLOWSTONE_DUST": "Polvo de piedra luminosa"}
+
+
+def java(nombre_clase):
+    return open(os.path.join(PUENTE, f"{nombre_clase}.java"), encoding="utf-8").read()
+
+
+def java_int(fuente, nombre_cte):
+    return int(re.search(rf"\b{nombre_cte}\s*=\s*(\d+)", fuente).group(1))
+
+
+def iglesia():
+    src = java("Iglesia")
+    caminos = {i: (n, int(p)) for i, n, p in re.findall(r'new Camino\("(\w+)", "([^"]+)", Material\.\w+, (\d+)\)', src)}
+    bendiciones = {i: (n, int(c), " ".join(e)) for i, n, c, *e in
+                   [(m[0], m[1], m[2], *re.findall(r'"([^"]*)"', m[3])) for m in
+                    re.findall(r'new Bendicion\("(\w+)", "([^"]+)", Material\.\w+, (\d+), ((?:"[^"]*",?\s*)+)\)', src)]}
+    filas = []
+    for bloque in re.findall(r'DIOSES\.put\((.*?)Particle\.\w+\)\);', src, re.S):
+        nom = re.search(r'new Dios\("\w+", "([^"]+)"', bloque).group(1)
+        listas = re.findall(r'List\.of\(([^)]*)\)', bloque)
+        desc = " ".join(re.findall(r'"([^"]*)"', listas[0]))
+        cam = [caminos[c] for c in re.findall(r'"(\w+)"', listas[1])]
+        ben = [bendiciones[b] for b in re.findall(r'"(\w+)"', listas[2])]
+        ofr = re.findall(r'Material\.(\w+), new int\[\]\{(\d+), (\d+)\}', re.search(r'Map\.of\((.*?)\),\s*List', bloque, re.S).group(1))
+        filas.append((f"**{nom}**", desc,
+                      "<br>".join(f"{n}: +{p}" for n, p in cam),
+                      "<br>".join(f"{q} × {MATERIAL.get(m, m)}: +{p}" for m, p, q in ofr),
+                      "<br>".join(f"**{n}** ({c}): {e}" for n, c, e in ben)))
+    escribir("dioses.md", tabla(["Dios", "Cómo es", "Devoción por actos", "Ofrendas que acepta", "Bendiciones (coste)"], filas))
+    escribir("caminos.md", tabla(["Acto", "Devoción"], [(n, f"+{p}") for n, p in caminos.values()]))
+    escribir("bendiciones.md", tabla(["Bendición", "Coste", "Qué hace"], [(f"**{n}**", c, e) for n, c, e in bendiciones.values()]))
+    escribir("iglesia_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Rezar (una vez al día)", f"+{java_int(src, 'REZAR')} devoción"),
+        ("Tope de devoción por actos al día", str(java_int(src, "TOPE_DIARIO"))),
+        ("Ofrendas", "sin tope; cada chip I = +1 (las chips y los diamantes van al Tesoro de la aldea)"),
+        ("Fundar una religión", f"{oficina.IGLESIA_PRECIO[0]} diamantes o {oficina.IGLESIA_PRECIO[1]} chips I")]))
+
+
+def justicia():
+    src = java("Justicia")
+    escribir("justicia_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Multa si el jurado declara culpable", f"{java_int(src, 'MULTA_JURADO')} chips I (al Tesoro)"),
+        ("Fianza para salir de la cárcel", f"{java_int(src, 'FIANZA_POR_MINUTO')} chips I por minuto que te quede")]))
+    d = oficina.DEFECTO
+    escribir("impuestos.md", tabla(["Impuesto", "Qué se cobra", "Al empezar"], [
+        ("**Sobre premios**", "Un % de los sellos y chips que ganas en misiones y minijuegos", f"{d['#imp_premios']} %"),
+        ("**A los ricos** (semanal)", "Un % de lo que haya en tus buzones por encima del mínimo exento",
+         f"{d['#imp_riqueza']} % de lo que pase de {d['#imp_umbral']} chips I"),
+        ("**A las empresas** (semanal, con SEPE)", "Un % de lo que haya en la caja de cada empresa", f"{d['#imp_empresas']} %")])
+             + f"\nEl Alcalde puede cambiarlos (entre 0 y {java_int(java('Oficina'), 'MAX_IMP')} %). Cada cambio se anuncia a todos.\n")
+    escribir("sepe_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Registrar una empresa", f"{barberia.PRECIO_DIAMANTES} diamantes o {barberia.PRECIO_CHIPS} chips I (van al Tesoro)"),
+        ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I + la Placa de la Empresa de la Semana")]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
-    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica()
+    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
     print("Tablas generadas en", SALIDA)
 
 
