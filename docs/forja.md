@@ -13,9 +13,10 @@ Los objetos tienen **rareza**, que se ve en la última línea de su descripción
 | Épica | ★★★★ | Armas especiales: se fabrican con su **plano** + **material de mazmorra**. |
 | Legendaria | ★★★★★ | Lo mejor del servidor. También con plano + material. |
 
-!!! warning "Ojo con las edades de la armadura"
+!!! warning "Ojo con las edades"
     Las piezas de los sets son de **diamante**, y el *Corazón de Titán* es de **netherita**: no te las podrás poner
-    hasta que llegue su [edad](index.md#las-edades-de-la-armadura).
+    hasta que llegue su [edad](index.md#las-edades). Con las armas pasa lo mismo: una espada o un hacha de hierro,
+    diamante o netherita **no hace daño** hasta su edad, aunque sea épica o legendaria.
 
 ---
 

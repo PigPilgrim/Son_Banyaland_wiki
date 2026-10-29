@@ -184,21 +184,26 @@ Aldeas fundadas, alcaldes elegidos, guerras, asedios, récords... Todo queda apu
 <div class="sb-seccion" markdown>
 <p class="sb-eyebrow">Progresión</p>
 
-## Las edades de la armadura
+## Las edades
 
-Es **la norma principal del servidor**: la armadura avanza por **edades**, y **cada semana se abre la siguiente**.
+Es **la norma principal del servidor**: la armadura, las armas y las herramientas avanzan por **edades**, y **cada
+semana se abre la siguiente**.
 
-| Semana | Edad | Qué armadura puedes llevar puesta |
-|---|---|---|
-| 1.ª | **Cobre** | Cobre, cuero y oro |
-| 2.ª | **Hierro** | Lo anterior + hierro y malla |
-| 3.ª | **Diamante** | Lo anterior + diamante |
-| 4.ª | **Netherita** | Todo |
+| Semana | Edad | Armadura que puedes llevar puesta | Armas y herramientas que puedes usar |
+|---|---|---|---|
+| 1.ª | **Cobre** | Cobre, cuero y oro | Madera, piedra, cobre y oro |
+| 2.ª | **Hierro** | Lo anterior + hierro y malla | Lo anterior + hierro |
+| 3.ª | **Diamante** | Lo anterior + diamante | Lo anterior + diamante |
+| 4.ª | **Netherita** | Todo | Todo |
 
-El caparazón de tortuga se puede llevar siempre. Cuando cambia la edad, sale un aviso a todos.
+El caparazón de tortuga se puede llevar siempre. Los arcos, las ballestas, los tridentes y las mazas no son de ninguna
+edad. Cuando cambia la edad, sale un aviso a todos.
 
-Una armadura de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te la
-pones, cae a tus pies, y solo la puede recoger su dueño.
+- Una **armadura** de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te
+  la pones, cae a tus pies, y solo la puede recoger su dueño (no desaparece).
+- Una **espada, hacha, pico, pala, azada o lanza** de una edad que aún no ha llegado se puede llevar, pero **en la
+  mano no rompe bloques ni hace daño**. Cuenta el material, **también en las armas especiales** de las mazmorras y la
+  forja: una katana de diamante no sirve hasta la edad del diamante.
 </div>
 
 <div class="sb-seccion" markdown>
@@ -212,7 +217,7 @@ regatas de barcos en [Minijuegos](minijuegos.md).
 
 ## Normas del servidor
 
-- **Respeta las edades de la armadura** (arriba): cada semana, la suya.
+- **Respeta las edades** (arriba): cada semana, la suya.
 
 !!! tip "Usa el buscador"
     Arriba tienes un buscador: escribe *katana*, *sello*, *zona segura*... y te lleva a la tabla donde sale.
