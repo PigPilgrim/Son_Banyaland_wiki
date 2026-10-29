@@ -56,7 +56,7 @@ rumor, sin pistas de dónde está.
 Cada aldea tiene una **Campana** en su centro. Está protegida: no se puede romper, ni quitarle el bloque de debajo, ni
 moverla con pistones, ni volarla.
 
-Pero en un **asedio** (los organiza el admin) los monstruos van a por ella. **Si la Campana cae**:
+Pero en un [**asedio**](guerra.md) (los organiza el admin) los monstruos van a por ella. **Si la Campana cae**:
 
 - **Todos los aldeanos cierran su tienda** ("Cerrado por miedo") y el Guía no lleva a nadie a las mazmorras.
 - El Secretario cambia su encargo por el de **reparar la Campana**. Al completarlo, todo vuelve a abrir.

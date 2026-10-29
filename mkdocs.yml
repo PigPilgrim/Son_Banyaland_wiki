@@ -71,8 +71,11 @@ nav:
       - Hacienda, Tesoro y empresas: hacienda.md
       - Justicia: justicia.md
       - La Iglesia: iglesia.md
+      - Guerra y asedios: guerra.md
   - Mazmorras y objetos:
       - Mazmorras: mazmorras.md
       - Armas y armaduras: forja.md
       - Magia: magia.md
+  - Minijuegos: minijuegos.md
+  - Comandos y extras: plugins.md
   - Pendientes: pendientes.md

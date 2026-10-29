@@ -401,7 +401,11 @@ def java(nombre_clase):
 
 
 def java_int(fuente, nombre_cte):
-    return int(re.search(rf"\b{nombre_cte}\s*=\s*(\d+)", fuente).group(1))
+    """Constante entera del Java; vale también un producto como 20 * 60."""
+    expr = re.search(rf"\b{nombre_cte}\s*=\s*(\d+(?:\s*\*\s*\d+)*)", fuente).group(1)
+    n = 1
+    for f in expr.split("*"): n *= int(f)
+    return n
 
 
 def iglesia():
@@ -449,9 +453,101 @@ def justicia():
         ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I + la Placa de la Empresa de la Semana")]))
 
 
+MOB_ASEDIO = {"zombi": "Zombi", "esqueleto_comun": "Esqueleto", "arana": "Araña", "zombi_acorazado": "Zombi acorazado"}
+
+
+def mob_asedio(clave):
+    return MOB_ASEDIO.get(clave) or texto(build.MOBS[clave]["CustomName"])
+
+
+def asedios():
+    filas = []
+    for a in asedio.ASEDIOS:
+        lo, hi = a["niveles"]
+        cuando = "Recién fundada, nivel 1 o 2" if lo == 0 else (f"Nivel {lo}" if lo == hi else f"Niveles {lo} y {hi}")
+        rondas = []
+        for k, r in enumerate(a["rondas"], start=1):
+            linea = f"**{k}.** {r['base']} + {r['por_jugador']} por defensor: " + ", ".join(mob_asedio(m) for m, _ in r["mobs"])
+            if "jefe" in r:
+                linea += f" · jefe: **{texto(asedio.JEFES_ASEDIO[r['jefe']][0]['CustomName'])}**"
+            rondas.append(linea)
+        p = a["premio"]
+        premio = [f"{p['chip1'][0]}-{p['chip1'][1]} × Chip I"]
+        if "chip2" in p: premio.append(f"Chip II · {pct(p['chip2'])}")
+        if "chip2_seguras" in p: premio.append(f"{p['chip2_seguras'][0]} × Chip II")
+        filas.append((cuando, "<br>".join(rondas), "<br>".join(premio)))
+    escribir("asedios.md", tabla(["Aldea", "Rondas (monstruos)", "Premio para cada defensor"], filas))
+    jefes_vida = ", ".join(f"{texto(j[0]['CustomName'])} {j[1]}" for j in asedio.JEFES_ASEDIO.values())
+    escribir("asedio_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Vida de la Campana", str(asedio.VIDA_CAMPANA)),
+        ("Tiempo para prepararse", f"{asedio.PREPARACION_S} segundos"),
+        ("Descanso entre rondas", f"{asedio.PAUSA_S} segundos"),
+        ("Vida que quita a la Campana cada segundo pegado a ella",
+         f"monstruo normal {asedio.GOLPE['normal']} · de mazmorra {asedio.GOLPE['mazmorra']} · jefe {asedio.GOLPE['jefe']}"),
+        ("Vida de los jefes del asedio", jefes_vida)]))
+
+
+def guerra():
+    src = java("Guerra")
+    escribir("guerra_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Matar a un ciudadano enemigo", f"+{java_int(src, 'PUNTOS_MUERTE')} punto"),
+        ("Ganar un asedio", f"+{java_int(src, 'PUNTOS_ASEDIO')} puntos y el {java_int(src, 'TRIBUTO')} % del Tesoro enemigo"),
+        ("Rendirse", f"pagas el {java_int(src, 'TRIBUTO')} % de tu Tesoro al enemigo"),
+        ("Duración de un asedio", f"{java_int(src, 'DURACION_S') // 60} minutos"),
+        ("Ocupación para conquistar", f"{java_int(src, 'CONQUISTA_S') // 60} minutos en total"),
+        ("Zona de la Campana", f"{java_int(src, 'ZONA')} bloques alrededor")]))
+
+
+def regatas():
+    import json
+    import barcos
+    datos = json.load(open(os.path.join(HERRAMIENTAS, "..", "plugins", "Puente", "barcos.json"), encoding="utf-8"))["mapas"]
+    filas = []
+    for k, (nom, _, _) in barcos.MAPAS.items():
+        m = datos.get(k)
+        if not m: continue
+        modos = "Carrera, Clasificación" + (", Gestión" if m.get("boxes") else "")
+        filas.append((f"**{nom}**", f"~{m['largo']} bloques", len(m["parrilla"]), modos, barcos.COPAS[k][0]))
+    escribir("pistas.md", tabla(["Pista", "Una vuelta", "Barcos en la parrilla", "Modos", "Copa del 1.º de la semana"], filas))
+    v = barcos.VUELTAS
+    base, rival = barcos.PREMIO_CARRERA["carrera"]
+    escribir("regatas_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Vueltas", f"Carrera {v['carrera']} · Gestión {v['gestion']} · Clasificación: las que quieras"),
+        ("Salida en falso (Carrera)", f"+{barcos.PENALIZACION_SALIDA} s"),
+        ("Gestión sin usar 2 neumáticos distintos", f"+{barcos.PENALIZACION_SIN_PARADA} s"),
+        ("Ganar una carrera", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día)"),
+        ("Top 3 de la semana (cada pista, en Clasificación y en Gestión)",
+         " · ".join(f"{n}.º {c} chips I" for n, c in enumerate(barcos.PREMIO_SEMANA, start=1)) + " · y el 1.º, la copa de la pista"),
+        ("Probabilidad de lluvia / de noche cada día", f"{pct(barcos.PROB_LLUVIA)} / {pct(barcos.PROB_NOCHE)}"),
+        ("Parada en boxes", f"{barcos.RUEDAS_PARADA} teclas, {barcos.VENTANA_TICKS / 20:g} s para cada una")]))
+    escribir("neumaticos.md", tabla(["Neumático", "Hielo azul (más rápido)", "Se gasta por vuelta", "Dura unas", "Con lluvia"], [
+        (f"**{n['nombre']}**", "nada" if not n["hielo"] else f"{pct(n['hielo'])} del hielo compacto", f"{n['desgaste']} %",
+         f"{round(100 / n['desgaste'])} vueltas", "igual" if n["lluvia"] == 1 else f"se gasta un {round((n['lluvia'] - 1) * 100)} % más")
+        for n in barcos.NEUMATICOS.values()]))
+
+
+def cabezas_tablas():
+    import cabezas
+    r = cabezas.RAREZAS
+    escribir("cofres_cabezas.md", tabla(["Cofre", "Se abre con"] + [x.capitalize() for x in r], [
+        (f"**{texto(cabezas.NOMBRE_COFRE[n])}**", f"1 × Chip {ROMANO[n]}", *[f"{cabezas.PESOS[n][x]} %" for x in r])
+        for n in sorted(cabezas.PESOS)]))
+    escribir("sets_cabezas.md", tabla(["Set", "Cabezas", "Premio al completarlo"], [
+        (f"**{s['nombre']}**", len(s["cabezas"]), f"{len(s['cabezas']) * cabezas.PREMIO_POR_CABEZA} chips I + Trofeo")
+        for s in sorted(cabezas.CATALOGO.values(), key=lambda s: -len(s["cabezas"]))]))
+
+    def chips(cuartos):
+        if cuartos == 4: return "1 chip I"
+        return f"{cuartos // 4} chips I" if cuartos % 4 == 0 else f"{cuartos}/4 de chip I" if cuartos < 4 else f"{cuartos / 4:g} chips I"
+    escribir("reciclar_cabezas.md", tabla(["Rareza", "Reciclar una repetida"], [
+        (x.capitalize(), "no se recicla" if not c else chips(c)) for x, c in cabezas.RECICLAR.items()])
+             + "\nLos cuartos de chip se guardan y se suman la próxima vez que recicles.\n")
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
+    asedios(); guerra(); regatas(); cabezas_tablas()
     print("Tablas generadas en", SALIDA)
 
 

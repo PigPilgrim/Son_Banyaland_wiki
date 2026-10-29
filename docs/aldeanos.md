@@ -59,7 +59,7 @@ Vende bebidas y la *Receta sellada*. Las bebidas y sus efectos están en [La Tab
 ## Maestro de Juegos
 
 **Clic derecho y te lleva al momento a los minijuegos** (las regatas de barcos sobre hielo). Al terminar vuelves a tu
-aldea.
+aldea. **Mayús + clic derecho** abre tu álbum de cabezas. Todo en [Minijuegos](minijuegos.md).
 
 ## Herrero
 

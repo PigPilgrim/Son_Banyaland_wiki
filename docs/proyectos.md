@@ -25,4 +25,4 @@ Qué trae cada proyecto, al detalle:
 - **Hacienda** y **SEPE**: [Hacienda, Tesoro y empresas](hacienda.md).
 - **Juzgado** y **Cárcel**: [Justicia](justicia.md).
 - **Iglesia**: [La Iglesia](iglesia.md).
-- **Cuartel**: la página de la guerra (próximamente).
+- **Cuartel**: [Guerra y asedios](guerra.md).
