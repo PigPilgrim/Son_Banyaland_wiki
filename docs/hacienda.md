@@ -18,6 +18,8 @@ su Despacho:
 
 --8<-- "_generado/impuestos.md"
 
+Todos empiezan **al 0 %**: hasta que el Alcalde los suba, Hacienda no cobra nada.
+
 - **Sobre premios:** se descuenta solo al cobrar el premio.
 - **A los ricos:** **solo cuenta lo que hay en los buzones de tus casas** (ver [Casas](casas.md#el-buzon)). Se suman
   los buzones de todas tus casas y paga lo que pase del mínimo. Se cobra una vez por semana; si no estás conectado,

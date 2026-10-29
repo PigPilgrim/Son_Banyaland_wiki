@@ -91,6 +91,8 @@ Con Walter Brick → **El Perista**: compra la mercancía y paga en **Fichas mar
 **Se toma con clic derecho** (para tomarla mirando a un cofre o una puerta, **Mayús + clic derecho**). Mientras te
 dura el efecto, **te sale humo verde** de la cabeza: se nota. Cuando se acaba, llega **el bajón**.
 
+Además **da experiencia**: menos cuanta más tolerancia tengas, y **nada si es sobredosis**.
+
 --8<-- "_generado/crimen_mercancia.md"
 
 En los minijuegos no se puede tomar nada.

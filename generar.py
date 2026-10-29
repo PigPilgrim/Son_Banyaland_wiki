@@ -568,8 +568,8 @@ def crimen_tablas():
     escribir("crimen_niveles.md", tabla(["Nivel", "Miembros (máx.)", "Tandas a la vez", "Mercancía al día", "Matas plantadas (máx.)", "Para llegar"], [
         (f"**{n['nombre']}**", n["max"], n["tandas"], n["produccion"], n["matas"], requisitos(n)) for n in crimen.NIVELES]))
     invest = {i["id"]: i for i in crimen.INVESTIGACION}
-    escribir("crimen_mercancia.md", tabla(["Mercancía", "Familia", "Efecto", "Bajón (después)", "El Perista paga", "Quiere al día", "Hace falta ser"], [
-        (f"**{d['nombre']}**", crimen.FAMILIAS[d["familia"]], efectos(d["buenos"]), efectos(d["malos"]),
+    escribir("crimen_mercancia.md", tabla(["Mercancía", "Familia", "Efecto", "Bajón (después)", "Experiencia", "El Perista paga", "Quiere al día", "Hace falta ser"], [
+        (f"**{d['nombre']}**", crimen.FAMILIAS[d["familia"]], efectos(d["buenos"]), efectos(d["malos"]), f"+{d['xp']}",
          f"{d['precio']} FM", d["demanda"], niveles[invest[d["id"]]["nivel"]]) for d in crimen.DROGAS]))
     edad = {"épica": "hierro", "legendaria": "diamante"}
     escribir("crimen_armas.md", tabla(["Arma", "Rareza", "Qué hace", "Se puede usar desde", "Hace falta ser"], [
