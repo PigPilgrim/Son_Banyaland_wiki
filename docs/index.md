@@ -14,8 +14,7 @@ hide:
 
 # Son Banyaland
 
-**Un servidor de rol: de mí para ti, de mí para vosotros.** Una aldea que crece entre todos, mazmorras de verdad
-difíciles, magia, una taberna, elecciones con parlamento, guerras entre aldeas y regatas de barcos sobre hielo.
+**Un servidor de "rol": de mí para tú, de mí para vosotros.**
 
 <label class="sb-buscador" for="__search">:material-magnify: <span>Busca en la wiki…</span> <kbd>/</kbd></label>
 

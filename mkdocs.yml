@@ -4,7 +4,7 @@ site_url: https://pigpilgrim.github.io/Son_Banyaland_wiki/
 repo_url: https://github.com/PigPilgrim/Son_Banyaland_wiki
 repo_name: Son_Banyaland_wiki
 edit_uri: edit/main/docs/
-copyright: Son Banyaland · un servidor de rol, de mí para ti, de mí para vosotros
+copyright: Son Banyaland · un servidor de "rol", de mí para tú, de mí para vosotros
 
 theme:
   name: material
