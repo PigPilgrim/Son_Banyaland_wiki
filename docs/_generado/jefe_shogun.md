@@ -1,6 +1,6 @@
 |  | El Shōgun |
 |---|---|
-| Vida | 600 (300 ♥) |
+| Vida | 600 (300 ♥) + 450 por cada jugador más en la sala |
 | Armadura | 12 |
 | Daño base | 8 |
 | Tamaño | ×1.6 |

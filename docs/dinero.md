@@ -27,7 +27,8 @@ Con chips se paga, entre otras cosas:
 ## Diamantes
 
 Los diamantes son la moneda de **las tiendas de los aldeanos** (Tabernero, Herrero, Mago, Barbero, Secretario). Las
-tiendas tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la Taberna, cada 24 horas). Ver
+tiendas tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la Taberna, cada 24 horas). En la Taberna, la Forja y la Torre de Magos, lo
+que vale diamantes también se puede pagar con chips: **1 diamante = 8 chips I**. Ver
 [Los aldeanos y sus tiendas](aldeanos.md).
 
 ## Sellos de la Aldea

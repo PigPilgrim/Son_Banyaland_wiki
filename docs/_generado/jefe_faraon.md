@@ -1,6 +1,6 @@
 |  | El Faraón |
 |---|---|
-| Vida | 500 (250 ♥) |
+| Vida | 500 (250 ♥) + 350 por cada jugador más en la sala |
 | Armadura | 10 |
 | Daño base | 8 |
 | Tamaño | ×2 |

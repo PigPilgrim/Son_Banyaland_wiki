@@ -196,8 +196,9 @@ semana se abre la siguiente**.
 | 3.ª | **Diamante** | Lo anterior + diamante | Lo anterior + diamante |
 | 4.ª | **Netherita** | Todo | Todo |
 
-El caparazón de tortuga se puede llevar siempre. Los arcos, las ballestas, los tridentes y las mazas no son de ninguna
-edad. Cuando cambia la edad, sale un aviso a todos.
+El caparazón de tortuga se puede llevar siempre. Los arcos, las ballestas, los tridentes y las mazas normales no son de
+ninguna edad. Pero **las armas y varitas épicas** (★★★★) de la Forja y la Torre de Magos piden **la edad del hierro**, y
+**las legendarias** (★★★★★) **la del diamante**, sean del material que sean. Cuando cambia la edad, sale un aviso a todos.
 
 - Una **armadura** de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te
   la pones, cae a tus pies, y solo la puede recoger su dueño (no desaparece).

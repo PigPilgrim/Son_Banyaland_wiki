@@ -1,7 +1,9 @@
 | Pagas | Recibes | Existencias |
 |---|---|---|
 | 12 × Diamante | 1 × Tridente | 1 |
-| 8 × Diamante | 1 × Encargo a ciegas | 3 |
+| 1 × Chip II + 32 × Chip I | 1 × Tridente | 1 |
+| 5 × Diamante | 1 × Encargo a ciegas | 3 |
+| 40 × Chip I | 1 × Encargo a ciegas | 3 |
 | 1 × Chip II + 16 × Diamante | 1 × Encargo maestro | 1 |
 | 1 × Plano: Katana + 3 × Acero Tamahagane | 1 × Katana | 99 |
 | 1 × Plano: Lanza Solar + 4 × Arena del Faraón | 1 × Lanza Solar | 99 |

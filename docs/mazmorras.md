@@ -69,8 +69,9 @@ Hay dos tipos de desafío: el **flojo** (amarillo) y el **fuerte** (azul).
 
 ### El jefe: El Faraón
 
-Aparece cuando alguien entra en su sala. Si el grupo se va o muere, **se cura** cuando volvéis. Una vez muerto, no
-vuelve hasta que la mazmorra se reinicia.
+Aparece cuando alguien entra en su sala. **Cuantos más seáis en la sala, más vida tiene** (si llega alguien a mitad de
+combate, gana la vida de uno más). Si el grupo se va o muere, **se cura** cuando volvéis. Una vez muerto, no vuelve
+hasta que la mazmorra se reinicia.
 
 --8<-- "_generado/jefe_faraon.md"
 
@@ -96,6 +97,8 @@ Un mapa enorme de Japón feudal. Al final, la **sala del Shōgun**, que además 
 --8<-- "_generado/mobs_samurai.md"
 
 ### El jefe: El Shōgun
+
+Como el Faraón: **más vida cuantos más seáis** en la sala, y se cura si el grupo se va o muere.
 
 --8<-- "_generado/jefe_shogun.md"
 

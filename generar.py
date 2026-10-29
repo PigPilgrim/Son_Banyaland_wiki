@@ -242,7 +242,8 @@ def jefes():
         e = j["entidad"]
         attr = {a["id"].split(":")[1]: a["base"] for a in e["attributes"]}
         b, t = j["botin"], j["tesoro_botin"]
-        filas = [("Vida", f"{j['vida']} ({j['vida'] // 2} ♥)"), ("Armadura", f"{attr.get('armor', 0):g}"),
+        filas = [("Vida", f"{j['vida']} ({j['vida'] // 2} ♥) + {j['vida_extra']} por cada jugador más en la sala"),
+                 ("Armadura", f"{attr.get('armor', 0):g}"),
                  ("Daño base", f"{attr.get('attack_damage', 0):g}"), ("Tamaño", f"×{attr.get('scale', 1):g}"),
                  ("Al 66 % de vida", j["fase1"][0]), ("Al 33 % de vida", j["fase2"][0] + (" Se vuelve más rápido y fuerte." if j["furia"] else ""))]
         if j["teletransporte"]:

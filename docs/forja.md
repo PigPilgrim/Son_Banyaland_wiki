@@ -16,7 +16,9 @@ Los objetos tienen **rareza**, que se ve en la última línea de su descripción
 !!! warning "Ojo con las edades"
     Las piezas de los sets son de **diamante**, y el *Corazón de Titán* es de **netherita**: no te las podrás poner
     hasta que llegue su [edad](index.md#las-edades). Con las armas pasa lo mismo: una espada o un hacha de hierro,
-    diamante o netherita **se te cae de la mano** hasta que llegue su edad, aunque sea épica o legendaria.
+    diamante o netherita **se te cae de la mano** hasta que llegue su edad, aunque sea épica o legendaria. Y las
+    **épicas** (arcos, ballestas, tridentes y mazas incluidos) no se pueden usar **hasta la edad del hierro**, ni las
+    **legendarias hasta la del diamante**.
 
 ---
 

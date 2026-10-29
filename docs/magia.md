@@ -18,7 +18,8 @@ Si aún no hay ninguna aldea, no se gasta.
 
 **No se gastan**: tras usarlas hay que esperar su **recarga**. Para tener una necesitas su **grimorio** y llevárselo
 al Mago **con el material de mazmorra** que pide. Los grimorios salen en los **Tesoros** de los jefes y en los
-**cofres** del vestíbulo (ver [Mazmorras](mazmorras.md)).
+**cofres** del vestíbulo (ver [Mazmorras](mazmorras.md)). Las varitas **épicas** no se pueden usar hasta **la edad
+del hierro**, y las **legendarias** hasta **la del diamante** (ver [Las edades](index.md#las-edades)).
 
 --8<-- "_generado/varitas.md"
 

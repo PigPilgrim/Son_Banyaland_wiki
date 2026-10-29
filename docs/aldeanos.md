@@ -1,7 +1,8 @@
 # Los aldeanos y sus tiendas
 
 Los aldeanos llegan a la aldea según su nivel (ver [Cómo crece la aldea](aldea.md#los-niveles)). Las tiendas cobran
-casi todo en **diamantes**, tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
+casi todo en **diamantes**; en la Taberna, la Forja y la Torre de Magos, lo que vale diamantes se puede pagar también
+con **chips** (1 diamante = 8 chips I, en la oferta de justo debajo). Tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
 encendido (la **Taberna**, una vez cada **24 horas**).
 
 Si la [Campana](aldea.md#la-campana) de la aldea cae en un asedio, **todos cierran** hasta que se repare.
