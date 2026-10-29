@@ -10,11 +10,11 @@ hide:
 <div class="sb-hero" markdown>
 <div class="sb-hero__texto" markdown>
 
-<p class="sb-eyebrow">☘ Servidor de Minecraft · Mallorca ☘</p>
+<p class="sb-eyebrow">☘ Servidor de Minecraft ☘</p>
 
 # Son Banyaland
 
-**Un servidor de Minecraft hecho entre amigos de Mallorca.** Una aldea que crece entre todos, mazmorras de verdad
+**Un servidor de rol: de mí para ti, de mí para vosotros.** Una aldea que crece entre todos, mazmorras de verdad
 difíciles, magia, una taberna, elecciones con parlamento, guerras entre aldeas y regatas de barcos sobre hielo.
 
 <label class="sb-buscador" for="__search">:material-magnify: <span>Busca en la wiki…</span> <kbd>/</kbd></label>
@@ -169,6 +169,17 @@ sea un fallo**: avisa al admin.
 - [Neumáticos *Para el modo Gestión*](minijuegos.md#neumaticos-modo-gestion)
 
 </div>
+</div>
+
+<div class="sb-seccion" markdown>
+<p class="sb-eyebrow">La crónica</p>
+
+## Lo que va pasando en el mundo
+
+Aldeas fundadas, alcaldes elegidos, guerras, asedios, récords... Todo queda apuntado en la
+[Historia de Son Banyaland](historia.md).
+
+[Leer la Historia](historia.md){ .md-button }
 </div>
 
 <div class="sb-seccion" markdown>

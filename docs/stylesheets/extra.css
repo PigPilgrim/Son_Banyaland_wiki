@@ -61,6 +61,15 @@
   --md-typeset-mark-color: rgba(217,181,90,.28);
   --md-typeset-table-color: var(--sb-line);
   --md-shadow-z2: 0 14px 30px rgba(0,0,0,.45);
+  --md-default-bg-color--light: color-mix(in srgb, var(--sb-bg) 70%, transparent);
+  --md-default-bg-color--lighter: color-mix(in srgb, var(--sb-bg) 30%, transparent);
+  --md-default-bg-color--lightest: color-mix(in srgb, var(--sb-bg) 12%, transparent);
+  --md-admonition-fg-color: var(--sb-text);
+  --md-admonition-bg-color: var(--sb-adm-bg);
+  --md-typeset-kbd-color: var(--sb-slot);
+  --md-typeset-kbd-accent-color: var(--sb-line-2);
+  --md-typeset-kbd-border-color: var(--sb-line);
+  --md-typeset-table-color--light: var(--sb-hover);
 }
 
 /* ---------- Esquema claro "pergamino" ---------- */
@@ -100,6 +109,15 @@
   --md-footer-bg-color--dark: #172015;
   --md-typeset-mark-color: rgba(138,106,31,.2);
   --md-typeset-table-color: var(--sb-line);
+  --md-default-bg-color--light: color-mix(in srgb, var(--sb-bg) 70%, transparent);
+  --md-default-bg-color--lighter: color-mix(in srgb, var(--sb-bg) 30%, transparent);
+  --md-default-bg-color--lightest: color-mix(in srgb, var(--sb-bg) 12%, transparent);
+  --md-admonition-fg-color: var(--sb-text);
+  --md-admonition-bg-color: var(--sb-adm-bg);
+  --md-typeset-kbd-color: var(--sb-slot);
+  --md-typeset-kbd-accent-color: var(--sb-line-2);
+  --md-typeset-kbd-border-color: var(--sb-line);
+  --md-typeset-table-color--light: var(--sb-hover);
 }
 
 /* Fondo: losas de piedra muy suaves */
@@ -207,10 +225,12 @@
 }
 .md-typeset .admonition-title::before, .md-typeset summary::before { background-color: currentColor; }
 .md-typeset details:not([open]) > summary { border-bottom: 0; }
-.md-typeset .tip { border-color: var(--sb-tip-line); background: var(--sb-tip-bg); }
-.md-typeset .tip > .admonition-title { background: var(--sb-tip-head) !important; color: var(--sb-tip-title); border-color: var(--sb-tip-line); }
-.md-typeset .warning { border-color: var(--sb-warn-line); background: var(--sb-warn-bg); }
-.md-typeset .warning > .admonition-title { background: var(--sb-warn-head) !important; color: var(--sb-warn-title); border-color: var(--sb-warn-line); }
+.md-typeset :is(.admonition, details) { border-color: var(--sb-adm-line); }
+.md-typeset :is(.admonition, details) > :is(.admonition-title, summary)::before { background-color: currentColor; }
+.md-typeset :is(.admonition, details).tip { border-color: var(--sb-tip-line); background: var(--sb-tip-bg); }
+.md-typeset :is(.admonition, details).tip > :is(.admonition-title, summary) { background: var(--sb-tip-head) !important; color: var(--sb-tip-title); border-color: var(--sb-tip-line); }
+.md-typeset :is(.admonition, details).warning { border-color: var(--sb-warn-line); background: var(--sb-warn-bg); }
+.md-typeset :is(.admonition, details).warning > :is(.admonition-title, summary) { background: var(--sb-warn-head) !important; color: var(--sb-warn-title); border-color: var(--sb-warn-line); }
 
 /* ---------- Ranura de inventario (iconos) ---------- */
 .md-typeset .sb-slot {
@@ -355,3 +375,14 @@
   .md-typeset .sb-buscador { max-width: none; }
   .md-typeset .sb-seccion { margin-top: 2.4rem; }
 }
+
+/* ---------- Historia: línea del tiempo (docs/historia.md, dentro de <div class="sb-cronica">) ---------- */
+.md-typeset .sb-cronica h3 {
+  position: relative; margin: 2em 0 .5em; padding-left: 1.4rem;
+  font-size: 1.15rem;
+}
+.md-typeset .sb-cronica h3::before {
+  content: ""; position: absolute; left: 0; top: .35em; width: .55rem; height: .55rem;
+  background: var(--sb-gold); box-shadow: 0 0 0 3px var(--sb-slot);
+}
+.md-typeset .sb-cronica h3 ~ p { padding-left: 1.4rem; border-left: 1px solid var(--sb-line); margin-left: .27rem; }
