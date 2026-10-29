@@ -11,22 +11,24 @@ theme:
   language: es
   logo: img/icono.png
   favicon: img/icono.png
+  font: false              # las fuentes del diseño (Grenze, Alegreya Sans, Pixelify Sans) las carga extra.css
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: green
-      accent: amber
+    # Oscuro "banyaland" (el principal) y claro "pergamino": colores en docs/stylesheets/extra.css
+    - scheme: banyaland
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Modo pergamino (claro)
+    - scheme: pergamino
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Modo oscuro
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: green
-      accent: amber
-      toggle:
-        icon: material/weather-sunny
-        name: Modo claro
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.instant
     - navigation.sections
     - navigation.top
@@ -35,6 +37,9 @@ theme:
     - search.highlight
     - content.action.edit
     - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search:
@@ -49,9 +54,16 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets:
       base_path: docs
       check_paths: true
+
+validation:
+  links:
+    anchors: warn             # un enlace a un apartado que no existe hace fallar la comprobación
 
 exclude_docs: |
   _generado/
