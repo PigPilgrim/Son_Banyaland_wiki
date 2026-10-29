@@ -565,8 +565,8 @@ def crimen_tablas():
         if n.get("legendario"): r.append(f"{n['legendario']} material legendario de mazmorra")
         if n.get("dias"): r.append(f"haber aguantado una redada o llevar {n['dias']} días")
         return ", ".join(r) if r else f"fundarla: {crimen.FUNDAR['chips']} chips I"
-    escribir("crimen_niveles.md", tabla(["Nivel", "Miembros (máx.)", "Tandas a la vez", "Mercancía al día", "Para llegar"], [
-        (f"**{n['nombre']}**", n["max"], n["tandas"], n["produccion"], requisitos(n)) for n in crimen.NIVELES]))
+    escribir("crimen_niveles.md", tabla(["Nivel", "Miembros (máx.)", "Tandas a la vez", "Mercancía al día", "Matas plantadas (máx.)", "Para llegar"], [
+        (f"**{n['nombre']}**", n["max"], n["tandas"], n["produccion"], n["matas"], requisitos(n)) for n in crimen.NIVELES]))
     invest = {i["id"]: i for i in crimen.INVESTIGACION}
     escribir("crimen_mercancia.md", tabla(["Mercancía", "Familia", "Efecto", "Bajón (después)", "El Perista paga", "Quiere al día", "Hace falta ser"], [
         (f"**{d['nombre']}**", crimen.FAMILIAS[d["familia"]], efectos(d["buenos"]), efectos(d["malos"]),
@@ -594,6 +594,10 @@ def crimen_tablas():
     escribir("crimen_plantas.md", tabla(["Sale", "Al cortar", "Probabilidad", "Hace falta haber investigado"], [
         (f"**{p['nombre']}**", {"tall_grass": "Hierba alta", "large_fern": "Helecho grande"}[p["de"]], pct(p["prob"]), nombres[p["necesita"]])
         for p in crimen.PLANTAS]))
+    escribir("crimen_cultivo.md", tabla(["Planta", "La mata parece", "Tarda", "Cosecha"], [
+        (f"**{p['nombre']}**", {"wheat": "trigo", "beetroots": "remolacha"}.get(p["cultivo"]["bloque"], p["cultivo"]["bloque"]),
+         tiempo(p["cultivo"]["min"]), f"{p['cultivo']['cosecha'][0]} a {p['cultivo']['cosecha'][1]}")
+        for p in crimen.PLANTAS if p.get("cultivo")]))
     plural = lambda i: "prueba" if i == 0 else "pruebas"
     escribir("crimen_cuerpo.md", tabla(["Qué", "Cuánto"], [
         ("Tolerancia (por familia)", f"+{R['tol_dosis']} por dosis (máx. {R['tol_max']}); baja {R['tol_baja_h']} por hora sin tomar"),

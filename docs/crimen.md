@@ -52,6 +52,22 @@ crecer.
 
 --8<-- "_generado/crimen_plantas.md"
 
+### Cultivar
+
+Las Briznas y los Cogollos **se plantan**: con uno en la mano, **clic derecho encima de tierra de cultivo**. Sale una
+**mata** que crece **en tiempo real**, aunque no haya nadie cerca. Cuando está lista, os avisa y la cosecha cualquier
+miembro rompiéndola.
+
+--8<-- "_generado/crimen_cultivo.md"
+
+- Solo en el mundo normal, **fuera de las aldeas** y con luz (vale la de antorchas: se puede cultivar bajo techo).
+- **El polvo de hueso no le hace nada**, y las matas no se pisotean.
+- Si la rompes **antes de tiempo**, solo recuperas la semilla.
+- **Cuando está lista echa humo verde**: se nota. Y si nadie la cosecha en **24 horas**, se echa a perder.
+- Cada organización tiene un **máximo de matas** según su nivel (ver [Los niveles](#los-niveles)).
+- **Cuidado con quién la encuentra:** otra organización que sepa cultivarla **os la puede robar**. Si la arranca **la
+  Policía**, cuenta como **una prueba** contra vosotros. Si alguien os arranca una mata, os llega el aviso.
+
 ## Producir
 
 En el Alquimista → **Producir**. Cada **tanda** fabrica una cosa (de 1 a 8 lotes de golpe) y tarda un rato en tiempo
@@ -105,7 +121,8 @@ El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la
 - **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca. Él lo ve venir (2 segundos). Si lleva algo
   ilegal, se le quita, **paga multa al Tesoro** (si no le llega, se le queda como [deuda](justicia.md#las-deudas)) y
   se abre **un caso en el Juzgado**, por si el Juez quiere añadir cárcel.
-- **Pruebas:** lo que se confisca dice de qué organización es. Cada prueba da **una pista** de dónde está su guarida:
+- **Pruebas:** lo que se confisca dice de qué organización es. **Arrancar una plantación** también cuenta (una prueba
+  por plantación, no por mata). Cada prueba da **una pista** de dónde está su guarida:
   un círculo cada vez más pequeño. Las pruebas caducan.
 - **Orden de registro:** con suficientes pruebas, el Juez o un agente la piden en **Pruebas y pistas**. La redada la
   organiza el admin: **hablad con Raúl**.
