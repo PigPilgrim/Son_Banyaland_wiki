@@ -11,9 +11,8 @@ Se gastan al usarlos (uno cada vez). Se apilan hasta 16.
 
 --8<-- "_generado/pergaminos.md"
 
-!!! warning "Pergamino de Regreso con varias aldeas"
-    Ahora mismo te lleva siempre al centro de **la primera aldea del servidor**, aunque seas de otra.
-    ⚠️ PENDIENTE: el admin está mirando si cambiarlo para que te lleve a la tuya.
+El **Pergamino de Regreso** te lleva al centro de **tu** aldea. Si no eres ciudadano de ninguna, a la primera que haya.
+Si aún no hay ninguna aldea, no se gasta.
 
 ## Varitas y bastones
 

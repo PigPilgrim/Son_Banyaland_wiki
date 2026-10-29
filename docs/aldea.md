@@ -29,9 +29,8 @@ Alrededor del centro de cada aldea hay una **zona segura**, y se hace más grand
 
 --8<-- "_generado/zona_segura.md"
 
-!!! warning "⚠️ PENDIENTE"
-    Qué protege exactamente la zona segura (monstruos, peleas entre jugadores, romper bloques...): falta explicarlo
-    aquí.
+**La zona segura protege de los monstruos:** los que aparecen solos dentro de ella desaparecen. Ojo: los que salen
+de **spawners** o en las **oleadas de un asedio** sí pueden entrar.
 
 ## Ser vecino de una aldea
 

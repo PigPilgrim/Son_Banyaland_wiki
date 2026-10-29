@@ -24,20 +24,19 @@ sea un fallo**: avisa al admin.
 
 ### Las edades de la armadura
 
-La armadura avanza por **edades**, y el admin las va abriendo más o menos cada semana:
+Es **la norma principal del servidor**: la armadura avanza por **edades**, y **cada semana se abre la siguiente**.
 
-| Edad | Qué armadura puedes llevar puesta |
-|---|---|
-| **Cobre** (la primera) | Cobre, cuero u oro |
-| **Hierro** | Lo anterior + hierro y malla |
-| **Diamante** | Lo anterior + diamante |
-| **Netherita** | Todo |
+| Semana | Edad | Qué armadura puedes llevar puesta |
+|---|---|---|
+| 1.ª | **Cobre** | Cobre, cuero y oro |
+| 2.ª | **Hierro** | Lo anterior + hierro y malla |
+| 3.ª | **Diamante** | Lo anterior + diamante |
+| 4.ª | **Netherita** | Todo |
+
+El caparazón de tortuga se puede llevar siempre. Cuando cambia la edad, sale un aviso a todos.
 
 Una armadura de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te la
 pones, cae a tus pies, y solo la puede recoger su dueño.
-
-!!! warning "⚠️ PENDIENTE"
-    Qué día se abre cada edad: lo decide el admin.
 
 ### Mazmorras y minijuegos
 
@@ -47,8 +46,7 @@ barcos tendrán su página más adelante.
 
 ### Normas del servidor
 
-!!! warning "⚠️ PENDIENTE"
-    Las normas básicas de convivencia: las tiene que escribir el admin.
+- **Respeta las edades de la armadura** (arriba): cada semana, la suya.
 
 ---
 
