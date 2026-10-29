@@ -33,7 +33,7 @@ Además de los portales, en el vestíbulo están:
 --8<-- "_generado/mercader.md"
 
 El **Pico del Saqueador** solo sirve para **romper spawners normales** (los de los desafíos, no). Es de diamante,
-así que **no funciona hasta la [edad del diamante](index.md#las-edades)** (3.ª semana). El libro de
+así que **no se puede usar hasta la [edad del diamante](index.md#las-edades)** (3.ª semana). El libro de
 **Reparación** es de los poquísimos del servidor: en el resto del juego está prohibido (ni en cofres, ni en
 bibliotecarios); por eso existe [la reparación del Herrero](aldeanos.md#reparaciones).
 

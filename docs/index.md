@@ -201,9 +201,10 @@ edad. Cuando cambia la edad, sale un aviso a todos.
 
 - Una **armadura** de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te
   la pones, cae a tus pies, y solo la puede recoger su dueño (no desaparece).
-- Una **espada, hacha, pico, pala, azada o lanza** de una edad que aún no ha llegado se puede llevar, pero **en la
-  mano no rompe bloques ni hace daño**. Cuenta el material, **también en las armas especiales** de las mazmorras y la
-  forja: una katana de diamante no sirve hasta la edad del diamante.
+- Una **espada, hacha, pico, pala, azada o lanza** de una edad que aún no ha llegado **se puede guardar en el
+  inventario, pero no cogerla en la mano**: si la coges, cae a tus pies y solo la puede recoger su dueño. Al recogerla
+  va a la parte de arriba del inventario, no a la barra. Cuenta el material, **también en las armas especiales** de
+  las mazmorras y la forja: una katana de diamante no se puede usar hasta la edad del diamante.
 </div>
 
 <div class="sb-seccion" markdown>
