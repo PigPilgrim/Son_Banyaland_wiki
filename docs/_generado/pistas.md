@@ -2,4 +2,4 @@
 |---|---|---|---|---|
 | **Camping Kart** | ~1442 bloques | 26 | Carrera, Clasificación, Gestión | Copa Pistón Pegajoso |
 | **Beach Club** | ~1075 bloques | 10 | Carrera, Clasificación, Gestión | Copa Pistón |
-| **Pista de Hielo 3** | ~2398 bloques | 5 | Carrera, Clasificación | Copa Pistón en Cofre |
+| **Pista de Hielo 3** | ~2398 bloques | 5 | Carrera, Clasificación, Gestión | Copa Pistón en Cofre |
