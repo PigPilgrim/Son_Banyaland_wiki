@@ -106,6 +106,8 @@ cuenta tu **mejor tiempo**. No hace falta coincidir con nadie.
 - Primero das una **vuelta de formación**. **Al cruzar la meta se gasta el intento**, y si abandonas o caes al agua no se
   devuelve.
 - En Clasificación, cada intento es **una sola vuelta**.
+- En Gestión, **cada sector se compara con tu mejor de los intentos de hoy**: si hiciste 30 s y ahora haces 20 s, verás
+  **-10**.
 
 A medianoche se reparten los puntos:
 
