@@ -92,6 +92,35 @@ siempre. **Al acabar la semana**, el top 3 de cada pista y modo cobra chips, y *
 
 Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).
 
+## La Liga
+
+La Liga se abre desde el menú del portal azul, con el **trofeo de abajo** (o con `/puente barcos liga`).
+
+### Gran Premio del día
+
+Cada día sale **un circuito y un modo al azar**: Clasificación o Gestión. Puedes intentarlo **todas las veces que
+quieras hasta medianoche**, y cuenta tu **mejor tiempo**. No hace falta coincidir con nadie. A medianoche se reparten
+los puntos:
+
+--8<-- "_generado/liga_puntos.md"
+
+### Escuderías
+
+Hay **cuatro colores de barco**: blanco, rosa, mangrove y bambú. Eliges uno y corres con ese barco **en todos los
+modos**, con cofre o sin él (es solo estética, y el cofre no se abre). Sin escudería no puntúas.
+
+- **El primero que entra en un color le pone el nombre**, y el nombre sigue de una semana a otra.
+- Puedes **cambiar de escudería o crear otra una vez por semana**, siempre antes de correr esa semana.
+
+--8<-- "_generado/liga_numeros.md"
+
+### Premios de la semana
+
+El **lunes a las 00:00** se cierra la semana, se entregan los premios y los puntos vuelven a cero. Los trofeos te
+llegan cuando vuelves a la aldea, y si no te caben, esperan.
+
+--8<-- "_generado/liga_premios.md"
+
 ## Cabezas coleccionables
 
 En el lobby hay **tres Cofres de Cabezas**. Cada uno se abre con **una chip** de su nivel y da **una cabeza** al azar

@@ -524,6 +524,21 @@ def regatas():
         ("Probabilidad de lluvia / de noche cada día", f"{pct(barcos.PROB_LLUVIA)} / {pct(barcos.PROB_NOCHE)}"),
         ("Parada en boxes", f"{barcos.RUEDAS_PARADA} teclas, {barcos.VENTANA_TICKS / 20:g} s para cada una"),
         ("Pinchazo seguro", f"entre el {barcos.PINCHAZO_MIN} % y el {barcos.PINCHAZO_MAX} % de desgaste")]))
+    liga = barcos.LIGA
+    escribir("liga_puntos.md", tabla(["Puesto del día", "Puntos"], [
+        *[(f"{n}.º", p) for n, p in enumerate(liga["puntos"], start=1)],
+        ("Resto de los que corren", liga["puntos_resto"]),
+        ("Vuelta rápida del día (solo en Gestión)", f"+{liga['vuelta_rapida']}")]))
+    escribir("liga_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Pilotos por escudería", f"{liga['tope']} como mucho"),
+        ("Pilotos que puntúan para la escudería cada día", f"sus {liga['puntuan']} mejores"),
+        ("Escudería vacía", f"se borra tras {liga['semanas_vacia']} semanas seguidas sin nadie")]))
+    escribir("liga_premios.md", tabla(["Premio", "Para quién"], [
+        (f"**{liga['premios']['oro']['nombre']}**", "1.º de la clasificación de pilotos"),
+        (f"**{liga['premios']['plata']['nombre']}**", "2.º de la clasificación de pilotos"),
+        (f"**{liga['premios']['bronce']['nombre']}**", "3.º de la clasificación de pilotos"),
+        (f"**{liga['premios']['copa']['nombre']}**", "Todos los pilotos de la escudería ganadora"),
+        (f"**{liga['premios']['casco']['nombre']}**", "Quien sume más vueltas rápidas del día en la semana")]))
     escribir("neumaticos.md", tabla(["Neumático", "Hielo azul (más rápido)", "Se gasta por vuelta", "Dura unas", "Con lluvia"], [
         (f"**{n['nombre']}**", "nada" if not n["hielo"] else f"{pct(n['hielo'])} del hielo compacto", f"{n['desgaste']} %",
          f"{round(100 / n['desgaste'])} vueltas", "igual" if n["lluvia"] == 1 else f"se gasta un {round((n['lluvia'] - 1) * 100)} % más")
