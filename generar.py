@@ -530,6 +530,7 @@ def regatas():
         ("Resto de los que corren", liga["puntos_resto"]),
         ("Vuelta rápida del día (solo en Gestión)", f"+{liga['vuelta_rapida']}")]))
     escribir("liga_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Intentos por Gran Premio", liga["intentos"]),
         ("Pilotos por escudería", f"{liga['tope']} como mucho"),
         ("Pilotos que puntúan para la escudería cada día", f"sus {liga['puntuan']} mejores"),
         ("Escudería vacía", f"se borra tras {liga['semanas_vacia']} semanas seguidas sin nadie")]))

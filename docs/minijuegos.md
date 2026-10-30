@@ -94,23 +94,31 @@ Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).
 
 ## La Liga
 
-La Liga se abre desde el menú del portal azul, con el **trofeo de abajo** (o con `/puente barcos liga`).
+La Liga se abre desde el menú del portal azul, con el **trofeo del centro** (o con `/puente barcos liga`).
 
 ### Gran Premio del día
 
-Cada día sale **un circuito y un modo al azar**: Clasificación o Gestión. Puedes intentarlo **todas las veces que
-quieras hasta medianoche**, y cuenta tu **mejor tiempo**. No hace falta coincidir con nadie. A medianoche se reparten
-los puntos:
+Cada día sale **un circuito y un modo al azar**: Clasificación o Gestión. Tienes **3 intentos hasta medianoche**, y
+cuenta tu **mejor tiempo**. No hace falta coincidir con nadie.
+
+- Solo cuentan los intentos que empiezas **desde el menú de la Liga**. Lo que corras por tu cuenta en esa pista no vale,
+  así que puedes entrenar sin gastar nada.
+- Primero das una **vuelta de formación**. **Al cruzar la meta se gasta el intento**, y si abandonas o caes al agua no se
+  devuelve.
+- En Clasificación, cada intento es **una sola vuelta**.
+
+A medianoche se reparten los puntos:
 
 --8<-- "_generado/liga_puntos.md"
 
 ### Escuderías
 
 Hay **cuatro colores de barco**: blanco, rosa, mangrove y bambú. Eliges uno y corres con ese barco **en todos los
-modos**, con cofre o sin él (es solo estética, y el cofre no se abre). Sin escudería no puntúas.
+modos**, con cofre o sin él (es solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran Premio.
 
+- **Cada semana hay que volver a elegir escudería**, por si quieres probar a ganar con otra o crear la tuya.
 - **El primero que entra en un color le pone el nombre**, y el nombre sigue de una semana a otra.
-- Puedes **cambiar de escudería o crear otra una vez por semana**, siempre antes de correr esa semana.
+- Puedes cambiar de idea **hasta gastar tu primer intento de la semana**; después, ya el lunes.
 
 --8<-- "_generado/liga_numeros.md"
 
