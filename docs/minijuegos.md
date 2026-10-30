@@ -3,7 +3,7 @@
 ## Ir y volver
 
 - **Ida:** clic derecho al **Maestro de Juegos** de tu aldea (llega con el nivel 2). Te lleva al **lobby de
-  minijuegos**. Si el admin aún no ha abierto los juegos esa semana, puedes pasear por el lobby igualmente.
+  minijuegos**. Si el admin ha cerrado los juegos, puedes pasear por el lobby igualmente.
 - **Vuelta:** la brújula **Volver a casa** del hueco 9 de tu barra (en el lobby es al momento), o el botón
   **[Volver a la aldea]** del chat. Vuelves junto al Maestro de Juegos.
 
@@ -19,6 +19,10 @@ Los minijuegos tienen **su propio inventario**, y en ellos **no pierdes nada al 
 
 Los **premios** de los minijuegos (chips) se cobran **al volver a la aldea**, y pagan el
 [impuesto sobre premios](hacienda.md#hacienda-los-impuestos) si tu aldea lo tiene.
+
+## Próximamente: Cod Zombies
+
+En el lobby ya está su portal, con el cartel **En Preparación**: todavía no se puede jugar.
 
 ## Las regatas
 
