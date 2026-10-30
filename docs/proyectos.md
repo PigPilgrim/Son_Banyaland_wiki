@@ -17,7 +17,7 @@ edificios públicos construir: Hacienda, SEPE, Juzgado, Cárcel, Iglesia y Cuart
 
 ## El Tesoro de la aldea
 
-Cada aldea tiene un **Tesoro** común (chips y sellos), que se ve en la Oficina. Cualquiera puede **donar**,
+Cada aldea tiene un **Tesoro** común (chips, diamantes y sellos), que se ve en la Oficina. Cualquiera puede **donar**,
 y se llena también con **los impuestos** si la aldea tiene Hacienda.
 
 Qué trae cada proyecto, al detalle:

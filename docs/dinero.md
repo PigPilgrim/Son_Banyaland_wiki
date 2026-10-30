@@ -1,6 +1,8 @@
 # Dinero
 
-En Son Banyaland todo se paga en **chips**. Además están los **Sellos de la Aldea**, y los **diamantes** se cambian por chips.
+En Son Banyaland hay dos monedas: los **diamantes**, el dinero de la aldea, y las **chips**, las fichas de mazmorras y
+minijuegos. Además están los **Sellos de la Aldea**. Quien solo mina necesitará chips y quien solo va a mazmorras,
+diamantes: **cambiad entre vosotros**.
 
 ## Chips
 
@@ -16,20 +18,25 @@ mazmorras: el **⬆** las sube y el **⬇** las baja. Ver [Mazmorras](mazmorras.
 
 Las chips también sirven **de llave**: con ellas se abren las cajas de premios.
 
-Con chips se paga, entre otras cosas:
-
-- Las **reparaciones del Herrero** (ver [el Herrero](aldeanos.md#herrero)).
-- **Todas las tiendas de los aldeanos** (Tabernero, Herrero, Mago, Barbero, Secretario). Tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la Taberna, cada 24 horas). Ver [Los aldeanos y sus tiendas](aldeanos.md).
-- El **Vale de barbería**.
-- Las piezas del **set de Archimago** en la tienda del Mago (1 Chip II cada una).
-- Los **proyectos de la Oficina** (ver [Proyectos](proyectos.md)).
-- Parte del **encargo del Secretario** en los niveles 4 y 5 de la aldea.
-
 ## Diamantes
 
-Los diamantes ya no son moneda: **se cambian por chips en el [Guía de las Mazmorras](aldeanos.md#guia-de-las-mazmorras)**
-(Mayús + clic derecho), en los dos sentidos: **1 diamante = 8 chips I**. Siguen haciendo falta como material
-(encargos de la aldea, misiones, proyectos...) y gustan a algunos dioses.
+Salen de **minar** y de algunos premios, y son el dinero de la aldea. El **Tesoro** y los **buzones** los guardan.
+
+## Qué se paga con qué
+
+| Moneda | Qué |
+|---|---|
+| **Diamantes** | Escrituras de casa y Carta de fundación, cartas, fundar una religión, registrar una empresa, recetas y bebidas comunes, pergaminos, tridente |
+| **Chips** | Cajas de premios, reparaciones, Vale de barbería, Encargo a ciegas, set de Archimago, proyectos de la Oficina (además de sus materiales), multas y fianzas, bajos fondos |
+| **Las dos a la vez** | Bebidas épicas y legendarias, Encargo maestro |
+
+Las tiendas tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la
+Taberna, cada 24 horas). Los precios, en [Los aldeanos y sus tiendas](aldeanos.md).
+
+## Cambiar chips y diamantes
+
+Un diamante vale **unas 8 chips I**. Lo mejor es cambiar **con otro jugador**. Si no hay nadie, el
+[Guía de las Mazmorras](aldeanos.md#guia-de-las-mazmorras) cambia siempre (Mayús + clic derecho), pero se queda una parte.
 
 ## Sellos de la Aldea
 

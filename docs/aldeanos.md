@@ -1,7 +1,8 @@
 # Los aldeanos y sus tiendas
 
-Los aldeanos llegan a la aldea según su nivel (ver [Cómo crece la aldea](aldea.md#los-niveles)). Las tiendas cobran
-todo en **chips**; si tienes diamantes, los cambias en el [Guía de las Mazmorras](#guia-de-las-mazmorras). Tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
+Los aldeanos llegan a la aldea según su nivel (ver [Cómo crece la aldea](aldea.md#los-niveles)). Cada cosa se paga en
+**diamantes**, en **chips** o en las dos a la vez ([qué se paga con qué](dinero.md#que-se-paga-con-que)); si te falta una, se cambia en
+el [Guía de las Mazmorras](#guia-de-las-mazmorras) o con otro jugador. Tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
 encendido (la **Taberna**, una vez cada **24 horas**).
 
 Si la [Campana](aldea.md#la-campana) de la aldea cae en un asedio, **todos cierran** hasta que se repare.
@@ -90,7 +91,8 @@ Cuesta:
 usa la brújula *Volver a casa* del hueco 9 de tu barra. Con la Campana rota no lleva a nadie. Todo en
 [Mazmorras](mazmorras.md).
 
-**Mayús + clic derecho** abre su tienda: **cambia chips y diamantes**, en los dos sentidos y al mismo precio.
+**Mayús + clic derecho** abre su tienda: **cambia chips y diamantes**, en los dos sentidos. Se queda una parte, así que
+sale mejor cambiar con otro jugador si encuentras a alguien.
 
 --8<-- "_generado/tienda_guia.md"
 

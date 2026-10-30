@@ -1,11 +1,11 @@
 | Pagas | Recibes | Existencias |
 |---|---|---|
-| 32 × Chip I | 1 × Pergamino de Regreso | 3 |
-| 48 × Chip I | 1 × Pergamino de Curación | 3 |
-| 24 × Chip I | 1 × Pergamino de Purificación | 3 |
-| 40 × Chip I | 1 × Pergamino de Escudo | 3 |
-| 24 × Chip I | 1 × Pergamino del Viento | 3 |
-| 24 × Chip I | 1 × Pergamino de Visión | 3 |
+| 4 × Diamante | 1 × Pergamino de Regreso | 3 |
+| 6 × Diamante | 1 × Pergamino de Curación | 3 |
+| 3 × Diamante | 1 × Pergamino de Purificación | 3 |
+| 5 × Diamante | 1 × Pergamino de Escudo | 3 |
+| 3 × Diamante | 1 × Pergamino del Viento | 3 |
+| 3 × Diamante | 1 × Pergamino de Visión | 3 |
 | 1 × Chip II | 1 × Capucha del Archimago | 1 |
 | 1 × Chip II | 1 × Túnica del Archimago | 1 |
 | 1 × Chip II | 1 × Faldones del Archimago | 1 |

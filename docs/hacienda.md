@@ -2,7 +2,7 @@
 
 ## El Tesoro de la aldea
 
-Cada aldea tiene un **Tesoro** común con **chips y sellos**. Se ve en el **Funcionario** (saldo y todos
+Cada aldea tiene un **Tesoro** común con **chips, diamantes y sellos**. Se ve en el **Funcionario** (saldo y todos
 los movimientos), y cualquiera puede **donar**. Se llena con:
 
 - **Donaciones** de los vecinos.

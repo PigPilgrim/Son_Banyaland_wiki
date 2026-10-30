@@ -1,8 +1,8 @@
 | Pagas | Recibes | Existencias |
 |---|---|---|
-| 1 × Chip II + 32 × Chip I | 1 × Tridente | 1 |
+| 12 × Diamante | 1 × Tridente | 1 |
 | 40 × Chip I | 1 × Encargo a ciegas | 3 |
-| 3 × Chip II | 1 × Encargo maestro | 1 |
+| 1 × Chip II + 16 × Diamante | 1 × Encargo maestro | 1 |
 | 1 × Plano: Katana + 3 × Acero Tamahagane | 1 × Katana | 99 |
 | 1 × Plano: Lanza Solar + 4 × Arena del Faraón | 1 × Lanza Solar | 99 |
 | 1 × Plano: Hoja Maldita + 1 × Vendas de Momia | 1 × Hoja Maldita | 99 |
