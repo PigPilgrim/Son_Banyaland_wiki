@@ -60,6 +60,10 @@ más resbaladizo**. Con el uso el neumático se gasta, y el azul se va apagando.
 
 --8<-- "_generado/neumaticos.md"
 
+**No apures demasiado.** Pasado el **100 %** el neumático revienta: empiezan a salir **manchas de nieve** en la pista
+(solo para ti), que frenan mucho. Poco después **pinchas seguro**: el barco se para, pulsas la tecla que salga y sigues
+con aún más nieve hasta que cambies de neumático en boxes. El momento exacto cambia cada día y en cada pista.
+
 ### Boxes
 
 La **zona amarilla** (con partículas) es el foso de boxes:
