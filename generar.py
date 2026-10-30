@@ -125,7 +125,7 @@ def tienda(rol):
 
 
 def tiendas():
-    for rol in ("tabernero", "herrero", "barbero", "mago"):
+    for rol in ("tabernero", "herrero", "barbero", "mago", "guia"):
         minutos = aldea.REPOSICION_TABERNA_MIN if rol == "tabernero" else aldea.REPOSICION_MIN
         cada = f"{minutos // 60} horas" if minutos % 60 == 0 else f"{minutos} minutos"
         escribir(f"tienda_{rol}.md", tienda(rol) + f"\nLas existencias se reponen solas cada {cada} "
@@ -137,7 +137,7 @@ def tiendas():
     escribir("tienda_secretario.md", tabla(["Pagas", "Recibes", "Existencias", "Cuándo"], filas))
     escribir("reparar.md", f"**{forja.REPARAR_CHIPS} chips I** por reparación.\n")
     escribir("barbero.md", f"La primera vez que hablas con el Barbero te **regala un Vale de barbería**. Después cuestan "
-                           f"**{barberia.PRECIO_DIAMANTES} diamantes** o **{barberia.PRECIO_CHIPS} chips I**.\n")
+                           f"**{barberia.PRECIO_CHIPS} chips I**.\n")
 
 
 def proyectos():
@@ -346,7 +346,8 @@ def forja_tablas():
 
 # ---------------------------------------------------------------- magia
 def magia_tablas():
-    filas = [(f"**{n}**", t_, f"{p} × Diamante", r and f"{r} s" or "—") for n, _, t_, p, _, r, _ in magia.PERGAMINOS.values()]
+    filas = [(f"**{n}**", t_, " + ".join(cosa(x) for x in (lambda o: (o[0], *o[3:]))(aldea.en_chips(p, None, 0))), r and f"{r} s" or "—")
+             for n, _, t_, p, _, r, _ in magia.PERGAMINOS.values()]
     escribir("pergaminos.md", tabla(["Pergamino", "Qué hace", "Precio en el Mago", "Recarga"], filas))
     filas = []
     for k, (n, rareza, _, recarga, t_, (mat, cuantos_), _) in magia.VARITAS.items():
@@ -435,8 +436,8 @@ def iglesia():
     escribir("iglesia_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Rezar (una vez al día)", f"+{java_int(src, 'REZAR')} devoción"),
         ("Tope de devoción por actos al día", str(java_int(src, "TOPE_DIARIO"))),
-        ("Ofrendas", "sin tope; cada chip I = +1 (las chips y los diamantes van al Tesoro de la aldea)"),
-        ("Fundar una religión", f"{oficina.IGLESIA_PRECIO[0]} diamantes o {oficina.IGLESIA_PRECIO[1]} chips I")]))
+        ("Ofrendas", "sin tope; cada chip I = +1 (las chips van al Tesoro de la aldea, y los diamantes, cambiados a chips)"),
+        ("Fundar una religión", f"{oficina.IGLESIA_PRECIO} chips I")]))
 
 
 def justicia():
@@ -452,7 +453,7 @@ def justicia():
         ("**A las empresas** (semanal, con SEPE)", "Un % de lo que haya en la caja de cada empresa", f"{d['#imp_empresas']} %")])
              + f"\nEl Alcalde puede cambiarlos (entre 0 y {java_int(java('Oficina'), 'MAX_IMP')} %). Cada cambio se anuncia a todos.\n")
     escribir("sepe_numeros.md", tabla(["Qué", "Cuánto"], [
-        ("Registrar una empresa", f"{barberia.PRECIO_DIAMANTES} diamantes o {barberia.PRECIO_CHIPS} chips I (van al Tesoro)"),
+        ("Registrar una empresa", f"{barberia.PRECIO_CHIPS} chips I (van al Tesoro)"),
         ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I + la Placa de la Empresa de la Semana")]))
 
 

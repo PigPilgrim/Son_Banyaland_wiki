@@ -48,8 +48,8 @@ sea un fallo**: avisa al admin.
 
 -   <span class="sb-slot">:material-poker-chip:</span>
 
-    **La moneda fuerte son las chips** (I, II, III...), y salen sobre todo de las mazmorras. Las tiendas de los
-    aldeanos cobran en **diamantes**. Todo en [Dinero](dinero.md).
+    **La moneda fuerte son las chips** (I, II, III...), y salen sobre todo de las mazmorras. Con ellas se paga
+    todo, también en las tiendas de los aldeanos. Todo en [Dinero](dinero.md).
 
 -   <span class="sb-slot">:material-home-group:</span>
 
@@ -82,7 +82,7 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-sack:</span> [Dinero](dinero.md)
 
-    Chips, diamantes y Sellos de la Aldea: qué vale cada cosa y de dónde sale.
+    Chips y Sellos de la Aldea, y cómo cambiar diamantes: qué vale cada cosa y de dónde sale.
 
     [Chips](dinero.md#chips){ .sb-chip } [Diamantes](dinero.md#diamantes){ .sb-chip } [Sellos](dinero.md#sellos-de-la-aldea){ .sb-chip }
 

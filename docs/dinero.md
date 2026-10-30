@@ -1,6 +1,6 @@
 # Dinero
 
-En Son Banyaland hay tres cosas que hacen de dinero: las **chips**, los **diamantes** y los **Sellos de la Aldea**.
+En Son Banyaland todo se paga en **chips**. Además están los **Sellos de la Aldea**, y los **diamantes** se cambian por chips.
 
 ## Chips
 
@@ -19,17 +19,17 @@ Las chips también sirven **de llave**: con ellas se abren las cajas de premios.
 Con chips se paga, entre otras cosas:
 
 - Las **reparaciones del Herrero** (ver [el Herrero](aldeanos.md#herrero)).
-- El **Vale de barbería** (si no tienes diamantes).
+- **Todas las tiendas de los aldeanos** (Tabernero, Herrero, Mago, Barbero, Secretario). Tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la Taberna, cada 24 horas). Ver [Los aldeanos y sus tiendas](aldeanos.md).
+- El **Vale de barbería**.
 - Las piezas del **set de Archimago** en la tienda del Mago (1 Chip II cada una).
 - Los **proyectos de la Oficina** (ver [Proyectos](proyectos.md)).
 - Parte del **encargo del Secretario** en los niveles 4 y 5 de la aldea.
 
 ## Diamantes
 
-Los diamantes son la moneda de **las tiendas de los aldeanos** (Tabernero, Herrero, Mago, Barbero, Secretario). Las
-tiendas tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la Taberna, cada 24 horas). En la Taberna, la Forja y la Torre de Magos, lo
-que vale diamantes también se puede pagar con chips: **1 diamante = 8 chips I**. Ver
-[Los aldeanos y sus tiendas](aldeanos.md).
+Los diamantes ya no son moneda: **se cambian por chips en el [Guía de las Mazmorras](aldeanos.md#guia-de-las-mazmorras)**
+(Mayús + clic derecho), en los dos sentidos: **1 diamante = 8 chips I**. Siguen haciendo falta como material
+(encargos de la aldea, misiones, proyectos...) y gustan a algunos dioses.
 
 ## Sellos de la Aldea
 

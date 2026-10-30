@@ -30,7 +30,8 @@ Honor* (2.º y 3.º) y *Pilar de Oro* (el de más puntos).
 
 ## Elecciones: Alcalde y Consejo
 
-Las elecciones **las convoca el admin**, o salen de una [moción de censura](#mocion-de-censura).
+Las primeras elecciones **se convocan solas al fundar la aldea**. Después las convoca el admin, o salen de una
+[moción de censura](#mocion-de-censura).
 
 1. **Candidaturas:** pulsa **[Presentarme]** en el chat (`/trigger elecciones set 1`) y te da un **Libro de
    candidatura**. Escribe tu programa y **fírmalo con tu lema como título**. Con el libro en la mano, pulsa

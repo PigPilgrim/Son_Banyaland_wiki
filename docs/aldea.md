@@ -34,6 +34,8 @@ de **spawners** o en las **oleadas de un asedio** sí pueden entrar.
 
 ## Ser vecino de una aldea
 
+Mientras no seas ciudadano de ninguna aldea, el chat te recuerda cada 5 minutos dónde está la primera.
+
 Para ser **ciudadano** de una aldea, habla con su Secretario: si aún no eres de esa aldea, te pregunta si quieres
 serlo. **Solo puedes cambiar de aldea una vez cada 7 días.**
 

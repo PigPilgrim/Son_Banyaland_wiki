@@ -1,8 +1,7 @@
 # Los aldeanos y sus tiendas
 
 Los aldeanos llegan a la aldea según su nivel (ver [Cómo crece la aldea](aldea.md#los-niveles)). Las tiendas cobran
-casi todo en **diamantes**; en la Taberna, la Forja y la Torre de Magos, lo que vale diamantes se puede pagar también
-con **chips** (1 diamante = 8 chips I, en la oferta de justo debajo). Tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
+todo en **chips**; si tienes diamantes, los cambias en el [Guía de las Mazmorras](#guia-de-las-mazmorras). Tienen **existencias limitadas** y **se reponen solas cada 40 minutos** con el servidor
 encendido (la **Taberna**, una vez cada **24 horas**).
 
 Si la [Campana](aldea.md#la-campana) de la aldea cae en un asedio, **todos cierran** hasta que se repare.
@@ -15,7 +14,7 @@ Si la [Campana](aldea.md#la-campana) de la aldea cae en un asedio, **todos cierr
 | [Tabernero](#tabernero) | Nivel 2 | Bebidas y recetas |
 | [Maestro de Juegos](#maestro-de-juegos) | Nivel 2 | Te lleva a los minijuegos |
 | [Herrero](#herrero) | Nivel 3 | Armas, encargos y reparaciones |
-| [Guía de las Mazmorras](#guia-de-las-mazmorras) | Nivel 3 | Te lleva a las mazmorras |
+| [Guía de las Mazmorras](#guia-de-las-mazmorras) | Nivel 3 | Te lleva a las mazmorras y cambia chips y diamantes |
 | [Funcionario](#funcionario) | Nivel 3 | La Oficina: Tesoro y proyectos |
 | [Mago](#mago) | Nivel 4 | Pergaminos, varitas y el set de Archimago |
 | Juez | Proyecto *Juzgado* | Juicios (página propia más adelante) |
@@ -90,6 +89,10 @@ Cuesta:
 **Clic derecho y te lleva al momento al vestíbulo de las mazmorras**, donde hay un portal a cada una. Para volver,
 usa la brújula *Volver a casa* del hueco 9 de tu barra. Con la Campana rota no lleva a nadie. Todo en
 [Mazmorras](mazmorras.md).
+
+**Mayús + clic derecho** abre su tienda: **cambia chips y diamantes**, en los dos sentidos y al mismo precio.
+
+--8<-- "_generado/tienda_guia.md"
 
 ## Funcionario
 
