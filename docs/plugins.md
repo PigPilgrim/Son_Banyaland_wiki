@@ -53,7 +53,7 @@ En el servidor hay **discos con canciones reales**, que suenan en cualquier toca
 ofrece un **paquete de recursos**: **acéptalo**, o no oirás las canciones. Los discos los reparte el admin.
 
 !!! warning "⚠️ PENDIENTE"
-    Ahora mismo la música todavía no funciona para todos los jugadores. Se arreglará cuando el servidor se mude.
+    El servidor ya se ha mudado, pero falta probar en el juego que la música suene para todos los jugadores.
 
 ## Mapa del mundo
 
