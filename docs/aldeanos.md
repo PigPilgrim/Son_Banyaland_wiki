@@ -85,6 +85,15 @@ Cuesta:
 
 --8<-- "_generado/reparar.md"
 
+### Reparar con experiencia
+
+!!! warning "⚠️ PENDIENTE"
+    **Todavía no funciona en el servidor**: se está probando aparte.
+
+**Un yunque a 6 bloques o menos del Herrero** también repara, gastando **solo tu experiencia**: con el objeto gastado en
+la mano, clic derecho al yunque. Cada punto de experiencia repara 2 de durabilidad, igual que el encantamiento
+*Reparación*, y si no te llega, repara lo que pueda. Con la mano vacía o con algo sin gastar, es un yunque normal.
+
 ## Guía de las Mazmorras
 
 **Clic derecho y te lleva al momento al vestíbulo de las mazmorras**, donde hay un portal a cada una. Para volver,
@@ -105,6 +114,9 @@ Lleva **la Oficina** de la aldea: el **Tesoro**, los impuestos y los **proyectos
 
 Vende pergaminos, el **set de Archimago** y fabrica **varitas y bastones** si le traes su **grimorio** y los
 materiales de las mazmorras.
+
+**Una mesa de encantar a 6 bloques o menos del Mago** repara con experiencia igual que
+[el yunque del Herrero](#reparar-con-experiencia).
 
 --8<-- "_generado/tienda_mago.md"
 

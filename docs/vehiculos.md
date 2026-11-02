@@ -4,7 +4,8 @@ Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su
 solo Concesionario** y **una sola Gasolinera**, y cada uno lo lleva un jugador.
 
 !!! warning "⚠️ PENDIENTE"
-    Falta probarlo en el juego. Los precios, las velocidades y los consumos pueden cambiar cuando se vea cómo funciona.
+    **Todavía no está en el servidor**: se está probando aparte. Los precios, las velocidades y los consumos pueden
+    cambiar cuando se vea cómo funciona.
 
 ## Los modelos
 
@@ -48,6 +49,14 @@ cuenta siempre.
 
 Los jugadores **no pueden hacerle daño**, pero sí los monstruos, la lava o una caída. **Si muere, se pierde**: suelta lo
 que llevaba en el maletero y la llave deja de servir. Tampoco se pueden criar.
+
+**No se curan solos ni dándoles de comer**: hay que llevarlos al Concesionario o a la Gasolinera, que tienen la
+**Llave inglesa**. Con ella en la mano, clic derecho al vehículo.
+
+--8<-- "_generado/llave_inglesa.md"
+
+La llave **no se rompe**, pero cuando está gastada no sirve hasta que se repara, con experiencia, en
+[el yunque del Herrero](aldeanos.md#reparar-con-experiencia).
 
 ## El Concesionario
 

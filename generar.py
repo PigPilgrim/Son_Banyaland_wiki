@@ -662,13 +662,15 @@ def vehiculos_tablas():
     filas = []
     for m in vehiculos.MODELOS.values():
         animal = {"HORSE": "Caballo", "DONKEY": "Burro", "HAPPY_GHAST": "Happy ghast (vuela)"}[m["animal"]]
-        filas.append((f"**{m['nombre']}**", animal, str(m["velocidad"]), f"{m['deposito']} l", f"{m['consumo']} l",
+        filas.append((f"**{m['nombre']}**", animal, str(m["vida"]), str(m["velocidad"]), f"{m['deposito']} l", f"{m['consumo']} l",
                       f"{m['maletero']} huecos" if m["maletero"] else "No tiene", f"{m['precio']} chips I", f"{m['horas']} h"))
-    escribir("vehiculos.md", tabla(["Modelo", "Animal", "Velocidad", "Depósito", "Gasta cada 100 bloques", "Maletero", "Le cuesta al concesionario", "Tarda en llegar"], filas))
+    escribir("vehiculos.md", tabla(["Modelo", "Animal", "Vida", "Velocidad", "Depósito", "Gasta cada 100 bloques", "Maletero", "Le cuesta al concesionario", "Tarda en llegar"], filas))
     nombres = {"LAVA_BUCKET": "Cubo de lava", "COAL_BLOCK": "Bloque de carbón", "DRIED_KELP_BLOCK": "Bloque de algas secas", "BLAZE_ROD": "Vara de blaze", "COAL": "Carbón", "CHARCOAL": "Carbón vegetal"}
     filas = [(nombres[k], f"{v} l") for k, v in vehiculos.LITROS.items()] + [("Cualquier otra cosa que arda en un horno (tablones, troncos...)", f"{vehiculos.LITROS_OTROS} l")]
     escribir("combustibles.md", tabla(["Combustible", "Da"], filas))
     filas = [(f"**{g['nombre']}**", f"{g['entrada']} l de combustible", f"{g['bidones']} bidones de {g['litros']} l", f"{g['horas']} h", f"Cada litro cunde como {g['rendimiento']}", "Sí" if g["velocidad"] > 1 else "No") for g in vehiculos.GASOLINAS.values()]
+    L = vehiculos.LLAVE_INGLESA
+    escribir("llave_inglesa.md", f"Cada uso cura **{L['cura']} de vida** y gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para unos {L['durabilidad'] // L['gasto']} usos.\n")
     escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
 
 
