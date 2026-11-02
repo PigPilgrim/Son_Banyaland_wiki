@@ -62,7 +62,7 @@ construcciones y las aldeas. Tiene el **mundo normal, el Nether y el End** (las 
 para no estropear la sorpresa). **Los jugadores no aparecen** en el mapa: nadie puede ver dónde estás.
 
 !!! warning "⚠️ PENDIENTE"
-    El enlace al mapa se pondrá aquí cuando el servidor se mude.
+    El mapa está pendiente de aprobar. Cuando se active, el enlace se pondrá aquí.
 
 ## Skin
 

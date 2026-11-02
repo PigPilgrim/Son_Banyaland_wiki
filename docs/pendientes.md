@@ -7,4 +7,4 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   reparto de puntos y trofeos funciona; los números de la [Liga](minijuegos.md#la-liga) pueden cambiar.
 - **Bajos fondos:** ⚠️ PENDIENTE de probar en el juego. Los precios, tiempos y efectos de la [mercancía](crimen.md)
   pueden cambiar cuando se vea cómo funciona.
-- **Mapa del mundo:** falta activarlo en el servidor nuevo y poner el enlace (ver [Comandos y extras](plugins.md#mapa-del-mundo)).
+- **Mapa del mundo:** ⚠️ PENDIENTE de aprobar; cuando se active, se pondrá el enlace (ver [Comandos y extras](plugins.md#mapa-del-mundo)).
