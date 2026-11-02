@@ -108,7 +108,7 @@ sea un fallo**: avisa al admin.
 
     Elecciones y leyes, los proyectos de la Oficina, impuestos, juicios, la Iglesia, la guerra entre aldeas y los bajos fondos.
 
-    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip } [Bajos fondos](crimen.md){ .sb-chip }
+    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip } [Bajos fondos](crimen.md){ .sb-chip } [Vehículos](vehiculos.md){ .sb-chip }
 
     [Entrar →](politica.md){ .sb-entrar }
 

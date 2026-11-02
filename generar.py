@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -658,10 +658,24 @@ def crimen_tablas():
         ("Fichas marcadas", "64 Fichas marcadas = 1 Ficha marcada II")]))
 
 
+def vehiculos_tablas():
+    filas = []
+    for m in vehiculos.MODELOS.values():
+        animal = {"HORSE": "Caballo", "DONKEY": "Burro", "HAPPY_GHAST": "Happy ghast (vuela)"}[m["animal"]]
+        filas.append((f"**{m['nombre']}**", animal, str(m["velocidad"]), f"{m['deposito']} l", f"{m['consumo']} l",
+                      f"{m['maletero']} huecos" if m["maletero"] else "No tiene", f"{m['precio']} chips I", f"{m['horas']} h"))
+    escribir("vehiculos.md", tabla(["Modelo", "Animal", "Velocidad", "Depósito", "Gasta cada 100 bloques", "Maletero", "Le cuesta al concesionario", "Tarda en llegar"], filas))
+    nombres = {"LAVA_BUCKET": "Cubo de lava", "COAL_BLOCK": "Bloque de carbón", "DRIED_KELP_BLOCK": "Bloque de algas secas", "BLAZE_ROD": "Vara de blaze", "COAL": "Carbón", "CHARCOAL": "Carbón vegetal"}
+    filas = [(nombres[k], f"{v} l") for k, v in vehiculos.LITROS.items()] + [("Cualquier otra cosa que arda en un horno (tablones, troncos...)", f"{vehiculos.LITROS_OTROS} l")]
+    escribir("combustibles.md", tabla(["Combustible", "Da"], filas))
+    filas = [(f"**{g['nombre']}**", f"{g['entrada']} l de combustible", f"{g['bidones']} bidones de {g['litros']} l", f"{g['horas']} h", f"Cada litro cunde como {g['rendimiento']}", "Sí" if g["velocidad"] > 1 else "No") for g in vehiculos.GASOLINAS.values()]
+    escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas()
     print("Tablas generadas en", SALIDA)
 
 
