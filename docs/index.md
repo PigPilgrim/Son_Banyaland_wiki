@@ -191,12 +191,13 @@ semana se abre la siguiente**.
 
 | Semana | Edad | Armadura que puedes llevar puesta | Armas y herramientas que puedes usar |
 |---|---|---|---|
-| 1.ª | **Cobre** | Cobre, cuero y oro | Madera, piedra, cobre y oro |
-| 2.ª | **Hierro** | Lo anterior + hierro y malla | Lo anterior + hierro |
-| 3.ª | **Diamante** | Lo anterior + diamante | Lo anterior + diamante |
+| 1.ª | **Cobre** | Cobre, cuero y oro | Madera, piedra, cobre y oro + **pico de hierro** |
+| 2.ª | **Hierro** | Lo anterior + hierro y malla | Lo anterior + hierro + **pico de diamante** |
+| 3.ª | **Diamante** | Lo anterior + diamante | Lo anterior + diamante + **pico de netherita** |
 | 4.ª | **Netherita** | Todo | Todo |
 
-El caparazón de tortuga se puede llevar siempre. Los arcos, las ballestas, los tridentes y las mazas normales no son de
+**Los picos van una edad por delante**: si encuentras diamantes la primera semana, puedes picarlos. El caparazón de
+tortuga se puede llevar siempre. Los escudos, los arcos, las ballestas, los tridentes y las mazas normales no son de
 ninguna edad. Pero **las armas y varitas épicas** (★★★★) de la Forja y la Torre de Magos piden **la edad del hierro**, y
 **las legendarias** (★★★★★) **la del diamante**, sean del material que sean. Cuando cambia la edad, sale un aviso a todos.
 
@@ -205,7 +206,8 @@ ninguna edad. Pero **las armas y varitas épicas** (★★★★) de la Forja y 
 - Una **espada, hacha, pico, pala, azada o lanza** de una edad que aún no ha llegado **se puede guardar en el
   inventario, pero no cogerla en la mano**: si la coges, cae a tus pies y solo la puede recoger su dueño. Al recogerla
   va a la parte de arriba del inventario, no a la barra. Cuenta el material, **también en las armas especiales** de
-  las mazmorras y la forja: una katana de diamante no se puede usar hasta la edad del diamante.
+  las mazmorras y la forja: una katana de diamante no se puede usar hasta la edad del diamante. Los picos, igual, pero
+  con una edad de adelanto.
 </div>
 
 <div class="sb-seccion" markdown>
