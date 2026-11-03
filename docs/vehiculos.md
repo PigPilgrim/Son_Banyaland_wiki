@@ -44,7 +44,7 @@ combustible en la mano y su llave en el inventario**. Cada vehículo sale de fá
 ### Combustible casero
 
 Solo sirve lo de esta tabla (nada de tablones, palos ni troncos). Es **de mala calidad**: cada vez que lo echas,
-**le quita estado al vehículo**, y arreglarlo cuesta chips.
+**le quita estado al vehículo**, y arreglarlo gasta repuestos.
 
 --8<-- "_generado/combustibles.md"
 
@@ -52,7 +52,8 @@ Sale más caro que la gasolina: lo que te ahorras en carbón lo pagas después r
 
 ### Gasolina 95 y 98
 
-Solo las refina **la Gasolinera**, y tarda. **No desgastan.** Las vende en sus surtidores, al precio que ella decida:
+Solo las refina **la Gasolinera**, y tarda. **No desgastan.** Las vende en sus surtidores, al precio que ella decida, sin pasar del
+[tope del Alcalde](#el-tope-del-alcalde):
 
 --8<-- "_generado/gasolinas.md"
 
@@ -65,7 +66,9 @@ Cada vehículo tiene **vida** y **estado** (de 0 a 100). Los ves en la barra de 
 
 - **La vida** baja con los golpes. Los jugadores no pueden hacerle daño, pero sí los monstruos, la lava, una caída o
   una explosión.
-- **El estado** baja con el combustible casero.
+- **El estado** baja con el combustible casero y al andar.
+
+--8<-- "_generado/desgaste.md"
 
 **Con 0 de vida o de estado no muere: se avería.** Se queda parado, su nombre sale en rojo con **AVERIADO**, nadie lo
 puede montar y ya no recibe más daño. El maletero sí se puede abrir. Si es el Ghastla y vas montado, **baja despacio
@@ -74,15 +77,15 @@ hasta el suelo** contigo encima.
 Solo se pierde de verdad si **cae al vacío**: entonces suelta lo que llevaba en el maletero y la llave deja de servir.
 Tampoco se pueden criar.
 
-**No se curan solos ni dándoles de comer**: hay que llevarlos al Concesionario o a la Gasolinera, que tienen la
-**Llave inglesa**. Con ella en la mano, clic derecho al vehículo: primero cura la vida y, cuando está llena, arregla el
-estado. En cuanto tiene vida y estado, vuelve a andar.
+**No se curan solos ni dándoles de comer**: hay que llevarlos al **Concesionario**, que tiene la **Llave inglesa**.
+Con ella en la mano, clic derecho al vehículo: primero cura la vida y, cuando está llena, arregla el estado con
+**repuestos**. En cuanto tiene vida y estado, vuelve a andar. La Gasolinera no repara: solo vende combustible.
 
 --8<-- "_generado/llave_inglesa.md"
 
 La llave **no se rompe**, pero cuando está gastada no sirve hasta que se repara, con experiencia, en
-[el yunque del Herrero](aldeanos.md#reparar-con-experiencia). Lo que te cobren a ti por la reparación **lo negocias
-con ellos**.
+[el yunque del Herrero](aldeanos.md#reparar-con-experiencia). Lo que te cobre a ti por la reparación **lo negocias
+con él**.
 
 ## El Concesionario
 
@@ -94,10 +97,16 @@ mundo normal o en el Nether, así que deja sitio alrededor, sobre todo para el G
 Solo su Concesionario puede colocarlo, usarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Con la Refinería y los
 surtidores pasa lo mismo con la Gasolinera. Las explosiones no le hacen nada.
 
+### Repuestos
+
+Hacen falta para arreglar el estado con la Llave inglesa: **1 repuesto por punto**.
+
+--8<-- "_generado/repuestos.md"
+
 ## Tuneo
 
-El Concesionario y la Gasolinera tienen el **Kit de tuneo**. Con él en la mano, clic derecho al vehículo y eliges qué
-hacerle. Lo pagan ellos en chips, y a ti te lo cobran al precio que acordéis.
+El Concesionario tiene el **Kit de tuneo**. Con él en la mano, clic derecho al vehículo y eliges qué hacerle. Lo paga
+él en chips, y a ti te lo cobra al precio que acordéis.
 
 Las armaduras de **hierro, diamante y netherita** solo se pueden poner cuando ha llegado su edad, como las de los
 jugadores. Las de cobre y oro, siempre.
@@ -125,12 +134,25 @@ En la Refinería se **encargan los surtidores**, y cada uno cuesta más que el a
 - Encima del surtidor hay un letrero con los precios y lo que queda.
 - **Si la aldea se queda sin Gasolinera, sus surtidores cierran** hasta que haya otra, que se los queda vacíos.
 
+### El tope del Alcalde
+
+El Alcalde pone **lo más que puede costar un bidón** en los surtidores de su aldea, desde su Despacho → **Permisos
+exclusivos** → **Tope de precios**. Lo elige dentro de un margen igual para todas las aldeas:
+
+--8<-- "_generado/topes.md"
+
+### Surtidor de emergencia
+
+**Solo cuando la aldea no tiene Gasolinera**, el **Funcionario** tiene un surtidor de emergencia: llevas tu vehículo
+(montado o a 8 bloques, con su llave) y repostas **a varias veces el tope** (la última columna de la tabla). Ese dinero no se lo queda nadie, ni el Tesoro.
+
 ## La licencia
 
 1. **El Alcalde lo reparte:** desde su Despacho, en **Permisos exclusivos**, elige a un ciudadano conectado. La aldea necesita tener el SEPE.
 2. **Lo registras en el SEPE** de tu aldea, eligiéndolo como tipo de empresa. Si ya tienes otra empresa, antes tienes que
    dejarla.
-3. Recibes el Ordenador o la Refinería, la Llave inglesa y el Kit de tuneo, que **solo le sirven al dueño de la licencia**.
+3. El Concesionario recibe el Ordenador, la Llave inglesa y el Kit de tuneo, y la Gasolinera, la Refinería. **Solo le
+   sirven al dueño de la licencia.**
    Su nombre sale en el cartel del Funcionario.
 
 Si cierras la empresa, o el Alcalde te la quita, pierdes la licencia. Cuando te la quita él, la empresa sigue con su caja,
@@ -143,3 +165,9 @@ pero pasa a ser de tipo *Otro*.
 - Las tandas de la Refinería te llegan cuando acaban de refinarse.
 
 Si no estás conectado, te llega al entrar.
+
+### Si no vienes
+
+--8<-- "_generado/inactividad.md"
+
+Las cartas se leen en tu [buzón](casas.md#cartas), o con el aviso que sale en el chat al entrar.

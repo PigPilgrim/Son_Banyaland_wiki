@@ -1,0 +1,1 @@
+Si llevas **7 días** sin entrar al servidor, te llega una carta del Ayuntamiento a ti y otra al Alcalde. Si llegas a **14 días**, **pierdes la licencia**, como si te la quitara el Alcalde. En cuanto entras, la cuenta vuelve a empezar.

@@ -110,6 +110,8 @@ sale mejor cambiar con otro jugador si encuentras a alguien.
 Lleva **la Oficina** de la aldea: el **Tesoro**, los impuestos y los **proyectos** que se votan entre todos. Ver
 [Proyectos de la Oficina](proyectos.md).
 
+Si la aldea no tiene Gasolinera, también tiene un [surtidor de emergencia](vehiculos.md#surtidor-de-emergencia).
+
 ## Mago
 
 Vende pergaminos, el **set de Archimago** y fabrica **varitas y bastones** si le traes su **grimorio** y los

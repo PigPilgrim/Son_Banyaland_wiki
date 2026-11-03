@@ -695,6 +695,16 @@ def vehiculos_tablas():
     escribir("tuneo.md", tabla(["Mejora", "Qué hace", "Cuesta"], filas))
     S = vehiculos.SURTIDOR
     escribir("surtidores.md", tabla(["Surtidor", "Cuesta"], [(f"{i + 1}.º", en_chips(S["precio"] * S["multiplica"] ** i)) for i in range(5)]))
+    escribir("topes.md", tabla(["Gasolina", "El Alcalde lo pone entre", "Al principio", "Surtidor de emergencia (al principio)"],
+                               [(f"**{vehiculos.GASOLINAS[g]['nombre']}**", f"{en_chips(t[0])} y {en_chips(t[1])}", en_chips(t[2]), en_chips(t[2] * S["emergencia"]))
+                                for g, t in S["topes"].items()]))
+    escribir("desgaste.md", f"Andando pierde **1 punto de estado cada {E['bloques_por_punto']} bloques**, y con menos de **{E['bajo']} de estado** "
+             f"va **al {E['lento'] * 100:g} %** de su velocidad.\n")
+    escribir("repuestos.md", f"En el Ordenador, **Comprar repuestos** te da {E['repuestos_por_compra']} repuestos por "
+             f"{en_chips(E['repuesto_precio'] * E['repuestos_por_compra'])}. No se pueden fabricar.\n")
+    I = vehiculos.INACTIVIDAD
+    escribir("inactividad.md", f"Si llevas **{I['aviso']} días** sin entrar al servidor, te llega una carta del Ayuntamiento a ti y otra al Alcalde. "
+             f"Si llegas a **{I['pierde']} días**, **pierdes la licencia**, como si te la quitara el Alcalde. En cuanto entras, la cuenta vuelve a empezar.\n")
 
 
 def main():
