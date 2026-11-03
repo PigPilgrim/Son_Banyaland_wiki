@@ -60,9 +60,12 @@ La llave **no se rompe**, pero cuando está gastada no sirve hasta que se repara
 
 ## El Concesionario
 
-Con el **Ordenador del Concesionario** en la mano, clic derecho: eliges un modelo, lo pagas en chips y llega unas horas
-después. Al recogerlo sale delante de ti con su llave, en el mundo normal o en el Nether. Solo puede tener
+El **Ordenador del Concesionario** se **coloca como un bloque**, por ejemplo encima de una mesa. Con clic derecho sobre
+él eliges un modelo, lo pagas en chips y llega unas horas después. Al recogerlo sale delante de ti con su llave, en el
+mundo normal o en el Nether, así que deja sitio alrededor, sobre todo para el Ghastla. Solo puede tener
 **5 pedidos a la vez**.
+
+Solo el Concesionario puede colocarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Las explosiones no le hacen nada.
 
 ## La Gasolinera
 
