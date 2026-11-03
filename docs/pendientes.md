@@ -7,10 +7,10 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   reparto de puntos y trofeos funciona; los números de la [Liga](minijuegos.md#la-liga) pueden cambiar.
 - **Bajos fondos:** ⚠️ PENDIENTE de probar en el juego. Los precios, tiempos y efectos de la [mercancía](crimen.md)
   pueden cambiar cuando se vea cómo funciona.
-- **Vehículos:** ⚠️ PENDIENTE: todavía no están en el servidor, se están probando aparte. Los precios, velocidades y
+- **Vehículos:** ⚠️ PENDIENTE de probar en el juego (llegaron al servidor el 3 de noviembre). Los precios, velocidades y
   consumos de los [vehículos](vehiculos.md) pueden cambiar cuando se vea cómo funcionan.
 - **Remodelación de vehículos:** ⚠️ PENDIENTE: el cambio de animal del [tuneo](vehiculos.md#tuneo) está en revisión:
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Reparar con experiencia:** ⚠️ PENDIENTE: el [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)
-  también se están probando aparte y todavía no funcionan en el servidor.
+  llegaron con los vehículos: ⚠️ PENDIENTE de probar en el juego.
 - **Mapa del mundo:** ⚠️ PENDIENTE de aprobar; cuando se active, se pondrá el enlace (ver [Comandos y extras](plugins.md#mapa-del-mundo)).

@@ -88,7 +88,7 @@ Cuesta:
 ### Reparar con experiencia
 
 !!! warning "⚠️ PENDIENTE"
-    **Todavía no funciona en el servidor**: se está probando aparte.
+    **Recién llegado al servidor, falta probarlo jugando.** Los números pueden cambiar.
 
 **Un yunque a 6 bloques o menos del Herrero** también repara, gastando **solo tu experiencia**: con el objeto gastado en
 la mano, clic derecho al yunque. Cada punto de experiencia repara 2 de durabilidad, igual que el encantamiento

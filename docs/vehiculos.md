@@ -5,7 +5,7 @@ Concesionario** y **una Gasolinera**, que reparte **el Alcalde**, y cada uno es
 [una empresa del SEPE](hacienda.md#el-sepe-empresas).
 
 !!! warning "⚠️ PENDIENTE"
-    **Todavía no está en el servidor**: se está probando aparte. Los precios, las velocidades y los consumos pueden
+    **Recién llegado al servidor, falta probarlo jugando.** Los precios, las velocidades y los consumos pueden
     cambiar cuando se vea cómo funciona.
 
 ## Los modelos
