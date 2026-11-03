@@ -533,7 +533,7 @@ def regatas():
         ("Intentos por Gran Premio", liga["intentos"]),
         ("Pilotos por escudería", f"{liga['tope']} como mucho"),
         ("Pilotos que puntúan para la escudería cada día", f"sus {liga['puntuan']} mejores"),
-        ("Escudería vacía", f"se borra tras {liga['semanas_vacia']} semanas seguidas sin nadie")]))
+        ("Escudería sin correr", f"desaparece tras {liga['semanas_vacia']} semanas seguidas sin que nadie corra el Gran Premio")]))
     escribir("liga_premios.md", tabla(["Premio", "Para quién"], [
         (f"**{liga['premios']['oro']['nombre']}**", "1.º de la clasificación de pilotos"),
         (f"**{liga['premios']['plata']['nombre']}**", "2.º de la clasificación de pilotos"),

@@ -68,7 +68,7 @@ sea un fallo**: avisa al admin.
 
 -   <span class="sb-slot">:material-border-outside:</span>
 
-    **El mundo tiene un borde** a 3.000 bloques del spawn en cada dirección (de −3.096 a 2.904 en X y en Z). El
+    **El mundo tiene un borde** a 10.000 bloques del spawn en cada dirección (de −10.096 a 9.904 en X y en Z). El
     Nether, las mazmorras y los minijuegos no tienen borde.
 
 </div>

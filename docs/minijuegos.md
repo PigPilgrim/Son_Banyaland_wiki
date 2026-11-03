@@ -115,12 +115,14 @@ A medianoche se reparten los puntos:
 
 ### Escuderías
 
-Hay **cuatro colores de barco**: blanco, rosa, mangrove y bambú. Eliges uno y corres con ese barco **en todos los
+Hay **cuatro colores de barco** fijos: blanco, rosa, mangrove y bambú. Además puedes **crear una escudería nueva** con
+otro barco: roble, abeto, abedul, jungla, acacia o roble oscuro. Corres con el barco de tu escudería **en todos los
 modos**, con cofre o sin él (es solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran Premio.
 
-- **Cada semana hay que volver a elegir escudería**, por si quieres probar a ganar con otra o crear la tuya.
-- **El primero que entra en un color le pone el nombre**, y el nombre sigue de una semana a otra.
-- Puedes cambiar de idea **hasta gastar tu primer intento de la semana**; después, ya el lunes.
+- **El primero que entra en un color le pone el nombre**, y te quedas en tu escudería de una semana a otra.
+- Puedes cambiarte a otra **hasta gastar tu primer intento de la semana**; después, ya el lunes.
+- Una escudería en la que **nadie corre el Gran Premio durante 2 semanas seguidas desaparece**, y sus pilotos quedan
+  libres para elegir otra.
 
 --8<-- "_generado/liga_numeros.md"
 

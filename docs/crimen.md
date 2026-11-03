@@ -39,7 +39,8 @@ Se sube de nivel con Walter Brick (**Subir a...**), cuando se cumple todo.
 ## Investigar
 
 Con Walter Brick → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
-conectado). Lo que se investiga se queda para siempre.
+conectado). Lo que se investiga se queda para siempre. En el menú (y al elegir qué fabricar), la mercancía sale
+arriba y las armas debajo.
 
 --8<-- "_generado/crimen_investigacion.md"
 
