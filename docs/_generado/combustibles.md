@@ -1,9 +1,8 @@
-| Combustible | Da |
-|---|---|
-| Cubo de lava | 100 l |
-| Bloque de carbón | 80 l |
-| Bloque de algas secas | 20 l |
-| Vara de blaze | 12 l |
-| Carbón | 8 l |
-| Carbón vegetal | 8 l |
-| Cualquier otra cosa que arda en un horno (tablones, troncos...) | 1.5 l |
+| Combustible | Da | Le quita de estado |
+|---|---|---|
+| Cubo de lava | 8 l | 2 puntos |
+| Bloque de carbón | 40 l | 10 puntos |
+| Bloque de algas secas | 10 l | 2,5 puntos |
+| Vara de blaze | 6 l | 1,5 puntos |
+| Carbón | 4 l | 1 punto |
+| Carbón vegetal | 4 l | 1 punto |

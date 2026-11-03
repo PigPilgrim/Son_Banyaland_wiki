@@ -672,15 +672,18 @@ def vehiculos_tablas():
     filas = []
     for m in vehiculos.MODELOS.values():
         animal = {"HORSE": "Caballo", "DONKEY": "Burro", "HAPPY_GHAST": "Happy ghast (vuela)"}[m["animal"]]
-        filas.append((f"**{m['nombre']}**", animal, str(m["vida"]), str(m["velocidad"]), f"{m['deposito']} l", f"{m['consumo']} l",
+        filas.append((f"**{m['nombre']}**", animal, str(m["vida"]), f"{m['velocidad']:g}".replace(".", ","), f"{m['deposito']} l", f"{m['consumo']:g} l".replace(".", ","),
                       f"{m['maletero']} huecos" if m["maletero"] else "No tiene", en_chips(m["precio"]), f"{m['horas']} h"))
     escribir("vehiculos.md", tabla(["Modelo", "Animal", "Vida", "Velocidad", "Depósito", "Gasta cada 100 bloques", "Maletero", "Le cuesta al concesionario", "Tarda en llegar"], filas))
     nombres = {"LAVA_BUCKET": "Cubo de lava", "COAL_BLOCK": "Bloque de carbón", "DRIED_KELP_BLOCK": "Bloque de algas secas", "BLAZE_ROD": "Vara de blaze", "COAL": "Carbón", "CHARCOAL": "Carbón vegetal"}
-    filas = [(nombres[k], f"{v} l") for k, v in vehiculos.LITROS.items()] + [("Cualquier otra cosa que arda en un horno (tablones, troncos...)", f"{vehiculos.LITROS_OTROS} l")]
-    escribir("combustibles.md", tabla(["Combustible", "Da"], filas))
-    filas = [(f"**{g['nombre']}**", f"{g['entrada']} l de combustible", f"{g['bidones']} bidones de {g['litros']} l", f"{g['horas']} h", f"Cada litro cunde como {g['rendimiento']}", "Sí" if g["velocidad"] > 1 else "No") for g in vehiculos.GASOLINAS.values()]
+    filas = [(nombres[k], f"{v} l", (lambda p: f"{p:g} punto{'' if p == 1 else 's'}".replace(".", ","))(v / vehiculos.ESTADO['litros_por_punto'])) for k, v in vehiculos.LITROS.items()]
+    escribir("combustibles.md", tabla(["Combustible", "Da", "Le quita de estado"], filas))
+    filas = [(f"**{g['nombre']}**", f"{g['entrada']} l de combustible", f"{g['bidones']} bidones de {g['litros']} l", f"{g['horas']} h", f"Cada litro cunde como {g['rendimiento']:g}".replace(".", ","), "Sí" if g["velocidad"] > 1 else "No") for g in vehiculos.GASOLINAS.values()]
     L = vehiculos.LLAVE_INGLESA
-    escribir("llave_inglesa.md", f"Cada uso cura **{L['cura']} de vida** y gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para unos {L['durabilidad'] // L['gasto']} usos.\n")
+    E = vehiculos.ESTADO
+    escribir("llave_inglesa.md", f"Cada uso gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para {(L['durabilidad'] - 1) // L['gasto']} usos. "
+             f"Mientras le falte vida, cada uso cura **{L['cura']} de vida**, gratis. Con la vida llena, cada uso arregla **hasta {E['por_uso']} puntos de estado**, "
+             f"a **{E['chips_por_punto']} chips I el punto**, que paga quien lo repara.\n")
     escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
     T = vehiculos.TUNEO
     armaduras = {"COPPER_HORSE_ARMOR": "cobre", "IRON_HORSE_ARMOR": "hierro", "GOLDEN_HORSE_ARMOR": "oro", "DIAMOND_HORSE_ARMOR": "diamante", "NETHERITE_HORSE_ARMOR": "netherita"}

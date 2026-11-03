@@ -72,6 +72,9 @@ Es **gratis**. Se avisa a los vecinos de las dos aldeas, y desde ese momento:
    y no se mueve. La barra de arriba enseña el % de conquista y el tiempo que queda.
 5. **Si la conquista llega al 100 %, ganan los atacantes.** Si se acaba el tiempo antes, ganan los defensores.
 
+Mientras dura, **en la zona de la aldea atacada no se puede volar** con el Ghastla de los [vehículos](vehiculos.md):
+quien entre volando baja despacio hasta el suelo.
+
 Quien gana se lleva **10 puntos** y **el 10 % del Tesoro** de la otra aldea (de cada moneda).
 
 !!! tip "Para defender basta con estar"
