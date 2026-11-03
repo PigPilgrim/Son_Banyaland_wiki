@@ -13,4 +13,3 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Reparar con experiencia:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)
   llegaron con los vehículos.
-- **Mapa del mundo:** ⚠️ PENDIENTE de aprobar; cuando se active, se pondrá el enlace (ver [Comandos y extras](plugins.md#mapa-del-mundo)).
