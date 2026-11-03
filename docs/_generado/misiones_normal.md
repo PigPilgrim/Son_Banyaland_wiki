@@ -20,3 +20,13 @@
 | Cata de la casa: tómate 3 bebidas de la taberna | 3 | Con la Taberna (aldea nivel 2 o más) |
 | Completa una vuelta lanzada, una gestión o una carrera de barcos | 3 | Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas |
 | Gana una Carrera de Barcos (contra otro jugador al menos) | 3 | Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas |
+| Mata 5 Soldados Faraónicos | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 10 Espíritus Enfadados | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 4 Esqueletos Faraónicos | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 3 Guerreros Enanos | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 5 Ballesteros Enanos | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 8 Mineros Enanos | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 5 Ninjas | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 3 Samuráis | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 2 Tsuchigumo | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Mata 3 Tengu | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
