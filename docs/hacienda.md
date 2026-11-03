@@ -38,7 +38,8 @@ El **SEPE** también es un proyecto de la Oficina. Cuando se termina, el **Funci
 ### Registrar una empresa
 
 1. Ponle **nombre** (yunque).
-2. Elige el **tipo** (taberna, granja, mina...).
+2. Elige el **tipo**: taberna, construcción, gasolinera, concesionario u otro. Si eliges *otro*, también eliges un bloque
+   que será su dibujo en los menús.
 3. Paga la **tasa** (va al Tesoro).
 4. Haz **clic derecho al cofre o barril** que será **la caja** de la empresa.
 
@@ -47,7 +48,7 @@ El **SEPE** también es un proyecto de la Oficina. Cuando se termina, el **Funci
 Cada jugador puede tener **una empresa**.
 
 El **Concesionario** y la **Gasolinera** son dos tipos de empresa especiales: hay **uno de cada por aldea** y solo los puede
-registrar quien tenga el permiso **del Alcalde**. Al registrarla recibes su licencia y sus herramientas, y al cerrarla la pierdes
+registrar quien tenga ese **permiso exclusivo del Alcalde**. Al registrarla recibes su licencia y sus herramientas, y al cerrarla la pierdes
 y queda libre para otro. Ver [Vehículos](vehiculos.md). ⚠️ PENDIENTE: **todavía no se pueden registrar**, porque los vehículos se están probando aparte.
 
 ### La caja

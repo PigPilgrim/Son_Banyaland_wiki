@@ -690,6 +690,8 @@ def vehiculos_tablas():
              ("**Ampliar el maletero**", f"{T['maletero_huecos']} huecos más, hasta {T['maletero_maximo']}", en_chips(T["maletero"]))]
     filas += [(f"**Armadura de {armaduras[k]}**", "Solo para caballos. La que lleve se pierde", en_chips(v)) for k, v in T["armaduras"].items()]
     escribir("tuneo.md", tabla(["Mejora", "Qué hace", "Cuesta"], filas))
+    S = vehiculos.SURTIDOR
+    escribir("surtidores.md", tabla(["Surtidor", "Cuesta"], [(f"{i + 1}.º", en_chips(S["precio"] * S["multiplica"] ** i)) for i in range(5)]))
 
 
 def main():

@@ -68,7 +68,8 @@ El **Ordenador del Concesionario** se **coloca como un bloque**, por ejemplo enc
 mundo normal o en el Nether, así que deja sitio alrededor, sobre todo para el Ghastla. Solo puede tener
 **5 pedidos a la vez**.
 
-Solo su Concesionario puede colocarlo, usarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Las explosiones no le hacen nada.
+Solo su Concesionario puede colocarlo, usarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Con la Refinería y los
+surtidores pasa lo mismo con la Gasolinera. Las explosiones no le hacen nada.
 
 ## Tuneo
 
@@ -79,17 +80,29 @@ hacerle. Lo pagan ellos en chips, y a ti te lo cobran al precio que acordéis.
 
 ## La Gasolinera
 
-Con la **Refinería** en la mano, clic derecho: eliges 95 o 98 y gasta el carbón, la lava, las varas de blaze o las algas
-secas que lleves en el inventario. Las tandas se refinan una detrás de otra, también si no estás conectado, y hay sitio
-para **9 tandas a la vez**.
+La **Refinería** se **coloca como un bloque**. Con clic derecho sobre ella eliges 95 o 98 y gasta el carbón, la lava, las
+varas de blaze o las algas secas que lleves en el inventario. Las tandas se refinan una detrás de otra, también si no
+estás conectado, y hay sitio para **9 tandas a la vez**.
+
+### Surtidores
+
+En la Refinería se **encargan los surtidores**, y cada uno cuesta más que el anterior:
+
+--8<-- "_generado/surtidores.md"
+
+- **La Gasolinera** lo coloca donde quiera, lo carga con sus bidones y pone el precio de cada uno. Lo cobrado se queda en el
+  surtidor hasta que lo recoge.
+- **Para repostar**, acerca el vehículo a 8 bloques o menos, haz clic derecho al surtidor y elige la gasolina. Se paga en
+  chips, y puede hacerlo cualquiera, también sin llave.
+- Encima del surtidor hay un letrero con los precios y lo que queda.
 
 ## La licencia
 
-1. **El Alcalde lo reparte:** desde su Despacho elige a un ciudadano conectado. La aldea necesita tener el SEPE.
+1. **El Alcalde lo reparte:** desde su Despacho, en **Permisos exclusivos**, elige a un ciudadano conectado. La aldea necesita tener el SEPE.
 2. **Lo registras en el SEPE** de tu aldea, eligiéndolo como tipo de empresa. Si ya tienes otra empresa, antes tienes que
    dejarla.
 3. Recibes el Ordenador o la Refinería, la Llave inglesa y el Kit de tuneo, que **solo le sirven al dueño de la licencia**.
    Su nombre sale en el cartel del Funcionario.
 
 Si cierras la empresa, o el Alcalde te la quita, pierdes la licencia. Cuando te la quita él, la empresa sigue con su caja,
-pero pasa a ser de tipo *Otra*. Los pedidos y las tandas a medias se quedan para quien la lleve después.
+pero pasa a ser de tipo *Otro*. Los pedidos y las tandas a medias se quedan para quien la lleve después.
