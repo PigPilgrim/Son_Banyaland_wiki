@@ -9,6 +9,8 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   pueden cambiar cuando se vea cómo funciona.
 - **Vehículos:** ⚠️ PENDIENTE: todavía no están en el servidor, se están probando aparte. Los precios, velocidades y
   consumos de los [vehículos](vehiculos.md) pueden cambiar cuando se vea cómo funcionan.
+- **Remodelación de vehículos:** ⚠️ PENDIENTE: el cambio de animal del [tuneo](vehiculos.md#tuneo) está en revisión y
+  puede cambiar o quitarse.
 - **Reparar con experiencia:** ⚠️ PENDIENTE: el [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)
   también se están probando aparte y todavía no funcionan en el servidor.
 - **Mapa del mundo:** ⚠️ PENDIENTE de aprobar; cuando se active, se pondrá el enlace (ver [Comandos y extras](plugins.md#mapa-del-mundo)).
