@@ -66,6 +66,11 @@ sea un fallo**: avisa al admin.
     **Alrededor de cada aldea hay una zona segura** que crece con el nivel. Ver
     [la tabla de radios](aldea.md#zona-segura).
 
+-   <span class="sb-slot">:material-border-outside:</span>
+
+    **El mundo tiene un borde** a 3.000 bloques del spawn en cada dirección (de −3.096 a 2.904 en X y en Z). El
+    Nether, las mazmorras y los minijuegos no tienen borde.
+
 </div>
 </div>
 
