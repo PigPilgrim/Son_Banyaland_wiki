@@ -1,1 +1,1 @@
-Cada uso gasta **4 de durabilidad**, de las 256 que tiene: da para 63 usos. Mientras le falte vida, cada uso cura **4 de vida**, gratis. Con la vida llena, cada uso arregla **hasta 10 puntos de estado**, a **2 chips I el punto**, que paga quien lo repara.
+Cada uso gasta **4 de durabilidad**, de las 256 que tiene: da para 63 usos. Mientras le falte vida, cada uso cura **4 de vida**, gratis. Con la vida llena, cada uso arregla **hasta 10 puntos de estado**, y gasta **1 repuesto por punto**. Los repuestos los compra el Concesionario en su Ordenador, a **2 chips I** cada uno.

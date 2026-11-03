@@ -683,13 +683,13 @@ def vehiculos_tablas():
     E = vehiculos.ESTADO
     escribir("llave_inglesa.md", f"Cada uso gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para {(L['durabilidad'] - 1) // L['gasto']} usos. "
              f"Mientras le falte vida, cada uso cura **{L['cura']} de vida**, gratis. Con la vida llena, cada uso arregla **hasta {E['por_uso']} puntos de estado**, "
-             f"a **{E['chips_por_punto']} chips I el punto**, que paga quien lo repara.\n")
+             f"y gasta **1 repuesto por punto**. Los repuestos los compra el Concesionario en su Ordenador, a **{E['repuesto_precio']} chips I** cada uno.\n")
     escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
     T = vehiculos.TUNEO
     armaduras = {"COPPER_HORSE_ARMOR": "cobre", "IRON_HORSE_ARMOR": "hierro", "GOLDEN_HORSE_ARMOR": "oro", "DIAMOND_HORSE_ARMOR": "diamante", "NETHERITE_HORSE_ARMOR": "netherita"}
     filas = [("**Pintura**", "Cambia el color del caballo o del arnés del Ghastla", en_chips(T["pintura"])),
              ("**Dibujo**", "Cambia las manchas del caballo", en_chips(T["dibujo"])),
-             ("**Remodelación**", "Cambia de animal: caballo, burro, mula o camello. Se pierden la armadura y la pintura", en_chips(T["remodelar"])),
+             ("**Remodelación**", "⚠️ PENDIENTE: de momento no se puede, está en revisión (ver [Pendientes](pendientes.md))", "—"),
              ("**Ampliar el maletero**", f"{T['maletero_huecos']} huecos más, hasta {T['maletero_maximo']}", en_chips(T["maletero"]))]
     filas += [(f"**Armadura de {armaduras[k]}**", "Solo para caballos. La que lleve se pierde", en_chips(v)) for k, v in T["armaduras"].items()]
     escribir("tuneo.md", tabla(["Mejora", "Qué hace", "Cuesta"], filas))
