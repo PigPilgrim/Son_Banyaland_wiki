@@ -658,12 +658,22 @@ def crimen_tablas():
         ("Fichas marcadas", "64 Fichas marcadas = 1 Ficha marcada II")]))
 
 
+def en_chips(n):
+    """Un precio con las chips más altas que se pueda: 2048 son 32 chips II."""
+    partes = []
+    for nivel, romano in ((6, "VI"), (5, "V"), (4, "IV"), (3, "III"), (2, "II"), (1, "I")):
+        cuantas, n = divmod(n, 64 ** (nivel - 1))
+        if cuantas:
+            partes.append(f"{cuantas} chip{'s' if cuantas > 1 else ''} {romano}")
+    return " y ".join(partes)
+
+
 def vehiculos_tablas():
     filas = []
     for m in vehiculos.MODELOS.values():
         animal = {"HORSE": "Caballo", "DONKEY": "Burro", "HAPPY_GHAST": "Happy ghast (vuela)"}[m["animal"]]
         filas.append((f"**{m['nombre']}**", animal, str(m["vida"]), str(m["velocidad"]), f"{m['deposito']} l", f"{m['consumo']} l",
-                      f"{m['maletero']} huecos" if m["maletero"] else "No tiene", f"{m['precio']} chips I", f"{m['horas']} h"))
+                      f"{m['maletero']} huecos" if m["maletero"] else "No tiene", en_chips(m["precio"]), f"{m['horas']} h"))
     escribir("vehiculos.md", tabla(["Modelo", "Animal", "Vida", "Velocidad", "Depósito", "Gasta cada 100 bloques", "Maletero", "Le cuesta al concesionario", "Tarda en llegar"], filas))
     nombres = {"LAVA_BUCKET": "Cubo de lava", "COAL_BLOCK": "Bloque de carbón", "DRIED_KELP_BLOCK": "Bloque de algas secas", "BLAZE_ROD": "Vara de blaze", "COAL": "Carbón", "CHARCOAL": "Carbón vegetal"}
     filas = [(nombres[k], f"{v} l") for k, v in vehiculos.LITROS.items()] + [("Cualquier otra cosa que arda en un horno (tablones, troncos...)", f"{vehiculos.LITROS_OTROS} l")]
@@ -672,6 +682,14 @@ def vehiculos_tablas():
     L = vehiculos.LLAVE_INGLESA
     escribir("llave_inglesa.md", f"Cada uso cura **{L['cura']} de vida** y gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para unos {L['durabilidad'] // L['gasto']} usos.\n")
     escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
+    T = vehiculos.TUNEO
+    armaduras = {"COPPER_HORSE_ARMOR": "cobre", "IRON_HORSE_ARMOR": "hierro", "GOLDEN_HORSE_ARMOR": "oro", "DIAMOND_HORSE_ARMOR": "diamante", "NETHERITE_HORSE_ARMOR": "netherita"}
+    filas = [("**Pintura**", "Cambia el color del caballo o del arnés del Ghastla", en_chips(T["pintura"])),
+             ("**Dibujo**", "Cambia las manchas del caballo", en_chips(T["dibujo"])),
+             ("**Remodelación**", "Cambia de animal: caballo, burro, mula o camello. Se pierden la armadura y la pintura", en_chips(T["remodelar"])),
+             ("**Ampliar el maletero**", f"{T['maletero_huecos']} huecos más, hasta {T['maletero_maximo']}", en_chips(T["maletero"]))]
+    filas += [(f"**Armadura de {armaduras[k]}**", "Solo para caballos. La que lleve se pierde", en_chips(v)) for k, v in T["armaduras"].items()]
+    escribir("tuneo.md", tabla(["Mejora", "Qué hace", "Cuesta"], filas))
 
 
 def main():

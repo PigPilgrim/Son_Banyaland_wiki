@@ -16,13 +16,6 @@ Hay **6 niveles**, y cada uno vale **64 del anterior**:
 **Para cambiarlas** (64 de un nivel ↔ 1 del siguiente) están los **Traders de Chips** del vestíbulo de las
 mazmorras: el **⬆** las sube y el **⬇** las baja. Ver [Mazmorras](mazmorras.md#el-vestibulo).
 
-**Si llevas más de una pila de un nivel, lo que sobra sube solo al siguiente**, para que no se te llene el inventario.
-Con 100 chips I, por ejemplo, te quedas con 36 chips I y 1 chip II. Se queda una pila de cada nivel porque las tiendas y
-los cofres piden chips de un nivel exacto. Solo pasa en tu inventario, no en los cofres.
-
-!!! warning "⚠️ PENDIENTE"
-    **La subida automática todavía no funciona en el servidor**: se está probando aparte.
-
 Las chips también sirven **de llave**: con ellas se abren las cajas de premios.
 
 ## Diamantes

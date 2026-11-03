@@ -1,7 +1,8 @@
 # Vehículos
 
 Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su **depósito**. En el servidor hay **un
-solo Concesionario** y **una sola Gasolinera**, y cada uno lo lleva un jugador.
+solo Concesionario** y **una sola Gasolinera**, y cada uno es [una empresa del SEPE](hacienda.md#el-sepe-empresas) de
+alguna aldea.
 
 !!! warning "⚠️ PENDIENTE"
     **Todavía no está en el servidor**: se está probando aparte. Los precios, las velocidades y los consumos pueden
@@ -11,10 +12,12 @@ solo Concesionario** y **una sola Gasolinera**, y cada uno lo lleva un jugador.
 
 --8<-- "_generado/vehiculos.md"
 
-La velocidad se lee así: un caballo normal va de 0,11 a 0,34. El Ghastla vuela, y por eso se mide aparte. **Durante un
-asedio no puede volar.**
+La velocidad se lee así: un caballo normal va de 0,11 a 0,34 y un burro o una mula, a 0,175, así que **todos los
+modelos corren más que cualquier animal normal**. El Ghastla vuela y se mide aparte: un happy ghast normal va a 0,05.
+**Durante un asedio no puede volar.**
 
-El precio de la tabla es lo que **le cuesta al Concesionario** pedirlo a fábrica. Lo que pagas tú **lo negocias con él**.
+El precio de la tabla es lo que **le cuesta al Concesionario** pedirlo a fábrica, y se paga con chips de cualquier nivel:
+si das de más, te devuelve el cambio. Lo que pagas tú **lo negocias con él**.
 
 ## La llave
 
@@ -67,10 +70,21 @@ mundo normal o en el Nether, así que deja sitio alrededor, sobre todo para el G
 
 Solo el Concesionario puede colocarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Las explosiones no le hacen nada.
 
+## Tuneo
+
+El Concesionario y la Gasolinera tienen el **Kit de tuneo**. Con él en la mano, clic derecho al vehículo y eliges qué
+hacerle. Lo pagan ellos en chips, y a ti te lo cobran al precio que acordéis.
+
+--8<-- "_generado/tuneo.md"
+
 ## La Gasolinera
 
 Con la **Refinería** en la mano, clic derecho: eliges 95 o 98 y gasta el carbón, la lava, las varas de blaze o las algas
 secas que lleves en el inventario. Las tandas se refinan una detrás de otra, también si no estás conectado, y hay sitio
 para **9 tandas a la vez**.
 
-El Ordenador y la Refinería **solo le sirven a quien tiene la licencia**, que da el admin.
+## La licencia
+
+Para llevar el Concesionario o la Gasolinera hay que **registrarlo en el SEPE** de una aldea, eligiéndolo como tipo de
+empresa. Si ya existe, no se puede registrar otro hasta que el dueño cierre el suyo. Al registrarlo recibes el Ordenador
+o la Refinería, la Llave inglesa y el Kit de tuneo, que **solo le sirven al dueño de la licencia**.

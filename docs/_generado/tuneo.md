@@ -1,0 +1,11 @@
+| Mejora | Qué hace | Cuesta |
+|---|---|---|
+| **Pintura** | Cambia el color del caballo o del arnés del Ghastla | 1 chip II |
+| **Dibujo** | Cambia las manchas del caballo | 1 chip II |
+| **Remodelación** | Cambia de animal: caballo, burro, mula o camello. Se pierden la armadura y la pintura | 4 chips II |
+| **Ampliar el maletero** | 9 huecos más, hasta 54 | 6 chips II |
+| **Armadura de cobre** | Solo para caballos. La que lleve se pierde | 1 chip II |
+| **Armadura de hierro** | Solo para caballos. La que lleve se pierde | 2 chips II |
+| **Armadura de oro** | Solo para caballos. La que lleve se pierde | 3 chips II |
+| **Armadura de diamante** | Solo para caballos. La que lleve se pierde | 8 chips II |
+| **Armadura de netherita** | Solo para caballos. La que lleve se pierde | 16 chips II |
