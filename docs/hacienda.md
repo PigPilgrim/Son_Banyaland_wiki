@@ -46,9 +46,9 @@ El **SEPE** también es un proyecto de la Oficina. Cuando se termina, el **Funci
 
 Cada jugador puede tener **una empresa**.
 
-El **Concesionario** y la **Gasolinera** son dos tipos de empresa especiales: solo puede haber **uno de cada en todo el
-servidor**. Al registrarla recibes su licencia y sus herramientas, y al cerrarla la pierdes y queda libre para otro. Ver
-[Vehículos](vehiculos.md). ⚠️ PENDIENTE: **todavía no se pueden registrar**, porque los vehículos se están probando aparte.
+El **Concesionario** y la **Gasolinera** son dos tipos de empresa especiales: hay **uno de cada por aldea** y solo los puede
+registrar quien tenga el permiso **del Alcalde**. Al registrarla recibes su licencia y sus herramientas, y al cerrarla la pierdes
+y queda libre para otro. Ver [Vehículos](vehiculos.md). ⚠️ PENDIENTE: **todavía no se pueden registrar**, porque los vehículos se están probando aparte.
 
 ### La caja
 

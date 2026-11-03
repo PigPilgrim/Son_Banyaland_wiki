@@ -1,8 +1,8 @@
 # Vehículos
 
-Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su **depósito**. En el servidor hay **un
-solo Concesionario** y **una sola Gasolinera**, y cada uno es [una empresa del SEPE](hacienda.md#el-sepe-empresas) de
-alguna aldea.
+Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su **depósito**. Cada aldea tiene **un
+Concesionario** y **una Gasolinera**, que reparte **el Alcalde**, y cada uno es
+[una empresa del SEPE](hacienda.md#el-sepe-empresas).
 
 !!! warning "⚠️ PENDIENTE"
     **Todavía no está en el servidor**: se está probando aparte. Los precios, las velocidades y los consumos pueden
@@ -68,7 +68,7 @@ El **Ordenador del Concesionario** se **coloca como un bloque**, por ejemplo enc
 mundo normal o en el Nether, así que deja sitio alrededor, sobre todo para el Ghastla. Solo puede tener
 **5 pedidos a la vez**.
 
-Solo el Concesionario puede colocarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Las explosiones no le hacen nada.
+Solo su Concesionario puede colocarlo, usarlo y quitarlo; al romperlo vuelve a ser el Ordenador. Las explosiones no le hacen nada.
 
 ## Tuneo
 
@@ -85,6 +85,11 @@ para **9 tandas a la vez**.
 
 ## La licencia
 
-Para llevar el Concesionario o la Gasolinera hay que **registrarlo en el SEPE** de una aldea, eligiéndolo como tipo de
-empresa. Si ya existe, no se puede registrar otro hasta que el dueño cierre el suyo. Al registrarlo recibes el Ordenador
-o la Refinería, la Llave inglesa y el Kit de tuneo, que **solo le sirven al dueño de la licencia**.
+1. **El Alcalde lo reparte:** desde su Despacho elige a un ciudadano conectado. La aldea necesita tener el SEPE.
+2. **Lo registras en el SEPE** de tu aldea, eligiéndolo como tipo de empresa. Si ya tienes otra empresa, antes tienes que
+   dejarla.
+3. Recibes el Ordenador o la Refinería, la Llave inglesa y el Kit de tuneo, que **solo le sirven al dueño de la licencia**.
+   Su nombre sale en el cartel del Funcionario.
+
+Si cierras la empresa, o el Alcalde te la quita, pierdes la licencia. Cuando te la quita él, la empresa sigue con su caja,
+pero pasa a ser de tipo *Otra*. Los pedidos y las tandas a medias se quedan para quien la lleve después.
