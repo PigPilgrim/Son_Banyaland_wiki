@@ -797,6 +797,26 @@ def clanes():
     for k in defensas:
         escribir(f"clanes_{k}.md", tabla(["Nivel", "Cuesta", "Tarda", "Daño por segundo", "Vida"],
                  [(n, coste(d["coste"]), tiempo(d["tiempo"]), d["dano"], num(d["vida"])) for n, d in enumerate(E[k]["niveles"], 1)]))
+    # fase 3: ataques
+    A = F.ATAQUE
+    pct = lambda x: f"{round(x * 100)} %"
+    escribir("clanes_ataque.md", tabla(["", ""], [
+        ("Buscar rival", f"{A['buscar_trigo']} {R['trigo']['icono']} × el nivel de tu Torreón (cada vez que buscas)"),
+        ("Se puede atacar", f"fortines con el Torreón al nivel {A['torreon_minimo']} o más, sin escudo y sin su dueño dentro"),
+        ("Para mirar la base", f"{A['explorar_s']} s (o hasta que sueltas la primera tropa)"),
+        ("Lo que dura el ataque", tiempo(A["duracion_s"])),
+        ("Tropas vivas a la vez", f"{A['vivas']} como mucho"),
+        ("Zona roja", f"no se sueltan tropas a {A['zona']} bloques o menos de un edificio, ni encima de un muro"),
+        ("Botín que se puede robar", f"el {pct(A['botin_guardado'])} de lo que tiene guardado y el {pct(A['botin_generadores'])} "
+                                     f"de lo acumulado en aserraderos, canteras y granjas"),
+        ("Te llevas", "ese botín multiplicado por la parte que destruyas (lo que no te quepa, se pierde)"),
+        ("Escudo del defensor", f"{A['escudo_fuerte_h']} h si le destruyen el {A['escudo_fuerte_pct']} % o más; si no, {A['escudo_h']} h"),
+    ]))
+    ej = [(0, 0), (0, 120), (120, 0), (0, 600), (600, 0)]
+    escribir("clanes_trofeos.md", tabla(["Tus trofeos", "Los del rival", "En juego", "Si ganas (1 ★ o más)", "Si pierdes (0 ★)"],
+             [(a, b, F.trofeos_en_juego(a, b), f"+{F.trofeos_en_juego(a, b)}", f"−{F.trofeos_en_juego(a, b) // 2}") for a, b in ej]))
+    escribir("clanes_premios.md", tabla(["Puesto de la semana", "Premio"],
+             [(f"{i}.º", f"{c} chips I") for i, c in enumerate(A["premio_semana"], 1)]))
 
 
 def main():
