@@ -139,7 +139,8 @@ cuenta tu **mejor tiempo**. No hace falta coincidir con nadie.
 - En Gestión, **cada sector se compara con tu mejor de los intentos de hoy**: si hiciste 30 s y ahora haces 20 s, verás
   **-10**.
 
-A medianoche se reparten los puntos:
+A medianoche se reparten los puntos. El chat lo avisa en el mensaje «🕛 ¡Nuevo día!», junto con las misiones
+nuevas: sale el podio de ayer y el Gran Premio de hoy.
 
 --8<-- "_generado/liga_puntos.md"
 
