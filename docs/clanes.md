@@ -224,8 +224,10 @@ Cuando tu aldea está [en guerra](guerra.md#la-guerra-entre-aldeas) con otra, Cr
   de los puntos de la guerra (los de matar enemigos y los asedios).
 - Salen los **fortines de los ciudadanos de la aldea enemiga**: **eliges a quién atacar** (no se busca al azar ni
   cuesta trigo). No se puede atacar a quien está dentro de su fortín ni a quien ya están atacando.
-- Tienes **un ataque de guerra al día** (cambia a las 0:00, hora de España). Se gasta al soltar la primera tropa: si
-  vuelves a casa sin atacar, lo conservas.
+- Los ataques de guerra son **los fines de semana** (sábado y domingo, hora de España). De lunes a viernes solo hay
+  ataques normales; el fin de semana, los dos. El menú y el marcador se pueden mirar cualquier día.
+- Tienes **un ataque de guerra al día** (cambia a las 0:00). Se gasta al soltar la primera tropa: si vuelves a casa
+  sin atacar, lo conservas.
 - El ataque es como uno normal, pero **sin botín**, **sin trofeos** y **sin escudo**: el escudo no protege en guerra.
 - De cada fortín enemigo cuenta solo **la mejor marca** que le saque tu aldea en toda la guerra: si ya le sacasteis
   ★★ y ahora alguien le saca ★★★, el marcador sube 1. Atacar otra vez al mismo solo suma si se mejora.

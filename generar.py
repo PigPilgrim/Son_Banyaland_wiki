@@ -817,7 +817,8 @@ def clanes():
              [(a, b, F.trofeos_en_juego(a, b), f"+{F.trofeos_en_juego(a, b)}", f"−{F.trofeos_en_juego(a, b) // 2}") for a, b in ej]))
     G = F.GUERRA
     escribir("clanes_guerra.md", tabla(["", ""], [
-        ("Ataques de guerra", f"{G['ataques_dia']} al día por jugador"),
+        ("Ataques de guerra", f"{G['ataques_dia']} al día por jugador, solo " + " y ".join(
+            ["", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"][d] for d in G["dias"])),
         ("Botín, trofeos y escudo", "no hay: cuentan las estrellas"),
         ("Puntos", "la mejor marca contra cada fortín enemigo (en estrellas)"),
         ("Últimos ataques en el menú", G["ultimos"]),
