@@ -22,10 +22,10 @@ La primera vez que entras te dan una **parcela de 48×48** con una valla alreded
 
 | Hueco | Objeto | Para qué |
 |---|---|---|
-| 1 | **Plano** | Construir un edificio nuevo |
-| 2 | **Decorar** | Bloques de decoración |
-| 3 | **Mi fortín** | Tus recursos, tus constructores, tu **ejército**, tus **trofeos**, tu **registro** de ataques, la semana y **Recoger todo** |
-| 4 | **Atacar** | Buscar un fortín para [atacar](#atacar) |
+| 1 | **Atacar** | Buscar un fortín para [atacar](#atacar) |
+| 3 | **Plano** | Construir un edificio nuevo |
+| 4 | **Decorar** | Bloques de decoración |
+| 5 | **Mi fortín** | Tus recursos, tus constructores, tu **ejército**, tus **trofeos**, tu **registro** de ataques, la semana y **Recoger todo** |
 | 9 | **Salir al lobby** | Volver al lobby de minijuegos |
 
 **Haz clic a cualquier edificio** para ver su menú: **Mejorar**, **Recoger** (aserraderos, canteras y granjas),
@@ -157,7 +157,7 @@ Su nivel máximo es el 6.
 
 ## Atacar
 
-Con **Atacar** (hueco 4) buscas el fortín de otro jugador para atacarlo. Necesitas tener tropas.
+Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesitas tener tropas.
 
 1. **Buscar** cuesta un poco de trigo. Te toca un fortín con un número de trofeos parecido al tuyo. Nunca sale uno con
    **escudo**, uno al que ya están atacando ni uno con su dueño dentro.
