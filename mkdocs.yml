@@ -91,7 +91,9 @@ nav:
       - Mazmorras: mazmorras.md
       - Armas y armaduras: forja.md
       - Magia: magia.md
-  - Minijuegos: minijuegos.md
+  - Minijuegos:
+      - Regatas y cabezas: minijuegos.md
+      - Craft of Clans: clanes.md
   - Estudio y Caballete: arte.md
   - Comandos y extras: plugins.md
   - Historia: historia.md

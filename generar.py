@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -734,10 +734,40 @@ def vehiculos_tablas():
              f"Si llegas a **{I['pierde']} días**, **pierdes la licencia**, como si te la quitara el Alcalde. En cuanto entras, la cuenta vuelve a empezar.\n")
 
 
+def clanes():
+    F = fortines
+    R = F.RECURSOS
+    num = lambda n: f"{n:,}".replace(",", ".")
+    coste = lambda c: " + ".join(f"{num(c[r])} {R[r]['icono']}" for r in R if c.get(r)) or "gratis"
+
+    def tiempo(s):
+        if s < 3600: return f"{s // 60} min"
+        return f"{s // 3600} h" + (f" {s % 3600 // 60} min" if s % 3600 else "")
+    E = F.EDIFICIOS
+    escribir("clanes_edificios.md", tabla(["Edificio", "Tamaño", "Para qué sirve"],
+             [(f"**{e['nombre']}**", f"{e['lado']}×{e['lado']}", e["texto"]) for e in E.values()]))
+    escribir("clanes_torreon.md", tabla(["Nivel", "Cuesta", "Tarda", "Guarda (de cada recurso)"],
+             [(n, coste(nv["coste"]) if n > 1 else "(lo tienes al empezar)", tiempo(nv["tiempo"]) if n > 1 else "—", num(F.TORREON_GUARDA * n))
+              for n, nv in enumerate(E["torreon"]["niveles"], 1)]))
+    escribir("clanes_generadores.md", tabla(["Nivel", "Aserradero cuesta", "Cantera cuesta", "Tarda", "Produce por hora", "Acumula hasta"],
+             [(n, coste(a["coste"]), coste(c["coste"]), tiempo(a["tiempo"]), num(a["produce"]), num(a["acumula"]))
+              for n, (a, c) in enumerate(zip(E["aserradero"]["niveles"], E["cantera"]["niveles"]), 1)]))
+    escribir("clanes_almacenes.md", tabla(["Nivel", "Almacén de madera cuesta", "Almacén de piedra cuesta", "Tarda", "Guarda"],
+             [(n, coste(a["coste"]), coste(b["coste"]), tiempo(a["tiempo"]), num(a["tope"]))
+              for n, (a, b) in enumerate(zip(E["almacen_madera"]["niveles"], E["almacen_piedra"]["niveles"]), 1)]))
+    escribir("clanes_cabanas.md", tabla(["Cabaña", "Cuesta"], [(f"{i + 1}.ª", "la tienes al empezar" if i == 0 else coste(c)) for i, c in enumerate(F.CABANAS_COSTE)]))
+    escribir("clanes_cuantos.md", tabla(["Torreón", *[e["nombre"] for k, e in E.items() if k != "torreon"]],
+             [(f"Nivel {t + 1}", *[e["cuantos"][t] for k, e in E.items() if k != "torreon"]) for t in range(F.MAX_NIVEL)]))
+    escribir("clanes_semanas.md", tabla(["Semana", "El Torreón puede llegar al nivel"],
+             [(f"{i}.ª" + (" y siguientes" if i == len(F.SEMANAS) else ""), n) for i, n in enumerate(F.SEMANAS, 1)]))
+    escribir("clanes_inicio.md", f"Se empieza con el **Torreón al nivel 1**, **una Cabaña** (un constructor) y "
+             f"{coste(F.INICIO)}. La decoración es gratis, hasta {num(F.MAX_DECORACION)} bloques por fortín.\n")
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes()
     print("Tablas generadas en", SALIDA)
 
 

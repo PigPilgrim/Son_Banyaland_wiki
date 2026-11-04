@@ -135,9 +135,9 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-sail-boat:</span> [Minijuegos](minijuegos.md)
 
-    Regatas de barcos sobre hielo, con neumáticos y boxes, y las cabezas coleccionables del lobby.
+    Regatas de barcos sobre hielo, con neumáticos y boxes, tu fortín en Craft of Clans y las cabezas coleccionables del lobby.
 
-    [Regatas](minijuegos.md#las-regatas){ .sb-chip } [Neumáticos](minijuegos.md#neumaticos-modo-gestion){ .sb-chip } [Cabezas](minijuegos.md#cabezas-coleccionables){ .sb-chip }
+    [Regatas](minijuegos.md#las-regatas){ .sb-chip } [Neumáticos](minijuegos.md#neumaticos-modo-gestion){ .sb-chip } [Cabezas](minijuegos.md#cabezas-coleccionables){ .sb-chip } [Craft of Clans](clanes.md){ .sb-chip }
 
     [Entrar →](minijuegos.md){ .sb-entrar }
 

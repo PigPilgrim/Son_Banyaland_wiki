@@ -20,6 +20,10 @@ Los minijuegos tienen **su propio inventario**, y en ellos **no pierdes nada al 
 Los **premios** de los minijuegos (chips) se cobran **al volver a la aldea**, y pagan el
 [impuesto sobre premios](hacienda.md#hacienda-los-impuestos) si tu aldea lo tiene.
 
+## Craft of Clans
+
+Tu propio **fortín** para construir y mejorar con tiempo real. Ver [Craft of Clans](clanes.md).
+
 ## Próximamente: Cod Zombies
 
 En el lobby ya está su portal, con el cartel **En Preparación**: todavía no se puede jugar.
