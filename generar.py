@@ -450,8 +450,10 @@ def justicia():
         ("**Sobre premios**", "Un % de los sellos y chips que ganas en misiones y minijuegos", f"{d['#imp_premios']} %"),
         ("**A los ricos** (semanal)", "Un % de lo que haya en tus buzones por encima del mínimo exento",
          f"{d['#imp_riqueza']} % de lo que pase de {d['#imp_umbral']} chips I"),
-        ("**A las empresas** (semanal, con SEPE)", "Un % de lo que haya en la caja de cada empresa", f"{d['#imp_empresas']} %")])
-             + f"\nEl Alcalde puede cambiarlos (entre 0 y {java_int(java('Oficina'), 'MAX_IMP')} %). Cada cambio se anuncia a todos.\n")
+        ("**A las empresas** (semanal, con SEPE)", "Un % de lo que haya en la caja de cada empresa", f"{d['#imp_empresas']} %"),
+        ("**Del Tablón de anuncios**", "Unas chips I por cada anuncio que se publica en el Tablón", f"{d['#imp_tablon']} chips I")])
+             + f"\nEl Alcalde puede cambiarlos (entre 0 y {java_int(java('Oficina'), 'MAX_IMP')} %; el del Tablón, entre 0 y "
+               f"{java_int(java('Oficina'), 'MAX_TABLON')} chips I por anuncio). Cada cambio se anuncia a todos.\n")
     escribir("sepe_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Registrar una empresa", f"{oficina.SEPE_PRECIO} diamantes (van al Tesoro)"),
         ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I + la Placa de la Empresa de la Semana")]))

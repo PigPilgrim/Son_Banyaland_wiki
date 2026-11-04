@@ -17,12 +17,13 @@ se las consiga. No es lo mismo que el *Tablón de misiones* del Pregonero (ver [
 Dale **clic derecho al tablón** y pulsa **Publicar un anuncio**.
 
 - Solo pueden publicar los **vecinos de esa aldea**, y como mucho **3 anuncios a la vez** cada uno.
-- Publicar cuesta **4 chips I**, que van al Tesoro de la aldea.
+- Publicar es **gratis**, salvo que el Alcalde ponga el **impuesto del Tablón** en
+  [Hacienda](hacienda.md#hacienda-los-impuestos): entonces cada anuncio paga esas chips I al Tesoro.
 - Se escribe un **título** (hasta 32 letras) y una **explicación** (hasta 50 letras) en un yunque.
 - Después se pone la **recompensa** en un cofre: chips, diamantes o cualquier objeto. **Se guarda en el momento**,
   así que nadie se queda sin cobrar.
 - Los anuncios duran **7 días**. Si nadie lo cumple, la recompensa vuelve a quien lo publicó. También se puede
-  **retirar** antes, si nadie lo ha aceptado: se devuelve la recompensa, pero no la tasa.
+  **retirar** antes, si nadie lo ha aceptado: se devuelve la recompensa (el impuesto, si lo hubo, no).
 
 Hay dos clases de anuncios:
 
