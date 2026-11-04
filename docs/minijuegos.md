@@ -106,10 +106,9 @@ La **zona amarilla** (con partículas) es el foso de boxes:
 
 **El cronómetro no para**: cuanto más rápido pulses, más corta es la parada.
 
-### El tiempo de cada día
+### El tiempo
 
-Cada día puede **llover** o ser **de noche** en las pistas (igual para todos ese día). Con lluvia, los neumáticos
-blandos y medios se gastan más.
+En el mundo de minijuegos (el lobby, las pistas y los demás juegos) **siempre es de día y no llueve**.
 
 ### Rankings y premios de la semana
 
@@ -122,6 +121,10 @@ Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).
 ## La Liga
 
 La Liga se abre desde el menú del portal azul, con el **trofeo del centro** (o con `/puente barcos liga`).
+
+Encima del portal hay un **cartel con cómo va la Liga**: el Gran Premio de hoy, el **top 10 de pilotos** de la semana
+(de arriba abajo, del color de su escudería) y los puntos de cada escudería. Los récords de cada pista están en el
+menú del portal, en **Ranking**.
 
 ### Gran Premio del día
 

@@ -551,7 +551,6 @@ def regatas():
         ("Ganar una partida online", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día, sumando todos los modos)"),
         ("Top 3 de la semana (cada pista, en Clasificación, 3 vueltas y Gestión)",
          " · ".join(f"{n}.º {c} chips I" for n, c in enumerate(barcos.PREMIO_SEMANA, start=1)) + " · y el 1.º, la copa de la pista"),
-        ("Probabilidad de lluvia / de noche cada día", f"{pct(barcos.PROB_LLUVIA)} / {pct(barcos.PROB_NOCHE)}"),
         ("Parada en boxes", f"{barcos.RUEDAS_PARADA} teclas, {barcos.VENTANA_TICKS / 20:g} s para cada una"),
         ("Pinchazo seguro", f"entre el {barcos.PINCHAZO_MIN} % y el {barcos.PINCHAZO_MAX} % de desgaste")]))
     liga = barcos.LIGA
@@ -570,9 +569,9 @@ def regatas():
         (f"**{liga['premios']['bronce']['nombre']}**", "3.º de la clasificación de pilotos"),
         (f"**{liga['premios']['copa']['nombre']}**", "Todos los pilotos de la escudería ganadora"),
         (f"**{liga['premios']['casco']['nombre']}**", "Quien sume más vueltas rápidas del día en la semana")]))
-    escribir("neumaticos.md", tabla(["Neumático", "Hielo azul (más rápido)", "Se gasta por vuelta", "Dura unas", "Con lluvia"], [
+    escribir("neumaticos.md", tabla(["Neumático", "Hielo azul (más rápido)", "Se gasta por vuelta", "Dura unas"], [
         (f"**{n['nombre']}**", "nada" if not n["hielo"] else f"{pct(n['hielo'])} del hielo compacto", f"{n['desgaste']} %",
-         f"{round(100 / n['desgaste'])} vueltas", "igual" if n["lluvia"] == 1 else f"se gasta un {round((n['lluvia'] - 1) * 100)} % más")
+         f"{round(100 / n['desgaste'])} vueltas")
         for n in barcos.NEUMATICOS.values()]))
 
 
