@@ -16,7 +16,8 @@ mejoras tardan **tiempo de verdad** (minutos al principio, horas después) y sig
   hambre.
 - Para salir, la **puerta** del hueco 9 de tu barra: vuelves al lobby.
 
-La primera vez que entras te dan una **parcela de 48×48** con una valla alrededor. Es solo tuya.
+La primera vez que entras te dan una **parcela de 56×56** con una valla alrededor. Es solo tuya. (Las parcelas de
+antes eran de 48×48: crecieron solas por el este y por el sur, sin mover nada de lo que había.)
 
 ## Tu barra
 
@@ -94,6 +95,34 @@ La granja se paga con madera y el granero con piedra. El Torreón también guard
 
 --8<-- "_generado/clanes_cuantos.md"
 
+## Herrería, Caldero y altares
+
+Tres edificios nuevos para cuando el fortín ya está avanzado:
+
+- **Herrería** (desde el Torreón 4): mejora tus **tropas** y tus **hechizos**, de uno en uno. Su nivel marca hasta
+  dónde.
+- **Caldero** (desde el Torreón 5): prepara **hechizos** para los ataques. Tiene pocos huecos y cada hechizo tarda en
+  hacerse.
+- **Altares** (uno por héroe): en cada uno vive un **héroe** que te acompaña en los ataques y luego descansa un rato.
+
+!!! warning "⚠️ PENDIENTE"
+    De momento solo se pueden **construir y mejorar**. Las mejoras de tropas, los hechizos y los héroes llegarán en
+    las próximas pruebas; aquí se explicarán cuando estén (ver [Pendientes](pendientes.md)).
+
+### Herrería
+
+--8<-- "_generado/clanes_herreria.md"
+
+### Caldero
+
+--8<-- "_generado/clanes_caldero.md"
+
+### Altares
+
+Cada altar se construye una vez y no tiene más niveles.
+
+--8<-- "_generado/clanes_altares.md"
+
 ## Ejército
 
 Las tropas se entrenan en el **Cuartel** con trigo y esperan en los **Campamentos**.
@@ -152,9 +181,20 @@ alcance. Mientras una defensa **se está mejorando no dispara** (pero la pueden 
 
 ### Catapulta
 
-Su nivel máximo es el 6.
-
 --8<-- "_generado/clanes_catapulta.md"
+
+### Brasero
+
+Escupe fuego a lo que tenga **muy cerca**: hace daño en área tanto a las tropas de tierra como a las que vuelan.
+
+--8<-- "_generado/clanes_brasero.md"
+
+### Escorpión
+
+Una ballesta enorme que **solo apunta al cielo**: no le hace nada a lo que va por tierra, pero es lo que más daño
+hace a lo que vuela.
+
+--8<-- "_generado/clanes_escorpion.md"
 
 ## Atacar
 
@@ -175,11 +215,13 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
 
 ### Cómo atacan las tropas
 
-- Cada tropa va a por lo suyo (ver la tabla de [Tropas](#tropas)): **lo más cercano**, **las defensas** o **los
-  muros**. Ninguna va a por un muro si no es que le **corta el paso**: entonces lo golpea hasta abrir hueco.
+- Cada tropa va a por lo suyo (ver la tabla de [Tropas](#tropas)): **lo más cercano**, **las defensas**, **los
+  muros** o **los almacenes y generadores**. Ninguna va a por un muro si no es que le **corta el paso**: entonces lo
+  golpea hasta abrir hueco.
 - El **Arquero** y la **Bruja** atacan desde lejos, también por encima de un muro. La Bruja y el **Zapador** hacen
   daño en área; el Zapador explota al llegar (y hace mucho más daño a los muros).
-- El **Fantasma** vuela: pasa por encima de todo y solo le pueden dar las **torres de arqueros**.
+- Las que **vuelan** pasan por encima de todo. Solo les pueden dar las **torres de arqueros**, los **braseros** y los
+  **escorpiones**.
 - Un edificio sin vida queda en **ruinas** y un muro, en nada. La decoración no se toca.
 
 ### Estrellas y botín

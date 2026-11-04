@@ -764,8 +764,17 @@ def clanes():
     def cuantos(claves):
         return tabla(["Torreón", *[E[k]["nombre"] for k in claves]], [(f"Nivel {t + 1}", *[E[k]["cuantos"][t] for k in claves]) for t in range(F.MAX_NIVEL)])
     guerra_k = [k for k, e in E.items() if e.get("cuartel") or e.get("muro") or e.get("defensa") or "capacidad" in e["niveles"][0]]
-    escribir("clanes_cuantos.md", "**Recursos y constructores**\n\n" + cuantos([k for k in E if k != "torreon" and k not in guerra_k])
-             + "\n**Ejército y defensas**\n\n" + cuantos(guerra_k))
+    mejora_k = [k for k, e in E.items() if e.get("herreria") or e.get("caldero") or e.get("heroe")]
+    escribir("clanes_cuantos.md", "**Recursos y constructores**\n\n" + cuantos([k for k in E if k != "torreon" and k not in guerra_k + mejora_k])
+             + "\n**Ejército y defensas**\n\n" + cuantos(guerra_k) + "\n**Herrería, Caldero y altares**\n\n" + cuantos(mejora_k))
+    desde_th = lambda k: next(t for t, c in enumerate(E[k]["cuantos"], 1) if c > 0)
+    for k in ("herreria", "caldero"):
+        escribir(f"clanes_{k}.md", tabla(["Nivel", "Cuesta", "Tarda", "Hace falta el Torreón"],
+                 [(n, coste(nv["coste"]), tiempo(nv["tiempo"]), f"nivel {next(t for t, m in enumerate(E[k]['maximos'], 1) if m >= n)}")
+                  for n, nv in enumerate(E[k]["niveles"], 1)]))
+    escribir("clanes_altares.md", tabla(["Altar", "Hace falta el Torreón", "Cuesta", "Tarda"],
+             [(f"**{E[k]['nombre']}**", f"nivel {desde_th(k)}", coste(E[k]["niveles"][0]["coste"]), tiempo(E[k]["niveles"][0]["tiempo"]))
+              for k, e in E.items() if e.get("heroe")]))
     escribir("clanes_semanas.md", tabla(["Semana", "El Torreón puede llegar al nivel"],
              [(f"{i}.ª" + (" y siguientes" if i == len(F.SEMANAS) else ""), n) for i, n in enumerate(F.SEMANAS, 1)]))
     escribir("clanes_inicio.md", f"Se empieza con el **Torreón al nivel 1**, **una Cabaña** (un constructor) y "
@@ -780,19 +789,23 @@ def clanes():
               for n, c in enumerate(E["cuartel"]["niveles"], 1)]))
     escribir("clanes_campamento.md", tabla(["Nivel", "Cuesta", "Tarda", "Caben"],
              [(n, coste(c["coste"]), tiempo(c["tiempo"]), c["capacidad"]) for n, c in enumerate(E["campamento"]["niveles"], 1)]))
-    ataca = {"cercano": "lo más cercano", "muros": "los muros", "defensas": "las defensas"}
+    ataca = {"cercano": "lo más cercano", "muros": "los muros", "defensas": "las defensas", "recursos": "almacenes y generadores",
+             "curar": "tus tropas heridas"}
     escribir("clanes_tropas.md", tabla(["Tropa", "Cuartel", "Ocupa", "Cuesta", "Tarda", "Vida", "Daño por segundo", "Va a por"],
              [(f"**{t['nombre']}**", t["cuartel"], t["espacio"], f"{num(t['coste'])} {R['trigo']['icono']}", tiempo(t["tiempo"]), num(t["vida"]),
-               str(t["dano"]) + (f" (a {t['alcance']} bloques)" if t["alcance"] else ""), ataca.get(t["ataca"], t["ataca"]) + (" (vuela)" if t["vuela"] else ""))
+               (f"cura {t['cura']}" if t.get("cura") else str(t["dano"])) + (f" (a {t['alcance']} bloques)" if t["alcance"] else "")
+               + (" en área" if t.get("area") else ""),
+               ataca.get(t["ataca"], t["ataca"]) + (" (vuela)" if t["vuela"] else "") + (" (salta los muros)" if t.get("salta") else ""))
               for t in T.values()]))
     escribir("clanes_muros.md", tabla(["Nivel", "Cuesta cada tramo", "Vida"],
              [(n, coste(m["coste"]), num(m["vida"])) for n, m in enumerate(E["muro"]["niveles"], 1)]))
     defensas = [k for k, e in E.items() if e.get("defensa")]
-    escribir("clanes_defensas.md", tabla(["Defensa", "Se paga con", "Alcance", "Ataca a", "Hace falta el Torreón"],
+    ataca_a = lambda d: "tierra y aire" if d["aire"] and d.get("tierra", True) else "solo lo que vuela" if d["aire"] else "solo tierra"
+    escribir("clanes_defensas.md", tabla(["Defensa", "Se paga con", "Alcance", "Ataca a", "Hace falta el Torreón", "Nivel máximo"],
              [(f"**{E[k]['nombre']}**", R[next(iter(E[k]["niveles"][0]["coste"]))]["icono"],
                (f"de {E[k]['defensa']['alcance_min']:g} a " if E[k]["defensa"]["alcance_min"] else "") + f"{E[k]['defensa']['alcance']:g} bloques"
                + (" (en área)" if E[k]["defensa"]["area"] else ""),
-               "tierra y aire" if E[k]["defensa"]["aire"] else "solo tierra", f"nivel {next(t for t, c in enumerate(E[k]['cuantos'], 1) if c > 0)}")
+               ataca_a(E[k]["defensa"]), f"nivel {desde_th(k)}", len(E[k]["niveles"]))
               for k in defensas]))
     for k in defensas:
         escribir(f"clanes_{k}.md", tabla(["Nivel", "Cuesta", "Tarda", "Daño por segundo", "Vida"],
