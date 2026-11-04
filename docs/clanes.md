@@ -23,6 +23,7 @@ La primera vez que entras te dan una **parcela de 48×48** con una valla alreded
 | Hueco | Objeto | Para qué |
 |---|---|---|
 | 1 | **Atacar** | Buscar un fortín para [atacar](#atacar) |
+| 2 | **Guerra** | Los [ataques de guerra](#guerra), cuando tu aldea está en guerra |
 | 3 | **Plano** | Construir un edificio nuevo |
 | 4 | **Decorar** | Bloques de decoración |
 | 5 | **Mi fortín** | Tus recursos, tus constructores, tu **ejército**, tus **trofeos**, tu **registro** de ataques, la semana y **Recoger todo** |
@@ -213,6 +214,27 @@ del portal del lobby). Al acabar la semana, los tres primeros se llevan **chips*
 demás premios de minijuegos. Es lo único de Craft of Clans que sale al juego normal.
 
 --8<-- "_generado/clanes_premios.md"
+
+## Guerra
+
+Cuando tu aldea está [en guerra](guerra.md#la-guerra-entre-aldeas) con otra, Craft of Clans también cuenta. Los
+**ataques de guerra** son aparte de los normales y se hacen desde el menú **Guerra** (hueco 2).
+
+- Sale el **marcador de Craft of Clans** de esa guerra: las estrellas de tu aldea contra las de la otra. Es **aparte**
+  de los puntos de la guerra (los de matar enemigos y los asedios).
+- Salen los **fortines de los ciudadanos de la aldea enemiga**: **eliges a quién atacar** (no se busca al azar ni
+  cuesta trigo). No se puede atacar a quien está dentro de su fortín ni a quien ya están atacando.
+- Tienes **un ataque de guerra al día** (cambia a las 0:00, hora de España). Se gasta al soltar la primera tropa: si
+  vuelves a casa sin atacar, lo conservas.
+- El ataque es como uno normal, pero **sin botín**, **sin trofeos** y **sin escudo**: el escudo no protege en guerra.
+- De cada fortín enemigo cuenta solo **la mejor marca** que le saque tu aldea en toda la guerra: si ya le sacasteis
+  ★★ y ahora alguien le saca ★★★, el marcador sube 1. Atacar otra vez al mismo solo suma si se mejora.
+- Al acabar cada ataque se avisa a los conectados de las dos aldeas. En el menú se ven los últimos ataques.
+- Cuando la guerra termina, el marcador de Craft of Clans queda apuntado en el resultado de la guerra.
+
+--8<-- "_generado/clanes_guerra.md"
+
+Si no eres de ninguna aldea, solo hay ataques normales.
 
 ## Decorar
 

@@ -815,6 +815,13 @@ def clanes():
     ej = [(0, 0), (0, 120), (120, 0), (0, 600), (600, 0)]
     escribir("clanes_trofeos.md", tabla(["Tus trofeos", "Los del rival", "En juego", "Si ganas (1 ★ o más)", "Si pierdes (0 ★)"],
              [(a, b, F.trofeos_en_juego(a, b), f"+{F.trofeos_en_juego(a, b)}", f"−{F.trofeos_en_juego(a, b) // 2}") for a, b in ej]))
+    G = F.GUERRA
+    escribir("clanes_guerra.md", tabla(["", ""], [
+        ("Ataques de guerra", f"{G['ataques_dia']} al día por jugador"),
+        ("Botín, trofeos y escudo", "no hay: cuentan las estrellas"),
+        ("Puntos", "la mejor marca contra cada fortín enemigo (en estrellas)"),
+        ("Últimos ataques en el menú", G["ultimos"]),
+    ]))
     escribir("clanes_premios.md", tabla(["Puesto de la semana", "Premio"],
              [(f"{i}.º", f"{c} chips I") for i, c in enumerate(A["premio_semana"], 1)]))
 
