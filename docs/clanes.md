@@ -106,12 +106,25 @@ Tres edificios nuevos para cuando el fortín ya está avanzado:
 - **Altares** (uno por héroe): en cada uno vive un **héroe** que te acompaña en los ataques y luego descansa un rato.
 
 !!! warning "⚠️ PENDIENTE"
-    De momento solo se pueden **construir y mejorar**. Las mejoras de tropas, los hechizos y los héroes llegarán en
-    las próximas pruebas; aquí se explicarán cuando estén (ver [Pendientes](pendientes.md)).
+    La Herrería ya funciona. El Caldero y los altares de momento solo se pueden **construir y mejorar**: los hechizos
+    y los héroes llegarán en las próximas pruebas (ver [Pendientes](pendientes.md)).
 
 ### Herrería
 
+Clic a la Herrería → **Mejorar tropas**. Sale cada tropa con su nivel, lo que gana en el siguiente y lo que cuesta.
+
+- Mejora **una tropa a la vez**, con tiempo de verdad (también sin estar tú). No usa constructor, pero mientras
+  mejora algo **no se puede mejorar la Herrería**.
+- Se paga con **trigo** al empezar.
+- Cada nivel de tropa pide la **Herrería** a cierto nivel, y la tropa tiene que estar desbloqueada en el cuartel.
+- Cada nivel da un **14 % más de vida y de daño** (al Hada, de cura). Las tropas que ya tienes entrenadas también
+  suben: cuenta el nivel que tengas al atacar.
+
 --8<-- "_generado/clanes_herreria.md"
+
+#### Niveles de cada tropa
+
+--8<-- "_generado/clanes_tropas_niveles.md"
 
 ### Caldero
 
@@ -220,8 +233,12 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
   golpea hasta abrir hueco.
 - El **Arquero** y la **Bruja** atacan desde lejos, también por encima de un muro. La Bruja y el **Zapador** hacen
   daño en área; el Zapador explota al llegar (y hace mucho más daño a los muros).
-- Las que **vuelan** pasan por encima de todo. Solo les pueden dar las **torres de arqueros**, los **braseros** y los
-  **escorpiones**.
+- Las que **vuelan** (Fantasma, Hada e Ifrit) pasan por encima de todo. Solo les pueden dar las **torres de
+  arqueros**, los **braseros** y los **escorpiones**.
+- El **Saqueador** va a por almacenes, aserraderos, canteras, granjas y graneros, y les hace el doble de daño.
+- La **Araña** no rodea los muros: **trepa por encima** y va directa a las defensas. Las defensas de tierra sí le dan.
+- El **Hada** no ataca: vuela detrás de tu tropa de tierra más herida y **cura** a las que tiene alrededor.
+- El **Ifrit** vuela y hace daño en área desde un poco lejos.
 - Un edificio sin vida queda en **ruinas** y un muro, en nada. La decoración no se toca.
 
 ### Estrellas y botín

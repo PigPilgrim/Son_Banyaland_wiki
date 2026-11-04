@@ -6,7 +6,7 @@
 | **Bruto** | 4 | 5 | 300 🌾 | 2 min | 420 | 22 | las defensas |
 | **Saqueador** | 5 | 2 | 150 🌾 | 1 min | 110 | 30 | almacenes y generadores |
 | **Bruja** | 6 | 4 | 450 🌾 | 3 min | 100 | 36 (a 3 bloques) en área | lo más cercano |
-| **Araña** | 7 | 4 | 400 🌾 | 2 min | 200 | 28 | las defensas (salta los muros) |
+| **Araña** | 7 | 4 | 400 🌾 | 2 min | 240 | 30 | las defensas (salta los muros) |
 | **Fantasma** | 8 | 8 | 800 🌾 | 4 min | 150 | 55 | las defensas (vuela) |
 | **Hada** | 9 | 5 | 900 🌾 | 4 min | 140 | cura 30 | tus tropas heridas (vuela) |
 | **Devastador** | 10 | 15 | 1.800 🌾 | 8 min | 1.700 | 90 | las defensas |

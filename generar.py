@@ -796,6 +796,12 @@ def clanes():
                + (" en área" if t.get("area") else ""),
                ataca.get(t["ataca"], t["ataca"]) + (" (vuela)" if t["vuela"] else "") + (" (salta los muros)" if t.get("salta") else ""))
               for t in T.values()]))
+    filas = []
+    for t in T.values():
+        for n, nv in enumerate(t["niveles"], 1):
+            filas.append((f"**{t['nombre']}**" if n == 1 else "", n, num(nv["vida"]), f"cura {nv['cura']}" if t.get("cura") else nv["dano"],
+                          "—" if n == 1 else coste(nv["coste"]), "—" if n == 1 else tiempo(nv["tiempo"]), "—" if n == 1 else f"nivel {nv['herreria']}"))
+    escribir("clanes_tropas_niveles.md", tabla(["Tropa", "Nivel", "Vida", "Daño por segundo", "Mejorarla cuesta", "Tarda", "Pide la Herrería"], filas))
     escribir("clanes_muros.md", tabla(["Nivel", "Cuesta cada tramo", "Vida"],
              [(n, coste(m["coste"]), num(m["vida"])) for n, m in enumerate(E["muro"]["niveles"], 1)]))
     defensas = [k for k, e in E.items() if e.get("defensa")]
