@@ -24,7 +24,7 @@ antes eran de 48×48: crecieron solas por el este y por el sur, sin mover nada d
 | Hueco | Objeto | Para qué |
 |---|---|---|
 | 1 | **Atacar** | Buscar un fortín para [atacar](#atacar) |
-| 2 | **Guerra** | Los [ataques de guerra](#guerra), cuando tu aldea está en guerra |
+| 2 | **Guerra** | Elegir [bando](#guerra-de-bandos) y, el fin de semana, los ataques de guerra |
 | 3 | **Plano** | Construir un edificio nuevo |
 | 4 | **Decorar** | Bloques de decoración |
 | 5 | **Mi fortín** | Tus recursos, tus constructores, tu **ejército**, tus **trofeos**, tu **registro** de ataques, la semana y **Recoger todo** |
@@ -311,32 +311,48 @@ lleva él. Cuantos más trofeos tiene el rival, más hay en juego. Nadie baja de
 
 Cada semana hay un **ranking de los trofeos ganados esa semana** (en **Mi fortín → Trofeos** y en el cartel encima
 del portal del lobby). Al acabar la semana, los tres primeros se llevan **chips**, que se cobran en la aldea como los
-demás premios de minijuegos. Es lo único de Craft of Clans que sale al juego normal.
+demás premios de minijuegos. Las copas de la [temporada](#temporadas) y los premios de la
+[guerra de bandos](#guerra-de-bandos) también salen al juego normal.
 
 --8<-- "_generado/clanes_premios.md"
 
-## Guerra
+## Temporadas
 
-Cuando tu aldea está [en guerra](guerra.md#la-guerra-entre-aldeas) con otra, Craft of Clans también cuenta. Los
-**ataques de guerra** son aparte de los normales y se hacen desde el menú **Guerra** (hueco 2).
+Cada **mes** es una temporada: empieza el **día 1 a las 0:00** (hora de España).
 
-- Sale el **marcador de Craft of Clans** de esa guerra: las estrellas de tu aldea contra las de la otra. Es **aparte**
-  de los puntos de la guerra (los de matar enemigos y los asedios).
-- Salen los **fortines de los ciudadanos de la aldea enemiga**: **eliges a quién atacar** (no se busca al azar ni
-  cuesta trigo). No se puede atacar a quien está dentro de su fortín ni a quien ya están atacando.
-- Los ataques de guerra son **los fines de semana** (sábado y domingo, hora de España). De lunes a viernes solo hay
-  ataques normales; el fin de semana, los dos. El menú y el marcador se pueden mirar cualquier día.
-- Tienes **un ataque de guerra al día** (cambia a las 0:00). Se gasta al soltar la primera tropa: si vuelves a casa
-  sin atacar, lo conservas.
+- Al acabar, los **tres con más trofeos** se llevan una copa: **Gold Chalice** (1.º), **Iron Chalice** (2.º) y
+  **Bronze Chalice** (3.º).
+- Después, los **trofeos de todos vuelven a 0** y se eligen **bandos nuevos**. Tu fortín, tus tropas, tus héroes y
+  tus niveles **no se tocan**.
+- El cartel del lobby enseña el top de **esta semana** y el de **la temporada**.
+
+## Guerra de bandos
+
+Cada temporada hay **dos bandos de colores** (por ejemplo, Rojo contra Azul; la siguiente, otros dos colores).
+
+- En el menú **Guerra** (hueco 2) **eliges bando**. Te quedas en él **toda la temporada**. Quien no elige no juega la
+  guerra.
+- Para que no se descompense: si un bando ya tiene **2 personas más** que el otro, solo se puede entrar en el otro.
+- La guerra es **cada fin de semana**: del **sábado a las 0:00 al domingo a las 24:00**. Tienes **un ataque de guerra
+  al día** (dos por fin de semana). Se gasta al soltar la primera tropa: si vuelves a casa sin atacar, lo conservas.
+- En el menú salen los **fortines del otro bando**: **eliges a quién atacar** (no se busca al azar ni cuesta trigo).
+  No se puede atacar a quien está dentro de su fortín ni a quien ya están atacando.
 - El ataque es como uno normal, pero **sin botín**, **sin trofeos** y **sin escudo**: el escudo no protege en guerra.
-- De cada fortín enemigo cuenta solo **la mejor marca** que le saque tu aldea en toda la guerra: si ya le sacasteis
-  ★★ y ahora alguien le saca ★★★, el marcador sube 1. Atacar otra vez al mismo solo suma si se mejora.
-- Al acabar cada ataque se avisa a los conectados de las dos aldeas. En el menú se ven los últimos ataques.
-- Cuando la guerra termina, el marcador de Craft of Clans queda apuntado en el resultado de la guerra.
+- De cada fortín enemigo cuenta solo **la mejor marca** que le saque tu bando: si ya le sacasteis ★★ y ahora alguien le
+  saca ★★★, suma 1. Atacar otra vez al mismo solo suma si se mejora.
+- **Gana el bando que saca más % de las estrellas posibles**, no el que más estrellas tiene: así el bando pequeño no
+  pierde por ser menos.
+- Al acabar cada ataque se avisa a los que tienen bando. En el menú se ven el marcador y los últimos ataques.
 
 --8<-- "_generado/clanes_guerra.md"
 
-Si no eres de ninguna aldea, solo hay ataques normales.
+**Premios** (el domingo a las 24:00):
+
+- **Ambrosia**: una para **cada uno del bando ganador**, aunque no haya atacado.
+- **Ice Chalice**: para **el mejor de la guerra** (el que más estrellas ha sacado; si empatan, el de más %).
+- Si nadie ataca en todo el fin de semana, no hay premios.
+- Los premios se dan en el **mundo normal**: si no estás conectado o estás en los minijuegos, te esperan y te llegan al
+  volver.
 
 ## Decorar
 

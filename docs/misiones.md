@@ -14,7 +14,8 @@ y una **difícil**, que son **las mismas para todos**. **Cada jugador puede hace
   dan los sellos.
 - **Las misiones cambian cada día a las 0:00** (hora de España). Si el servidor está apagado a medianoche, cambian
   en cuanto se enciende. Ese momento lo avisa **un solo mensaje en el chat**, «🕛 ¡Nuevo día!», con el botón del
-  tablón, el Gran Premio de barcos del día y el podio del de ayer.
+  tablón, el Gran Premio de barcos del día, el podio del de ayer y, cuando toca, la guerra de bandos o la temporada
+  nueva de [Craft of Clans](clanes.md#temporadas).
 
 !!! info "Impuestos"
     Si tu aldea tiene **Hacienda**, el Alcalde puede quedarse un porcentaje de los sellos de las misiones para el

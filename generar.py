@@ -860,7 +860,10 @@ def clanes():
         ("Ataques de guerra", f"{G['ataques_dia']} al día por jugador, solo " + " y ".join(
             ["", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"][d] for d in G["dias"])),
         ("Botín, trofeos y escudo", "no hay: cuentan las estrellas"),
-        ("Puntos", "la mejor marca contra cada fortín enemigo (en estrellas)"),
+        ("Puntos", "la mejor marca contra cada fortín del otro bando (en estrellas)"),
+        ("Gana", "el bando con más % de las estrellas posibles (3 por cada fortín del otro bando con el Torreón "
+                 f"{A['torreon_minimo']} o más); si empatan, el que más ha destruido; si siguen empatados, los dos"),
+        ("Para que no se descompense", f"si un bando tiene {G['equilibrio']} personas más que el otro, solo se puede entrar en el otro"),
         ("Últimos ataques en el menú", G["ultimos"]),
     ]))
     escribir("clanes_premios.md", tabla(["Puesto de la semana", "Premio"],

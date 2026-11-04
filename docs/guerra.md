@@ -59,8 +59,6 @@ Es **gratis**. Se avisa a los vecinos de las dos aldeas, y desde ese momento:
 - **Morir a manos de un enemigo no te hace perder nada**: ni el inventario ni la experiencia.
 - **No se puede romper ni poner bloques dentro de la aldea enemiga** (en toda su zona segura). Las casas están a
   salvo: la guerra es entre personas.
-- También se lucha en [Craft of Clans](clanes.md#guerra): los ataques de guerra a los fortines del enemigo llevan su
-  propio marcador de estrellas, aparte de estos puntos.
 
 --8<-- "_generado/guerra_numeros.md"
 
@@ -88,4 +86,4 @@ Quien gana se lleva **10 puntos** y **el 10 % del Tesoro** de la otra aldea (de 
 - **La paz:** un Alcalde la propone y el otro la acepta (Despacho → Guerra). Nadie paga nada.
 - **Rendirse:** se acaba al momento, pero tu aldea **paga el 10 % de su Tesoro** a la otra.
 
-Al acabar, se anuncia el resultado final a las dos aldeas (con el marcador de Craft of Clans, si hubo ataques).
+Al acabar, se anuncia el resultado final a las dos aldeas.
