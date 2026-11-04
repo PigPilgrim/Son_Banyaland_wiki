@@ -31,7 +31,7 @@ antes eran de 48×48: crecieron solas por el este y por el sur, sin mover nada d
 | 9 | **Salir al lobby** | Volver al lobby de minijuegos |
 
 **Haz clic a cualquier edificio** para ver su menú: **Mejorar**, **Recoger** (aserraderos, canteras y granjas),
-**Entrenar tropas** (cuartel) y **Mover**. Ahí también se ve su **vida** (la que tiene cuando le atacan). Encima de cada
+**Entrenar tropas** (cuartel), **Mejorar tropas y hechizos** (Herrería), **Cocer hechizos** (Caldero) y **Mover**. Ahí también se ve su **vida** (la que tiene cuando le atacan). Encima de cada
 edificio sale su nivel y, si está en obras, cuánto le queda (los muros no llevan cartel).
 
 ## Recursos
@@ -106,14 +106,15 @@ Tres edificios nuevos para cuando el fortín ya está avanzado:
 - **Altares** (uno por héroe): en cada uno vive un **héroe** que te acompaña en los ataques y luego descansa un rato.
 
 !!! warning "⚠️ PENDIENTE"
-    La Herrería ya funciona. El Caldero y los altares de momento solo se pueden **construir y mejorar**: los hechizos
-    y los héroes llegarán en las próximas pruebas (ver [Pendientes](pendientes.md)).
+    La Herrería y el Caldero ya funcionan. Los altares de momento solo se pueden **construir**: los héroes llegarán en
+    las próximas pruebas (ver [Pendientes](pendientes.md)).
 
 ### Herrería
 
-Clic a la Herrería → **Mejorar tropas**. Sale cada tropa con su nivel, lo que gana en el siguiente y lo que cuesta.
+Clic a la Herrería → **Mejorar tropas y hechizos**. Sale cada tropa (y abajo, cada hechizo) con su nivel, lo que gana
+en el siguiente y lo que cuesta.
 
-- Mejora **una tropa a la vez**, con tiempo de verdad (también sin estar tú). No usa constructor, pero mientras
+- Mejora **una cosa a la vez**, con tiempo de verdad (también sin estar tú). No usa constructor, pero mientras
   mejora algo **no se puede mejorar la Herrería**.
 - Se paga con **trigo** al empezar.
 - Cada nivel de tropa pide la **Herrería** a cierto nivel, y la tropa tiene que estar desbloqueada en el cuartel.
@@ -128,7 +129,27 @@ Clic a la Herrería → **Mejorar tropas**. Sale cada tropa con su nivel, lo que
 
 ### Caldero
 
+Clic al Caldero → **Cocer hechizos**.
+
+- Cada hechizo ocupa **un hueco**, ya esté cocido o esperando en la cola. Hay **pocos huecos**: los da el nivel del
+  Caldero.
+- Se cuecen **de uno en uno**, en orden, con tiempo de verdad (también sin estar tú). Se pagan con **trigo** al
+  encargarlos; si cancelas uno de la cola, te devuelve el trigo.
+- Los cocidos esperan a tu próximo ataque. Si quieres hacer sitio, puedes **tirar** uno (no se devuelve).
+- Cada nivel del Caldero desbloquea un hechizo nuevo.
+
+--8<-- "_generado/clanes_caldero_huecos.md"
+
 --8<-- "_generado/clanes_caldero.md"
+
+#### Hechizos
+
+--8<-- "_generado/clanes_hechizos.md"
+
+Los hechizos suben de nivel en la **Herrería**: cada nivel da un **20 % más** de efecto y **1 segundo más** de
+duración.
+
+--8<-- "_generado/clanes_hechizos_niveles.md"
 
 ### Altares
 
@@ -221,7 +242,10 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
    **Mayús + clic** sueltas cinco. Lo marcado en **rojo** está demasiado cerca de un edificio: ahí no se puede.
 4. El ataque empieza al soltar la primera tropa (o cuando se acaba el tiempo de mirar) y dura unos minutos. Arriba ves
    el tiempo, el % destruido y las estrellas; encima de cada edificio, su **vida**.
-5. Acaba cuando se acaba el tiempo, cuando lo destruyes todo, cuando no te quedan tropas o cuando te **rindes** (con
+5. Tus **hechizos** también van en la barra. Con uno en la mano, mira al suelo: sale su **círculo**. Haz **clic** para
+   lanzarlo; vale también en lo rojo. Si tienes muchas tropas o hechizos, la **flecha** del hueco 8 pasa de página.
+   Los hechizos lanzados se gastan; los que no lances vuelven contigo.
+6. Acaba cuando se acaba el tiempo, cuando lo destruyes todo, cuando no te quedan tropas o cuando te **rindes** (con
    la bandera del hueco 9). Luego vuelves a tu fortín.
 
 --8<-- "_generado/clanes_ataque.md"
@@ -239,6 +263,8 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
 - La **Araña** no rodea los muros: **trepa por encima** y va directa a las defensas. Las defensas de tierra sí le dan.
 - El **Hada** no ataca: vuela detrás de tu tropa de tierra más herida y **cura** a las que tiene alrededor.
 - El **Ifrit** vuela y hace daño en área desde un poco lejos.
+- Con **Rabia**, las tropas que están dentro del círculo pegan más y van más deprisa. Con **Salto**, las de tierra que
+  están dentro pasan por encima de los muros. Con **Hielo**, las defensas que están dentro no disparan.
 - Un edificio sin vida queda en **ruinas** y un muro, en nada. La decoración no se toca.
 
 ### Estrellas y botín

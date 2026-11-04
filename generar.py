@@ -771,6 +771,19 @@ def clanes():
         escribir(f"clanes_{k}.md", tabla(["Nivel", "Cuesta", "Tarda", "Hace falta el Torreón"],
                  [(n, coste(nv["coste"]), tiempo(nv["tiempo"]), f"nivel {next(t for t, m in enumerate(E[k]['maximos'], 1) if m >= n)}")
                   for n, nv in enumerate(E[k]["niveles"], 1)]))
+    def efecto(k, h, nv):
+        dura = f" durante {nv['duracion']} s" if nv["duracion"] else ""
+        return {"rayo": f"{h.get('rayos', 1)} rayos de {num(round(nv['efecto']))} de daño",
+                "curacion": f"cura {num(round(nv['efecto']))} por segundo{dura}",
+                "rabia": f"+{round(nv['efecto'] * 100)} % de daño y +{round(h.get('velocidad', 0) * 100)} % de velocidad{dura}"}.get(k, f"dura {nv['duracion']} s")
+    HE = F.HECHIZOS
+    escribir("clanes_hechizos.md", tabla(["Hechizo", "Caldero", "Qué hace", "Nivel 1", "Radio", "Cuesta", "Tarda en cocerse"],
+             [(f"**{h['nombre']}**", f"nivel {h['caldero']}", h["texto"], efecto(k, h, h["niveles"][0]), f"{str(h['radio']).replace('.', ',')} bloques",
+               coste(h["coste"]), tiempo(h["tiempo"])) for k, h in HE.items()]))
+    escribir("clanes_hechizos_niveles.md", tabla(["Hechizo", "Nivel", "Efecto", "Mejorarlo cuesta", "Tarda", "Pide la Herrería"],
+             [(f"**{h['nombre']}**" if n == 1 else "", n, efecto(k, h, nv), "—" if n == 1 else coste(nv["coste"]), "—" if n == 1 else tiempo(nv["tiempo"]),
+               "—" if n == 1 else f"nivel {nv['herreria']}") for k, h in HE.items() for n, nv in enumerate(h["niveles"], 1)]))
+    escribir("clanes_caldero_huecos.md", tabla(["Caldero", "Huecos para hechizos"], [(f"Nivel {i}", n) for i, n in enumerate(F.CALDERO_HUECOS, 1)]))
     escribir("clanes_altares.md", tabla(["Altar", "Hace falta el Torreón", "Cuesta", "Tarda"],
              [(f"**{E[k]['nombre']}**", f"nivel {desde_th(k)}", coste(E[k]["niveles"][0]["coste"]), tiempo(E[k]["niveles"][0]["tiempo"]))
               for k, e in E.items() if e.get("heroe")]))
