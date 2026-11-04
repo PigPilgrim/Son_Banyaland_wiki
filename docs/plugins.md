@@ -80,5 +80,6 @@ siempre** (gratis): `/puente propia`.
 | `/puente fianza` | Pagar la fianza y [salir de la cárcel](justicia.md#la-carcel) |
 | `/puente crimen` | Tu organización de los [bajos fondos](crimen.md) (o fundar una) |
 | `/puente barcos salir` | Salir de una [regata](minijuegos.md#las-regatas) |
+| `/puente barcos empezar` | Arrancar antes tu [partida online](minijuegos.md#partidas-online) de barcos (si ya sois 2 o más) |
 
 Casi todo lo demás se hace **haciendo clic a los aldeanos** o en los **botones del chat**.

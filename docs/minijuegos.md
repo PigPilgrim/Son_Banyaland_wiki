@@ -30,7 +30,8 @@ En el lobby ya está su portal, con el cartel **En Preparación**: todavía no s
 
 ## Las regatas
 
-Se corre **en barco sobre hielo**. Se entra por el **portal azul del lobby**: eliges **pista** y **modo**.
+Se corre **en barco sobre hielo**. Se entra por el **portal azul del lobby**: eliges **pista** y **modo**, **en
+solitario** (contra el reloj) u **online** (contra otros jugadores a la vez).
 
 ### Las pistas
 
@@ -38,23 +39,45 @@ Se corre **en barco sobre hielo**. Se entra por el **portal azul del lobby**: el
 
 ### Los modos
 
-#### Carrera (contra otros)
+Hay tres modos, y cada uno se puede jugar **en solitario** o **online**.
 
-Te apuntas a la cola de una pista. Con **2 o más**, hay 30 segundos de espera y salís en parrilla con un
-**semáforo de 5 luces**: cuando se apagan, ¡a correr! Salir antes es una **salida en falso** y suma segundos.
-**El ganador se lleva chips.**
-
-#### Clasificación (tú solo)
+#### Clasificación
 
 Una vuelta para coger velocidad y, al pasar por meta, empiezan las **vueltas lanzadas**: cuenta **tu mejor
 vuelta**. Cada vuelta se divide en **3 sectores**, como en la Fórmula 1: **morado** = récord de la pista,
 **verde** = tu mejor marca, **amarillo** = más lento.
 
-#### Gestión (tú solo)
+**Online:** todos a la vez en pista durante **5 minutos**. Cuando se acaba el tiempo puedes terminar la vuelta que
+llevas. **Gana la mejor vuelta.**
+
+#### 3 vueltas
+
+**En solitario:** una vuelta para coger velocidad y luego **3 vueltas seguidas** contra el reloj. Cuenta el tiempo
+total y tiene **su propio ranking**.
+
+**Online:** una **carrera a 3 vueltas** saliendo en parrilla con un **semáforo de 5 luces**: cuando se apagan, ¡a
+correr! Salir antes es una **salida en falso** y suma segundos. **Gana el primero en llegar.**
+
+#### Gestión
 
 Una vuelta para coger velocidad y luego **5 vueltas cronometradas con neumáticos**. Es **obligatorio usar dos
 neumáticos distintos** (o te penalizan), así que hay que **parar en boxes** al menos una vez. Cuenta el tiempo
 total.
+
+**Online:** la misma carrera de 5 vueltas con neumáticos y boxes, todos a la vez y saliendo con el semáforo. **Gana
+el primero en llegar**, y tu tiempo también cuenta para el ranking de Gestión.
+
+#### Partidas online
+
+1. En el menú de la pista, elige un modo **online** y **de cuántos jugadores** es la partida (en Gestión, también
+   tu neumático de salida).
+2. Los demás la ven en el mismo menú (**Unirse**) y les sale un aviso en el chat para entrar.
+3. **Mientras esperáis, podéis dar vueltas** por la pista libremente (sin cronómetro).
+4. Cuando está **llena**, empieza en 30 segundos. Quien la creó puede **arrancarla antes** con el botón
+   **[Empezar ya]** del chat si ya sois al menos 2.
+
+En cada pista hay **una partida online a la vez**; cuando empieza, los que estaban en solitario en esa pista
+vuelven al lobby. **El ganador se lleva chips**, con un **tope de premios al día** (sumando todos los modos).
 
 Si caes **al agua**, vuelves al último punto de control (en Clasificación, además, esa vuelta no cuenta). Para salir
 de una regata en cualquier momento: `/puente barcos salir`.
@@ -90,8 +113,8 @@ blandos y medios se gastan más.
 
 ### Rankings y premios de la semana
 
-En el lobby está el **ranking** de cada pista: el **top 10** de Clasificación y de Gestión, de la semana y de
-siempre. **Al acabar la semana**, el top 3 de cada pista y modo cobra chips, y **el 1.º se lleva la copa de la pista**
+En el lobby está el **ranking** de cada pista: el **top 10** de Clasificación, 3 vueltas y Gestión, de la semana
+y de siempre. **Al acabar la semana**, el top 3 de cada pista y modo cobra chips, y **el 1.º se lleva la copa de la pista**
 (una cabeza de trofeo; te llega cuando vuelves a la aldea).
 
 Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).

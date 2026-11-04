@@ -536,17 +536,20 @@ def regatas():
     for k, (nom, _, _) in barcos.MAPAS.items():
         m = datos.get(k)
         if not m: continue
-        modos = "Carrera, Clasificación" + (", Gestión" if m.get("boxes") else "")
+        modos = "Clasificación, 3 vueltas" + (", Gestión" if m.get("boxes") else "") + " (en solitario y online)"
         filas.append((f"**{nom}**", f"~{m['largo']} bloques", len(m["parrilla"]), modos, barcos.COPAS[k][0]))
     escribir("pistas.md", tabla(["Pista", "Una vuelta", "Barcos en la parrilla", "Modos", "Copa del 1.º de la semana"], filas))
     v = barcos.VUELTAS
     base, rival = barcos.PREMIO_CARRERA["carrera"]
     escribir("regatas_numeros.md", tabla(["Qué", "Cuánto"], [
-        ("Vueltas", f"Carrera {v['carrera']} · Gestión {v['gestion']} · Clasificación: las que quieras"),
-        ("Salida en falso (Carrera)", f"+{barcos.PENALIZACION_SALIDA} s"),
+        ("Vueltas", f"3 vueltas: {v['carrera']} · Gestión: {v['gestion']} · Clasificación: las que quieras"),
+        ("Clasificación online", f"{barcos.CLASIF_ONLINE_S // 60} minutos; la vuelta empezada se puede acabar"),
+        ("Partida online", f"de 2 jugadores a los que quepan en la parrilla; llena, empieza en 30 s; "
+                           f"quien la crea puede arrancarla antes (con 2 o más, en {barcos.EMPEZAR_YA_S} s)"),
+        ("Salida en falso (online, menos en Clasificación)", f"+{barcos.PENALIZACION_SALIDA} s"),
         ("Gestión sin usar 2 neumáticos distintos", f"+{barcos.PENALIZACION_SIN_PARADA} s"),
-        ("Ganar una carrera", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día)"),
-        ("Top 3 de la semana (cada pista, en Clasificación y en Gestión)",
+        ("Ganar una partida online", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día, sumando todos los modos)"),
+        ("Top 3 de la semana (cada pista, en Clasificación, 3 vueltas y Gestión)",
          " · ".join(f"{n}.º {c} chips I" for n, c in enumerate(barcos.PREMIO_SEMANA, start=1)) + " · y el 1.º, la copa de la pista"),
         ("Probabilidad de lluvia / de noche cada día", f"{pct(barcos.PROB_LLUVIA)} / {pct(barcos.PROB_NOCHE)}"),
         ("Parada en boxes", f"{barcos.RUEDAS_PARADA} teclas, {barcos.VENTANA_TICKS / 20:g} s para cada una"),
