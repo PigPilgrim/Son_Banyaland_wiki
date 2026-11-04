@@ -412,6 +412,30 @@ def java_int(fuente, nombre_cte):
     return n
 
 
+def java_num(fuente, nombre_cte):
+    """Constante decimal del Java (0.95...)."""
+    return float(re.search(rf"\b{nombre_cte}\s*=\s*(\d+(?:\.\d+)?)", fuente).group(1))
+
+
+def arte():
+    e, c = java("Estudio"), java("Caballete")
+    p = lambda x: f"{java_num(x[0], x[1]) * 100:g} %"
+    escribir("estudio.md", tabla(["Qué", "Cuánto"], [
+        ("Grabar una canción", f"{java_int(e, 'PRECIO')} chip I"),
+        ("Notas de cada grabación", str(java_int(e, 'NOTAS'))),
+        ("Disco **Perfecto** ★★★", f"acertar al menos el {p((e, 'PERFECTO'))}"),
+        ("Disco **Bueno** ★★", f"acertar al menos el {p((e, 'BUENO'))}"),
+        ("Disco **Rayado**", "menos que eso: suena con crujidos y saltos de aguja")]))
+    tam = ", ".join(f"{w}×{h}" for w, h in re.findall(r"\{(\d), (\d)\}", re.search(r"TAMANOS = \{(.*?)\};", c).group(1)))
+    escribir("caballete.md", tabla(["Qué", "Cuánto"], [
+        ("Pintar un cuadro", f"{java_int(c, 'PRECIO')} chip I (si la imagen no se puede usar, se devuelve)"),
+        ("Tamaños (mapas de ancho × alto)", tam),
+        ("Tiempo pintando", f"{java_int(c, 'PINTA') // 20} segundos"),
+        ("**Obra maestra** ★★★", f"seguir la bola al menos el {p((c, 'MAESTRA'))} del tiempo"),
+        ("**Buen cuadro** ★★", f"al menos el {p((c, 'BUENA'))}"),
+        ("**Emborronado**", "menos que eso: sale pixelado, con manchas y colores corridos")]))
+
+
 def iglesia():
     src = java("Iglesia")
     caminos = {i: (n, int(p)) for i, n, p in re.findall(r'new Camino\("(\w+)", "([^"]+)", Material\.\w+, (\d+)\)', src)}
@@ -713,7 +737,7 @@ def vehiculos_tablas():
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte()
     print("Tablas generadas en", SALIDA)
 
 

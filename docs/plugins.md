@@ -1,6 +1,6 @@
 # Comandos y extras
 
-Lo que puedes hacer en el servidor además de jugar: registrarte, sentarte, colgar imágenes, poner música...
+Lo que puedes hacer en el servidor además de jugar: registrarte, sentarte, colgar imágenes, poner música, el color de tu nombre...
 
 ## Registrarte y entrar
 
@@ -50,10 +50,20 @@ El enlace tiene que ser **directo a la imagen** (que acabe en `.png`, `.jpg`, `.
 ## Música: discos con canciones de verdad
 
 En el servidor hay **discos con canciones reales**, que suenan en cualquier tocadiscos. Al entrar, el servidor te
-ofrece un **paquete de recursos**: **acéptalo**, o no oirás las canciones. Los discos los reparte el admin.
+ofrece un **paquete de recursos**: **acéptalo**, o no oirás las canciones. Los discos los reparte el admin, y también
+los puedes **grabar tú** en un [Estudio de grabación](arte.md#estudio-de-grabacion), donde además puedes **pedir
+canciones nuevas**.
 
 !!! warning "⚠️ PENDIENTE"
     El servidor ya se ha mudado, pero falta probar en el juego que la música suene para todos los jugadores.
+
+## Color de tu nombre
+
+Puedes elegir el **color de tu nombre** en el chat y en la lista de jugadores (Tab): **haz clic en tu nombre** en
+cualquier mensaje tuyo del chat (o escribe `/puente color`) y elige uno. Es gratis y lo puedes cambiar cuando quieras.
+Si haces clic en el nombre de **otro**, se prepara un mensaje privado para él.
+
+El nombre que sale **encima de la cabeza** no cambia, y el prefijo de **[Alcalde]** o **[Concejal]** se mantiene.
 
 ## Skin
 
@@ -64,6 +74,7 @@ siempre** (gratis): `/puente propia`.
 
 | Comando | Para qué |
 |---|---|
+| `/puente color` | Elegir el [color de tu nombre](#color-de-tu-nombre) |
 | `/puente album` | Tu álbum de [cabezas coleccionables](minijuegos.md#cabezas-coleccionables) |
 | `/puente cartas` | Leer tus [cartas](casas.md) |
 | `/puente fianza` | Pagar la fianza y [salir de la cárcel](justicia.md#la-carcel) |
