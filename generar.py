@@ -97,7 +97,8 @@ def niveles():
     for n, d in enumerate(aldea.NIVELES, start=1):
         enc = "<br>".join(f"{c} × {objeto_encargo(o)} · {e} entregas (**{c * e}** en total)" for o, c, e in d["encargo"])
         llegan = ", ".join(aldea.ROLES[r][0] for r in d.get("roles", [])) or "—"
-        edificio = f"Terminar {d['edificio']}" if d["edificio"] else "—"
+        req = aldea.requisitos(n)
+        edificio = (lambda s: s[:1].upper() + s[1:])(" y ".join(req)) if req else "—"
         filas.append((n, d["titulo"], enc, edificio, llegan, f"{aldea.RADIOS[n]} bloques"))
     escribir("niveles.md", tabla(["Nivel", "Qué se consigue", "Encargo del Secretario", "Además hace falta", "Llegan",
                                   "Zona segura"], filas))

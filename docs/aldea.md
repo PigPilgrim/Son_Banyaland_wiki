@@ -12,9 +12,15 @@ cuánto falta.
 
 Cualquiera puede entregar: **la aldea es de todos**.
 
-!!! info "Algunos niveles necesitan además un edificio"
-    En los niveles con algo en la columna *Además hace falta*, no basta con el encargo: los vecinos tienen que
-    **construir ese edificio** y el admin tiene que darlo por bueno. Hasta entonces el nivel no sube.
+!!! info "Algunos niveles necesitan algo más que el encargo"
+    En los niveles con algo en la columna *Además hace falta*, no basta con el encargo:
+
+    - **Terminar un edificio:** los vecinos tienen que **construirlo** y el admin tiene que darlo por bueno. Cada
+      edificio se pide en el nivel siguiente a la llegada de su aldeano: el ayuntamiento para el nivel 1, la taberna
+      (llega el Tabernero en el 2) para el nivel 3 y la torre de magos (llega el Mago en el 4) para el nivel 5.
+    - **Colocar el Tablón de anuncios** (para el nivel 2): lo coloca el Alcalde. Ver [Tablón de anuncios](tablon.md).
+
+    Hasta entonces el nivel no sube.
 
 ## Los niveles
 
