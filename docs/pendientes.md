@@ -3,8 +3,9 @@
 Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al admin.
 
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
-- **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego. De momento solo está la base (fase 1); faltan tropas,
-  defensas y ataques, y los números de [Craft of Clans](clanes.md) pueden cambiar.
+- **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego. Ya están la base, el trigo, el ejército, los muros y las
+  defensas, pero **todavía no hay ataques** (las defensas no disparan y las tropas solo esperan). Los números de
+  [Craft of Clans](clanes.md) pueden cambiar y el aspecto de los edificios lo cambiará el admin.
 - **Estudio y Caballete:** ⚠️ PENDIENTE de probar en el juego. Los precios, la dificultad y los tiempos del
   [Estudio de grabación y el Caballete de pintor](arte.md) pueden cambiar.
 - **Liga de barcos:** ⚠️ PENDIENTE de probar en el juego. Falta comprobar que todos los barcos de las escuderías corren

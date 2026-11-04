@@ -741,7 +741,9 @@ def clanes():
     coste = lambda c: " + ".join(f"{num(c[r])} {R[r]['icono']}" for r in R if c.get(r)) or "gratis"
 
     def tiempo(s):
-        if s < 3600: return f"{s // 60} min"
+        if s <= 0: return "al momento"
+        if s < 60: return f"{s} s"
+        if s < 3600: return f"{s // 60} min" + (f" {s % 60} s" if s % 60 else "")
         return f"{s // 3600} h" + (f" {s % 3600 // 60} min" if s % 3600 else "")
     E = F.EDIFICIOS
     escribir("clanes_edificios.md", tabla(["Edificio", "Tamaño", "Para qué sirve"],
@@ -756,12 +758,42 @@ def clanes():
              [(n, coste(a["coste"]), coste(b["coste"]), tiempo(a["tiempo"]), num(a["tope"]))
               for n, (a, b) in enumerate(zip(E["almacen_madera"]["niveles"], E["almacen_piedra"]["niveles"]), 1)]))
     escribir("clanes_cabanas.md", tabla(["Cabaña", "Cuesta"], [(f"{i + 1}.ª", "la tienes al empezar" if i == 0 else coste(c)) for i, c in enumerate(F.CABANAS_COSTE)]))
-    escribir("clanes_cuantos.md", tabla(["Torreón", *[e["nombre"] for k, e in E.items() if k != "torreon"]],
-             [(f"Nivel {t + 1}", *[e["cuantos"][t] for k, e in E.items() if k != "torreon"]) for t in range(F.MAX_NIVEL)]))
+    def cuantos(claves):
+        return tabla(["Torreón", *[E[k]["nombre"] for k in claves]], [(f"Nivel {t + 1}", *[E[k]["cuantos"][t] for k in claves]) for t in range(F.MAX_NIVEL)])
+    guerra_k = [k for k, e in E.items() if e.get("cuartel") or e.get("muro") or e.get("defensa") or "capacidad" in e["niveles"][0]]
+    escribir("clanes_cuantos.md", "**Recursos y constructores**\n\n" + cuantos([k for k in E if k != "torreon" and k not in guerra_k])
+             + "\n**Ejército y defensas**\n\n" + cuantos(guerra_k))
     escribir("clanes_semanas.md", tabla(["Semana", "El Torreón puede llegar al nivel"],
              [(f"{i}.ª" + (" y siguientes" if i == len(F.SEMANAS) else ""), n) for i, n in enumerate(F.SEMANAS, 1)]))
     escribir("clanes_inicio.md", f"Se empieza con el **Torreón al nivel 1**, **una Cabaña** (un constructor) y "
              f"{coste(F.INICIO)}. La decoración es gratis, hasta {num(F.MAX_DECORACION)} bloques por fortín.\n")
+    # fase 2: trigo, ejército, muros y defensas
+    escribir("clanes_granjas.md", tabla(["Nivel", "Granja cuesta", "Tarda", "Produce por hora", "Acumula hasta", "Granero cuesta", "Tarda", "Granero guarda"],
+             [(n, coste(g["coste"]), tiempo(g["tiempo"]), num(g["produce"]), num(g["acumula"]), coste(r["coste"]), tiempo(r["tiempo"]), num(r["tope"]))
+              for n, (g, r) in enumerate(zip(E["granja"]["niveles"], E["granero"]["niveles"]), 1)]))
+    T = F.TROPAS
+    escribir("clanes_cuartel.md", tabla(["Nivel", "Cuesta", "Tarda", "Desbloquea"],
+             [(n, coste(c["coste"]), tiempo(c["tiempo"]), ", ".join(t["nombre"] for t in T.values() if t["cuartel"] == n) or "—")
+              for n, c in enumerate(E["cuartel"]["niveles"], 1)]))
+    escribir("clanes_campamento.md", tabla(["Nivel", "Cuesta", "Tarda", "Caben"],
+             [(n, coste(c["coste"]), tiempo(c["tiempo"]), c["capacidad"]) for n, c in enumerate(E["campamento"]["niveles"], 1)]))
+    ataca = {"cercano": "lo más cercano", "muros": "los muros", "defensas": "las defensas"}
+    escribir("clanes_tropas.md", tabla(["Tropa", "Cuartel", "Ocupa", "Cuesta", "Tarda", "Vida", "Daño por segundo", "Va a por"],
+             [(f"**{t['nombre']}**", t["cuartel"], t["espacio"], f"{num(t['coste'])} {R['trigo']['icono']}", tiempo(t["tiempo"]), num(t["vida"]),
+               str(t["dano"]) + (f" (a {t['alcance']} bloques)" if t["alcance"] else ""), ataca.get(t["ataca"], t["ataca"]) + (" (vuela)" if t["vuela"] else ""))
+              for t in T.values()]))
+    escribir("clanes_muros.md", tabla(["Nivel", "Cuesta cada tramo", "Vida"],
+             [(n, coste(m["coste"]), num(m["vida"])) for n, m in enumerate(E["muro"]["niveles"], 1)]))
+    defensas = [k for k, e in E.items() if e.get("defensa")]
+    escribir("clanes_defensas.md", tabla(["Defensa", "Se paga con", "Alcance", "Ataca a", "Hace falta el Torreón"],
+             [(f"**{E[k]['nombre']}**", R[next(iter(E[k]["niveles"][0]["coste"]))]["icono"],
+               (f"de {E[k]['defensa']['alcance_min']:g} a " if E[k]["defensa"]["alcance_min"] else "") + f"{E[k]['defensa']['alcance']:g} bloques"
+               + (" (en área)" if E[k]["defensa"]["area"] else ""),
+               "tierra y aire" if E[k]["defensa"]["aire"] else "solo tierra", f"nivel {next(t for t, c in enumerate(E[k]['cuantos'], 1) if c > 0)}")
+              for k in defensas]))
+    for k in defensas:
+        escribir(f"clanes_{k}.md", tabla(["Nivel", "Cuesta", "Tarda", "Daño por segundo", "Vida"],
+                 [(n, coste(d["coste"]), tiempo(d["tiempo"]), d["dano"], num(d["vida"])) for n, d in enumerate(E[k]["niveles"], 1)]))
 
 
 def main():
