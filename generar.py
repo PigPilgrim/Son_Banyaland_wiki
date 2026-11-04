@@ -357,7 +357,7 @@ def magia_tablas():
 # ---------------------------------------------------------------- misiones
 def misiones_tablas():
     cond = {misiones.TAB: "Con la Taberna (aldea nivel 2 o más)", misiones.MAZ: "Con el Guía de las Mazmorras (aldea nivel 3 o más)",
-            f"{misiones.MAZ} {misiones.DOMINGO}": "Solo el 7.º día de cada semana (aldea nivel 3 o más)"}
+            f"{misiones.MAZ} {misiones.DOMINGO}": "Solo los domingos (aldea nivel 3 o más)"}
     for dif, titulo in (("facil", "fáciles"), ("normal", "normales"), ("dificil", "difíciles")):
         filas = []
         for clave, d, txt, _, _, c in misiones.MISIONES:
