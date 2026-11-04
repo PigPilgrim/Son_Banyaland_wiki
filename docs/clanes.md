@@ -105,9 +105,6 @@ Tres edificios nuevos para cuando el fortín ya está avanzado:
   hacerse.
 - **Altares** (uno por héroe): en cada uno vive un **héroe** que te acompaña en los ataques y luego descansa un rato.
 
-!!! warning "⚠️ PENDIENTE"
-    La Herrería y el Caldero ya funcionan. Los altares de momento solo se pueden **construir**: los héroes llegarán en
-    las próximas pruebas (ver [Pendientes](pendientes.md)).
 
 ### Herrería
 
@@ -151,11 +148,27 @@ duración.
 
 --8<-- "_generado/clanes_hechizos_niveles.md"
 
-### Altares
+### Altares y héroes
 
-Cada altar se construye una vez y no tiene más niveles.
+Cada altar se construye una vez y no tiene más niveles. Al terminarlo, su **héroe** vive en él, al nivel 1.
 
 --8<-- "_generado/clanes_altares.md"
+
+Clic al altar: sale tu héroe con su nivel, su habilidad y si está listo.
+
+- **Subirlo de nivel** cuesta trigo y **ocupa un constructor**, como una obra. Mientras sube, no puede ir a los ataques.
+  Hasta qué nivel puede llegar lo marca tu **Torreón**.
+- En el ataque se suelta como una tropa (va a por lo más cercano). Después, con **clic** en su hueco de la barra, usa
+  su **habilidad**: una vez por ataque.
+- Tras cada ataque en que lo sueltes, **descansa** un rato: hasta entonces no puede volver a atacar. Se ve en el altar
+  y en tu ejército (**Mi fortín**).
+- La Curación y el Hada le curan **la mitad**.
+
+--8<-- "_generado/clanes_heroes.md"
+
+#### Niveles de cada héroe
+
+--8<-- "_generado/clanes_heroes_niveles.md"
 
 ## Ejército
 
@@ -242,8 +255,10 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
    **Mayús + clic** sueltas cinco. Lo marcado en **rojo** está demasiado cerca de un edificio: ahí no se puede.
 4. El ataque empieza al soltar la primera tropa (o cuando se acaba el tiempo de mirar) y dura unos minutos. Arriba ves
    el tiempo, el % destruido y las estrellas; encima de cada edificio, su **vida**.
-5. Tus **hechizos** también van en la barra. Con uno en la mano, mira al suelo: sale su **círculo**. Haz **clic** para
-   lanzarlo; vale también en lo rojo. Si tienes muchas tropas o hechizos, la **flecha** del hueco 8 pasa de página.
+5. Tus **héroes** (los que no descansan) y tus **hechizos** también van en la barra. El héroe se suelta como una
+   tropa; luego, clic otra vez en su hueco para su **habilidad**.
+   Con un **hechizo** en la mano, mira al suelo: sale su **círculo**. Haz **clic** para lanzarlo; vale también en lo
+   rojo. Si tienes muchas tropas o hechizos, la **flecha** del hueco 8 pasa de página.
    Los hechizos lanzados se gastan; los que no lances vuelven contigo.
 6. Acaba cuando se acaba el tiempo, cuando lo destruyes todo, cuando no te quedan tropas o cuando te **rindes** (con
    la bandera del hueco 9). Luego vuelves a tu fortín.

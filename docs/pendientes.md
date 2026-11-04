@@ -5,8 +5,7 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
 - **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego, sobre todo los **ataques**. Falta equilibrar vidas, daños,
   botín y trofeos; los números de [Craft of Clans](clanes.md) pueden cambiar y el aspecto de los edificios lo cambiará
-  el admin. Faltan por llegar los [héroes](clanes.md#herreria-caldero-y-altares)
-  y las temporadas con bandos.
+  el admin. Faltan por llegar las temporadas con bandos.
 - **Estudio y Caballete:** ⚠️ PENDIENTE de probar en el juego. Los precios, la dificultad y los tiempos del
   [Estudio de grabación y el Caballete de pintor](arte.md) pueden cambiar.
 - **Liga de barcos:** ⚠️ PENDIENTE de probar en el juego. Falta comprobar que todos los barcos de las escuderías corren

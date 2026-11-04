@@ -784,6 +784,15 @@ def clanes():
              [(f"**{h['nombre']}**" if n == 1 else "", n, efecto(k, h, nv), "—" if n == 1 else coste(nv["coste"]), "—" if n == 1 else tiempo(nv["tiempo"]),
                "—" if n == 1 else f"nivel {nv['herreria']}") for k, h in HE.items() for n, nv in enumerate(h["niveles"], 1)]))
     escribir("clanes_caldero_huecos.md", tabla(["Caldero", "Huecos para hechizos"], [(f"Nivel {i}", n) for i, n in enumerate(F.CALDERO_HUECOS, 1)]))
+    HR = F.HEROES
+    escribir("clanes_heroes.md", tabla(["Héroe", "Altar desde", "Nivel 1", "Ataca", "Habilidad (una vez por ataque)", "Descansa tras atacar"],
+             [(f"**{h['nombre']}**", f"Torreón {desde_th(h['altar'])}", f"vida {num(h['niveles'][0]['vida'])} · daño {h['niveles'][0]['dano']}/s",
+               ("cuerpo a cuerpo" if not h["alcance"] else f"a {h['alcance']} bloques") + (" en área" if h["area"] else ""),
+               f"**{h['habilidad']['nombre']}**: {h['habilidad']['texto']}",
+               f"{tiempo(h['recuperacion_base'] + h['recuperacion_nivel'])} al nivel 1, {tiempo(h['recuperacion_nivel'])} más por nivel") for h in HR.values()]))
+    escribir("clanes_heroes_niveles.md", tabla(["Héroe", "Nivel", "Vida", "Daño por segundo", "Subirlo cuesta", "Tarda", "Hace falta el Torreón"],
+             [(f"**{h['nombre']}**" if n == 1 else "", n, num(nv["vida"]), nv["dano"], "—" if n == 1 else coste(nv["coste"]), "—" if n == 1 else tiempo(nv["tiempo"]),
+               f"nivel {next(t for t, m in enumerate(h['maximos'], 1) if m >= n)}") for h in HR.values() for n, nv in enumerate(h["niveles"], 1)]))
     escribir("clanes_altares.md", tabla(["Altar", "Hace falta el Torreón", "Cuesta", "Tarda"],
              [(f"**{E[k]['nombre']}**", f"nivel {desde_th(k)}", coste(E[k]["niveles"][0]["coste"]), tiempo(E[k]["niveles"][0]["tiempo"]))
               for k, e in E.items() if e.get("heroe")]))
