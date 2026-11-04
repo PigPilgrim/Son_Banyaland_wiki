@@ -79,6 +79,6 @@ normal*, pega lo mismo que el objeto de base.
 ## Reparaciones
 
 El encantamiento **Reparación está prohibido** en el servidor. El Herrero te arregla lo que quieras: ponte a su lado
-con el objeto gastado en la mano y escribe `/trigger reparar`. Cuesta:
+con el objeto gastado en la mano y escribe `/puente boton reparar 1`. Cuesta:
 
 --8<-- "_generado/reparar.md"

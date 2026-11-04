@@ -79,7 +79,7 @@ nuevo:
 
 1. Ponte **a su lado** (6 bloques como mucho).
 2. Coge **en la mano** lo que quieras reparar (tiene que estar gastado).
-3. Escribe `/trigger reparar`.
+3. Escribe `/puente boton reparar 1`.
 
 Cuesta:
 

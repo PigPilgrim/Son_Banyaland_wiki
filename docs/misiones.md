@@ -6,7 +6,7 @@ y una **difícil**, que son **las mismas para todos**. **Cada jugador puede hace
 
 ## Cómo funcionan
 
-- **Ver las misiones de hoy:** habla con el Pregonero o escribe `/trigger mision set 1`. Encima del Pregonero también
+- **Ver las misiones de hoy:** habla con el Pregonero o escribe `/puente boton mision 1`. Encima del Pregonero también
   hay un cartel flotante con ellas.
 - **Misiones de "Trae...":** ve al Pregonero con lo que pide y **haz clic derecho en él**: si lo llevas encima, se lo
   queda solo. También puedes pulsar **[Entregar]** en el chat estando a su lado.

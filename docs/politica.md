@@ -12,9 +12,9 @@ Cada aldea se gobierna sola: **elige su nombre**, **elige Alcalde y Consejo** y 
 
 Cuando se funda una aldea, empieza sola la votación de su nombre:
 
-1. **Propuestas:** al entrar en la aldea recibes **Pergaminos de propuesta**. Renombra uno en un **yunque** con el
+1. **Propuestas (24 horas):** al entrar en la aldea recibes **Pergaminos de propuesta**. Renombra uno en un **yunque** con el
    nombre que quieras y haz **clic derecho**. Los nombres repetidos no cuentan.
-2. **Votación:** en el chat sale una papeleta con botones **[3] [2] [1]** para dar puntos (`/trigger votar set 1` la
+2. **Votación (24 horas más):** en el chat sale una papeleta con botones **[3] [2] [1]** para dar puntos (`/puente boton votar 1` la
    abre). Se puede cambiar hasta el final.
 3. **Gana** el que más puntos sume (si empatan: el que tenga más votos de 3; si siguen empatados, el que se propuso
    antes).
@@ -33,10 +33,10 @@ Honor* (2.º y 3.º) y *Pilar de Oro* (el de más puntos).
 Las primeras elecciones **se convocan solas al fundar la aldea**. Después las convoca el admin, o salen de una
 [moción de censura](#mocion-de-censura).
 
-1. **Candidaturas:** pulsa **[Presentarme]** en el chat (`/trigger elecciones set 1`) y te da un **Libro de
+1. **Candidaturas:** pulsa **[Presentarme]** en el chat (`/puente boton elecciones 1`) y te da un **Libro de
    candidatura**. Escribe tu programa y **fírmalo con tu lema como título**. Con el libro en la mano, pulsa
-   **[Entregar candidatura]** (`/trigger elecciones set 2`). Para retirarte: `/trigger elecciones set 3`.
-2. **Votación:** `/trigger elecciones set 4` enseña los candidatos con **[Leer programa]** y **[Votar]**. El voto es
+   **[Entregar candidatura]** (`/puente boton elecciones 2`). Para retirarte: `/puente boton elecciones 3`.
+2. **Votación:** `/puente boton elecciones 4` enseña los candidatos con **[Leer programa]** y **[Votar]**. El voto es
    **secreto** y se puede cambiar hasta el final.
 3. **Resultado:**
     - El más votado es **Alcalde** (si empatan, el que se presentó antes).
@@ -45,7 +45,7 @@ Las primeras elecciones **se convocan solas al fundar la aldea**. Después las c
     - En el chat sale **[Alcalde]** o **[Concejal]** delante del nombre.
     - Los cargos duran **hasta las siguientes elecciones**. Si nadie vota, siguen los de antes.
 
-Sin elecciones en marcha, `/trigger elecciones set 4` enseña el Consejo actual.
+Sin elecciones en marcha, `/puente boton elecciones 4` enseña el Consejo actual.
 
 ### El Alcalde
 
@@ -73,10 +73,10 @@ El fundador de una aldea nueva es su **Alcalde provisional** hasta que haya elec
 --8<-- "_generado/modos_ley.md"
 
 3. Todos los que votan reciben la papeleta: **[Leer la ley]**, **[Sí]**, **[No]**, **[Abstención]**
-   (`/trigger ley set 4`). El voto es secreto y se puede cambiar.
+   (`/puente boton ley 4`). El voto es secreto y se puede cambiar.
 4. **Sale aprobada si el Sí supera al No.** Si empatan, gana lo que votó el Alcalde.
 
-Las leyes aprobadas van al **Libro de Leyes** (`/trigger ley set 6`). **Las aplica el admin**: avísale si una ley no
+Las leyes aprobadas van al **Libro de Leyes** (`/puente boton ley 6`). **Las aplica el admin**: avísale si una ley no
 se está cumpliendo.
 
 ---
