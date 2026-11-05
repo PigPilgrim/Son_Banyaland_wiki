@@ -23,6 +23,9 @@
 | **Elige bando** | Elige bando para la temporada. |
 | **Guerra de bandos** | Ataca en una guerra de bandos de fin de semana. |
 | **Campeón de temporada** 🏆 | Acaba entre los 3 mejores de una temporada de Craft of Clans. |
+| **Hagan juego** | Haz una tirada en una tragaperras del casino del lobby. |
+| 🔒 *Secreto* | Se descubre al conseguirlo. |
+| **Con suerte** | Compra un boleto de lotería en el casino del lobby. |
 | **Sorpresa** | Abre una caja de cabezas. |
 | **Coleccionista** | Consigue tu primera cabeza para el álbum (Mayús + clic al Maestro de Juegos para verlo). |
 | **Colección completa** 🏆 | Completa un set de cabezas y cobra su Trofeo. |
