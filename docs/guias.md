@@ -18,7 +18,8 @@ ramas: al conseguir uno aparecen los que vienen detrás.
 - Los logros con 🎯 son **metas** y los que tienen 🏆 son **desafíos**: cuestan más.
 - Hay **logros secretos** 🔒: no se ven hasta que los consigues. ¡Descúbrelos tú!
 - El último de cada pestaña se consigue al tener **todos los demás** de esa pestaña (los secretos no hacen falta).
-- No dan premio y no salen en el chat: solo te avisa a ti la notificación de arriba a la derecha.
+- No dan premio y no salen en el chat: solo te avisa a ti la notificación de arriba a la derecha. Los de los **bajos
+  fondos** sí salen, pero **sin decir quién**: «▒▒▒▒▒▒ ha completado el logro [...]».
 
 !!! warning "⚠️ PENDIENTE"
     Las guías son nuevas y falta probarlas en el juego: algún logro podría no salir cuando toca.

@@ -25,7 +25,8 @@ Si sale un premio más grande que lo que hay en el bote, te llevas todo el bote.
 
 ## Tragaperras de objetos
 
-También cuesta **1 chip I** la tirada (va entera al bote), pero en vez de chips **de vez en cuando da un objeto**.
+También cuesta **1 chip I** la tirada (va entera al bote). De vez en cuando da **chips, diamantes o un tótem**
+(estos premios no salen del bote).
 
 --8<-- "_generado/casino_objetos.md"
 

@@ -29,6 +29,7 @@ antes eran de 48×48: crecieron solas por el este y por el sur, sin mover nada d
 | 4 | **Decorar** | Bloques de decoración |
 | 5 | **Mi fortín** | Tus recursos, tus constructores, tu **ejército**, tus **trofeos**, tu **registro** de ataques, la semana y **Recoger todo** |
 | 6 | **Recoger todo** | Vacía de un clic todos los aserraderos, canteras y granjas (hasta donde te quepa) |
+| 8 | **Avisos de ataques** | Verde = activados (como viene): te avisa al momento si atacan tu fortín y, al conectarte, si te atacaron mientras no estabas. Clic para desactivarlos (se pone rojo). Al entrar en el fortín siempre ves lo que pasó |
 | 9 | **Salir al lobby** | Volver al lobby de minijuegos |
 
 **Haz clic a cualquier edificio** para ver su menú: **Mejorar**, **Recoger** (aserraderos, canteras y granjas),

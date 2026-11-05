@@ -906,11 +906,9 @@ def casino_tablas():
     escribir("casino_chips.md", tabla(["Símbolo", "Tres iguales", "Dos iguales", "Tres iguales sale"], filas) +
              f"\nDe media, la máquina devuelve el **{round(e['media'] * 100)} %** de lo que se juega, más el bote gordo. Hay premio en "
              f"**1 de cada {round(1 / e['gana'])}** tiradas.\n")
-    rar = casino.OBJETOS_RAREZA
-    filas = [(r.capitalize(), pct(casino.OBJETOS_PROB / 100 * rar[r] / sum(rar.values())), ", ".join(n for n, _ in casino.OBJETOS[r]))
-             for r in casino.OBJETOS]
-    escribir("casino_objetos.md", f"Hay premio en el **{casino.OBJETOS_PROB} %** de las tiradas. Cuando toca, sale uno de estos "
-             "(dentro de cada rareza, todos igual de probables):\n\n" + tabla(["Rareza", "Probabilidad por tirada", "Premios"], filas))
+    filas = [(n, "1 de cada " + f"{round(1 / p):,}".replace(",", ".")) for n, _, _, p in casino.OBJETOS]
+    escribir("casino_objetos.md", f"Hay premio en **1 de cada {round(1 / e['obj_gana'])}** tiradas y de media devuelve el "
+             f"**{round(e['obj_media'] * 100)} %** de lo jugado. Solo da chips, diamantes y tótems:\n\n" + tabla(["Premio", "Sale"], filas))
     escribir("casino_loteria.md", tabla(["", ""], [
         ("Precio", f"{casino.PRECIO} chip I la tirada y {casino.PRECIO} chip I el boleto"),
         ("Boletos", f"como mucho {casino.BOLETOS_MAX} comprados por persona y semana"),
