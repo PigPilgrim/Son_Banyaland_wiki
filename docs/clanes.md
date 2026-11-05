@@ -118,7 +118,7 @@ en el siguiente y lo que cuesta.
   mejora algo **no se puede mejorar la Herrería**.
 - Se paga con **trigo** al empezar.
 - Cada nivel de tropa pide la **Herrería** a cierto nivel, y la tropa tiene que estar desbloqueada en el cuartel.
-- Cada nivel da un **14 % más de vida y de daño** (al Hada, de cura). Las tropas que ya tienes entrenadas también
+- Cada nivel da un **30 % más de vida y de daño** (al Hada, de cura). Las tropas que ya tienes entrenadas también
   suben: cuenta el nivel que tengas al atacar.
 
 --8<-- "_generado/clanes_herreria.md"
