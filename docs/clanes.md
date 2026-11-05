@@ -42,6 +42,8 @@ Hay tres: 🪵 **Madera**, 🪨 **Piedra** y 🌾 **Trigo**. Son solo de este ju
   sin estar tú. Cada uno acumula hasta un tope: **recógelo** antes de que se llene, o deja de producir.
 - Cuánto puedes tener lo marcan el **Torreón** y los **almacenes** (el trigo, los **graneros**). Lo que no cabe se
   queda esperando donde se produjo.
+- Si una mejora cuesta más de lo que te cabe, el menú te lo dice. Mira si el Torreón ya te deja **otro almacén**
+  (desde el Torreón 3 puedes tener 2 de cada) o sube los que tienes.
 - La madera y la piedra son para construir; el trigo, para **entrenar tropas**.
 
 --8<-- "_generado/clanes_inicio.md"
