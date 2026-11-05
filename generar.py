@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -887,10 +887,34 @@ def guias():
         escribir(f"guia_{pest}.md", tabla(["Logro", "Cómo se consigue"], filas))
 
 
+def casino_tablas():
+    """Casino del lobby de minijuegos: premios de las tragaperras y la lotería (mazmorras-tools/casino.py)."""
+    e = casino.estadisticas()
+    filas = []
+    for clave, nombre, _, _, trio, par in casino.SIMBOLOS:
+        tres = f"**bote gordo**: el {casino.BOTE_GORDO} % del bote" if trio is None else f"{trio * casino.PRECIO} chips I"
+        filas.append((nombre, tres, (f"{par * casino.PRECIO} chip{'s' if par * casino.PRECIO > 1 else ''} I" if par else "—"), f"1 de cada {round(1 / e['trio'][clave]):,}".replace(",", ".")))
+    escribir("casino_chips.md", tabla(["Símbolo", "Tres iguales", "Dos iguales", "Tres iguales sale"], filas) +
+             f"\nDe media, la máquina devuelve el **{round(e['media'] * 100)} %** de lo que se juega, más el bote gordo. Hay premio en "
+             f"**1 de cada {round(1 / e['gana'])}** tiradas.\n")
+    rar = casino.OBJETOS_RAREZA
+    filas = [(r.capitalize(), pct(casino.OBJETOS_PROB / 100 * rar[r] / sum(rar.values())), ", ".join(n for n, _ in casino.OBJETOS[r]))
+             for r in casino.OBJETOS]
+    escribir("casino_objetos.md", f"Hay premio en el **{casino.OBJETOS_PROB} %** de las tiradas. Cuando toca, sale uno de estos "
+             "(dentro de cada rareza, todos igual de probables):\n\n" + tabla(["Rareza", "Probabilidad por tirada", "Premios"], filas))
+    escribir("casino_loteria.md", tabla(["", ""], [
+        ("Precio", f"{casino.PRECIO} chip I la tirada y {casino.PRECIO} chip I el boleto"),
+        ("Boletos", f"como mucho {casino.BOLETOS_MAX} comprados por persona y semana"),
+        ("Boleto gratis", f"cada {casino.BOLETO_GRATIS_CADA} tiradas en las tragaperras (no cuenta para el máximo)"),
+        ("Sorteo", "los lunes a las 0:00 (hora de España)"),
+        ("Premios", " · ".join(f"{i}.º el {p} % del bote" for i, p in enumerate(casino.REPARTO, 1))),
+    ]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas()
     print("Tablas generadas en", SALIDA)
 
 
