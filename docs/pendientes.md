@@ -16,5 +16,7 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   consumos de los [vehículos](vehiculos.md) pueden cambiar cuando se vea cómo funcionan.
 - **Remodelación de vehículos:** ⚠️ PENDIENTE: el cambio de animal del [tuneo](vehiculos.md#tuneo) está en revisión:
   de momento no se puede hacer, y puede cambiar o quitarse.
+- **Guías (tecla L):** ⚠️ PENDIENTE de probar en el juego que cada [logro de las guías](guias.md) salga cuando toca,
+  también los de lo que ya se había hecho antes.
 - **Reparar con experiencia:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)
   llegaron con los vehículos.

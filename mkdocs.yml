@@ -72,6 +72,7 @@ nav:
   - Inicio: index.md
   - Empezar:
       - Dinero: dinero.md
+      - Guías (tecla L): guias.md
   - La aldea:
       - Cómo crece la aldea: aldea.md
       - Los aldeanos y sus tiendas: aldeanos.md

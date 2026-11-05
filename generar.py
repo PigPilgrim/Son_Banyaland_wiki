@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -870,10 +870,27 @@ def clanes():
              [(f"{i}.º", f"{c} chips I") for i, c in enumerate(A["premio_semana"], 1)]))
 
 
+def guias():
+    """Logros de la pantalla de logros (tecla L), una tabla por pestaña. Los secretos (y lo que cuelga de ellos) no se cuentan."""
+    for pest, logros in guia.LOGROS.items():
+        ocultos = set()
+        for x in logros:
+            if x["oculto"] or x["padre"] in ocultos:
+                ocultos.add(x["id"])
+        filas = []
+        for x in logros:
+            marca = {"goal": " 🎯", "challenge": " 🏆"}.get(x["marco"], "")
+            if x["id"] in ocultos:
+                filas.append(("🔒 *Secreto*", "Se descubre al conseguirlo."))
+            else:
+                filas.append((f"**{x['titulo']}**{marca}", x["desc"]))
+        escribir(f"guia_{pest}.md", tabla(["Logro", "Cómo se consigue"], filas))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias()
     print("Tablas generadas en", SALIDA)
 
 

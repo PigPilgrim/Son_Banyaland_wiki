@@ -66,6 +66,11 @@ sea un fallo**: avisa al admin.
     **Alrededor de cada aldea hay una zona segura** que crece con el nivel. Ver
     [la tabla de radios](aldea.md#zona-segura).
 
+-   <span class="sb-slot">:material-map-check-outline:</span>
+
+    **¿No sabes qué hacer? Pulsa L.** En los logros hay guías de la aldea, las mazmorras, los minijuegos y las
+    imágenes y música: cada una te dice qué probar. Ver [Guías](guias.md).
+
 -   <span class="sb-slot">:material-border-outside:</span>
 
     **El mundo tiene un borde** a 10.000 bloques del spawn en cada dirección (de −10.096 a 9.904 en X y en Z). El
