@@ -73,9 +73,41 @@ miembro rompiéndola.
 
 ## Producir
 
+Lo más sencillo (la mercancía del **Camello** y las armas) se hace **por tandas** con Walter Brick. La mercancía buena,
+la de la **Pandilla** y el **Cartel**, se **elabora a mano en la guarida**, como las bebidas de la Taberna.
+
+--8<-- "_generado/crimen_elaboracion.md"
+
+Hay un **tope de mercancía al día** según el nivel (las armas no cuentan), contando las dos formas.
+
+### Por tandas
+
 Con Walter Brick → **Producir**. Cada **tanda** fabrica una cosa (de 1 a 8 lotes de golpe) y tarda un rato en tiempo
-real. Cuando está lista, os avisa y la recoge cualquier miembro. Hay un **tope de mercancía al día** según el nivel
-(las armas no cuentan).
+real. Cuando está lista, os avisa y la recoge cualquier miembro.
+
+### A mano en la guarida
+
+Walter Brick os da la receta al terminar de investigarla: qué va al caldero y los pasos, con un **margen** («cocer
+2-3 minutos», «destilar 3-4 veces»...). Todo se hace **en la guarida**, cerca del Alijo, y solo pueden los miembros.
+
+1. **Cocer:** un **caldero con agua y fuego debajo** (hoguera, fuego, lava o magma). Clic derecho con cada
+   ingrediente para echarlo (**Mayús** + clic: el montón entero). El tiempo cuenta desde el primer ingrediente. Para
+   sacarlo, clic con **botellas de cristal**: una por lote. Con la mano vacía ves qué hay dentro; con **Mayús** y la mano
+   vacía, lo vacías y recuperas lo echado.
+2. **Destilar:** clic derecho a un **soporte para pociones** con las mezclas en la mano. Cada pasada tarda medio minuto;
+   luego, otro clic para recogerlas. Se repite tantas veces como diga la receta.
+3. **Curar:** deja las mezclas en un **barril** de la guarida. Cuenta el tiempo que pasan dentro (en tiempo real).
+4. **Envasar:** con Walter Brick → **Producir** → **Envasar mezclas**. Las mezclas que lleves se convierten en mercancía.
+
+Cada mezcla lleva apuntado lo que le has hecho. **El orden de los pasos importa**, y si los ingredientes no son de
+ninguna receta sale una **mezcla turbia**, que no sirve.
+
+!!! tip "Las estrellas"
+    Dentro del margen sale buena, pero **en cada margen hay un punto justo** que da la mejor calidad: hay que probar.
+    Pasarse o quedarse corto, saltarse un paso, hacer uno de más o cambiarlos de orden baja las estrellas. Si sale
+    muy mal, la mezcla está **cortada** y se tira.
+
+--8<-- "_generado/crimen_calidad.md"
 
 ## El Perista y las Fichas marcadas
 

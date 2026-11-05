@@ -618,6 +618,15 @@ def crimen_tablas():
         (f"**{d['nombre']}**", crimen.FAMILIAS[d["familia"]], efectos(d["buenos"]), efectos(d["malos"]), f"+{d['xp']}",
          f"{d['precio']} FM", d["demanda"], niveles[invest[d["id"]]["nivel"]]) for d in crimen.DROGAS]))
     edad = {"épica": "hierro", "legendaria": "diamante"}
+    nombres_d = {d["id"]: d["nombre"] for d in crimen.DROGAS}
+    escribir("crimen_elaboracion.md", tabla(["Mercancía", "Cómo se hace"], [
+        (f"**{nombres_d[d['id']]}**", "a mano en la guarida (con estrellas)" if "pasos" in crimen.RECETAS[d["id"]]
+         else "por tandas con Walter Brick") for d in crimen.DROGAS]))
+    C = crimen.CALIDAD
+    por = lambda f: f"× {f:.2f}".rstrip("0").rstrip(".").replace(".", ",")
+    escribir("crimen_calidad.md", tabla(["Calidad", "Duración del efecto", "Duración del bajón", "El Perista paga", "Experiencia"], [
+        ("★" * (i + 1) + "☆" * (4 - i), por(C["efecto"][i]), por(C["bajon"][i]), por(C["precio"][i]), por(C["efecto"][i])) for i in range(5)])
+        + "\nLa mercancía hecha por tandas no tiene estrellas: vale como la de ★★★☆☆.\n")
     escribir("crimen_armas.md", tabla(["Arma", "Rareza", "Qué hace", "Se puede usar desde", "Hace falta ser"], [
         (f"**{a['nombre']}**" + (f" (de {a['cantidad']} en {a['cantidad']})" if a["cantidad"] > 1 else ""), a["rareza"].capitalize(),
          " ".join(a["desc"]), f"la edad del {edad[a['rareza']]}" if a["rareza"] in edad else "siempre", niveles[invest[a["id"]]["nivel"]])
