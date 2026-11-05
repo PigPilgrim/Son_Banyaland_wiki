@@ -39,8 +39,11 @@ Se sube de nivel con Walter Brick (**Subir a...**), cuando se cumple todo.
 ## Investigar
 
 Con Walter Brick → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
-conectado). Lo que se investiga se queda para siempre. En el menú (y al elegir qué fabricar), la mercancía sale
-arriba y las armas debajo.
+conectado). Lo que se investiga se queda para siempre. En el menú (y al elegir qué fabricar), cada cosa va en su
+fila: **Hierbas**, **Polvos**, **Premium**, **Armas** y **Flechas**.
+
+Lo ya investigado se puede **llevar en papel**: clic en él en el menú de Investigar y Walter Brick te da la
+**receta apuntada**, como las de la Taberna (una de cada a la vez).
 
 --8<-- "_generado/crimen_investigacion.md"
 
@@ -122,7 +125,7 @@ Con Walter Brick → **El Perista**: compra la mercancía y paga en **Fichas mar
 ## La mercancía
 
 **Se toma con clic derecho** (para tomarla mirando a un cofre o una puerta, **Mayús + clic derecho**). Mientras te
-dura el efecto, **te sale humo verde** de la cabeza: se nota. Cuando se acaba, llega **el bajón**.
+dura el efecto, **te sale humo** de la cabeza, del color de lo que has tomado: se nota. Cuando se acaba, llega **el bajón**.
 
 Además **da experiencia**: menos cuanta más tolerancia tengas, y **nada si es sobredosis**.
 
