@@ -8,8 +8,9 @@ y una **difícil**, que son **las mismas para todos**. **Cada jugador puede hace
 
 - **Ver las misiones de hoy:** habla con el Pregonero o escribe `/puente boton mision 1`. Encima del Pregonero también
   hay un cartel flotante con ellas.
-- **Misiones de "Trae...":** ve al Pregonero con lo que pide y **haz clic derecho en él**: si lo llevas encima, se lo
-  queda solo. También puedes pulsar **[Entregar]** en el chat estando a su lado.
+- **Misiones de "Trae...":** ve al Pregonero con lo que pide **en la mano** y **haz clic derecho en él**: se lo queda
+  solo (cuenta todo lo que llevas encima de eso). Si no lo tienes en la mano, solo te enseña las misiones, así puedes
+  preguntarle qué pide sin darle nada. También puedes pulsar **[Entregar]** en el chat estando a su lado.
 - **Misiones de "Mata / Mina / Camina...":** se cuentan solas **desde que empieza el día**. Al llegar a la cifra, te
   dan los sellos.
 - **Las misiones cambian cada día a las 0:00** (hora de España). Si el servidor está apagado a medianoche, cambian
