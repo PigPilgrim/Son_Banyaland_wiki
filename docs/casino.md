@@ -42,10 +42,10 @@ También cuesta **1 chip I** la tirada (va entera al bote). De vez en cuando da 
 - Cada boleto tiene un **número** y es **una oportunidad más**: con más boletos, más fácil es que te toque.
 - El **lunes a las 0:00** salen tres boletos al azar. El resultado sale en el chat, en el mensaje de medianoche.
 - Si esa semana hay menos de tres boletos, lo que no se reparte se queda en el bote para la siguiente.
-- **No hace falta estar conectado:** el premio va a tu **mochila** y te avisa al entrar. Sale en cuanto estás en la
-  aldea (o en el lobby).
+- **No hace falta estar conectado:** te avisa al entrar y **lo cobras al volver a la aldea**, como los premios de los
+  minijuegos. Es un premio, así que **paga el impuesto sobre premios** de tu aldea si tiene Hacienda (va al Tesoro).
 
 ## Tus premios
 
-Lo que ganes en el casino viaja contigo en la mochila, como lo que sacas de los cofres del lobby: si no te cabe en el
+Lo que ganes en las tragaperras viaja contigo en la mochila, como lo que sacas de los cofres del lobby: si no te cabe en el
 inventario, espera en la mochila hasta que hagas hueco.

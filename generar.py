@@ -471,7 +471,7 @@ def justicia():
         ("Fianza para salir de la cárcel", f"{java_int(src, 'FIANZA_POR_MINUTO')} chips I por minuto que te quede")]))
     d = oficina.DEFECTO
     escribir("impuestos.md", tabla(["Impuesto", "Qué se cobra", "Al empezar"], [
-        ("**Sobre premios**", "Un % de los sellos y chips que ganas en misiones y minijuegos", f"{d['#imp_premios']} %"),
+        ("**Sobre premios**", "Un % de los sellos y chips que ganas en misiones, minijuegos y la lotería", f"{d['#imp_premios']} %"),
         ("**A los ricos** (semanal)", "Un % de lo que haya en tus buzones por encima del mínimo exento",
          f"{d['#imp_riqueza']} % de lo que pase de {d['#imp_umbral']} chips I"),
         ("**A las empresas** (semanal, con SEPE)", "Un % de lo que haya en la caja de cada empresa", f"{d['#imp_empresas']} %"),
