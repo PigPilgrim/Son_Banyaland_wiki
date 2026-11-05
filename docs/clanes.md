@@ -293,6 +293,8 @@ Con **Atacar** (hueco 1) buscas el fortín de otro jugador para atacarlo. Necesi
 | ★ | Destruir el Torreón |
 | ★ | Destruirlo todo |
 
+Con **1 estrella o más** es una **victoria** (por ejemplo, solo con tirar el Torreón); con ninguna, una **derrota**.
+
 Te llevas el **botín** multiplicado por la parte destruida: con el 60 % destruido, el 60 % del botín. Las tropas que
 soltaste **se pierden** aunque sigan vivas; las que no soltaste vuelven a tu campamento.
 
