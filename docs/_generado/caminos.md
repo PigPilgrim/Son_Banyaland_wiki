@@ -4,6 +4,7 @@
 | Matar jugadores | +15 |
 | Abrir cajas (mazmorra, forja, minijuegos) | +5 |
 | Conseguir chips (recogerlas del suelo) | +1 |
+| Jugar a las tragaperras del casino (tiradas pagadas) | +1 |
 | Cosechar cultivos maduros | +1 |
 | Criar animales | +2 |
 | Matar no-muertos de día | +2 |

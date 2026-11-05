@@ -171,7 +171,8 @@ llegan cuando vuelves a la aldea, y si no te caben, esperan.
 ## Cabezas coleccionables
 
 En el lobby hay **tres Cofres de Cabezas**. Cada uno se abre con **una chip** de su nivel y da **una cabeza** al azar
-de cualquier set. Cuanto más alto el cofre, más fácil que salgan raras:
+de cualquier set (menos **La Feria del Azar**, que solo sale en la [Tragaperras de objetos](casino.md#tragaperras-de-objetos)
+del casino). Cuanto más alto el cofre, más fácil que salgan raras:
 
 --8<-- "_generado/cofres_cabezas.md"
 
@@ -187,9 +188,10 @@ decoración y quitar** sin perder nada.
 cuenta para el álbum **en cuanto la llevas en el inventario**.
 
 En el álbum ves cuánto llevas de cada set (las que te faltan salen como *???*) y el **top 5 de coleccionistas**.
+También tiene el botón de tus **[cosméticos](casino.md#cosmeticos)**.
 **Al completar un set** te dan un premio (una vez por set):
 
-??? note "Los 14 sets y sus premios"
+??? note "Los 15 sets y sus premios"
     --8<-- "_generado/sets_cabezas.md"
 
 ### Reciclar repetidas
@@ -197,3 +199,5 @@ En el álbum ves cuánto llevas de cada set (las que te faltan salen como *???*)
 Desde el álbum puedes **cambiar cabezas repetidas por chips**:
 
 --8<-- "_generado/reciclar_cabezas.md"
+
+Las de **La Feria del Azar** no se reciclan (en la tragaperras, una repetida ya te da tiradas gratis).

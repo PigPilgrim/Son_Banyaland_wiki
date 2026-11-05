@@ -18,8 +18,8 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Elaboración a mano de la mercancía:** ⚠️ PENDIENTE de probar en el juego. Los tiempos, las estrellas y lo que
   cambia cada una en los [bajos fondos](crimen.md#a-mano-en-la-guarida) pueden cambiar.
-- **Casino:** ⚠️ PENDIENTE: falta poner las máquinas en el lobby de minijuegos y probarlas en el juego. Los premios del
-  [casino](casino.md) pueden cambiar cuando se vea cómo va el bote.
+- **Casino:** ⚠️ PENDIENTE: falta probar en el juego la nueva Tragaperras de objetos (cabezas de La Feria del Azar y
+  cosméticos). Los premios del [casino](casino.md) pueden cambiar cuando se vea cómo va el bote.
 - **Guías (tecla L):** ⚠️ PENDIENTE de probar en el juego que cada [logro de las guías](guias.md) salga cuando toca,
   también los de lo que ya se había hecho antes.
 - **Reparar con experiencia:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)

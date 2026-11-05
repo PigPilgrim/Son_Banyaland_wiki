@@ -4,7 +4,7 @@ En el **lobby de minijuegos** hay un casino con **tragaperras** y una máquina d
 que llevas en la mochila 🎒.
 
 !!! warning "⚠️ PENDIENTE"
-    El casino es nuevo: falta poner las máquinas en el lobby y probarlo en el juego. Los premios pueden cambiar.
+    El casino es nuevo: falta probarlo en el juego (sobre todo la nueva Tragaperras de objetos). Los premios pueden cambiar.
 
 ## Un solo bote
 
@@ -25,13 +25,57 @@ Si sale un premio más grande que lo que hay en el bote, te llevas todo el bote.
 
 ## Tragaperras de objetos
 
-También cuesta **1 chip I** la tirada (va entera al bote). De vez en cuando da **chips, diamantes o un tótem**
-(estos premios no salen del bote).
+La máquina de **la Feria**: es para **coleccionar**, no para ganar chips. También cuesta **1 chip I** la tirada (va
+entera al bote) y da:
+
+- Las **cabezas del set La Feria del Azar** (15), que **solo salen aquí**. Van a tu [álbum](minijuegos.md#el-album)
+  como las demás y, al completarlo, tienen su premio.
+- **Cosméticos** (25): títulos, rastros al andar, efectos al ganar y sombreros. Ver [más abajo](#cosmeticos).
+- **Tiradas gratis**, **boletos de lotería gratis** y, muy de vez en cuando, chips, un diamante o un tótem (estos
+  premios no salen del bote).
 
 --8<-- "_generado/casino_objetos.md"
 
+### Repetidas = tiradas gratis
+
+Si te sale algo que **ya tienes**, no te llevas otra copia: te llevas **tiradas gratis** de esta máquina (cuantas más
+cuanto más raro, ver la tabla). Se gastan **solas** la próxima vez que juegues, antes que tus chips. Son tuyas y no se
+pueden pasar a nadie. Cuántas te quedan lo ves en el menú de cosméticos.
+
+### Regalos por jugar
+
+Al llegar a ciertas **tiradas pagadas** en esta máquina te regalan **algo que aún no tienes** de esa rareza: primero una
+cabeza del set que te falte y, si ya las tienes, un cosmético. Si ya lo tienes todo, tiradas gratis.
+
+--8<-- "_generado/casino_hitos.md"
+
+Las tiradas gratis **no cuentan** para estos regalos, ni para el boleto gratis, ni para la devoción.
+
+!!! info "Lo épico y lo legendario se anuncia"
+    Si te sale algo **épico o legendario**, se entera todo el servidor.
+
+### Cosméticos
+
+Son **de tu cuenta**: no se pierden, no se tiran y no se pueden pasar a otros. Se ponen en el menú de **Cosméticos**
+(botón del [álbum](minijuegos.md#el-album) o `/puente cosmeticos`). Lo que aún no tienes sale como *???*.
+
+- **Títulos:** salen detrás de tu nombre en el chat. Algunos tienen otra forma: **Mayús + clic** para elegirla
+  (*Rey del Casino* o *Reina del Casino*).
+- **Rastros al andar:** unas pocas partículas cuando andas (no cuando estás quieto).
+- **Al ganar:** un efecto cuando te toca algo en las tragaperras (en las dos).
+- **Sombreros:** clic y te dan uno para ponértelo; si lo pierdes, pides otro.
+
+En el mismo menú puedes **dejar de ver las partículas** (los rastros y los efectos de todos).
+
+??? note "Los 25 cosméticos"
+    --8<-- "_generado/cosmeticos.md"
+
 !!! tip "Constancia"
-    Cada **20 tiradas** (sumando las dos tragaperras) te llevas un **boleto de lotería gratis**.
+    Cada **20 tiradas pagadas** (sumando las dos tragaperras) te llevas un **boleto de lotería gratis**.
+
+!!! tip "Dios del Azar"
+    Cada tirada pagada (en cualquiera de las dos tragaperras) da **1 de devoción** si sigues al Dios del Azar. Ver
+    [La Iglesia](iglesia.md).
 
 ## La lotería
 
