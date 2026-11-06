@@ -27,8 +27,9 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
   la zona, vuelves a donde estabas.
 - Al empezar un tramo salen **zombis por oleadas**. Abajo de la pantalla ves cuántos quedan y tus balas.
 - Cuando no queda ninguno, el tramo está **despejado**: se abre el cordón hacia el siguiente, una **flecha** te dice
-  hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino. En cuanto alguien del grupo entra en el siguiente tramo, empieza, los demás van
-  con él y el cordón se cierra detrás.
+  hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino. Si te alejas
+  mucho de él, te avisa (*«Creo que no es por ahí...»*) y te empuja un poco de vuelta. En cuanto alguien del grupo
+  entra en el siguiente tramo, empieza, los demás van con él y el cordón se cierra detrás.
 - No hay hambre, pero **la vida no se recupera sola**: para eso están los botiquines.
 - **Si caes**, miras hasta que se despeje el tramo y entonces vuelves con los demás. **Si caéis todos**, se repite el
   tramo.
