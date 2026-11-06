@@ -3,8 +3,8 @@
 Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al admin.
 
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
-- **Cod Zombies:** ⚠️ PENDIENTE de probar en el juego: solo están el tutorial y Sandy Heights, y falta ajustar la vida de
-  los zombis, el daño de las armas y la munición de [Cod Zombies](zombies.md). Falta también confirmar con el autor del
+- **Cod Zombies:** ⚠️ PENDIENTE: es una DEMO con solo el tutorial y Sandy Heights; la vida de los zombis, el daño de
+  las armas y la munición de [Cod Zombies](zombies.md) pueden cambiar. Falta también confirmar con el autor del
   mapa (Port Vance, de Eivisxp) que se puede usar en el servidor.
 - **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego, sobre todo los **ataques**. Falta equilibrar vidas, daños,
   botín y trofeos; los números de [Craft of Clans](clanes.md) pueden cambiar y el aspecto de los edificios lo cambiará

@@ -3,10 +3,9 @@
 Una **ruta por una ciudad llena de zombis**: llegas en un crucero a Port Vance y tienes que cruzarla, **tramo a
 tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y lo que vas superando es tuyo.
 
-!!! warning "⚠️ PENDIENTE"
-    Está en pruebas y de momento **solo están los tres primeros tramos** (el tutorial y Sandy Heights). La vida de los
-    zombis, el daño de las armas y la munición pueden cambiar cuando se pruebe. Además, el portal está **cerrado**
-    hasta que el admin lo abra.
+!!! warning "DEMO"
+    Es una **DEMO**: de momento **solo están los tres primeros tramos** (el tutorial y Sandy Heights). La vida de los
+    zombis, el daño de las armas y la munición pueden cambiar. El resto de la ruta llegará más adelante.
 
 ## Entrar y salir
 

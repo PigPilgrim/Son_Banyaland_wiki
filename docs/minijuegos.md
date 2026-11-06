@@ -42,5 +42,5 @@ Los tres Cofres de Cabezas del lobby, el álbum y las repetidas. Ver [Cabezas co
 
 ## Cod Zombies
 
-Una ruta por una ciudad llena de zombis, tramo a tramo, solo o en grupo. Está en pruebas y su portal (el lima) sigue
-cerrado. Ver [Cod Zombies](zombies.md).
+Una ruta por una ciudad llena de zombis, tramo a tramo, solo o en grupo. Está abierto como **DEMO** (los tres
+primeros tramos), por el portal lima. Ver [Cod Zombies](zombies.md).

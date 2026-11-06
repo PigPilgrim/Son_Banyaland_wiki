@@ -528,6 +528,9 @@ def guerra():
         ("Zona de la Campana", f"{java_int(src, 'ZONA')} bloques alrededor")]))
 
 
+MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+
 def regatas():
     import json
     import barcos
@@ -542,14 +545,17 @@ def regatas():
     v = barcos.VUELTAS
     base, rival = barcos.PREMIO_CARRERA["carrera"]
     escribir("regatas_numeros.md", tabla(["Qué", "Cuánto"], [
-        ("Vueltas", f"3 vueltas: {v['carrera']} · Gestión: {v['gestion']} · Clasificación: las que quieras"),
+        ("Vueltas", f"3 vueltas: {v['carrera']} · Gestión: {v['gestion']}"
+                    + "".join(f" ({barcos.MAPAS[k][0]}: {n}, desde el {int(d[8:])} de {MESES[int(d[5:7]) - 1]})"
+                              for k, (n, d) in barcos.VUELTAS_GESTION.items())
+                    + " · Clasificación: las que quieras"),
         ("Clasificación online", f"{barcos.CLASIF_ONLINE_S // 60} minutos; la vuelta empezada se puede acabar"),
         ("Partida online", f"hasta los que quepan en la parrilla; empieza cuando quien la crea pulsa [Empezar] (aunque esté solo), "
                            f"en {barcos.EMPEZAR_YA_S} s; si en 5 min no lo hace, puede cualquiera de la sala"),
         ("Salida en falso (online, menos en Clasificación)", f"+{barcos.PENALIZACION_SALIDA} s"),
         ("Gestión sin usar 2 neumáticos distintos", f"+{barcos.PENALIZACION_SIN_PARADA} s"),
         ("Ganar una partida online", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día, sumando todos los modos)"),
-        ("Top 3 de la semana (cada pista, en Clasificación, 3 vueltas y Gestión)",
+        ("Top 3 de la semana (cada pista: la vuelta más rápida, en cualquier modo)",
          " · ".join(f"{n}.º {c} chips I" for n, c in enumerate(barcos.PREMIO_SEMANA, start=1)) + " · y el 1.º, la copa de la pista"),
         ("Parada en boxes", f"{barcos.RUEDAS_PARADA} teclas, {barcos.VENTANA_TICKS / 20:g} s para cada una"),
         ("Pinchazo seguro", f"entre el {barcos.PINCHAZO_MIN} % y el {barcos.PINCHAZO_MAX} % de desgaste")]))

@@ -15,8 +15,7 @@ Hay tres modos, y cada uno se puede jugar **en solitario** o **online**.
 
 #### Clasificación
 
-Una vuelta para coger velocidad y, al pasar por meta, empiezan las **vueltas lanzadas**: cuenta **tu mejor
-vuelta**. Cada vuelta se divide en **3 sectores**, como en la Fórmula 1: **morado** = récord de la pista,
+Una vuelta para coger velocidad y, al pasar por meta, empiezan las **vueltas lanzadas**. Cada vuelta se divide en **3 sectores**, como en la Fórmula 1: **morado** = récord de la pista,
 **verde** = tu mejor marca, **amarillo** = más lento.
 
 **Online:** todos a la vez en pista durante **5 minutos**. Cuando se acaba el tiempo puedes terminar la vuelta que
@@ -24,20 +23,20 @@ llevas. **Gana la mejor vuelta.**
 
 #### 3 vueltas
 
-**En solitario:** una vuelta para coger velocidad y luego **3 vueltas seguidas** contra el reloj. Cuenta el tiempo
-total y tiene **su propio ranking**.
+**En solitario:** una vuelta para coger velocidad y luego **3 vueltas seguidas** contra el reloj. Al acabar ves el
+tiempo total y si es tu mejor marca.
 
 **Online:** una **carrera a 3 vueltas** saliendo en parrilla con un **semáforo de 5 luces**: cuando se apagan, ¡a
 correr! Salir antes es una **salida en falso** y suma segundos. **Gana el primero en llegar.**
 
 #### Gestión
 
-Una vuelta para coger velocidad y luego **5 vueltas cronometradas con neumáticos**. Es **obligatorio usar dos
-neumáticos distintos** (o te penalizan), así que hay que **parar en boxes** al menos una vez. Cuenta el tiempo
-total.
+Una vuelta para coger velocidad y luego **5 vueltas cronometradas con neumáticos** (en la Pista de Hielo 3, que es
+muy larga, **3 vueltas**). Es **obligatorio usar dos neumáticos distintos** (o te penalizan), así que hay que **parar
+en boxes** al menos una vez. Al acabar ves el tiempo total y si es tu mejor marca.
 
-**Online:** la misma carrera de 5 vueltas con neumáticos y boxes, todos a la vez y saliendo con el semáforo. **Gana
-el primero en llegar**, y tu tiempo también cuenta para el ranking de Gestión.
+**Online:** la misma carrera con neumáticos y boxes, todos a la vez y saliendo con el semáforo. **Gana el primero en
+llegar.**
 
 #### Partidas online
 
@@ -52,9 +51,9 @@ el primero en llegar**, y tu tiempo también cuenta para el ranking de Gestión.
 
 En cada pista hay **una partida online a la vez**; cuando empieza, los que estaban en solitario en esa pista
 vuelven al lobby. **El ganador se lleva chips** si corrían **2 o más**, con un **tope de premios al día** (sumando
-todos los modos). Si corres solo, tus tiempos cuentan igual para los rankings.
+todos los modos). Si corres solo, tus vueltas cuentan igual para el ranking.
 
-Si caes **al agua**, vuelves al último punto de control (en Clasificación, además, esa vuelta no cuenta). Para salir
+Si caes **al agua**, vuelves al último punto de control y **esa vuelta no cuenta** para el ranking. Para salir
 de una regata en cualquier momento: `/puente barcos salir`.
 
 --8<-- "_generado/regatas_numeros.md"
@@ -81,11 +80,18 @@ La **zona amarilla** (con partículas) es el foso de boxes:
 
 **El cronómetro no para**: cuanto más rápido pulses, más corta es la parada.
 
-### Rankings y premios de la semana
+### Ranking y premios de la semana
 
-En el lobby está el **ranking** de cada pista: el **top 10** de Clasificación, 3 vueltas y Gestión, de la semana
-y de siempre. **Al acabar la semana**, el top 3 de cada pista y modo cobra chips, y **el 1.º se lleva la copa de la pista**
-(una cabeza de trofeo; te llega cuando vuelves a la aldea).
+Cada pista tiene **un solo ranking: la vuelta más rápida** de cada uno, la hagas **en el modo que sea**
+(Clasificación, 3 vueltas o Gestión, en solitario u online). Se ve en el menú de la pista, en **Ranking**: el
+**top 10** de la semana y el de siempre.
+
+- Cuentan las **vueltas enteras**: de línea de meta a línea de meta. La de la salida en parrilla no cuenta.
+- Si caes al agua en esa vuelta, no cuenta.
+- Con **neumáticos blandos** nuevos el hielo va más rápido: el récord suele salir en Gestión.
+
+**Al acabar la semana**, el top 3 de cada pista cobra chips y **el 1.º se lleva la copa de la pista** (una cabeza de
+trofeo; te llega cuando vuelves a la aldea).
 
 Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).
 
