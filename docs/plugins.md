@@ -1,25 +1,6 @@
 # Comandos y extras
 
-Lo que puedes hacer en el servidor además de jugar: registrarte, sentarte, colgar imágenes, poner música, el color de tu nombre...
-
-## Registrarte y entrar
-
-La primera vez que entras tienes que **elegir una contraseña**:
-
-```
-/register <contraseña> <contraseña>
-```
-
-(la misma dos veces). A partir de entonces, cada vez que entres:
-
-```
-/login <contraseña>
-```
-
-Si vuelves a entrar desde la misma conexión en menos de una hora, no te la vuelve a pedir.
-
-!!! warning "Apúntate la contraseña"
-    Si la olvidas, habla con el admin. Y no uses la misma que en otros sitios.
+Lo que puedes hacer en el servidor además de jugar: sentarte, colgar imágenes, poner música, el color de tu nombre...
 
 ## Sentarse y tumbarse
 
@@ -75,11 +56,11 @@ siempre** (gratis): `/puente propia`.
 | Comando | Para qué |
 |---|---|
 | `/puente color` | Elegir el [color de tu nombre](#color-de-tu-nombre) |
-| `/puente album` | Tu álbum de [cabezas coleccionables](minijuegos.md#cabezas-coleccionables) |
+| `/puente album` | Tu álbum de [cabezas coleccionables](cabezas.md) |
 | `/puente cartas` | Leer tus [cartas](casas.md) |
 | `/puente fianza` | Pagar la fianza y [salir de la cárcel](justicia.md#la-carcel) |
 | `/puente crimen` | Tu organización de los [bajos fondos](crimen.md) (o fundar una) |
-| `/puente barcos salir` | Salir de una [regata](minijuegos.md#las-regatas) |
-| `/puente barcos empezar` | Arrancar tu [partida online](minijuegos.md#partidas-online) de barcos (el botón [Empezar] del chat) |
+| `/puente barcos salir` | Salir de una [regata](regatas.md) |
+| `/puente barcos empezar` | Arrancar tu [partida online](regatas.md#partidas-online) de barcos (el botón [Empezar] del chat) |
 
 Casi todo lo demás se hace **haciendo clic a los aldeanos** o en los **botones del chat**.

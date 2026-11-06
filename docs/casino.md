@@ -28,7 +28,7 @@ Si sale un premio más grande que lo que hay en el bote, te llevas todo el bote.
 La máquina de **la Feria**: es para **coleccionar**, no para ganar chips. También cuesta **1 chip I** la tirada (va
 entera al bote) y da:
 
-- Las **cabezas del set La Feria del Azar** (15), que **solo salen aquí**. Van a tu [álbum](minijuegos.md#el-album)
+- Las **cabezas del set La Feria del Azar** (15), que **solo salen aquí**. Van a tu [álbum](cabezas.md#el-album)
   como las demás y, al completarlo, tienen su premio.
 - **Cosméticos** (25): títulos, rastros al andar, efectos al ganar y sombreros. Ver [más abajo](#cosmeticos).
 - **Tiradas gratis**, **boletos de lotería gratis** y, muy de vez en cuando, chips, un diamante o un tótem (estos
@@ -57,7 +57,7 @@ Las tiradas gratis **no cuentan** para estos regalos, ni para el boleto gratis, 
 ### Cosméticos
 
 Son **de tu cuenta**: no se pierden, no se tiran y no se pueden pasar a otros. Se ponen en el menú de **Cosméticos**
-(botón del [álbum](minijuegos.md#el-album) o `/puente cosmeticos`). Lo que aún no tienes sale como *???*.
+(botón del [álbum](cabezas.md#el-album) o `/puente cosmeticos`). Lo que aún no tienes sale como *???*.
 
 - **Títulos:** salen detrás de tu nombre en el chat. Algunos tienen otra forma: **Mayús + clic** para elegirla
   (*Rey del Casino* o *Reina del Casino*).

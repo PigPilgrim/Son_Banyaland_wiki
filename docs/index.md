@@ -21,7 +21,7 @@ hide:
 <p class="sb-sugerencias">Escribe <em>katana</em>, <em>sello</em>, <em>zona segura</em>… y te lleva a la tabla donde sale.</p>
 
 <div class="sb-botones" markdown>
-[Empieza aquí](dinero.md){ .md-button .md-button--primary }
+[Empieza aquí](primeros-pasos.md){ .md-button .md-button--primary }
 [Explora la wiki](#explora-la-wiki){ .md-button }
 </div>
 
@@ -76,6 +76,11 @@ sea un fallo**: avisa al admin.
     **El mundo tiene un borde** a 10.000 bloques del spawn en cada dirección (de −10.096 a 9.904 en X y en Z). El
     Nether, las mazmorras y los minijuegos no tienen borde.
 
+-   <span class="sb-slot">:material-calendar-week:</span>
+
+    **Las edades** son la norma principal: cada semana se abre la siguiente. Ver
+    [Primeros pasos](primeros-pasos.md#las-edades).
+
 </div>
 </div>
 
@@ -86,17 +91,17 @@ sea un fallo**: avisa al admin.
 
 <div class="grid cards sb-secciones" markdown>
 
--   [![](img/capturas/dinero.png){ .sb-captura loading=lazy alt="" }](dinero.md)
+-   [![](img/capturas/dinero.png){ .sb-captura loading=lazy alt="" }](primeros-pasos.md)
 
     <p class="sb-grupo">Empezar</p>
 
-    ### <span class="sb-slot">:material-sack:</span> [Dinero](dinero.md)
+    ### <span class="sb-slot">:material-sack:</span> [Empezar](primeros-pasos.md)
 
-    Chips, diamantes y Sellos de la Aldea: qué vale cada cosa y de dónde sale.
+    Registrarte, tu primer día, las edades y las normas; chips, diamantes y Sellos de la Aldea: qué vale cada cosa y de dónde sale.
 
-    [Chips](dinero.md#chips){ .sb-chip } [Diamantes](dinero.md#diamantes){ .sb-chip } [Sellos](dinero.md#sellos-de-la-aldea){ .sb-chip }
+    [Registro](primeros-pasos.md#registrarte-y-entrar){ .sb-chip } [Primer día](primeros-pasos.md#tu-primer-dia){ .sb-chip } [Edades](primeros-pasos.md#las-edades){ .sb-chip } [Dinero](dinero.md){ .sb-chip } [Guías](guias.md){ .sb-chip }
 
-    [Entrar →](dinero.md){ .sb-entrar }
+    [Entrar →](primeros-pasos.md){ .sb-entrar }
 
 -   [![](img/capturas/aldea.png){ .sb-captura loading=lazy alt="" }](aldea.md)
 
@@ -104,23 +109,33 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-home-group:</span> [La aldea](aldea.md)
 
-    Cómo sube de nivel, sus aldeanos y tiendas, la Taberna, las misiones y tu casa.
+    Cómo sube de nivel, sus aldeanos y tiendas, la Taberna, las misiones, tu casa y la Iglesia.
 
-    [Niveles](aldea.md#los-niveles){ .sb-chip } [Aldeanos](aldeanos.md){ .sb-chip } [Taberna](taberna.md){ .sb-chip } [Misiones](misiones.md){ .sb-chip } [Casas](casas.md){ .sb-chip }
+    [Niveles](aldea.md#los-niveles){ .sb-chip } [Aldeanos](aldeanos.md){ .sb-chip } [Taberna](taberna.md){ .sb-chip } [Misiones](misiones.md){ .sb-chip } [Casas](casas.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip }
 
     [Entrar →](aldea.md){ .sb-entrar }
 
 -   [![](img/capturas/gobierno.png){ .sb-captura loading=lazy alt="" }](politica.md)
 
-    <p class="sb-grupo">La aldea</p>
+    <p class="sb-grupo">Gobierno</p>
 
-    ### <span class="sb-slot">:material-bank-outline:</span> [Gobierno y guerra](politica.md)
+    ### <span class="sb-slot">:material-bank-outline:</span> [Gobierno](politica.md)
 
-    Elecciones y leyes, los proyectos de la Oficina, impuestos, juicios, la Iglesia, la guerra entre aldeas y los bajos fondos.
+    Elecciones y leyes, los proyectos de la Oficina, el Tesoro y los impuestos, juicios y la guerra entre aldeas.
 
-    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Iglesia](iglesia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip } [Bajos fondos](crimen.md){ .sb-chip } [Vehículos](vehiculos.md){ .sb-chip }
+    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip }
 
     [Entrar →](politica.md){ .sb-entrar }
+
+-   <p class="sb-grupo">Negocios</p>
+
+    ### <span class="sb-slot">:material-store-outline:</span> [Negocios](empresas.md)
+
+    Las empresas del SEPE, los vehículos con su Concesionario y su Gasolinera, y los bajos fondos.
+
+    [Empresas](empresas.md){ .sb-chip } [Vehículos](vehiculos.md){ .sb-chip } [Bajos fondos](crimen.md){ .sb-chip }
+
+    [Entrar →](empresas.md){ .sb-entrar }
 
 -   [![](img/capturas/mazmorras.png){ .sb-captura loading=lazy alt="" }](mazmorras.md)
 
@@ -140,23 +155,23 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-sail-boat:</span> [Minijuegos](minijuegos.md)
 
-    Regatas de barcos sobre hielo, con neumáticos y boxes, tu fortín en Craft of Clans y las cabezas coleccionables del lobby.
+    Regatas de barcos sobre hielo, con neumáticos, boxes y la Liga, tu fortín en Craft of Clans, el casino y las cabezas coleccionables del lobby.
 
-    [Regatas](minijuegos.md#las-regatas){ .sb-chip } [Neumáticos](minijuegos.md#neumaticos-modo-gestion){ .sb-chip } [Cabezas](minijuegos.md#cabezas-coleccionables){ .sb-chip } [Craft of Clans](clanes.md){ .sb-chip }
+    [Regatas](regatas.md){ .sb-chip } [Liga](regatas.md#la-liga){ .sb-chip } [Craft of Clans](clanes.md){ .sb-chip } [Casino](casino.md){ .sb-chip } [Cabezas](cabezas.md){ .sb-chip }
 
     [Entrar →](minijuegos.md){ .sb-entrar }
 
--   [![](img/capturas/comandos.png){ .sb-captura loading=lazy alt="" }](plugins.md)
+-   [![](img/capturas/comandos.png){ .sb-captura loading=lazy alt="" }](arte.md)
 
-    <p class="sb-grupo">Plugins</p>
+    <p class="sb-grupo">Arte y extras</p>
 
-    ### <span class="sb-slot">:material-console-line:</span> [Comandos y extras](plugins.md)
+    ### <span class="sb-slot">:material-palette-outline:</span> [Arte y extras](arte.md)
 
-    Registrarte, sentarte, colgar imágenes, poner música y los comandos útiles.
+    El Estudio de grabación y el Caballete de pintor; sentarte, colgar imágenes, poner música y los comandos útiles.
 
-    [Registro](plugins.md#registrarte-y-entrar){ .sb-chip } [Sentarse](plugins.md#sentarse-y-tumbarse){ .sb-chip } [Imágenes](plugins.md#imagenes-en-marcos){ .sb-chip }
+    [Estudio](arte.md#estudio-de-grabacion){ .sb-chip } [Caballete](arte.md#caballete-de-pintor){ .sb-chip } [Sentarse](plugins.md#sentarse-y-tumbarse){ .sb-chip } [Imágenes](plugins.md#imagenes-en-marcos){ .sb-chip } [Música](plugins.md#musica-discos-con-canciones-de-verdad){ .sb-chip } [Comandos](plugins.md){ .sb-chip }
 
-    [Entrar →](plugins.md){ .sb-entrar }
+    [Entrar →](arte.md){ .sb-entrar }
 
 </div>
 </div>
@@ -175,7 +190,7 @@ sea un fallo**: avisa al admin.
 - [Armas con plano *Épicas y legendarias*](forja.md#armas-con-plano)
 - [Misiones *Todas las que pueden salir*](misiones.md#todas-las-misiones-que-pueden-salir)
 - [Los dioses *Devoción y bendiciones*](iglesia.md#los-dioses)
-- [Neumáticos *Para el modo Gestión*](minijuegos.md#neumaticos-modo-gestion)
+- [Neumáticos *Para el modo Gestión*](regatas.md#neumaticos-modo-gestion)
 
 </div>
 </div>
@@ -192,53 +207,14 @@ Aldeas fundadas, alcaldes elegidos, guerras, asedios, récords... Todo queda apu
 </div>
 
 <div class="sb-seccion" markdown>
-<p class="sb-eyebrow">Progresión</p>
-
-## Las edades
-
-Es **la norma principal del servidor**: la armadura, las armas y las herramientas avanzan por **edades**, y **cada
-semana se abre la siguiente**.
-
-| Semana | Edad | Armadura que puedes llevar puesta | Armas y herramientas que puedes usar |
-|---|---|---|---|
-| 1.ª | **Cobre** | Cobre, cuero y oro | Madera, piedra, cobre y oro + **pico de hierro** |
-| 2.ª | **Hierro** | Lo anterior + hierro y malla | Lo anterior + hierro + **pico de diamante** |
-| 3.ª | **Diamante** | Lo anterior + diamante | Lo anterior + diamante + **pico de netherita** |
-| 4.ª | **Netherita** | Todo | Todo |
-
-**Los picos van una edad por delante**: si encuentras diamantes la primera semana, puedes picarlos. El caparazón de
-tortuga se puede llevar siempre. Los escudos, los arcos, las ballestas, los tridentes y las mazas normales no son de
-ninguna edad. Pero **las armas y varitas épicas** (★★★★) de la Forja y la Torre de Magos piden **la edad del hierro**, y
-**las legendarias** (★★★★★) **la del diamante**, sean del material que sean. Cuando cambia la edad, sale un aviso a todos.
-
-- Una **armadura** de una edad que aún no ha llegado **se puede guardar en el inventario, pero no ponérsela**: si te
-  la pones, cae a tus pies, y solo la puede recoger su dueño (no desaparece).
-- Una **espada, hacha, pico, pala, azada o lanza** de una edad que aún no ha llegado **se puede guardar en el
-  inventario, pero no cogerla en la mano**: si la coges, cae a tus pies y solo la puede recoger su dueño. Al recogerla
-  va a la parte de arriba del inventario, no a la barra. Cuenta el material, **también en las armas especiales** de
-  las mazmorras y la forja: una katana de diamante no se puede usar hasta la edad del diamante. Los picos, igual, pero
-  con una edad de adelanto.
-</div>
-
-<div class="sb-seccion" markdown>
-<p class="sb-eyebrow">Antes de jugar</p>
-
-## Mazmorras y minijuegos
-
-En las mazmorras y en los minijuegos se juega en **modo aventura** (no se pueden romper ni poner bloques), y **al
-morir no pierdes el inventario** (en el mundo normal, sí). Todo sobre las mazmorras en [Mazmorras](mazmorras.md); las
-regatas de barcos en [Minijuegos](minijuegos.md).
-
-## Normas del servidor
-
-- **Respeta las edades** (arriba): cada semana, la suya.
 
 !!! tip "Usa el buscador"
     Arriba tienes un buscador: escribe *katana*, *sello*, *zona segura*... y te lleva a la tabla donde sale.
 
 ---
 
-*¿Ves algo mal o que falta? Avisa al admin. En cada página hay un lápiz arriba a la derecha para proponer cambios.*
+*¿Ves algo mal o que falta? Avisa al admin. En cada página hay un lápiz arriba a la derecha para proponer cambios.
+Lo que aún está por confirmar: [Pendientes](pendientes.md).*
 </div>
 
 </div>

@@ -41,6 +41,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/anclas-antiguas.js   # lleva los enlaces viejos a apartados que cambiaron de página
+
 plugins:
   - search:
       lang: es
@@ -71,32 +74,39 @@ exclude_docs: |
 nav:
   - Inicio: index.md
   - Empezar:
+      - Primeros pasos: primeros-pasos.md
       - Dinero: dinero.md
       - Guías (tecla L): guias.md
   - La aldea:
       - Cómo crece la aldea: aldea.md
       - Los aldeanos y sus tiendas: aldeanos.md
       - La Taberna: taberna.md
-      - Proyectos de la Oficina: proyectos.md
       - Misiones del Pregonero: misiones.md
       - Tablón de anuncios: tablon.md
       - Casas, buzones y cartas: casas.md
-      - Política: politica.md
-      - Hacienda, Tesoro y empresas: hacienda.md
-      - Justicia: justicia.md
       - La Iglesia: iglesia.md
+  - Gobierno:
+      - Política: politica.md
+      - Proyectos de la Oficina: proyectos.md
+      - Hacienda y Tesoro: hacienda.md
+      - Justicia: justicia.md
       - Guerra y asedios: guerra.md
-      - Bajos fondos: crimen.md
+  - Negocios:
+      - Empresas (SEPE): empresas.md
       - Vehículos: vehiculos.md
+      - Bajos fondos: crimen.md
   - Mazmorras y objetos:
       - Mazmorras: mazmorras.md
       - Armas y armaduras: forja.md
       - Magia: magia.md
   - Minijuegos:
-      - Regatas y cabezas: minijuegos.md
+      - El lobby: minijuegos.md
+      - Regatas y Liga: regatas.md
       - Craft of Clans: clanes.md
       - Casino y lotería: casino.md
-  - Estudio y Caballete: arte.md
-  - Comandos y extras: plugins.md
+      - Cabezas coleccionables: cabezas.md
+  - Arte y extras:
+      - Estudio y Caballete: arte.md
+      - Comandos y extras: plugins.md
   - Historia: historia.md
-  - Pendientes: pendientes.md
+  # Pendientes (pendientes.md) no va en el menú: es una lista de trabajo. Se llega desde el pie de la portada y el buscador.

@@ -22,7 +22,7 @@ y se llena también con **los impuestos** si la aldea tiene Hacienda.
 
 Qué trae cada proyecto, al detalle:
 
-- **Hacienda** y **SEPE**: [Hacienda, Tesoro y empresas](hacienda.md).
+- **Hacienda**: [Hacienda y Tesoro](hacienda.md). **SEPE**: [Empresas (SEPE)](empresas.md).
 - **Juzgado** y **Cárcel**: [Justicia](justicia.md).
 - **Iglesia**: [La Iglesia](iglesia.md).
 - **Cuartel**: [Guerra y asedios](guerra.md).

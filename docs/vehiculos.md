@@ -2,7 +2,7 @@
 
 Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su **depósito**. Cada aldea tiene **un
 Concesionario** y **una Gasolinera**, que reparte **el Alcalde**, y cada uno es
-[una empresa del SEPE](hacienda.md#el-sepe-empresas).
+[una empresa del SEPE](empresas.md).
 
 !!! warning "⚠️ PENDIENTE"
     **Recién llegado al servidor, falta probarlo jugando.** Los precios, las velocidades y los consumos pueden

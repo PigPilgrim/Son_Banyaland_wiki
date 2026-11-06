@@ -149,7 +149,7 @@ Cada **familia** (Hierbas, Polvos, Premium) lleva su cuenta:
 ## Las armas
 
 Se investigan y se fabrican con Walter Brick. Son **ilegales** (la Policía las confisca) y, como las demás armas
-épicas y legendarias, **no se pueden usar hasta su edad** (ver [Las edades](index.md#las-edades)).
+épicas y legendarias, **no se pueden usar hasta su edad** (ver [Las edades](primeros-pasos.md#las-edades)).
 
 --8<-- "_generado/crimen_armas.md"
 
@@ -189,7 +189,7 @@ Funcionan como los [asedios](guerra.md): a la hora acordada, **el Alijo brilla**
 ## Blanquear
 
 Las Fichas marcadas se pueden convertir en **chips I limpias** dejándolas en **la caja de una empresa**
-([SEPE](hacienda.md#el-sepe-empresas)). Pasa sola **con el cobro semanal de Hacienda** (hace falta que la aldea tenga
+([SEPE](empresas.md)). Pasa sola **con el cobro semanal de Hacienda** (hace falta que la aldea tenga
 Hacienda). Pero Hacienda **a veces inspecciona**, y más a quien tiene pruebas encima:
 
 --8<-- "_generado/crimen_blanqueo.md"
