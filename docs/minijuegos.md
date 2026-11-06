@@ -40,6 +40,7 @@ Tragaperras y lotería con un bote que se sortea cada lunes. Ver [Casino y loter
 
 Los tres Cofres de Cabezas del lobby, el álbum y las repetidas. Ver [Cabezas coleccionables](cabezas.md).
 
-## Próximamente: Cod Zombies
+## Cod Zombies
 
-En el lobby ya está su portal, con el cartel **En Preparación**: todavía no se puede jugar.
+Una ruta por una ciudad llena de zombis, tramo a tramo, solo o en grupo. Está en pruebas y su portal (el lima) sigue
+cerrado. Ver [Cod Zombies](zombies.md).

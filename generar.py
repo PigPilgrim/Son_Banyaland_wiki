@@ -939,10 +939,38 @@ def casino_tablas():
     ]))
 
 
+def zombies_tablas():
+    import zombies as Z
+    cor = lambda m: (str(m // 2) if m % 2 == 0 else f"{m / 2:g}".replace(".", ",")) + " ♥"
+    escribir("zombies_tramos.md", tabla(["Tramo", "Dónde", "Al superarlo", "Se puede jugar"], [
+        (f"**{t['id']} · {t['nombre']}**" + (" (tutorial)" if t.get("tutorial") else ""), t["lugar"], t["desbloquea"],
+         "sí" if t["hecho"] else "próximamente") for t in Z.TRAMOS]))
+    filas = []
+    for k, a in Z.ARMAS.items():
+        if a["tipo"] == "curación": efecto = f"cura {cor(a['cura'])}"
+        elif a["tipo"] == "arco": efecto = f"Poder {ROMANO[a['poder']]}"
+        else: efecto = f"{cor(a['dano'])} por golpe" if a["tipo"] == "cuerpo a cuerpo" else f"{cor(a['dano'])} por disparo"
+        filas.append((f"**{a['nombre']}**", a["tipo"], efecto, a["detalle"], a["consigue"]))
+    escribir("zombies_armas.md", tabla(["Arma", "Tipo", "Efecto", "Detalles", "Se consigue"], filas))
+    m = Z.MUNICION
+    escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad"], [
+        (f"**{z['nombre']}**", cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","), "normal" if z["velocidad"] <= 0.23 else "rápido")
+        for z in Z.ZOMBIS.values()]))
+    P, L = Z.PREMIOS, Z.LIMITES
+    escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Jugadores por partida", f"de 1 a {L['jugadores']}"),
+        ("Balas al empezar cada tramo", f"{m['balas_tramo']} (además del cargador lleno)"),
+        ("Balas que suelta un zombi", f"{m['soltar_balas']}, una de cada {round(1 / m['soltar_probabilidad'])} veces"),
+        ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador ({L['max_partida']} en total)"),
+        ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
+        ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),
+        ("Repetir un tramo", f"{P['repetir']} chip I ({P['repetir_sin_muertes']} si nadie del grupo cae); como mucho {P['tope_dia']} premios al día"),
+    ]))
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas()
     print("Tablas generadas en", SALIDA)
 
 
