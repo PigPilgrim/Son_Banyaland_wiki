@@ -125,7 +125,8 @@ Con Walter Brick → **El Perista**: compra la mercancía y paga en **Fichas mar
 ## La mercancía
 
 **Se toma con clic derecho** (para tomarla mirando a un cofre o una puerta, **Mayús + clic derecho**). Mientras te
-dura el efecto, **te sale humo** de la cabeza, del color de lo que has tomado: se nota. Cuando se acaba, llega **el bajón**.
+dura el efecto, **te sale humo** de la cabeza, del color de lo que has tomado: se nota. Cuando se acaba, llega **el bajón**,
+y hay que pasarlo: **la leche no lo quita** (quita los demás efectos, pero los del bajón siguen hasta que se acaban).
 
 Además **da experiencia**: menos cuanta más tolerancia tengas, y **nada si es sobredosis**.
 
