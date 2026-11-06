@@ -2,7 +2,7 @@
 |---|---|
 | Vueltas | 3 vueltas: 3 · Gestión: 5 · Clasificación: las que quieras |
 | Clasificación online | 5 minutos; la vuelta empezada se puede acabar |
-| Partida online | de 2 jugadores a los que quepan en la parrilla; llena, empieza en 30 s; quien la crea puede arrancarla antes (con 2 o más, en 10 s) |
+| Partida online | hasta los que quepan en la parrilla; empieza cuando quien la crea pulsa [Empezar] (aunque esté solo), en 10 s; si en 5 min no lo hace, puede cualquiera de la sala |
 | Salida en falso (online, menos en Clasificación) | +5 s |
 | Gestión sin usar 2 neumáticos distintos | +20 s |
 | Ganar una partida online | 2 chips I + 1 por cada rival (como mucho 5 premios al día, sumando todos los modos) |

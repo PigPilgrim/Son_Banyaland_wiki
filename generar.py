@@ -544,8 +544,8 @@ def regatas():
     escribir("regatas_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Vueltas", f"3 vueltas: {v['carrera']} · Gestión: {v['gestion']} · Clasificación: las que quieras"),
         ("Clasificación online", f"{barcos.CLASIF_ONLINE_S // 60} minutos; la vuelta empezada se puede acabar"),
-        ("Partida online", f"de 2 jugadores a los que quepan en la parrilla; llena, empieza en 30 s; "
-                           f"quien la crea puede arrancarla antes (con 2 o más, en {barcos.EMPEZAR_YA_S} s)"),
+        ("Partida online", f"hasta los que quepan en la parrilla; empieza cuando quien la crea pulsa [Empezar] (aunque esté solo), "
+                           f"en {barcos.EMPEZAR_YA_S} s; si en 5 min no lo hace, puede cualquiera de la sala"),
         ("Salida en falso (online, menos en Clasificación)", f"+{barcos.PENALIZACION_SALIDA} s"),
         ("Gestión sin usar 2 neumáticos distintos", f"+{barcos.PENALIZACION_SIN_PARADA} s"),
         ("Ganar una partida online", f"{base} chips I + {rival} por cada rival (como mucho {barcos.TOPE_PREMIOS_DIA} premios al día, sumando todos los modos)"),

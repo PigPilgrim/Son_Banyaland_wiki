@@ -73,15 +73,18 @@ el primero en llegar**, y tu tiempo también cuenta para el ranking de Gestión.
 
 #### Partidas online
 
-1. En el menú de la pista, elige un modo **online** y **de cuántos jugadores** es la partida (en Gestión, también
-   tu neumático de salida).
-2. Los demás la ven en el mismo menú (**Unirse**) y les sale un aviso en el chat para entrar.
+1. En el menú de la pista, elige un modo **online** (en Gestión, también tu neumático de salida) y entras directamente.
+2. Los demás la ven en el mismo menú (**Unirse**) y les sale un aviso en el chat para entrar. Caben tantos como
+   huecos tenga la parrilla.
 3. **Mientras esperáis, podéis dar vueltas** por la pista libremente (sin cronómetro).
-4. Cuando está **llena**, empieza en 30 segundos. Quien la creó puede **arrancarla antes** con el botón
-   **[Empezar ya]** del chat si ya sois al menos 2.
+4. **No empieza sola:** quien la creó pulsa **[Empezar]** en el chat cuando quiera, **aunque esté solo**. Hay
+   10 segundos y el semáforo; a partir de ahí ya no entra nadie más.
+5. Si en **5 minutos** no la ha arrancado, puede pulsar **[Empezar]** cualquiera de la sala. Si quien la creó se va,
+   el botón pasa al siguiente.
 
 En cada pista hay **una partida online a la vez**; cuando empieza, los que estaban en solitario en esa pista
-vuelven al lobby. **El ganador se lleva chips**, con un **tope de premios al día** (sumando todos los modos).
+vuelven al lobby. **El ganador se lleva chips** si corrían **2 o más**, con un **tope de premios al día** (sumando
+todos los modos). Si corres solo, tus tiempos cuentan igual para los rankings.
 
 Si caes **al agua**, vuelves al último punto de control (en Clasificación, además, esa vuelta no cuenta). Para salir
 de una regata en cualquier momento: `/puente barcos salir`.
