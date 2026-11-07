@@ -955,18 +955,24 @@ def zombies_tablas():
     for k, a in Z.ARMAS.items():
         if a["tipo"] == "curación": efecto = f"cura {cor(a['cura'])}"
         elif a["tipo"] == "arco": efecto = f"Poder {ROMANO[a['poder']]}"
-        else: efecto = f"{cor(a['dano'])} por golpe" if a["tipo"] == "cuerpo a cuerpo" else f"{cor(a['dano'])} por disparo"
+        elif a["tipo"] == "armadura": efecto = f"armadura {a['armadura']}"
+        elif a["tipo"] == "lanzable": efecto = f"{cor(a['dano'])} en un radio de {a['radio']}" + (" cada segundo" if "segundos" in a else "")
+        elif a["tipo"] == "cuerpo a cuerpo": efecto = f"{cor(a['dano'])} por golpe"
+        else: efecto = f"{cor(a['dano'])} por " + ("perdigón" if "perdigones" in a else "disparo")
         filas.append((f"**{a['nombre']}**", a["tipo"], efecto, a["detalle"], a["consigue"]))
     escribir("zombies_armas.md", tabla(["Arma", "Tipo", "Efecto", "Detalles", "Se consigue"], filas))
     m = Z.MUNICION
     escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad"], [
-        (f"**{z['nombre']}**", cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","), "normal" if z["velocidad"] <= 0.23 else "rápido")
+        (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
+         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.24 else "rápido")
         for z in Z.ZOMBIS.values()]))
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Jugadores por partida", f"de 1 a {L['jugadores']}"),
-        ("Balas al empezar cada tramo", f"{m['balas_tramo']} (además del cargador lleno)"),
-        ("Balas que suelta un zombi", f"{m['soltar_balas']}, una de cada {round(1 / m['soltar_probabilidad'])} veces"),
+        ("Munición al empezar cada tramo", " · ".join(f"{a['nombre']}: {a['por_tramo']} {Z.MUNICIONES[a['municion']]['nombre'].lower()}"
+                                                       for a in Z.ARMAS.values() if "por_tramo" in a) + " (además del cargador lleno)"),
+        ("Munición que suelta un zombi", f"una de cada {round(1 / m['soltar_probabilidad'])} veces, del arma que lleves en la mano: "
+         + " · ".join(f"{n} {Z.MUNICIONES[k]['nombre'].lower()}" for k, n in m["soltar"].items())),
         ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador ({L['max_partida']} en total)"),
         ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
         ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),

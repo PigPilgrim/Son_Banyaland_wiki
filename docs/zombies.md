@@ -3,9 +3,10 @@
 Una **ruta por una ciudad llena de zombis**: llegas en un crucero a Port Vance y tienes que cruzarla, **tramo a
 tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y lo que vas superando es tuyo.
 
-!!! warning "DEMO"
-    Es una **DEMO**: de momento **solo están los tres primeros tramos** (el tutorial y Sandy Heights). La vida de los
-    zombis, el daño de las armas y la munición pueden cambiar. El resto de la ruta llegará más adelante.
+!!! warning "En pruebas"
+    La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
+    sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
+    zombis, el daño de las armas y la munición pueden cambiar.
 
 ## Entrar y salir
 
@@ -24,7 +25,8 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
 
 - Cada **tramo** es un trozo de la ciudad cerrado con **cordones de cuarentena** (vallas de barrotes). Si te sales de
   la zona, vuelves a donde estabas.
-- Al empezar un tramo salen **zombis por oleadas**. Abajo de la pantalla ves cuántos quedan y tus balas.
+- Al empezar un tramo salen **zombis por oleadas**. Abajo de la pantalla ves cuántos quedan y la munición del arma
+  que llevas en la mano.
 - Cuando no queda ninguno, el tramo está **despejado**: se abre el cordón hacia el siguiente, una **flecha** te dice
   hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino. Si te alejas
   mucho de él, te avisa (*«Creo que no es por ahí...»*) y te empuja un poco de vuelta. En cuanto alguien del grupo
@@ -32,7 +34,13 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
 - No hay hambre, pero **la vida no se recupera sola**: para eso están los botiquines.
 - **Si caes**, miras hasta que se despeje el tramo y entonces vuelves con los demás. **Si caéis todos**, se repite el
   tramo.
-- Al empezar cada tramo te **rellenan** el equipo: balas, flechas y botiquines.
+- Al empezar cada tramo te **rellenan** el equipo: munición, flechas, curas y lanzables. Lo que ya has superado
+  cuenta: cada tramo te da armas nuevas para los siguientes (ver la tabla de abajo).
+- En la valla del aeropuerto no hay puertas: al despejar el Tranvía de Badoc se **abre una brecha** para pasar a las
+  pistas.
+- En el **Aeropuerto**, la última oleada la trae **El Piloto**, el jefe final, con su barra de vida arriba de la
+  pantalla. Cuando caiga y no quede ningún zombi, corred a la **parada de autobús** delante de la terminal: os
+  **evacúan** y la campaña está completada. Después puedes rejugar cualquier tramo.
 
 ## Los tramos
 
@@ -45,16 +53,24 @@ seguir hasta Sandy Heights sin salir. Superar un tramo te deja empezar en el sig
 
 --8<-- "_generado/zombies_armas.md"
 
-- **Pistola:** clic derecho para disparar. Cuando se vacía el cargador recarga sola si llevas **balas**; también
-  puedes recargar con la tecla de **cambiar de mano** (F).
+- **Pistola, escopeta y rifle:** clic derecho para disparar. Cuando se vacía el cargador recargan solas si llevas su
+  munición (**balas**, **cartuchos** o **balas de rifle**); también puedes recargar con la tecla de **cambiar de
+  mano** (F). La escopeta echa varios perdigones abiertos (de cerca); el rifle atraviesa a varios zombis en fila.
 - **Botiquín:** clic derecho y quédate **quieto 2 segundos**. Si te mueves o te dan, se cancela.
-- Las **balas** se pueden tirar al suelo para pasárselas a otro del grupo.
+- **Adrenalina:** clic derecho; cura al momento y corres más durante unos segundos.
+- **Cóctel incendiario y granada:** clic derecho para lanzarlos. El cóctel deja fuego unos segundos donde cae; la
+  granada explota al caer. Solo hacen daño a los zombis y no rompen nada.
+- Las armas mejores **ocupan el sitio** de las de antes: la tubería pasa a machete y luego a hacha de bombero, y el
+  botiquín pasa a botiquín grande. El **chaleco** lo llevas puesto.
+- La **munición** se puede tirar al suelo para pasársela a otro del grupo. Los zombis a veces sueltan munición del
+  arma que llevas en la mano.
 
 ## Los zombis
 
 --8<-- "_generado/zombies_zombis.md"
 
-Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol.
+Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol. Los
+**tanques** (más grandes y lentos) aparecen desde El centro.
 
 ## Premios y números
 
