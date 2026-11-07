@@ -123,11 +123,12 @@ nuevas: sale el podio de ayer y el Gran Premio de hoy.
 
 ### Escuderías
 
-Hay **cuatro colores de barco** fijos: blanco, rosa, mangrove y bambú. Además puedes **crear una escudería nueva** con
-otro barco: roble, abeto, abedul, jungla, acacia o roble oscuro. Corres con el barco de tu escudería **en todos los
-modos**, con cofre o sin él (es solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran Premio.
+En el menú salen **las escuderías que ya existen**: entra en una o pulsa **Crear escudería nueva**. Al crearla eliges
+su barco entre los que no tengan ya escudería (blanco, rosa, mangrove, bambú, roble, abeto, abedul, jungla, acacia o
+roble oscuro) y le pones nombre. Corres con el barco de tu escudería **en todos los modos**, con cofre o sin él (es
+solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran Premio.
 
-- **El primero que entra en un color le pone el nombre**, y te quedas en tu escudería de una semana a otra.
+- **Quien la crea elige el barco y le pone el nombre**, y te quedas en tu escudería de una semana a otra.
 - Puedes cambiarte a otra **hasta gastar tu primer intento de la semana**; después, ya el lunes.
 - Una escudería en la que **nadie corre el Gran Premio durante 2 semanas seguidas desaparece**, y sus pilotos quedan
   libres para elegir otra.
