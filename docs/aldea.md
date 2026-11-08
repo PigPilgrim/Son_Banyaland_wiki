@@ -36,7 +36,8 @@ Alrededor del centro de cada aldea hay una **zona segura**, y se hace más grand
 --8<-- "_generado/zona_segura.md"
 
 **La zona segura protege de los monstruos:** los que aparecen solos dentro de ella desaparecen. Ojo: los que salen
-de **spawners** o en las **oleadas de un asedio** sí pueden entrar.
+de **spawners** o en las **oleadas de un asedio** sí pueden entrar. Y los **phantoms** también llegan: si llevas días sin
+dormir, la aldea no te libra de ellos.
 
 ## Ser vecino de una aldea
 
