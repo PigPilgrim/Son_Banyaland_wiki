@@ -109,5 +109,6 @@ nav:
   - Arte y extras:
       - Estudio y Caballete: arte.md
       - Comandos y extras: plugins.md
+  - Eventos: eventos.md
   - Historia: historia.md
   # Pendientes (pendientes.md) no va en el menú: es una lista de trabajo. Se llega desde el pie de la portada y el buscador.
