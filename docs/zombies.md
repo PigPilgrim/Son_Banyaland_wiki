@@ -31,7 +31,8 @@ necesita ayuda.
 - Los mensajes de radio salen en el chat con **📻 [Radio]** y un pitido; lo que dice la gente que encontráis, con su
   nombre.
 - El **objetivo** de cada momento está siempre arriba de la pantalla (🎯). No todo son oleadas: hay que llegar a
-  sitios, buscar cosas, hablar con gente (clic derecho) o aguantar en un punto.
+  sitios, buscar cosas, hablar con gente (clic derecho) o aguantar en un punto. Abajo, junto a los zombis y la
+  munición, una **flecha 🎯** te dice hacia dónde queda, a cuántos metros y si está más arriba o más abajo.
 - Todo avanza **para el grupo**: lo que haga cualquiera cuenta para todos.
 - Si ya te la sabes: **`/historia saltar`** corta el diálogo cuando lo pide todo el grupo.
 
