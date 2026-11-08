@@ -51,6 +51,9 @@ necesita ayuda.
   mucho de él, te avisa (*«Creo que no es por ahí...»*) y te empuja un poco de vuelta. En cuanto alguien del grupo
   entra en el siguiente tramo, empieza, los demás van con él y el cordón se cierra detrás.
 - No hay hambre, pero **la vida no se recupera sola**: para eso están los botiquines.
+- Dentro del juego **nadie te empuja**: ni los demás jugadores ni los golpes de los zombis. Cuando te dan, el borde
+  de la pantalla se pone **rojo** un momento, y se queda algo rojo si te quedan 3 corazones o menos (se ve con los
+  gráficos en «Detallados» o mejores).
 - Si un zombi tarda mucho en aparecer, o quedan pocos y no hay manera de encontrarlos, **brillan** y se ven a través
   de las paredes.
 - **Si caes**, miras hasta que se despeje el tramo y entonces vuelves con los demás (o sales con **[Salir de la
