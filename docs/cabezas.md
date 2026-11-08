@@ -21,7 +21,7 @@ En el álbum ves cuánto llevas de cada set (las que te faltan salen como *???*)
 También tiene el botón de tus **[cosméticos](casino.md#cosmeticos)**.
 **Al completar un set** te dan un premio (una vez por set):
 
-??? note "Los 15 sets y sus premios"
+??? note "Los 16 sets y sus premios"
     --8<-- "_generado/sets_cabezas.md"
 
 ## Reciclar repetidas

@@ -7,6 +7,8 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   sigue la DEMO con solo el tutorial y Sandy Heights. La vida de los zombis, el daño de las armas y la munición de
   [Cod Zombies](zombies.md) pueden cambiar. Falta la Supervivencia. Falta también confirmar con el autor del
   mapa (Port Vance, de Eivisxp) que se puede usar en el servidor.
+- **Cabezas «Zombis de Port Vance»:** ⚠️ PENDIENTE: el set nuevo de [cabezas coleccionables](cabezas.md) llega al
+  servidor junto con la campaña de Cod Zombies; hasta entonces no sale en los Cofres de Cabezas.
 - **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego, sobre todo los **ataques**. Falta equilibrar vidas, daños,
   botín y trofeos; los números de [Craft of Clans](clanes.md) pueden cambiar y el aspecto de los edificios lo cambiará
   el admin. Las temporadas, la guerra de bandos y sus premios en cabezas están sin estrenar.

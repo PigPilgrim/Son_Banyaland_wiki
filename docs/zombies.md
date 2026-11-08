@@ -6,8 +6,9 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
 !!! warning "En pruebas"
     La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
-    zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa de los zombis, la
-    pared roja del borde y los zombis que brillan llegan al servidor junto con la campaña.
+    zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
+    zombis, las botas doradas de los corredores, la pared roja del borde, los zombis que brillan y que al caer quedes
+    fuera de la partida llegan al servidor junto con la campaña.
 
 ## Entrar y salir
 
@@ -57,8 +58,8 @@ necesita ayuda.
   gráficos en «Detallados» o mejores).
 - Si un zombi tarda mucho en aparecer, o quedan pocos y no hay manera de encontrarlos, **brillan** y se ven a través
   de las paredes.
-- **Si caes**, miras hasta que se despeje el tramo y entonces vuelves con los demás (o sales con **[Salir de la
-  partida]** del chat). **Si caéis todos**, se repite el tramo.
+- **Si caes, quedas fuera de la partida** y vuelves al lobby. Para volver a intentarlo, entra otra vez: empiezas en
+  el tramo siguiente al último que hayas superado. Los demás del grupo siguen jugando.
 - Al empezar cada tramo te **rellenan** el equipo: munición, flechas, curas y lanzables. Lo que ya has superado
   cuenta: cada tramo te da armas nuevas para los siguientes (ver la tabla de abajo).
 - En la valla del aeropuerto no hay puertas: al despejar el Tranvía de Badoc se **abre una brecha** para pasar a las

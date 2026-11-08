@@ -7,6 +7,7 @@
 | **Star Wars** | 20 | 80 chips I + Trofeo | Cofres de Cabezas |
 | **Banderas** | 20 | 80 chips I + Trofeo | Cofres de Cabezas |
 | **Navidad** | 16 | 64 chips I + Trofeo | Cofres de Cabezas |
+| **Zombis de Port Vance** | 16 | 64 chips I + Trofeo | Cofres de Cabezas |
 | **Biblioteca** | 15 | 60 chips I + Trofeo | Cofres de Cabezas |
 | **Los Simpson** | 14 | 56 chips I + Trofeo | Cofres de Cabezas |
 | **Halloween** | 13 | 52 chips I + Trofeo | Cofres de Cabezas |

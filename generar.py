@@ -962,9 +962,17 @@ def zombies_tablas():
         filas.append((f"**{a['nombre']}**", a["tipo"], efecto, a["detalle"], a["consigue"]))
     escribir("zombies_armas.md", tabla(["Arma", "Tipo", "Efecto", "Detalles", "Se consigue"], filas))
     m = Z.MUNICION
-    escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad"], [
+    def aspecto(z):
+        cosas = []
+        if z.get("botas") == "GOLDEN_BOOTS": cosas.append("botas doradas")
+        if z.get("casco"): cosas.append("casco")
+        if z.get("escala"): cosas.append("más grande" if z["escala"] < 1.5 else "enorme")
+        if z.get("jefe"): cosas.append("nombre y barra de vida")
+        if z.get("variantes"): cosas.append(f"{'la mitad' if z['variantes'] == 0.5 else 'algunos'}: otra cara (médicos, policías, presos...)")
+        return ", ".join(cosas) or "—"
+    escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad", "Cómo se reconoce"], [
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
-         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido")
+         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido", aspecto(z))
         for z in Z.ZOMBIS.values()]))
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
