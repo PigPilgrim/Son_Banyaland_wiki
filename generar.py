@@ -964,7 +964,7 @@ def zombies_tablas():
     m = Z.MUNICION
     escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad"], [
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
-         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.24 else "rápido")
+         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido")
         for z in Z.ZOMBIS.values()]))
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
@@ -973,6 +973,8 @@ def zombies_tablas():
                                                        for a in Z.ARMAS.values() if "por_tramo" in a) + " (además del cargador lleno)"),
         ("Munición que suelta un zombi", f"una de cada {round(1 / m['soltar_probabilidad'])} veces, del arma que lleves en la mano: "
          + " · ".join(f"{n} {Z.MUNICIONES[k]['nombre'].lower()}" for k, n in m["soltar"].items())),
+        ("Disparo a la cabeza", f"×{Z.CABEZA:g} de daño (pistola, escopeta, rifle y arco)"),
+        ("Un zombi brilla", f"si lleva más de {L['brillo']} s vivo, o si quedan {L['brillo_ultimos']} o menos y nadie ha matado ninguno en {L['brillo_espera']} s"),
         ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador ({L['max_partida']} en total)"),
         ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
         ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),

@@ -2,5 +2,5 @@
 |---|---|---|---|
 | **Zombi** | 10 ♥ | 2,25 ♥ | normal |
 | **Corredor** | 6 ♥ | 1,5 ♥ | rápido |
-| **Tanque** | 25 ♥ | 4,5 ♥ | lento |
+| **Tanque** | 25 ♥ | 4,5 ♥ | normal |
 | **El Piloto** (jefe final) | 150 ♥ | 6 ♥ | normal |
