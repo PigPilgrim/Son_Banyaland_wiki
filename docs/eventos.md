@@ -23,7 +23,7 @@ amenazan con **borrar la aldea del mapa** si no se paga.
 - El Alcalde vuelve a casa y recupera sus poderes.
 - Trae **recuerdos del crucero** para el Tesoro: la cuarta parte del rescate (25 sellos y 96 chips I).
 - Todos los que aportaron algo reciben el título **«Rescatador»** (o «Rescatadora»), que sale en el chat. Se pone en
-  tus cosméticos (`/puente cosmeticos`).
+  tus cosméticos (en un [Tocador](crafteos.md#tocador) o con `/puente cosmeticos`).
 
 **Si no se paga:**
 

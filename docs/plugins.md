@@ -41,7 +41,7 @@ canciones nuevas**.
 ## Color de tu nombre
 
 Puedes elegir el **color de tu nombre** en el chat y en la lista de jugadores (Tab): **haz clic en tu nombre** en
-cualquier mensaje tuyo del chat (o escribe `/puente color`) y elige uno. Es gratis y lo puedes cambiar cuando quieras.
+cualquier mensaje tuyo del chat, en un [Tocador](crafteos.md#tocador) (o escribe `/puente color`) y elige uno. Es gratis y lo puedes cambiar cuando quieras.
 Si haces clic en el nombre de **otro**, se prepara un mensaje privado para él.
 
 El nombre que sale **encima de la cabeza** no cambia, y el prefijo de **[Alcalde]** o **[Concejal]** se mantiene.
@@ -49,7 +49,7 @@ El nombre que sale **encima de la cabeza** no cambia, y el prefijo de **[Alcalde
 ## Skin
 
 El **Barbero** de la aldea te cambia la skin: ver [Los aldeanos](aldeanos.md#barbero). Para **volver a tu skin de
-siempre** (gratis): `/puente propia`.
+siempre** (gratis): en un [Tocador](crafteos.md#tocador) o con `/puente propia`.
 
 ## Otros comandos útiles
 

@@ -57,7 +57,7 @@ Las tiradas gratis **no cuentan** para estos regalos, ni para el boleto gratis, 
 ### Cosméticos
 
 Son **de tu cuenta**: no se pierden, no se tiran y no se pueden pasar a otros. Se ponen en el menú de **Cosméticos**
-(botón del [álbum](cabezas.md#el-album) o `/puente cosmeticos`). Lo que aún no tienes sale como *???*.
+(en un [Tocador](crafteos.md#tocador), con el botón del [álbum](cabezas.md#el-album) o con `/puente cosmeticos`). Lo que aún no tienes sale como *???*.
 
 - **Títulos:** salen detrás de tu nombre en el chat. Algunos tienen otra forma: **Mayús + clic** para elegirla
   (*Rey del Casino* o *Reina del Casino*).

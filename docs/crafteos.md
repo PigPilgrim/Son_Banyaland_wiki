@@ -10,7 +10,7 @@ Colócalo todo **tal y como sale en el dibujo**. Las recetas también salen en e
 
 ## Tocador
 
-Para ponerte guapo:
+Tiene **forma de telar**. Para ponerte guapo:
 
 - **Títulos, rastros, efectos y sombreros**: tus [cosméticos](casino.md) (el título sale detrás de tu nombre en el chat).
 - **Color del nombre**: con el que sales en el chat y en la lista de jugadores (Tab). Gratis.
@@ -20,7 +20,7 @@ Para ponerte guapo:
 
 ## Atril de colecciones
 
-Para ver tus cosas:
+Tiene **forma de atril**. Para ver tus cosas:
 
 - Tu **álbum de cabezas** coleccionables ([Cabezas](cabezas.md)).
 - **Tus cartas** ([Casas, buzones y cartas](casas.md)).
