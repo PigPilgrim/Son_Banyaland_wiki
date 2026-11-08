@@ -39,7 +39,8 @@ Se sube de nivel con Walter Brick (**Subir a...**), cuando se cumple todo.
 ## Investigar
 
 Con Walter Brick → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
-conectado). Lo que se investiga se queda para siempre. En el menú (y al elegir qué fabricar), cada cosa va en su
+conectado). Lo que se investiga se queda para siempre. Va **despacio a propósito**: tenerlo todo lleva
+semanas, al ritmo de las edades. En el menú (y al elegir qué fabricar), cada cosa va en su
 fila: **Hierbas**, **Polvos**, **Premium**, **Armas** y **Flechas**.
 
 Lo ya investigado se puede **llevar en papel**: clic en él en el menú de Investigar y Walter Brick te da la
