@@ -20,6 +20,31 @@ Para separar épocas (por ejemplo, cada edad de la armadura), un apartado con "#
 
 ## La crónica
 
-*Todavía no ha pasado nada: la historia empieza cuando se abra el servidor.*
+## La Edad del Hierro
+
+### 9 de noviembre de 2026 · Empieza la Edad del Hierro
+
+Se abre la segunda edad: ya se pueden usar el hierro y la malla (y los picos de diamante).
+
+### 9 de noviembre de 2026 · Secuestran al Alcalde
+
+A medianoche, los malos malosos secuestran a **MFmisteri**, Alcalde de Payoland, mientras estaba de crucero. Piden
+100 Sellos de la Aldea y 6 chips II en una semana. Esa misma noche empieza también **la ira de los dioses**: el
+primero que entre en el Nether será el traidor.
+
+## La Edad del Cobre
+
+### 8 de noviembre de 2026 · Nace el Cartel de Montepinar
+
+Se funda la primera organización de los bajos fondos, el **Cartel de Montepinar**, con 444DobleD444 de jefe.
+
+### 6 de noviembre de 2026 · Primer Alcalde
+
+**MFmisteri** gana las primeras elecciones de Payoland con el lema *«Elijo progreso»*. TuFurro queda de concejal.
+
+### 3 de noviembre de 2026 · Se abre el mundo
+
+Llegan los primeros vecinos, TuFurro y LinkVEEM. Ese mismo día se funda la primera aldea, que acabará llamándose
+**Payoland**.
 
 </div>

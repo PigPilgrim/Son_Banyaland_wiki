@@ -362,7 +362,7 @@ def misiones_tablas():
     for dif, titulo in (("facil", "fáciles"), ("normal", "normales"), ("dificil", "difíciles")):
         filas = []
         for clave, d, txt, _, _, c in misiones.MISIONES:
-            if d != dif: continue
+            if d != dif or c == misiones.NUNCA: continue                                   # quitadas
             if c and "abierto_" in c and c.split("abierto_")[1].split()[0] not in mj_comun.JUEGOS: continue  # juego retirado
             if c and "abierto" in c: cuando = "Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas"
             else: cuando = cond.get(c, "Siempre") if c else "Siempre"

@@ -137,6 +137,12 @@ Sus ingredientes incluyen **materiales de mazmorra**.
 
 --8<-- "_generado/tienda_tabernero.md"
 
+### La ronda de la casa
+
+**Una vez al día, el Tabernero te invita a una bebida**: solo tienes que hablar con él. El día cambia a las 0:00 (hora
+de España) y **la bebida es la misma para todos**. Si ese día hay una [misión](misiones.md) de la Taberna (una
+cerveza, un vino, un licor...), la invitación es de ese tipo, así que te sirve para cumplirla.
+
 ---
 
 ## Las bebidas y sus efectos

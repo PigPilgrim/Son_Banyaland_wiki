@@ -10,6 +10,7 @@
 | Títulos | **Rey del Casino** (o «Reina del Casino») | Legendaria | Sale detrás de tu nombre en el chat. |
 | Títulos | **Rescatador** (o «Rescatadora») | Épica | Aportó al rescate del Alcalde secuestrado. |
 | Títulos | **Cazador del Traidor** (o «Cazadora del Traidor») | Legendaria | Cazó al traidor durante la ira de los dioses. |
+| Títulos | **El Inmortal** (o «La Inmortal») | Legendaria | El único que no murió ni una vez en toda la primera edad. |
 | Rastros al andar | **Polvo de feria** | Común | Un poco de polvo de la feria al andar. |
 | Rastros al andar | **Notas de verbena** | Poco común | Vas dejando notas de música. |
 | Rastros al andar | **Chispas doradas** | Rara | Chispas de oro a cada paso. |

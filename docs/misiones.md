@@ -39,7 +39,7 @@ Cada día se eligen al azar entre estas. Algunas solo salen si la aldea tiene ya
 
 Además, cada semana hay **una misión para toda la aldea** ("entre todos, 2000 de trigo"). Dura hasta el domingo por
 la noche: la nueva sale **el lunes a las 0:00**. Las de entregar se aportan
-en el Pregonero con **[Aportar]**; las de contar (zombis, pesca...) se suman solas. La de los jefes solo sale cuando
+en el Pregonero con **[Aportar]**; las de contar (zombis, esqueletos...) se suman solas. La de los jefes solo sale cuando
 la aldea ya tiene abiertas las mazmorras (nivel 3).
 
 --8<-- "_generado/misiones_semana.md"
