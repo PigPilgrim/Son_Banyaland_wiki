@@ -22,6 +22,23 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
   vuelve al salir. Dentro te dan el equipo del juego, que **no sale** de la partida.
 - Para salir: la **barrera** del hueco 9 de tu barra (clic derecho), o **[Salir]** en el chat. Vuelves al lobby.
 
+## La historia
+
+Eres un pasajero del crucero que acaba de atracar cuando empieza el brote. **Marta**, una operadora de evacuación,
+os habla por radio desde el aeropuerto: queda un último avión y os va guiando hasta él. Por el camino hay gente que
+necesita ayuda.
+
+- Los mensajes de radio salen en el chat con **📻 [Radio]** y un pitido; lo que dice la gente que encontráis, con su
+  nombre.
+- El **objetivo** de cada momento está siempre arriba de la pantalla (🎯). No todo son oleadas: hay que llegar a
+  sitios, buscar cosas, hablar con gente (clic derecho) o aguantar en un punto.
+- Todo avanza **para el grupo**: lo que haga cualquiera cuenta para todos.
+- Si ya te la sabes: **`/historia saltar`** corta el diálogo cuando lo pide todo el grupo.
+
+!!! note "En pruebas"
+    De momento solo tienen historia el **Hospital** y la **Comisaría** (y solo en el servidor de pruebas). El resto
+    de tramos siguen siendo oleadas.
+
 ## Cómo se juega
 
 - Cada **tramo** es un trozo de la ciudad cerrado con **cordones de cuarentena** (vallas de barrotes). Durante las
@@ -88,6 +105,10 @@ Los premios se cobran **al volver a la aldea**, como los de los demás minijuego
 aldea lo tiene).
 
 --8<-- "_generado/zombies_numeros.md"
+
+## Para quien edita la historia
+
+Los diálogos y objetivos están en un archivo aparte: [formato del archivo de historia](zombies-historia.md).
 
 ## Créditos
 
