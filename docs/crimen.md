@@ -39,8 +39,8 @@ Se sube de nivel con Walter Brick (**Subir a...**), cuando se cumple todo.
 ## Investigar
 
 Con Walter Brick → **Investigar**. **Una cosa a la vez**, y tarda **en tiempo real** (aunque nadie esté
-conectado). Lo que se investiga se queda para siempre. Va **despacio a propósito**: tenerlo todo lleva
-semanas, al ritmo de las edades. En el menú (y al elegir qué fabricar), cada cosa va en su
+conectado). Lo que se investiga se queda para siempre. Cada investigación tarda **unas horas**, así que
+se nota el avance casi cada día; lo que frena son las **edades**: para subir de nivel hay que esperar a la siguiente. En el menú (y al elegir qué fabricar), cada cosa va en su
 fila: **Hierbas**, **Polvos**, **Premium**, **Armas** y **Flechas**.
 
 Lo ya investigado se puede **llevar en papel**: clic en él en el menú de Investigar y Walter Brick te da la
@@ -70,7 +70,7 @@ miembro rompiéndola.
 - Solo en el mundo normal, **fuera de las aldeas** y con luz (vale la de antorchas: se puede cultivar bajo techo).
 - **El polvo de hueso no le hace nada**, y las matas no se pisotean.
 - Si la rompes **antes de tiempo**, solo recuperas la semilla.
-- **Cuando está lista echa humo verde**: se nota. Y si nadie la cosecha en **24 horas**, se echa a perder.
+- **Cuando está lista echa humo verde**: se nota. Y si nadie la cosecha en **3 días**, se echa a perder.
 - Cada organización tiene un **máximo de matas** según su nivel (ver [Los niveles](#los-niveles)).
 - **Cuidado con quién la encuentra:** otra organización que sepa cultivarla **os la puede robar**. Si la arranca **la
   Policía**, cuenta como **una prueba** contra vosotros. Si alguien os arranca una mata, os llega el aviso.
