@@ -56,6 +56,7 @@ ninguna edad. Pero **las armas y varitas épicas** (★★★★) de la Forja y 
   va a la parte de arriba del inventario, no a la barra. Cuenta el material, **también en las armas especiales** de
   las mazmorras y la forja: una katana de diamante no se puede usar hasta la edad del diamante. Los picos, igual, pero
   con una edad de adelanto.
+- En el minijuego [Cod Zombies](zombies.md) las edades **no cuentan**: sus armas y su equipo se usan siempre.
 
 ## Normas del servidor
 
