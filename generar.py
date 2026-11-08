@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -981,10 +981,51 @@ def zombies_tablas():
         ("Repetir un tramo", f"{P['repetir']} chip I ({P['repetir_sin_muertes']} si nadie del grupo cae); como mucho {P['tope_dia']} premios al día"),
     ]))
 
+def crafteos_tablas():
+    """Cada receta de crafteos.py como una mesa de trabajo (iconos en docs/img/items/, sacados del Minecraft del PC)."""
+    import glob, struct, zipfile, zlib
+    carpeta = os.path.join(AQUI, "docs", "img", "items")
+    os.makedirs(carpeta, exist_ok=True)
+    vacio = os.path.join(carpeta, "vacio.png")
+    if not os.path.exists(vacio):   # 16×16 transparente: el hueco vacío de la mesa
+        def trozo(t, d): return struct.pack(">I", len(d)) + t + d + struct.pack(">I", zlib.crc32(t + d) & 0xffffffff)
+        filas = bytes(16 * (1 + 64))
+        open(vacio, "wb").write(bytes.fromhex("89504e470d0a1a0a") + trozo(b"IHDR", struct.pack(">IIBBBBB", 16, 16, 8, 6, 0, 0, 0))
+                                + trozo(b"IDAT", zlib.compress(filas)) + trozo(b"IEND", b""))
+    faltan = [o for o in crafteos.OBJETOS if not os.path.exists(os.path.join(carpeta, o.lstrip("#") + ".png"))]
+    jars = sorted(glob.glob(os.path.join(os.environ.get("APPDATA", ""), ".minecraft", "versions", "*", "*.jar")))
+    if faltan and jars:
+        with zipfile.ZipFile(jars[-1]) as z:
+            for o in faltan:
+                ruta = "assets/minecraft/textures/" + crafteos.OBJETOS[o][1] + ".png"
+                if ruta in z.namelist(): open(os.path.join(carpeta, o.lstrip("#") + ".png"), "wb").write(z.read(ruta))
+
+    def icono(o, titulo=None):
+        n = titulo or crafteos.OBJETOS[o][0]
+        return f'![{n}](img/items/{o.lstrip("#")}.png "{n}")'
+
+    for r in crafteos.RECETAS:
+        forma = [f.ljust(3) for f in r["forma"]] + ["   "] * (3 - len(r["forma"]))
+        huecos = [icono(r["ingredientes"][c]) if c != " " else "![](img/items/vacio.png)" for f in forma for c in f]
+        cuenta = {}
+        for f in r["forma"]:
+            for c in f:
+                if c != " ": cuenta[r["ingredientes"][c]] = cuenta.get(r["ingredientes"][c], 0) + 1
+        lineas = ['<div class="sb-craft" markdown>',
+                  '<div class="sb-craft-mesa" markdown>', " ".join(huecos), "</div>",
+                  '<div class="sb-craft-flecha" aria-hidden="true">➜</div>',
+                  '<div class="sb-craft-sale" markdown>', icono(r["icono"], r["nombre"]), "</div>",
+                  "</div>", "",
+                  "**Necesitas:** " + " · ".join(f"{n} × {crafteos.OBJETOS[o][0]}" for o, n in cuenta.items()), ""]
+        escribir(f"crafteo_{r['clave']}.md", "\n".join(lineas))
+    escribir("crafteos_lista.md", tabla(["Bloque", "Para qué sirve", "Receta"],
+                                        [(f"**{r['nombre']}**", r["para"], f"[Ver receta]({r['pagina']})") for r in crafteos.RECETAS]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas()
     print("Tablas generadas en", SALIDA)
 
 

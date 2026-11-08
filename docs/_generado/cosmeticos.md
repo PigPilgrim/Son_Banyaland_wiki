@@ -8,6 +8,8 @@
 | Títulos | **Mano de oro** | Rara | Sale detrás de tu nombre en el chat. |
 | Títulos | **Señor del Bote** (o «Señora del Bote») | Épica | Sale detrás de tu nombre en el chat. |
 | Títulos | **Rey del Casino** (o «Reina del Casino») | Legendaria | Sale detrás de tu nombre en el chat. |
+| Títulos | **Rescatador** (o «Rescatadora») | Épica | Aportó al rescate del Alcalde secuestrado. |
+| Títulos | **Cazador del Traidor** (o «Cazadora del Traidor») | Legendaria | Cazó al traidor durante la ira de los dioses. |
 | Rastros al andar | **Polvo de feria** | Común | Un poco de polvo de la feria al andar. |
 | Rastros al andar | **Notas de verbena** | Poco común | Vas dejando notas de música. |
 | Rastros al andar | **Chispas doradas** | Rara | Chispas de oro a cada paso. |

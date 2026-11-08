@@ -386,3 +386,19 @@
   background: var(--sb-gold); box-shadow: 0 0 0 3px var(--sb-slot);
 }
 .md-typeset .sb-cronica h3 ~ p { padding-left: 1.4rem; border-left: 1px solid var(--sb-line); margin-left: .27rem; }
+
+/* ---------- Crafteos: la receta como una mesa de trabajo (generar.py → _generado/crafteo_*.md) ---------- */
+.md-typeset .sb-craft {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; width: fit-content; max-width: 100%;
+  margin: 1em 0; padding: .9rem 1.1rem; background: var(--sb-stone); border: 2px solid var(--sb-line);
+  border-radius: var(--sb-radius); box-shadow: var(--sb-bevel);
+}
+.md-typeset .sb-craft-mesa > p, .md-typeset .sb-craft-sale > p { display: grid; gap: 4px; margin: 0; }
+.md-typeset .sb-craft-mesa > p { grid-template-columns: repeat(3, 2.9rem); }
+.md-typeset .sb-craft-sale > p { grid-template-columns: 3.6rem; }
+.md-typeset .sb-craft img {
+  display: block; width: 100%; aspect-ratio: 1; padding: 6px; box-sizing: border-box; margin: 0;
+  background: var(--sb-slot); box-shadow: var(--sb-bevel); image-rendering: pixelated;
+}
+.md-typeset .sb-craft-sale img { padding: 8px; outline: 2px solid var(--sb-gold-dim); }
+.md-typeset .sb-craft-flecha { font-size: 2rem; line-height: 1; color: var(--sb-text-2); }

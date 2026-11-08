@@ -10,11 +10,7 @@ y el **Caballete de pintor**, para pintar cuadros con cualquier imagen de intern
 
 **Receta** (mesa de trabajo):
 
-| | | |
-|:-:|:-:|:-:|
-| Bloque musical | Bloque musical | Bloque musical |
-| Bloque musical | Tocadiscos | Bloque musical |
-| Tablones | Tablones | Tablones |
+--8<-- "_generado/crafteo_estudio.md"
 
 Ponlo en el suelo y dale **clic derecho**: salen todas las canciones del servidor. Elige una para grabarla.
 
@@ -39,11 +35,7 @@ Le llega al admin, que decide si la sube. Si la sube, saldrá en el Estudio para
 
 **Receta** (mesa de trabajo):
 
-| | | |
-|:-:|:-:|:-:|
-| Papel | Marco | Papel |
-| Palo | Mesa de cartografía | Palo |
-| Palo | | Palo |
+--8<-- "_generado/crafteo_caballete.md"
 
 Ponlo en el suelo y dale **clic derecho**:
 
