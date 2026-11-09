@@ -22,6 +22,10 @@ Para separar épocas (por ejemplo, cada edad de la armadura), un apartado con "#
 
 ## La Edad del Hierro
 
+### 9 de noviembre de 2026 · LinkVEEM, «El Inmortal»
+
+**LinkVEEM** recibe el título **«El Inmortal»**: fue el único que pasó toda la primera edad sin morir ni una vez.
+
 ### 9 de noviembre de 2026 · Empieza la Edad del Hierro
 
 Se abre la segunda edad: ya se pueden usar el hierro y la malla (y los picos de diamante).
