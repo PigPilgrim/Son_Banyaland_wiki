@@ -171,6 +171,8 @@ El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la
 - **Soplos:** cualquiera puede dar un soplo en el Juez → Policía → **Dar un soplo**. Es **anónimo**. Si aciertas,
   cuenta como prueba y, si la redada sale bien, **te llevas una parte**.
 - **Tomar mercancía dentro de una aldea** delante de uno de sus policías: multa leve.
+- **Cámaras:** con la **Comisaría**, la Policía cuelga cámaras públicas. Para no salir en ellas: oscuridad, cara
+  tapada, puntos ciegos o tinta en la lente ([Seguridad y cámaras](seguridad.md#contramedidas-para-los-dos-lados)).
 
 --8<-- "_generado/crimen_policia.md"
 

@@ -13,6 +13,12 @@ Habla con el **Juez** (clic derecho) → **Denunciar**:
 
 El caso queda abierto y se anuncia a todos. En **Casos abiertos** se pueden ver todos.
 
+### Pruebas: las cintas de vídeo
+
+Si una cámara grabó lo que pasó, saca la **Cinta de vídeo** en un Monitor y, con ella en la mano, ve al caso →
+**Adjuntar prueba**. La cinta pasa al expediente y la puede ver cualquiera que mire el caso. Pueden adjuntar pruebas
+las partes, el Juez y la Policía. Todo en [Seguridad y cámaras](seguridad.md#las-cintas-como-prueba).
+
 ### Defenderse
 
 El **acusado** puede elegir un **abogado** (otro vecino), y él o su abogado escriben la **defensa**.

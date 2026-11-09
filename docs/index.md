@@ -123,7 +123,7 @@ sea un fallo**: avisa al admin.
 
     Elecciones y leyes, los proyectos de la Oficina, el Tesoro y los impuestos, juicios y la guerra entre aldeas.
 
-    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip }
+    [Política](politica.md){ .sb-chip } [Proyectos](proyectos.md){ .sb-chip } [Hacienda](hacienda.md){ .sb-chip } [Justicia](justicia.md){ .sb-chip } [Cámaras](seguridad.md){ .sb-chip } [Guerra](guerra.md){ .sb-chip }
 
     [Entrar →](politica.md){ .sb-entrar }
 

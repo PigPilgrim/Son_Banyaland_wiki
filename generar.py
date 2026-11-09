@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos, seguridad  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -1000,7 +1000,8 @@ def crafteos_tablas():
         filas = bytes(16 * (1 + 64))
         open(vacio, "wb").write(bytes.fromhex("89504e470d0a1a0a") + trozo(b"IHDR", struct.pack(">IIBBBBB", 16, 16, 8, 6, 0, 0, 0))
                                 + trozo(b"IDAT", zlib.compress(filas)) + trozo(b"IEND", b""))
-    faltan = [o for o in crafteos.OBJETOS if not os.path.exists(os.path.join(carpeta, o.lstrip("#") + ".png"))]
+    # (los que no tienen textura de Minecraft, como la Cámara, llevan su icono hecho a mano en docs/img/items/)
+    faltan = [o for o in crafteos.OBJETOS if crafteos.OBJETOS[o][1] and not os.path.exists(os.path.join(carpeta, o.lstrip("#") + ".png"))]
     jars = sorted(glob.glob(os.path.join(os.environ.get("APPDATA", ""), ".minecraft", "versions", "*", "*.jar")))
     if faltan and jars:
         with zipfile.ZipFile(jars[-1]) as z:
@@ -1030,10 +1031,24 @@ def crafteos_tablas():
                                         [(f"**{r['nombre']}**", r["para"], f"[Ver receta]({r['pagina']})") for r in crafteos.RECETAS]))
 
 
+def seguridad_tablas():
+    """Cámaras de seguridad (seguridad.py). La receta del Pasamontañas no se publica."""
+    v, r, lim = seguridad.VISION, seguridad.REGLAS, seguridad.LIMITES
+    escribir("seguridad_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Alcance de una cámara", f"{v['alcance']} bloques"),
+        ("Lo que abarca a los lados", f"{v['fov_h']}° ({v['fov_h'] // 2}° a cada lado)"),
+        ("Lo que abarca de arriba abajo", f"{v['fov_v']}°, mirando {abs(v['inclinacion'])}° hacia abajo"),
+        ("Luz mínima para reconocer a alguien", f"{v['luz_minima']} (de noche, al aire libre y sin antorchas, hay 4)"),
+        ("Una bolsa de tinta la ciega", f"{r['ceguera_min']} minutos"),
+        ("Lo grabado dura", f"{r['caducidad_h']} horas reales (y como mucho {r['max_eventos']} grabaciones por cámara)"),
+        ("Lo mismo repetido se junta en una grabación", f"si pasa en menos de {r['fusionar_s']} s"),
+        ("Cámaras por casa / empresa / aldea", f"{lim['casa']} / {lim['empresa']} / {lim['aldea']}")]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas()
     print("Tablas generadas en", SALIDA)
 
 

@@ -1,7 +1,7 @@
 # Proyectos de la Oficina
 
 La **Oficina de Proyectos** la lleva el **Funcionario** (llega con el nivel 3 de la aldea). Allí la aldea decide qué
-edificios públicos construir: Hacienda, SEPE, Juzgado, Cárcel, Iglesia y Cuartel.
+edificios públicos construir: Hacienda, SEPE, Juzgado, Cárcel, Comisaría, Iglesia y Cuartel.
 
 ## Cómo sale adelante un proyecto
 
@@ -24,5 +24,6 @@ Qué trae cada proyecto, al detalle:
 
 - **Hacienda**: [Hacienda y Tesoro](hacienda.md). **SEPE**: [Empresas (SEPE)](empresas.md).
 - **Juzgado** y **Cárcel**: [Justicia](justicia.md).
+- **Comisaría**: [Seguridad y cámaras](seguridad.md#la-comisaria).
 - **Iglesia**: [La Iglesia](iglesia.md).
 - **Cuartel**: [Guerra y asedios](guerra.md).

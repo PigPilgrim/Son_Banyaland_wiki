@@ -29,6 +29,20 @@ Tiene **forma de atril**. Para ver tus cosas:
 
 --8<-- "_generado/crafteo_atril.md"
 
+## Cámara de seguridad
+
+Se cuelga en una pared y graba lo que pasa delante: quién abre tus cofres, quién entra por la puerta... Todo en
+[Seguridad y cámaras](seguridad.md).
+
+--8<-- "_generado/crafteo_camara.md"
+
+## Monitor de vigilancia
+
+Para ver lo que han grabado tus cámaras y sacar **cintas de vídeo** que sirven de prueba en el Juzgado. Todo en
+[Seguridad y cámaras](seguridad.md#el-monitor).
+
+--8<-- "_generado/crafteo_monitor.md"
+
 ## Estudio de grabación
 
 Para grabar tus propios discos con las canciones del servidor. Cómo funciona: [Estudio y Caballete](arte.md#estudio-de-grabacion).
