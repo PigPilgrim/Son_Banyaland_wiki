@@ -50,7 +50,7 @@ necesita ayuda.
   que llevas en la mano.
 - Cuando no queda ninguno, el tramo está **despejado**: se abre el cordón hacia el siguiente, una **flecha** te dice
   hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino. Si te alejas
-  mucho de él, te avisa (*«Creo que no es por ahí...»*) y te empuja un poco de vuelta. En cuanto alguien del grupo
+  mucho de él, te avisa (*«Creo que no es por ahí...»*). En cuanto alguien del grupo
   entra en el siguiente tramo, empieza, los demás van con él y el cordón se cierra detrás.
 - No hay hambre, pero **la vida no se recupera sola**: para eso están los botiquines.
 - Dentro del juego **nadie te empuja**: ni los demás jugadores ni los golpes de los zombis. Cuando te dan, el borde
