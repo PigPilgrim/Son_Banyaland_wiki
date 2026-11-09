@@ -6,7 +6,8 @@ Cómo acaba cada uno se apunta en la [Historia](historia.md).
 ## El secuestro del Alcalde
 
 Los **malos malosos** han secuestrado al Alcalde de la aldea mientras estaba de crucero con su mujer. Piden un rescate y
-amenazan con **borrar la aldea del mapa** si no se paga.
+amenazan con **borrar la aldea del mapa** si no se paga. Mientras dure, la primera vez que entras te llega **su
+comunicado** por el chat.
 
 - **El Alcalde secuestrado pierde sus poderes** mientras dure: no puede usar el Despacho, el Tesoro, los impuestos ni
   las leyes. Por lo demás, juega normal.
