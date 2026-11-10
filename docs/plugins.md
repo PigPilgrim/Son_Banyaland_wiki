@@ -51,6 +51,14 @@ El nombre que sale **encima de la cabeza** no cambia, y el prefijo de **[Alcalde
 El **Barbero** de la aldea te cambia la skin: ver [Los aldeanos](aldeanos.md#barbero). Para **volver a tu skin de
 siempre** (gratis): en un [Tocador](crafteos.md#tocador) o con `/puente propia`.
 
+## Registro de bloques y cofres
+
+El servidor **apunta quién pone y rompe cada bloque** y **quién mete y saca cosas de cada cofre**, con la hora. Si te
+roban o te rompen la casa, **avisa al admin** diciendo dónde: puede mirar quién fue y **devolverlo todo como estaba**.
+
+!!! warning "En pruebas"
+    El registro **aún no ha llegado al servidor**: de momento solo está en el servidor de pruebas.
+
 ## Otros comandos útiles
 
 | Comando | Para qué |
