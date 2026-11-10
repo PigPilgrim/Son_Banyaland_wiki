@@ -12,7 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos, seguridad  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos, seguridad, retos  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -372,6 +372,20 @@ def misiones_tablas():
              + f"\nSi la aldea la cumple, **todos los que hayan aportado algo** reciben **{misiones.SELLOS_SEMANA} sellos**.\n")
 
 
+def retos_tablas():
+    def premio(pr):
+        l = []
+        if pr["chips"]: l.append(f"{pr['chips']} chips I")
+        if pr["llaves"]: l.append(f"{pr['llaves']} × Llave del Cofre de Cabezas II")
+        return " y ".join(l)
+    for dif in retos.PREMIOS:
+        escribir(f"retos_{dif}.md", tabla(["Reto", "Juego"], [(txt, retos.JUEGO[j]) for _, d, j, txt, _, _ in retos.RETOS if d == dif])
+                 + f"\nPremio: **{premio(retos.PREMIOS[dif])}**.\n")
+    escribir("retos_premios.md", tabla(["Reto", "Premio"], [(f"**{retos.ETIQUETA[d]}**", premio(pr)) for d, pr in retos.PREMIOS.items()]
+                                       + [("**De la semana**", premio(retos.PREMIO_SEMANA) + " para cada uno que haya ayudado")]))
+    escribir("retos_semana.md", tabla(["Reto de la semana", "Juego"], [(txt, retos.JUEGO[j]) for _, j, txt, _, _ in retos.SEMANALES]))
+
+
 # ---------------------------------------------------------------- política
 def politica():
     filas = [("Nombre de la aldea: propuestas", f"{votacion.PROPUESTAS_H} h",
@@ -585,7 +599,9 @@ def cabezas_tablas():
     import cabezas
     r = cabezas.RAREZAS
     escribir("cofres_cabezas.md", tabla(["Cofre", "Se abre con"] + [x.capitalize() for x in r], [
-        (f"**{texto(cabezas.NOMBRE_COFRE[n])}**", f"1 × Chip {ROMANO[n]}", *[f"{cabezas.PESOS[n][x]} %" for x in r])
+        (f"**{texto(cabezas.NOMBRE_COFRE[n])}**", f"1 × Chip {ROMANO[n]}" + (" o 1 × Llave del Cofre de Cabezas II"
+                                                                            if f"cabezas_{n}" == retos.LLAVE_COFRE else ""),
+         *[f"{cabezas.PESOS[n][x]} %" for x in r])
         for n in sorted(cabezas.PESOS)]))
     escribir("sets_cabezas.md", tabla(["Set", "Cabezas", "Premio al completarlo", "Dónde sale"], [
         (f"**{s['nombre']}**", len(s["cabezas"]), f"{len(s['cabezas']) * cabezas.PREMIO_POR_CABEZA} chips I + Trofeo",
@@ -1047,7 +1063,7 @@ def seguridad_tablas():
 
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
-    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); politica(); iglesia(); justicia()
+    mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
     asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas()
     print("Tablas generadas en", SALIDA)
 
