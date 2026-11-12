@@ -27,8 +27,11 @@ pagan en la caja. Cada restaurante elige una **rama** de cocina (marisquería, t
 
 ### El Ordenador
 
-Solo lo usan **el dueño y los empleados**, y solo lo puede romper el dueño (no lo rompen explosiones, pistones ni agua).
-Lo que **cuesta chips** (investigar, mejoras, contratar...) solo lo hace **el dueño**, y se paga **de la caja**.
+Es el Ordenador de las empresas: ver [El Ordenador y la investigación](empresas.md#el-ordenador-y-la-investigacion).
+El dueño puede hacerlo todo; los **empleados**, lo que el dueño les deje en **Personal → Permisos** (de entrada: usar el
+Ordenador, cargar la Carta y los escaparates y cocinar). Lo que **cuesta chips** se paga **de la caja**.
+
+- **Estado:** la caja, el alquiler y lo que se está investigando.
 
 - **Investigar:** las ramas, la conservación y las recetas que ya sabéis.
 - **Mejoras:** la cocina, el comedor, el escaparate y los objetos de prestigio.
@@ -102,10 +105,10 @@ un 25 % más**.
 
 ### Dependientes
 
-Desde **Personal** el dueño **contrata dependientes** (cuántos, según la mejora Escaparate). Son aldeanos que venden
+Desde **Personal** el dueño (o un empleado con permiso) **contrata dependientes** (cuántos, según la mejora Escaparate). Son aldeanos que venden
 vuestros platos **a cualquiera**, al **precio que ponga el dueño**. Lo que pagan va **a la caja**.
 
-- Los cargan el dueño y los empleados desde el Ordenador (**Escaparate**). Solo admiten platos de vuestras ramas.
+- Los cargan el dueño y los empleados con permiso desde el Ordenador (**Escaparate**). Solo admiten platos de vuestras ramas.
 - Mientras alguien cambia el escaparate, ese dependiente no vende.
 - Cobran un **sueldo cada día** de la caja. Si no hay chips, se ponen **en huelga** hasta que cobren lo que se les debe.
 - Se pueden **mover**: en Personal, **Moverlo**, y luego clic derecho en el suelo donde lo queráis.

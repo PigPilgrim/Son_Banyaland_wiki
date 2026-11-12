@@ -1126,8 +1126,9 @@ def seguridad_tablas():
 
 def restaurantes_tablas():
     """Restaurantes (restaurantes.py y restaurantes_recetas.py). Las recetas (ingredientes y pasos) no se publican."""
-    import restaurantes as R, restaurantes_recetas as RR
-    G, C, Q, M = R.REGLAS, R.COMENSALES, R.CALIDAD, R.MAYORISTA
+    import restaurantes as R, restaurantes_recetas as RR, empresa_restaurante as ER
+    G, C, Q, M, T = R.REGLAS, R.COMENSALES, R.CALIDAD, R.MAYORISTA, ER.TIPO
+    AL, OR, ESP = T["aldea"], T["ordenador"], T["investigacion"]["especializacion"]
     estilos = ("rapida", "casera", "lujo")
 
     def coma(x):
@@ -1148,20 +1149,20 @@ def restaurantes_tablas():
         return ", ".join(f"{R.EFECTOS.get(e, e)} {ROMANO[n + 1]} ({s // 60} min)" if s >= 60 and s % 60 == 0 else
                          f"{R.EFECTOS.get(e, e)} {ROMANO[n + 1]} ({s} s)" for e, n, s in lista)
 
-    niv = [f"nivel {n}: {m}" for n, m in enumerate(G["max_por_nivel"]) if n >= G["nivel_aldea"]]
-    sec = G["secundaria"]
+    niv = [f"nivel {n}: {m}" for n, m in enumerate(AL["max_por_nivel"]) if n >= AL["nivel"]]
+    sec = ESP["secundaria"]
     nombre_estilo = {R.NIVELES[n]["orden"]: R.NIVELES[n]["nombre"] for n in estilos}
     escribir("restaurantes_numeros.md", tabla(["Qué", "Cuánto"], [
-        ("Para registrar uno", f"aldea de nivel {G['nivel_aldea']} o más"),
+        ("Para registrar uno", f"aldea de nivel {AL['nivel']} o más"),
         ("Restaurantes por aldea", " · ".join(niv)),
-        ("Alquiler", f"{G['alquiler']} chips I a la semana (el lunes, de la caja); sin pagar, cerrado hasta pagarlo"),
-        ("Ordenador", f"a {G['radio_ordenador']} bloques de la caja como mucho"),
-        ("Cocina", f"estaciones, cámaras, dependientes y Mayorista a {G['radio_cocina']} bloques del Ordenador como mucho"),
+        ("Alquiler", f"{T['alquiler']} chips I a la semana (el lunes, de la caja); sin pagar, cerrado hasta pagarlo"),
+        ("Ordenador", f"a {OR['radio_caja']} bloques de la caja como mucho"),
+        ("Cocina", f"estaciones, cámaras, dependientes y Mayorista a {OR['radio']} bloques del Ordenador como mucho"),
         ("Rama secundaria", f"hasta {nombre_estilo[sec['nivel_max']]}; investigar cuesta ×{coma(sec['coste'])} chips y ×{coma(sec['tiempo'])} tiempo"),
-        ("Cambiar de rama", f"{G['cambio_rama_chips']} chips I, y la nueva empieza de cero"),
+        ("Cambiar de rama", f"{ESP['cambiar']} chips I, y la nueva empieza de cero"),
         ("Cámaras frigoríficas", f"{G['camaras_max']} por restaurante"),
         ("La Carta", f"{G['carta_huecos']} huecos"),
-        ("Sueldo de un dependiente", f"{R.DEPENDIENTES['sueldo']} chips I al día (de la caja); sin cobrar, huelga"),
+        ("Sueldo de un dependiente", f"{T['dependientes']['sueldo']} chips I al día (de la caja); sin cobrar, huelga"),
         ("Preparación sin emplatar", f"se echa a perder a las {G['preparacion_h']} h"),
         ("Comer sentado en el comedor", f"efectos un {round((G['sentado_mult'] - 1) * 100)} % más largos")]))
 
@@ -1194,10 +1195,11 @@ def restaurantes_tablas():
     escribir("restaurantes_estrellas.md", tabla(["Estrellas", "Los efectos duran", "Pagan los comensales"], [
         ("★" * (k + 1), f"×{coma(Q['efecto'][k])}", f"×{coma(Q['pago'][k])}") for k in range(5)]))
 
-    co = R.CONSERVACION
+    pr = T["investigacion"]["proyectos"]
+    co = {k: c for k, c in pr.items() if c["categoria"] == "conservacion"}
     escribir("restaurantes_conservacion.md", tabla(["Investigación", "Qué hace", "Cuesta", "Tarda"], [
-        (f"**{c['nombre']}**", c["desc"] + (f" Antes hace falta la {co[c['requiere']]['nombre']}." if c.get("requiere") else ""),
-         f"{c['chips']} chips I; {mats(c['materiales'])}", tiempo(c["min"])) for c in co.values()]))
+        (f"**{c['nombre']}**", c["desc"] + "".join(f" Antes hace falta la {pr[r]['nombre']}." for r in c.get("requiere", [])),
+         f"{c['chips']} chips I; {mats(c['items'])}", tiempo(c["min"])) for c in co.values()]))
 
     g = R.GRASA
     escribir("restaurantes_grasa.md", tabla(["Grasa", "Qué pasa"], [
@@ -1216,15 +1218,15 @@ def restaurantes_tablas():
         ("Variedad", "prefieren la rama que menos han comido hoy en la aldea" if C["variedad"] else "no")]))
 
     filas = []
-    for m in R.MEJORAS.values():
+    for m in T["mejoras"].values():
         for k, n in enumerate(m["niveles"]):
-            que = []
-            if "estaciones" in n: que.append(f"{n['estaciones']} estaciones de cada tipo")
-            if "radio" in n: que.append(f"comedor de {n['radio']} bloques de radio")
-            if n.get("comensales"): que.append(f"+{n['comensales']} comensales al día")
-            if "huecos" in n: que.append(f"escaparate de {n['huecos']} huecos, {n['dependientes']} dependiente{'s' if n['dependientes'] > 1 else ''}")
+            v, que = n["valores"], []
+            if "estaciones" in v: que.append(f"{v['estaciones']} estaciones de cada tipo")
+            if "radio-comedor" in v: que.append(f"comedor de {v['radio-comedor']} bloques de radio")
+            if v.get("comensales-comedor"): que.append(f"+{v['comensales-comedor']} comensales al día")
+            if "huecos-escaparate" in v: que.append(f"escaparate de {v['huecos-escaparate']} huecos, {v['dependientes']} dependiente{'s' if v['dependientes'] > 1 else ''}")
             filas.append((f"**{m['nombre']}** {k}", ", ".join(que), "de partida" if not n["coste"] else f"{n['coste']} chips I"))
-    for x in R.PRESTIGIO:
+    for x in T["prestigio"]:
         filas.append((f"**Prestigio:** {x['nombre']}", x["desc"], f"{x['precio']} chips I"))
     escribir("restaurantes_mejoras.md", tabla(["Mejora", "Qué da", "Cuesta"], filas))
 
@@ -1234,10 +1236,28 @@ def restaurantes_tablas():
     escribir("restaurantes_mayorista.md", tabla(["Qué", "Precio", "Compras a la semana (por empresa)"], filas))
 
 
+def empresas_tablas():
+    """Módulo común de empresas (empresas.py): investigación, permisos y dependientes."""
+    import empresas as E
+    i, d = E.COMUN["investigacion"], E.COMUN["dependientes"]
+
+    def pc(x):
+        return f"{round(x * 100)} %"
+    escribir("empresas_investigacion.md", tabla(["Qué", "Cuánto"], [
+        ("Investigaciones a la vez", f"{i['huecos']} (más con algunas mejoras)"),
+        ("Cancelar", f"devuelve el {pc(i['cancelar_devuelve'])} de lo gastado y no cuenta como intento fallido"),
+        ("Un intento que falla", f"devuelve el {pc(i['fallo_devuelve'])} de lo gastado"),
+        ("El siguiente intento", f"un {pc(i['fallo_reduce'])} más corto por cada fallo (como mucho, la mitad: hasta el {pc(i['fallo_tiempo_min'])} del tiempo)"),
+        ("Catalizadores", "suben la probabilidad y se gastan aunque salga mal"),
+        ("Dependientes (si el tipo no dice otra cosa)", f"{d['sueldo']} chips I al día de la caja; sin cobrar, huelga")]))
+    escribir("empresas_permisos.md", tabla(["Permiso", "Un empleado nuevo lo tiene"], [
+        (f"**{n}**", "sí" if k in E.COMUN["permisos_empleado"] else "no") for k, n in E.COMUN["permisos"].items()]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas()
     print("Tablas generadas en", SALIDA)
 
 
