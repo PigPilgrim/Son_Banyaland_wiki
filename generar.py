@@ -751,6 +751,35 @@ def crimen_tablas():
         '<div class="sb-craft-flecha" aria-hidden="true">➜</div>',
         '<div class="sb-craft-sale" markdown>', f'![{L["nombre"]}](img/items/spyglass.png "{L["nombre"]}")', "</div>", "</div>", "",
         "**Necesitas:** " + " · ".join(f"{n} × {nombres[o][0]}" for o, n in cuenta.items()), ""]))
+    # El Trapero: lo que compra, encargos y tienda (las recetas de las encargadas no se ponen: solo la regla)
+    T = crimen.TRAPERO
+    plantas = {p["id"]: p["nombre"] for p in crimen.PLANTAS}
+    nombres_n = {n["id"]: n["nombre"] for n in crimen.NIVELES}
+    E = T["encargos"]
+    escribir("crimen_trapero.md", tabla(["Qué", "Cuánto"], [
+        ("Compra", " · ".join(f"{plantas.get(p, p)}: {v} billete{'s' if v != 1 else ''}" for p, v in T["compra"].items()) + " (en bruto)"),
+        ("El precio baja", f"un {round(T['baja_lote'] * 100)} % cada {T['lote']} que le vendáis (como mucho hasta el "
+                           f"{round(T['suelo'] * 100)} %); se recupera en {T['recupera_h']} h. Cada organización tiene sus precios"),
+        ("Tope diario", " · ".join(f"{nombres_n[k]}: {v}" for k, v in T["tope_dia"].items()) + " plantas (pasado el tope, al bidón: no paga)"),
+        ("Encargos", f"solo {', '.join(crimen.FAMILIAS[f] for f in E['familias'])} que ya sepáis hacer; el doble de planta que la receta "
+                     f"y {E['billetes_lote']} billetes por lote; sale {'★' * E['estrellas']}; como mucho {E['lotes_max']} lotes de una vez"),
+        ("Los encargos gastan", "el tope diario de mercancía, igual que producir con Walter Brick"),
+        ("Cerrado", " · ".join(x for x, s in (("durante una redada a la organización", T["cierra_redada"]),
+                                              ("con Walter Brick detenido", T["cierra_detenido"])) if s) or "nunca"),
+        ("Multa si te pillan con billetes", f"1 chip I cada {T['billete']['multa_cada']} billetes, que se confiscan (y son prueba)")]))
+    utiles = {"lupa": crimen.UTILES["lupa"]["nombre"], "ganzua": crimen.UTILES["ganzua"]["nombre"]}
+    armas = {a["id"]: a["nombre"] for a in crimen.ARMAS}
+    filas = []
+    for a in T["tienda"]:
+        if a["tipo"] == "municion" and not T["municion_propia"]:
+            continue
+        nombre = (armas.get(a["id"]) if a["tipo"] == "arma" else T["municion"][a["id"]]["nombre"] if a["tipo"] == "municion"
+                  else utiles.get(a["id"]) if a["tipo"] == "util" else crimen.NOMBRES.get(a["id"], a["id"]))
+        cuando = ("si la tenéis investigada" if a["tipo"] == "arma" else f"desde {nombres_n[a['nivel']]}" if a.get("nivel", "camello") != "camello" else "siempre")
+        filas.append((f"{a['cantidad']} × {nombre}" if a["cantidad"] > 1 else nombre, f"{a['precio']} billetes", f"{a['stock']}", cuando))
+    filas.append(("Un arma de la organización (épica o legendaria)", " · ".join(f"{r}: {p}" for r, p in T["armas"]["precios"].items()),
+                  f"{T['armas']['stock_semana']} en total", "si la tenéis investigada"))
+    escribir("crimen_trapero_tienda.md", tabla(["Qué", "Precio", "A la semana", "Cuándo"], filas))
 
 
 def en_chips(n):

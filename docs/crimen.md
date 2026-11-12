@@ -123,6 +123,35 @@ Con Walter Brick → **El Perista**: compra la mercancía y paga en **Fichas mar
 - Las Fichas marcadas sirven para **investigar**, **subir de nivel** y, si se **blanquean**, para conseguir chips I
   limpias (ver [Blanquear](#blanquear)). No se pueden colocar como bloque.
 
+## El Trapero
+
+En cada guarida, al lado de Walter Brick, vive **El trapero Duki**: compra lo que os sobra y paga en **Billetes
+falsos**. Solo atiende a los de su organización, en la guarida. **Cierra** mientras haya una redada contra vosotros y
+mientras Walter Brick esté detenido.
+
+Los Billetes falsos **solo valen para él**: el Perista no los quiere, no se blanquean y no se cambian por chips ni
+por Fichas marcadas. Son **ilegales**: si te cachean, te los quitan, pagas multa y la Policía sabe de qué
+organización son.
+
+Su menú tiene tres pestañas:
+
+- **Vender excedente:** Brizna y Cogollo **en bruto**. Clic vende 16; **Mayús + clic**, todas. Cuanto más le
+  vendáis, menos paga, y lo recupera en un día. Tiene un **tope al día** por organización: lleno el tope, solo puedes
+  **quemarlas en el bidón** (no te da nada). Lo que le vendes **no cuenta como venta** para el Perista ni para subir
+  de nivel.
+- **Encargos:** te prepara hierba que ya sepáis hacer, al momento, pero pide **el doble de planta** que la receta y
+  unos billetes, y sale de calidad baja (★). Gasta **el mismo tope de mercancía del día** que producir con Walter
+  Brick.
+- **Tienda:** Flechas de Somnífero y de Humo (si las tenéis investigadas), la [Lupa](#lupa-de-cultivo) y la
+  [Ganzúa](#ganzua), algunos materiales y **un arma de la organización a la semana**. Cada cosa tiene un **stock
+  por semana** para cada organización, que se repone el lunes.
+
+--8<-- "_generado/crimen_trapero.md"
+
+**La tienda:**
+
+--8<-- "_generado/crimen_trapero_tienda.md"
+
 ## La mercancía
 
 **Se toma con clic derecho** (para tomarla mirando a un cofre o una puerta, **Mayús + clic derecho**). Mientras te
