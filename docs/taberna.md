@@ -137,6 +137,9 @@ Sus ingredientes incluyen **materiales de mazmorra**.
 
 --8<-- "_generado/tienda_tabernero.md"
 
+Si trabajas en una **Taberna** o un **Restaurante** registrados en el SEPE, **El Mayorista** de los restaurantes de tu
+aldea vende las bebidas comunes más baratas (con un tope a la semana). Ver [Restaurantes](restaurantes.md#el-mayorista).
+
 ### La ronda de la casa
 
 **Una vez al día, el Tabernero te invita a una bebida**: solo tienes que hablar con él. El día cambia a las 0:00 (hora

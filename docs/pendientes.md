@@ -24,6 +24,10 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Elaboración a mano de la mercancía:** ⚠️ PENDIENTE de probar en el juego. Los tiempos, las estrellas y lo que
   cambia cada una en los [bajos fondos](crimen.md#a-mano-en-la-guarida) pueden cambiar.
+- **Restaurantes:** ⚠️ PENDIENTE: están hechos pero aún no han llegado al servidor; falta probarlos en el juego. Los precios, tiempos, efectos, comensales y el Mayorista de los
+  [Restaurantes](restaurantes.md) pueden cambiar.
+- **Helados y el calor:** ⚠️ PENDIENTE: los [helados](restaurantes.md#ramas-y-platos) solo dan Resistencia al fuego;
+  falta un efecto propio de «aguante del calor».
 - **Retos del Árbitro:** ⚠️ PENDIENTE: los [retos](retos.md) están hechos pero aún no han llegado al servidor; falta
   probarlos en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
   pueden cambiar.

@@ -1124,10 +1124,120 @@ def seguridad_tablas():
         ("Cámaras por casa / empresa / aldea", f"{lim['casa']} / {lim['empresa']} / {lim['aldea']}")]))
 
 
+def restaurantes_tablas():
+    """Restaurantes (restaurantes.py y restaurantes_recetas.py). Las recetas (ingredientes y pasos) no se publican."""
+    import restaurantes as R, restaurantes_recetas as RR
+    G, C, Q, M = R.REGLAS, R.COMENSALES, R.CALIDAD, R.MAYORISTA
+    estilos = ("rapida", "casera", "lujo")
+
+    def coma(x):
+        return f"{x:g}".replace(".", ",")
+
+    def ing(i):
+        a, b = i.split(":", 1)
+        return build.MATERIALES[b][0] if a == "mazmorra" else R.NOMBRES.get(i, b.replace("_", " ").capitalize())
+
+    def tiempo(m):
+        if m < 60: return f"{m} min"
+        return f"{coma(m / 60)} h" if m < 48 * 60 else f"{coma(m / 1440)} días"
+
+    def mats(lista):
+        return ", ".join(f"{n} × {ing(i)}" for i, n in lista)
+
+    def efectos(lista):
+        return ", ".join(f"{R.EFECTOS.get(e, e)} {ROMANO[n + 1]} ({s // 60} min)" if s >= 60 and s % 60 == 0 else
+                         f"{R.EFECTOS.get(e, e)} {ROMANO[n + 1]} ({s} s)" for e, n, s in lista)
+
+    niv = [f"nivel {n}: {m}" for n, m in enumerate(G["max_por_nivel"]) if n >= G["nivel_aldea"]]
+    sec = G["secundaria"]
+    nombre_estilo = {R.NIVELES[n]["orden"]: R.NIVELES[n]["nombre"] for n in estilos}
+    escribir("restaurantes_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Para registrar uno", f"aldea de nivel {G['nivel_aldea']} o más"),
+        ("Restaurantes por aldea", " · ".join(niv)),
+        ("Alquiler", f"{G['alquiler']} chips I a la semana (el lunes, de la caja); sin pagar, cerrado hasta pagarlo"),
+        ("Ordenador", f"a {G['radio_ordenador']} bloques de la caja como mucho"),
+        ("Cocina", f"estaciones, cámaras, dependientes y Mayorista a {G['radio_cocina']} bloques del Ordenador como mucho"),
+        ("Rama secundaria", f"hasta {nombre_estilo[sec['nivel_max']]}; investigar cuesta ×{coma(sec['coste'])} chips y ×{coma(sec['tiempo'])} tiempo"),
+        ("Cambiar de rama", f"{G['cambio_rama_chips']} chips I, y la nueva empieza de cero"),
+        ("Cámaras frigoríficas", f"{G['camaras_max']} por restaurante"),
+        ("La Carta", f"{G['carta_huecos']} huecos"),
+        ("Sueldo de un dependiente", f"{R.DEPENDIENTES['sueldo']} chips I al día (de la caja); sin cobrar, huelga"),
+        ("Preparación sin emplatar", f"se echa a perder a las {G['preparacion_h']} h"),
+        ("Comer sentado en el comedor", f"efectos un {round((G['sentado_mult'] - 1) * 100)} % más largos")]))
+
+    escribir("restaurantes_ramas.md", tabla(["Rama", "En la guía del SEPE", *(R.NIVELES[n]["nombre"] for n in estilos)], [
+        (f"**{r['nombre']}**", f"Restaurante · {r['tienda']}",
+         *(f"{r['investigar'][n]['chips']} chips I, {tiempo(r['investigar'][n]['min'])}; {mats(r['investigar'][n]['materiales'])}"
+           for n in estilos))
+        for r in RR.RAMAS.values() if r["activa"]]))
+
+    filas = []
+    for rid, r in RR.RAMAS.items():
+        if not r["activa"]: continue
+        for x in sorted((x for x in RR.RECETAS.values() if x["rama"] == rid), key=lambda x: R.NIVELES[x["nivel"]]["orden"]):
+            filas.append((r["nombre"], f"**{x['nombre']}**", R.NIVELES[x["nivel"]]["nombre"], efectos(x["efectos"]), f"{x['vida_h']} h"))
+    escribir("restaurantes_platos.md", tabla(["Rama", "Plato", "Estilo", "Efecto (con ★★★)", "Caduca a las"], filas))
+
+    est = {"rapida": RR.RAPIDA, "casera": RR.CASERA, "lujo": RR.LUJO}
+
+    def grasa_txt(g):
+        return f"+{g}" if g > 0 else (str(g).replace("-", "−") if g < 0 else "nada")
+
+    def ademas(n):
+        if est[n].get("secundarios"): return "da un poco de Hambre"
+        if est[n].get("alcohol"): return "baja el alcohol y las toxinas de las bebidas"
+        return "los efectos más fuertes (nunca Fuerza, y Resistencia como mucho I)"
+    escribir("restaurantes_estilos.md", tabla(["Estilo", "Platos por tanda", "Pagan los comensales", "Grasa", "Además"], [
+        (f"**{R.NIVELES[n]['nombre']}**", f"hasta {R.NIVELES[n]['lotes_max'] * est[n]['sale']}", f"×{coma(R.NIVELES[n]['pago'])}",
+         grasa_txt(est[n].get("grasa", 0)), ademas(n)) for n in estilos]))
+
+    escribir("restaurantes_estrellas.md", tabla(["Estrellas", "Los efectos duran", "Pagan los comensales"], [
+        ("★" * (k + 1), f"×{coma(Q['efecto'][k])}", f"×{coma(Q['pago'][k])}") for k in range(5)]))
+
+    co = R.CONSERVACION
+    escribir("restaurantes_conservacion.md", tabla(["Investigación", "Qué hace", "Cuesta", "Tarda"], [
+        (f"**{c['nombre']}**", c["desc"] + (f" Antes hace falta la {co[c['requiere']]['nombre']}." if c.get("requiere") else ""),
+         f"{c['chips']} chips I; {mats(c['materiales'])}", tiempo(c["min"])) for c in co.values()]))
+
+    g = R.GRASA
+    escribir("restaurantes_grasa.md", tabla(["Grasa", "Qué pasa"], [
+        (f"{g['lentitud']} o más", "a ratos, Lentitud"),
+        (f"{g['nauseas']} o más", "a ratos, también Náuseas"),
+        (f"{g['max']}", f"{g['bloqueo_min']} minutos sin poder comer comida Rápida"),
+        ("Baja sola", f"de {g['max']} a 0 en {g['baja_h']} horas")]))
+
+    escribir("restaurantes_comensales.md", tabla(["Qué", "Cuánto"], [
+        ("Comensales al día en cada aldea", f"{C['por_nivel']} por cada nivel de la aldea" + (f" + {C['base']}" if C["base"] else "")),
+        ("Como mucho, por restaurante", f"{C['tope_restaurante']} al día (sin contar los extra)"),
+        ("Extra por las estrellas del SEPE", f"+{coma(C['por_estrella'])} al día por cada ★ de la semana (como mucho {C['estrellas_tope']} ★)"),
+        ("Extra si sois la Empresa de la semana", f"+{C['empresa_semana']} al día"),
+        ("Extra por el Comedor", "según la mejora (abajo)"),
+        ("El mismo plato muchas veces", f"cada uno que vendéis lo baja un {round(C['baja'] * 100)} % (como mucho hasta la mitad); se recupera en {C['recupera_h']} h"),
+        ("Variedad", "prefieren la rama que menos han comido hoy en la aldea" if C["variedad"] else "no")]))
+
+    filas = []
+    for m in R.MEJORAS.values():
+        for k, n in enumerate(m["niveles"]):
+            que = []
+            if "estaciones" in n: que.append(f"{n['estaciones']} estaciones de cada tipo")
+            if "radio" in n: que.append(f"comedor de {n['radio']} bloques de radio")
+            if n.get("comensales"): que.append(f"+{n['comensales']} comensales al día")
+            if "huecos" in n: que.append(f"escaparate de {n['huecos']} huecos, {n['dependientes']} dependiente{'s' if n['dependientes'] > 1 else ''}")
+            filas.append((f"**{m['nombre']}** {k}", ", ".join(que), "de partida" if not n["coste"] else f"{n['coste']} chips I"))
+    for x in R.PRESTIGIO:
+        filas.append((f"**Prestigio:** {x['nombre']}", x["desc"], f"{x['precio']} chips I"))
+    escribir("restaurantes_mejoras.md", tabla(["Mejora", "Qué da", "Cuesta"], filas))
+
+    filas = [(f"{c} × {ing(i)}", f"{p} chip{'s' if p != 1 else ''} I", n) for i, c, p, n in M["ingredientes"]]
+    filas += [(f"{M['bebidas_cantidad']} × {bebidas.CARTA[b]['nombre']}", f"{M['bebidas_precio']} chips I (en el Tabernero, {M['tabernero_precio']})",
+               M["bebidas_semana"]) for b in M["bebidas"]]
+    escribir("restaurantes_mayorista.md", tabla(["Qué", "Precio", "Compras a la semana (por empresa)"], filas))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas()
     print("Tablas generadas en", SALIDA)
 
 
