@@ -55,8 +55,7 @@ El Alcalde recibe el **Libro del Alcalde** (se le quita si pierde el cargo). Con
 - **Proponer leyes** y **proyectos** (ver abajo y [Proyectos](proyectos.md)).
 - Ver el **Libro de Leyes**.
 - **Colocar a los aldeanos** donde quiera dentro de la aldea.
-- Con **SEPE**: repartir los **permisos exclusivos**, el [Concesionario y la Gasolinera](vehiculos.md#la-licencia) de la aldea,
-  y poner el [tope del precio de la gasolina](vehiculos.md#el-tope-del-alcalde).
+- Con **SEPE**: poner el [tope del precio de la gasolina](vehiculos.md#el-tope-del-alcalde).
 - Con **Hacienda**: poner los **impuestos**.
 - Con **Cuartel**: declarar **guerras** (página propia más adelante).
 

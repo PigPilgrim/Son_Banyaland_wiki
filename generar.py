@@ -828,7 +828,7 @@ def vehiculos_tablas():
              f"{en_chips(E['repuesto_precio'] * E['repuestos_por_compra'])}. No se pueden fabricar.\n")
     I = vehiculos.INACTIVIDAD
     escribir("inactividad.md", f"Si llevas **{I['aviso']} días** sin entrar al servidor, te llega una carta del Ayuntamiento a ti y otra al Alcalde. "
-             f"Si llegas a **{I['pierde']} días**, **pierdes la licencia**, como si te la quitara el Alcalde. En cuanto entras, la cuenta vuelve a empezar.\n")
+             f"Si llegas a **{I['pierde']} días**, **dejas de llevarlo**: tu empresa sigue con su caja, pero pasa a ser de tipo *Otro*, y el hueco de la aldea queda libre para otro. En cuanto entras, la cuenta vuelve a empezar.\n")
 
 
 def clanes():

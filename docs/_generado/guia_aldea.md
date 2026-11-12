@@ -54,7 +54,7 @@
 | **Sobre ruedas** | Ten la llave de un vehículo (se compran en el Concesionario). |
 | **Lleno, por favor** | Reposta tu vehículo en un surtidor. |
 | **Tuneado** | Que el Concesionario tunee tu vehículo. |
-| **Negocio sobre ruedas** | Consigue la licencia del Concesionario o la de la Gasolinera. |
+| **Negocio sobre ruedas** | Registra el Concesionario o la Gasolinera de tu aldea. |
 | 🔒 *Secreto* | Se descubre al conseguirlo. |
 | 🔒 *Secreto* | Se descubre al conseguirlo. |
 | 🔒 *Secreto* | Se descubre al conseguirlo. |

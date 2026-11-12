@@ -1,8 +1,8 @@
 # Vehículos
 
 Caballos, burros y happy ghasts de marca, con su **llave**, su **maletero** y su **depósito**. Cada aldea tiene **un
-Concesionario** y **una Gasolinera**, que reparte **el Alcalde**, y cada uno es
-[una empresa del SEPE](empresas.md).
+Concesionario** y **una Gasolinera**, y cada uno es [una empresa del SEPE](empresas.md): el primero que la registra
+se la queda.
 
 !!! warning "⚠️ PENDIENTE"
     **Recién llegado al servidor, falta probarlo jugando.** Los precios, las velocidades y los consumos pueden
@@ -137,8 +137,8 @@ En la Refinería se **encargan los surtidores**, y cada uno cuesta más que el a
 
 ### El tope del Alcalde
 
-El Alcalde pone **lo más que puede costar un bidón** en los surtidores de su aldea, desde su Despacho → **Permisos
-exclusivos** → **Tope de precios**. Lo elige dentro de un margen igual para todas las aldeas:
+El Alcalde pone **lo más que puede costar un bidón** en los surtidores de su aldea, desde su Despacho → **Precio de
+la gasolina**. Lo elige dentro de un margen igual para todas las aldeas:
 
 --8<-- "_generado/topes.md"
 
@@ -147,17 +147,15 @@ exclusivos** → **Tope de precios**. Lo elige dentro de un margen igual para to
 **Solo cuando la aldea no tiene Gasolinera**, el **Funcionario** tiene un surtidor de emergencia: llevas tu vehículo
 (montado o a 8 bloques, con su llave) y repostas **a varias veces el tope** (la última columna de la tabla). Ese dinero no se lo queda nadie, ni el Tesoro.
 
-## La licencia
+## Abrir el Concesionario o la Gasolinera
 
-1. **El Alcalde lo reparte:** desde su Despacho, en **Permisos exclusivos**, elige a un ciudadano conectado. La aldea necesita tener el SEPE.
-2. **Lo registras en el SEPE** de tu aldea, eligiéndolo como tipo de empresa. Si ya tienes otra empresa, antes tienes que
-   dejarla.
-3. El Concesionario recibe el Ordenador, la Llave inglesa y el Kit de tuneo, y la Gasolinera, la Refinería. **Solo le
-   sirven al dueño de la licencia.**
+1. **Lo registras en el SEPE** de tu aldea, eligiéndolo como tipo de empresa. Hay **uno de cada por aldea**: si ya lo
+   lleva alguien, sale en gris con su nombre. Si ya tienes otra empresa, antes tienes que dejarla.
+2. El Concesionario recibe el Ordenador, la Llave inglesa y el Kit de tuneo, y la Gasolinera, la Refinería. **Solo le
+   sirven al dueño.**
    Su nombre sale en el cartel del Funcionario.
 
-Si cierras la empresa, o el Alcalde te la quita, pierdes la licencia. Cuando te la quita él, la empresa sigue con su caja,
-pero pasa a ser de tipo *Otro*.
+Si cierras la empresa, queda libre para otro.
 
 **Lo que era tuyo no se lo queda el siguiente:**
 
