@@ -717,6 +717,40 @@ def crimen_tablas():
         ("El Perista", f"cada venta baja el precio un {round(R['perista_baja'] * 100)} % (hasta el {round(R['perista_minimo'] * 100)} %); "
                        f"se recupera en {R['perista_recupera_h']} h. Los precios y la demanda son para todo el servidor"),
         ("Fichas marcadas", "64 Fichas marcadas = 1 Ficha marcada II")]))
+    # Útiles (Lupa y Ganzúa). La receta de la Lupa se publica; la de la Ganzúa no.
+    L, G = crimen.UTILES["lupa"], crimen.UTILES["ganzua"]
+    objetivos = {"buzon": "buzones de casas", "maletero": "maleteros de vehículos", "alijo": "el Alijo de otras organizaciones"}
+    escribir("crimen_utiles.md", tabla(["Qué", "Cuánto"], [
+        ("Lupa: usos", f"{L['usos']} (uno por mata mirada)"),
+        ("Ganzúa: qué abre", ", ".join(v for k, v in objetivos.items() if G["objetivos"][k]) or "nada"),
+        ("Ganzúa: quién la fabrica", "solo los de una organización (usarla, cualquiera)" if G["solo_org_fabrica"] else "cualquiera"),
+        ("Forcejeo", f"{G['forcejeo_s']} s quieto y agachado; se gasta siempre"),
+        ("Probabilidad de abrir", f"{round(G['exito'] * 100)} %"),
+        ("Si falla", f"{round(G['rotura'] * 100)} % de que deje una Ganzúa rota en el suelo"),
+        ("Lo que se ve al abrir", f"de {G['huecos'][0]} a {G['huecos'][1]} huecos al azar; chips y diamantes, como mucho el "
+                                  f"{G['tope_dinero_pct']} % de lo que haya"),
+        ("Tiempo para llevarte algo", f"{G['robo_s']} s"),
+        ("Para volver a usarla", f"{G['cooldown_jugador_min']} min"),
+        ("Para volver a forzar lo mismo", f"{G['cooldown_objetivo_h']} h (la misma casa, vehículo o Alijo)"),
+        ("Lo oyen", f"los que estén a {G['aviso_radio']} bloques"),
+        ("La Policía sabe", f"la zona, en un círculo de unos {G['policia_radio']} bloques"),
+        ("Multa si te pillan con una", f"{G['valor'] * 2} chips I por ganzúa (y un caso en el Juzgado)"),
+        ("Hace falta", f"más de {R['horas_miembro']} h jugadas; no estar en la cárcel ni haber una redada en marcha")]))
+    nombres = {"chip:1": ("Chip I", "chip"), "glass_pane": ("Panel de cristal", "glass_pane"), "stick": ("Palo", "stick"),
+               "iron_ingot": ("Lingote de hierro", "iron_ingot")}
+    r = L["receta"]
+    forma = [f.ljust(3) for f in r["forma"]] + ["   "] * (3 - len(r["forma"]))
+    huecos = [f'![{nombres[r["ingredientes"][c]][0]}](img/items/{nombres[r["ingredientes"][c]][1]}.png "{nombres[r["ingredientes"][c]][0]}")'
+              if c != " " else "![](img/items/vacio.png)" for f in forma for c in f]
+    cuenta = {}
+    for f in r["forma"]:
+        for c in f:
+            if c != " ": cuenta[r["ingredientes"][c]] = cuenta.get(r["ingredientes"][c], 0) + 1
+    escribir("crafteo_lupa.md", "\n".join([
+        '<div class="sb-craft" markdown>', '<div class="sb-craft-mesa" markdown>', " ".join(huecos), "</div>",
+        '<div class="sb-craft-flecha" aria-hidden="true">➜</div>',
+        '<div class="sb-craft-sale" markdown>', f'![{L["nombre"]}](img/items/spyglass.png "{L["nombre"]}")', "</div>", "</div>", "",
+        "**Necesitas:** " + " · ".join(f"{n} × {nombres[o][0]}" for o, n in cuenta.items()), ""]))
 
 
 def en_chips(n):

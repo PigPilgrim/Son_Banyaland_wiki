@@ -30,7 +30,8 @@ si das de más, te devuelve el cambio. Lo que pagas tú **lo negocias con él**.
 - **Agachado y clic derecho**: abrir el maletero.
 - **Clic derecho con la llave en la mano**: te dice dónde está, su vida, su estado y su combustible.
 
-Sin la llave no se puede montar, ni abrir el maletero, ni repostar.
+Sin la llave no se puede montar, ni abrir el maletero, ni repostar. Un ladrón con una [Ganzúa](crimen.md#ganzua) sí
+puede forzar el maletero y llevarse algo. Quien lleve la llave se entera al momento.
 
 !!! tip "Antes de comprar, mira la llave"
     La llave dice **el modelo y la matrícula** del vehículo, y **no se puede renombrar en el yunque** (los bidones

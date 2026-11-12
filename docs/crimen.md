@@ -163,8 +163,9 @@ El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la
 - **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca. Él lo ve venir (2 segundos). Si lleva algo
   ilegal, se le quita, **paga multa al Tesoro** (si no le llega, se le queda como [deuda](justicia.md#las-deudas)) y
   se abre **un caso en el Juzgado**, por si el Juez quiere añadir cárcel.
-- **Pruebas:** lo que se confisca dice de qué organización es. **Arrancar una plantación** también cuenta (una prueba
-  por plantación, no por mata). Cada prueba da **una pista** de dónde está su guarida:
+- **Pruebas:** lo que se confisca dice de qué organización es. **Arrancar una plantación** o registrarla con la
+  [Lupa](#lupa-de-cultivo) también cuenta (una prueba por plantación, no por mata), y también encontrar una
+  [Ganzúa rota](#ganzua). Cada prueba da **una pista** de dónde está su guarida:
   un círculo cada vez más pequeño. Las pruebas caducan.
 - **Orden de registro:** con suficientes pruebas, el Juez o un agente la piden en **Pruebas y pistas**. La redada la
   organiza el admin: **hablad con Raúl**.
@@ -175,6 +176,39 @@ El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la
   tapada, puntos ciegos o tinta en la lente ([Seguridad y cámaras](seguridad.md#contramedidas-para-los-dos-lados)).
 
 --8<-- "_generado/crimen_policia.md"
+
+## Útiles
+
+### Lupa de cultivo
+
+Con ella en la mano, **clic derecho a una mata** y te dice cómo va: en qué fase está, cuánto le falta para estar
+lista y si ya se puede cosechar (o cuándo se echará a perder). Cada mata que miras gasta un uso. En el aire es un
+catalejo normal.
+
+Es **legal**: la usan los que cultivan y también la Policía, y no se confisca en los cacheos. Nunca dice de qué
+organización es la mata, salvo que sea la tuya. Si eres el **Juez o un agente**, te sale **Registrar como prueba**:
+cuenta igual que arrancarla, pero la mata se queda donde está.
+
+--8<-- "_generado/crafteo_lupa.md"
+
+### Ganzúa
+
+Es **ilegal**: si te cachean con una, te la quitan y pagas multa. La fabrican los de las organizaciones, pero luego
+la puede usar cualquiera. La receta no se publica: pregunta en los bajos fondos.
+
+- **Mayús + clic derecho** al **buzón de una casa** o al **maletero de un vehículo**. Tienes que aguantar **quieto y
+  agachado** unos segundos. Si te mueves, te levantas o te hacen daño, lo dejas.
+- **Se gasta siempre**, abra o no. Si no abre, puede que **se parta y un trozo se quede en el suelo**: si lo encuentra la
+  Policía, sabrá de qué organización eres.
+- Si abre, **no ves todo**: solo unos pocos huecos al azar, y de las chips y los diamantes, solo una parte. Tienes unos
+  segundos para coger lo que quieras antes de que se cierre.
+- **Te van a oír.** El dueño (o la familia de la casa, o quien lleve la llave del vehículo) se entera al momento,
+  aunque no sabe quién eres. Los que estén cerca oyen el forcejeo, la Policía de la aldea recibe la denuncia con la
+  zona aproximada y las [cámaras](seguridad.md) graban el intento.
+- Una casa o un vehículo forzado no se puede volver a forzar en un buen rato, y tú tampoco puedes encadenar robos.
+- No se puede usar desde la cárcel ni mientras haya una redada en marcha.
+
+--8<-- "_generado/crimen_utiles.md"
 
 ## Las redadas
 

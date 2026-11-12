@@ -15,6 +15,7 @@ Encima del buzón sale un cartel con **el nombre de la casa, el dueño, su nivel
 ### El buzón
 
 - **Solo lo abren el dueño y su familia.** Está protegido: nadie más lo puede romper, ni las explosiones, ni las tolvas.
+  Eso sí, un ladrón con una [Ganzúa](crimen.md#ganzua) puede forzarlo y llevarse un poco. Si pasa, te enteras al momento.
 - **Es la hucha de la casa:** las chips y los diamantes que guardes ahí son la fortuna de la casa.
 - **Es lo único que paga el impuesto a los ricos** (si tu aldea tiene Hacienda). Lo que lleves encima o en el cofre
   de Ender **no paga**. Si rompes el buzón, la casa sigue pagando por lo último que tenía, y lo que no se pueda cobrar
