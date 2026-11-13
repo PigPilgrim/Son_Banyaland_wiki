@@ -366,6 +366,8 @@ Con **Decorar** eliges bloques (flores, setos, vallas, faroles, caminos, lanas..
 **gratis** y no cuentan para nada: solo para que tu fortín quede bonito.
 
 - **Clic derecho**: poner el bloque. Los caminos (tierra de camino, grava...) sustituyen la hierba del suelo.
-- **Clic izquierdo** con un bloque de decoración en la mano: quitar decoración.
+- **Clic izquierdo** con un bloque de decoración en la mano: quitar decoración. Se quita también lo que estaba
+  apoyado encima (una flor, un farol...).
+- La grava y lo que cae tiene que ir **sobre algo**: en el aire no se puede poner.
 - No se puede decorar **encima de un edificio ni pegado a uno** (queda un bloque de paso alrededor).
 - En el fortín **no se fabrica nada**: la rejilla 2×2 del inventario está bloqueada.
