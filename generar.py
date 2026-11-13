@@ -949,9 +949,14 @@ def clanes():
         ("Te llevas", "ese botín multiplicado por la parte que destruyas (lo que no te quepa, se pierde)"),
         ("Escudo del defensor", f"{A['escudo_fuerte_h']} h si le destruyen el {A['escudo_fuerte_pct']} % o más; si no, {A['escudo_h']} h"),
     ]))
-    ej = [(0, 0), (0, 120), (120, 0), (0, 600), (600, 0)]
+    ej = [(100, 100), (100, 220), (220, 100), (100, 700), (700, 100), (20, 100), (100, 20)]
     escribir("clanes_trofeos.md", tabla(["Tus trofeos", "Los del rival", "En juego", "Si ganas (1 ★ o más)", "Si pierdes (0 ★)"],
-             [(a, b, F.trofeos_en_juego(a, b), f"+{F.trofeos_en_juego(a, b)}", f"−{F.trofeos_en_juego(a, b) // 2}") for a, b in ej]))
+             [(a, b, F.trofeos_en_juego(a, b), f"+{F.trofeos_movidos(a, b, True)}", f"−{F.trofeos_movidos(a, b, False)}") for a, b in ej]))
+    escribir("clanes_trofeos_reglas.md", tabla(["", ""], [
+        ("Trofeos al empezar cada temporada", str(A["trofeos_inicio"])),
+        ("Un mismo rival mueve trofeos", f"{A['trofeos_rival_semana']} veces por semana como mucho (contando ataques en los dos sentidos)"),
+        ("Cuentas nuevas", "no mueven trofeos hasta tener las horas jugadas que piden las organizaciones" if A["trofeos_horas_org"]
+         else "mueven trofeos como todas")]))
     G = F.GUERRA
     escribir("clanes_guerra.md", tabla(["", ""], [
         ("Ataques de guerra", f"{G['ataques_dia']} al día por jugador, solo " + " y ".join(

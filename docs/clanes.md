@@ -311,7 +311,10 @@ soltaste **se pierden** aunque sigan vivas; las que no soltaste vuelven a tu cam
 ### Trofeos y premios
 
 Atacar con **1 estrella o más** te da trofeos y se los quita al defensor; con 0 estrellas, los pierdes tú y se los
-lleva él. Cuantos más trofeos tiene el rival, más hay en juego. Nadie baja de 0.
+lleva él. **Lo que gana uno lo pierde el otro**: nadie se lleva más de lo que tiene el rival y nadie baja de 0. Cuantos
+más trofeos tiene el rival, más hay en juego; ganar a alguien con muchos menos da poco.
+
+--8<-- "_generado/clanes_trofeos_reglas.md"
 
 --8<-- "_generado/clanes_trofeos.md"
 
@@ -328,7 +331,7 @@ Cada **mes** es una temporada: empieza el **día 1 a las 0:00** (hora de España
 
 - Al acabar, los **tres con más trofeos** se llevan una copa: **Gold Chalice** (1.º), **Iron Chalice** (2.º) y
   **Bronze Chalice** (3.º).
-- Después, los **trofeos de todos vuelven a 0** y se eligen **bandos nuevos**. Tu fortín, tus tropas, tus héroes y
+- Después, los **trofeos de todos vuelven al número de inicio** (ver arriba) y se eligen **bandos nuevos**. Tu fortín, tus tropas, tus héroes y
   tus niveles **no se tocan**.
 - El cartel del lobby enseña el top de **esta semana** y el de **la temporada**.
 
