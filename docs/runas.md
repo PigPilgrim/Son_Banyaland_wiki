@@ -46,6 +46,20 @@ el nombre de tu Taller. Además, sin investigar nada:
 
 Las runas se venden a mano o con **dependientes**, como en cualquier empresa del módulo.
 
+### Encargos del Mago
+
+En la pestaña **Encargos** del Ordenador, **el Mago** te pide cosas cada semana y te paga en **chips**, que van a la
+caja del Taller:
+
+- **Runas:** unas cuantas de las que tu Taller ya sabe hacer. Se entregan con un clic en la pestaña, llevándolas encima.
+  Tienen que estar **hechas en tu Taller**: una runa comprada a otro no vale.
+- **Una investigación:** algo que puedes empezar ya. Cuando **sale bien**, el Mago te paga una parte de lo que cuesta.
+  Si cuando cambia la semana todavía está en marcha, el encargo sigue la semana siguiente.
+- Los encargos cambian cada semana (los que no hayas entregado se pierden) y lo que pagan tiene un **tope semanal**.
+- Un Taller nuevo, sin runas investigadas, solo recibe el encargo de investigación.
+
+--8<-- "_generado/runas_encargos.md"
+
 ### Mejoras
 
 --8<-- "_generado/runas_mejoras.md"

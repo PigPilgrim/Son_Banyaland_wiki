@@ -1339,6 +1339,15 @@ def runas_tablas():
              ("Curarte con el daño, como mucho", f"{RM['tope_robo']} % del daño, sumando runas, sets y armas")]
     escribir("runas_mazmorra_reglas.md", tabla(["Regla", "Cuánto"], filas))
 
+    EN = ER.ENCARGOS
+    pago = EN["runas"]["pago"]
+    filas = [("Runas que pide cada semana", f"{EN['runas']['cuantas']}, distintas, de las que tu Taller tiene investigadas"),
+             ("Paga por runa", f"I: {pago[0]} · II: {pago[1]} · III: {pago[2]} · de mazmorra: {EN['runas']['pago_mazmorra']} chips I"),
+             ("Investigación", f"1 a la semana; al salir bien paga el {EN['investigacion']['pct']} % de lo que cuesta un intento: "
+                               + "; ".join(f"nivel {ROMANO[n]}, {round(ER.NIVEL[n]['chips'] * EN['investigacion']['pct'] / 100)} chips I" for n in (1, 2, 3))),
+             ("Como mucho a la semana", f"{EN['tope_semana']} chips I por Taller, entre todos los encargos")]
+    escribir("runas_encargos.md", tabla(["Encargo", "Cuánto"], filas))
+
     filas = [(f"**{ER.OBJETOS[k]['nombre']}**", mats(t["items"]), t["sale"]) for k, t in ER.TALLER.items()]
     escribir("runas_taller.md", tabla(["Qué", "Materiales", "Salen"], filas))
 
