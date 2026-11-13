@@ -94,6 +94,11 @@ Cuesta:
 la mano, clic derecho al yunque. Cada punto de experiencia repara 2 de durabilidad, igual que el encantamiento
 *Reparación*, y si no te llega, repara lo que pueda. Con la mano vacía o con algo sin gastar, es un yunque normal.
 
+!!! warning "Lo que cuenta sus usos no se repara"
+    La **Ruleta Rusa** y la **Lupa de cultivo** gastan un uso cada vez: eso es su durabilidad. No se reparan con
+    experiencia, ni en un yunque normal (juntándolas con otra, con material o con un libro), ni en la piedra de afilar,
+    ni juntando dos en la mesa de crafteo, ni con *Reparación*.
+
 ## Guía de las Mazmorras
 
 **Clic derecho y te lleva al momento al vestíbulo de las mazmorras**, donde hay un portal a cada una. Para volver,
