@@ -96,3 +96,7 @@ intentos han fallado ya y cuántos faltan para el que sale **seguro**.
   Cobran un **sueldo diario** de la caja; si no hay chips, se ponen **en huelga** hasta que cobren.
 - El **alquiler** se paga cada lunes de la caja. Si no hay bastantes chips, la empresa **cierra** hasta que las haya (el
   dueño puede pagarlo desde el Ordenador, en **Estado**).
+- Mientras la empresa está **cerrada** (alquiler sin pagar, sin caja, sin Ordenador, precintada o tras un accidente) no
+  se compran mejoras ni prestigio, no se contrata y no se cocina. Lo que ya estaba en una estación sí se puede sacar.
+- Si el dueño cambia un precio mientras compras a un dependiente, la compra no se hace: te enseña el precio nuevo y
+  vuelves a pulsar.
