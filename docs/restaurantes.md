@@ -62,6 +62,9 @@ Toda la cocina se hace con **bloques normales** cerca del Ordenador, y solo pued
 Con **Mayús + clic con la mano vacía** en una estación con ingredientes sueltos, la vaciáis y los recuperáis.
 Una preparación **se echa a perder** si pasan 2 horas sin emplatarla.
 
+Las estaciones en uso son **del restaurante**: quien no trabaja en él no las puede romper ni vaciarles el agua con un
+cubo. Si el restaurante desaparece, lo que había en sus estaciones va a su dueño.
+
 !!! danger "Plato quemado"
     Si os **saltáis un paso**, los hacéis **en otro orden**, los ingredientes no son de ninguna receta que sepáis o las
     **proporciones** no cuadran, sale un **plato quemado**. No sirve para nada (y sienta fatal).
@@ -74,7 +77,7 @@ Una preparación **se echa a perder** si pasan 2 horas sin emplatarla.
 --8<-- "_generado/restaurantes_estrellas.md"
 
 Las recetas **no se publican**: salen en el Ordenador al investigarlas y se pueden **sacar en papel** para tenerlas a
-mano.
+mano (una copia de cada una: si ya la llevas encima, no te da otra).
 
 ### Los estilos: Rápida, Casera y Lujo
 
@@ -112,7 +115,8 @@ vuestros platos **a cualquiera**, al **precio que ponga el dueño**. Lo que paga
 - Mientras alguien cambia el escaparate, ese dependiente no vende.
 - Cobran un **sueldo cada día** de la caja. Si no hay chips, se ponen **en huelga** hasta que cobren lo que se les debe.
 - Se pueden **mover**: en Personal, **Moverlo**, y luego clic derecho en el suelo donde lo queráis.
-- Al **despedir** a uno, te devuelve lo que tenía en el escaparate.
+- Al **despedir** a uno, te devuelve lo que tenía en el escaparate. Si se le debe sueldo, antes se le paga de la caja:
+  sin esas chips en la caja no se le puede despedir.
 
 ### Comensales
 

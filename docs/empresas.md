@@ -53,7 +53,8 @@ al elegir la caja y que se pone **cerca de la caja**. Desde él se lleva la empr
 
 - Solo lo **ponen, usan y quitan** el dueño y los empleados con permiso. No lo rompen explosiones, pistones ni agua.
 - Si se rompe, el Ordenador **vuelve al dueño** (si no está conectado, al entrar). Si la empresa **cierra**, el
-  Ordenador desaparece y se devuelve lo que corresponda (investigaciones a medias, escaparates...).
+  Ordenador desaparece y se devuelve lo que corresponda (investigaciones a medias, escaparates, las chips que no
+  cabían en la caja...).
 - Tiene pestañas: **Estado**, **Investigar**, **Mejoras** y **Personal**, y cada tipo puede tener alguna más.
 - Todo lo que cuesta chips desde el Ordenador se paga **de la caja**, y esas chips **desaparecen**.
 
@@ -71,7 +72,7 @@ Un empleado nuevo empieza así:
 - Cada proyecto cuesta **chips de la caja** y **materiales** que lleva encima quien lo empieza, y tarda un tiempo en
   **tiempo real** (sigue aunque no haya nadie conectado).
 - Cuando termina, se avisa a todos los de la empresa.
-- Lo investigado se puede **sacar en papel** desde el Ordenador.
+- Lo investigado se puede **sacar en papel** desde el Ordenador (una copia de cada cosa a la vez).
 - Algunos tipos tienen **especialización**: la primera categoría que investigáis es la principal, la segunda es más cara
   y más lenta, y las demás quedan bloqueadas. Cambiar cuesta chips y lo de la vieja se pierde.
 
@@ -93,7 +94,8 @@ intentos han fallado ya y cuántos faltan para el que sale **seguro**.
 - Las **mejoras** van por niveles. Cada nivel cuesta chips (y a veces materiales) y puede pedir algo investigado antes.
 - Los objetos de **prestigio** solo sirven para presumir.
 - Los **dependientes** son aldeanos que venden lo que les carguéis al precio que pongáis, y lo que pagan va a la caja.
-  Cobran un **sueldo diario** de la caja; si no hay chips, se ponen **en huelga** hasta que cobren.
+  Cobran un **sueldo diario** de la caja; si no hay chips, se ponen **en huelga** hasta que cobren. Para despedir a
+  uno al que se le debe sueldo, primero se le paga de la caja.
 - El **alquiler** se paga cada lunes de la caja. Si no hay bastantes chips, la empresa **cierra** hasta que las haya (el
   dueño puede pagarlo desde el Ordenador, en **Estado**).
 - Mientras la empresa está **cerrada** (alquiler sin pagar, sin caja, sin Ordenador, precintada o tras un accidente) no
