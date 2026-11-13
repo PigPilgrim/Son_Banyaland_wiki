@@ -19,6 +19,11 @@ Los minijuegos tienen **su propio inventario**, y en ellos **no pierdes nada al 
 
 Los **premios** de los minijuegos (chips) se cobran **al volver a la aldea**, y pagan el
 [impuesto sobre premios](hacienda.md#hacienda-los-impuestos) si tu aldea lo tiene.
+Si no tienes aldea, van a tu **mochila** y te llegan en cuanto sales de los juegos, aunque no estuvieras conectado
+cuando los ganaste. Las copas y los premios de la Liga no se entregan dentro de los minijuegos ni de los zombis: esperan
+a que vuelvas.
+
+Los menús de las carreras de barcos y de la Liga solo se abren **desde el lobby** y sin estar en otro juego.
 
 ## El tiempo
 
