@@ -14,7 +14,8 @@ marcadas** (dinero negro). Enfrente está **la Policía** de cada aldea, que cac
 Escribe **`/puente crimen`** → **Fundar una organización**:
 
 1. Ponle **nombre** (yunque).
-2. Haz **clic derecho al cofre o barril** que será **el Alijo**: el almacén de la organización.
+2. Haz **clic derecho al cofre o barril** que será **el Alijo**: el almacén de la organización. Tienes 2 minutos;
+   si tardas más, hay que volver a empezar.
 3. Al lado aparece **Walter Brick**, el alquimista de la organización. Con él se hace todo lo demás.
 
 --8<-- "_generado/crimen_fundar.md"
@@ -189,8 +190,9 @@ Se investigan y se fabrican con Walter Brick. Son **ilegales** (la Policía las 
 Cada aldea con [Juzgado](justicia.md) tiene Policía: **el Juez es el jefe** y nombra **agentes** (Juez → Policía).
 El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la dejan).
 
-- **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca. Él lo ve venir (2 segundos). Si lleva algo
-  ilegal, se le quita, **paga multa al Tesoro** (si no le llega, se le queda como [deuda](justicia.md#las-deudas)) y
+- **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca. Él lo ve venir (2 segundos), pero en ese
+  tiempo **no puede tocar su inventario** (ni tirar nada, ni abrir cofres). Se mira todo: el inventario, lo que lleve
+  en el cursor, la rejilla de fabricar y **dentro de shulkers y sacos**. Si lleva algo ilegal, se le quita, **paga multa al Tesoro** (si no le llega, se le queda como [deuda](justicia.md#las-deudas)) y
   se abre **un caso en el Juzgado**, por si el Juez quiere añadir cárcel.
 - **Pruebas:** lo que se confisca dice de qué organización es. **Arrancar una plantación** o registrarla con la
   [Lupa](#lupa-de-cultivo) también cuenta (una prueba por plantación, no por mata), y también encontrar una
@@ -198,7 +200,7 @@ El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la
   un círculo cada vez más pequeño. Las pruebas caducan.
 - **Orden de registro:** con suficientes pruebas, el Juez o un agente la piden en **Pruebas y pistas**. La redada la
   organiza el admin: **hablad con Raúl**.
-- **Soplos:** cualquiera puede dar un soplo en el Juez → Policía → **Dar un soplo**. Es **anónimo**. Si aciertas,
+- **Soplos:** cualquiera que no sea de la Policía puede dar un soplo en el Juez → Policía → **Dar un soplo**. Es **anónimo**. Si aciertas,
   cuenta como prueba y, si la redada sale bien, **te llevas una parte**.
 - **Tomar mercancía dentro de una aldea** delante de uno de sus policías: multa leve.
 - **Cámaras:** con la **Comisaría**, la Policía cuelga cámaras públicas. Para no salir en ellas: oscuridad, cara
