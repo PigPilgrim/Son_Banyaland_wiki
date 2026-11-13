@@ -90,7 +90,7 @@ Cada pista tiene **un solo ranking: la vuelta más rápida** de cada uno, la hag
 - Si caes al agua en esa vuelta, no cuenta.
 - Con **neumáticos blandos** nuevos el hielo va más rápido: el récord suele salir en Gestión.
 
-**Al acabar la semana**, el top 3 de cada pista cobra chips y **el 1.º se lleva la copa de la pista** (una cabeza de
+**Al acabar la semana** (el lunes a las 00:00, hora de España), el top 3 de cada pista cobra chips y **el 1.º se lleva la copa de la pista** (una cabeza de
 trofeo; te llega cuando sales de los minijuegos).
 
 Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).

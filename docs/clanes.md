@@ -319,7 +319,7 @@ más trofeos tiene el rival, más hay en juego; ganar a alguien con muchos menos
 --8<-- "_generado/clanes_trofeos.md"
 
 Cada semana hay un **ranking de los trofeos ganados esa semana** (en **Mi fortín → Trofeos** y en el cartel encima
-del portal del lobby). Al acabar la semana, los tres primeros se llevan **chips**, que se cobran en la aldea como los
+del portal del lobby). Al acabar la semana (el lunes a las 00:00, hora de España), los tres primeros se llevan **chips**, que se cobran en la aldea como los
 demás premios de minijuegos. Las copas de la [temporada](#temporadas) y los premios de la
 [guerra de bandos](#guerra-de-bandos) también salen al juego normal.
 
