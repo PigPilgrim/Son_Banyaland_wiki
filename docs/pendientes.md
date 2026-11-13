@@ -2,6 +2,7 @@
 
 Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al admin.
 
+- **Llave inglesa:** ⚠️ PENDIENTE: ya no se repara; falta decidir cómo consigue otra el Concesionario cuando se gasta (ver [Vehículos](vehiculos.md)).
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
 - **Cod Zombies:** ⚠️ PENDIENTE: la campaña entera (T0-T9) está hecha pero sin probar en el juego; en el servidor
   sigue la DEMO con solo el tutorial y Sandy Heights. La vida de los zombis, el daño de las armas y la munición de

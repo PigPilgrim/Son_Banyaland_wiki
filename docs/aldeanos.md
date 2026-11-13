@@ -95,9 +95,10 @@ la mano, clic derecho al yunque. Cada punto de experiencia repara 2 de durabilid
 *Reparación*, y si no te llega, repara lo que pueda. Con la mano vacía o con algo sin gastar, es un yunque normal.
 
 !!! warning "Lo que cuenta sus usos no se repara"
-    La **Ruleta Rusa** y la **Lupa de cultivo** gastan un uso cada vez: eso es su durabilidad. No se reparan con
-    experiencia, ni en un yunque normal (juntándolas con otra, con material o con un libro), ni en la piedra de afilar,
-    ni juntando dos en la mesa de crafteo, ni con *Reparación*.
+    La **Ruleta Rusa**, la **Lupa de cultivo**, la **Llave inglesa** y todo lo que gasta un uso cada vez no se repara
+    **en ningún sitio**: ni con experiencia, ni pagando al Herrero, ni en un yunque normal (juntándolas con otra, con
+    material o con un libro), ni en la piedra de afilar, ni juntando dos en la mesa de crafteo o en un crafter, ni con
+    *Reparación*.
 
 ## Guía de las Mazmorras
 
