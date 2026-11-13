@@ -115,8 +115,8 @@ El Encantador también puede usar la Mesa **para lo suyo**, sin cliente.
 
 ### Yunque, piedra de afilar y mesa de herrería
 
-- **Yunque:** renombrar o echar un libro encantado **conserva** los huecos y las runas. **No se pueden juntar** dos
-  objetos si alguno tiene huecos.
+- **Yunque:** renombrar, echar un libro encantado o **reparar con material** (diamantes, lingotes...) **conserva** los
+  huecos y las runas. **No se pueden juntar** dos objetos si alguno tiene huecos.
 - **Piedra de afilar:** quita los encantamientos, pero **nunca** toca los huecos ni las runas. Tampoco junta dos objetos
   con huecos.
 - **Mesa de herrería:** al mejorar a netherita se **conservan** los huecos y las runas, y el objeto pasa a admitir los
@@ -140,8 +140,9 @@ Tienen tres niveles. **No funcionan en los minijuegos**, ni en la cárcel, ni en
 - **Picada rápida** y **Atracción** se suman, pero con un tope: con Atracción III, la runa ya casi no añade nada.
 - **Pescador experto** nunca da más tesoros: solo más experiencia y, a veces, un pez normal más.
 - **Andarín** se apaga unos segundos cada vez que golpeas a un jugador o te golpea uno.
-- **Imán** no recoge lo que alguien acaba de tirar (tampoco lo tuyo, para que puedas soltar cosas) ni lo que suelta
-  otro jugador al morir. Pasado un rato, sí.
+- **Imán** no recoge lo que alguien acaba de tirar (tampoco lo tuyo, para que puedas soltar cosas), lo que acaba de
+  romper o matar otro jugador, ni lo que suelta otro jugador al morir. Pasado un rato, sí. Tampoco recoge **a través de
+  paredes**: solo lo que tienes a la vista.
 
 --8<-- "_generado/runas_oficio.md"
 
