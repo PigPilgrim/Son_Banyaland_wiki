@@ -44,6 +44,9 @@ el nombre de tu Taller. Además, sin investigar nada:
 - **Polvo arcano:** lo piden las runas II y III. **Lo vende el Mago** (ver [Magia](magia.md)).
 - **Polvo de estabilidad:** sube la probabilidad de un servicio de la Mesa.
 
+Las runas y los polvos **solo sirven para esto**: no se pueden poner en el suelo, plantar, compostar, fundir, usar en un
+soporte para pociones ni dar de comer a los animales, aunque lo parezcan.
+
 Las runas se venden a mano o con **dependientes**, como en cualquier empresa del módulo.
 
 ### Encargos del Mago

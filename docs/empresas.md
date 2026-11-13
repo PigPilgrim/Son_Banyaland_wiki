@@ -52,7 +52,8 @@ Algunos tipos de empresa (de momento, el [Restaurante](restaurantes.md) y el [Ta
 al elegir la caja y que se pone **cerca de la caja**. Desde él se lleva la empresa.
 
 - Solo lo **ponen, usan y quitan** el dueño y los empleados con permiso. No lo rompen explosiones, pistones ni agua.
-- Si se rompe, el Ordenador **vuelve al dueño** (si no está conectado, al entrar). Si la empresa **cierra**, el
+- Si se rompe, el Ordenador **vuelve al dueño** (si no está conectado, al entrar; si está en los minijuegos, al
+  volver). Si la empresa **cierra**, el
   Ordenador desaparece y se devuelve lo que corresponda (investigaciones a medias, escaparates, las chips que no
   cabían en la caja...).
 - Tiene pestañas: **Estado**, **Investigar**, **Mejoras** y **Personal**, y cada tipo puede tener alguna más.
