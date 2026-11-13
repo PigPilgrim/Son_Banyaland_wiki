@@ -98,10 +98,12 @@ Walter Brick os da la receta al terminar de investigarla: qué va al caldero y l
 1. **Cocer:** un **caldero con agua y fuego debajo** (hoguera, fuego, lava o magma). Clic derecho con cada
    ingrediente para echarlo (**Mayús** + clic: el montón entero). El tiempo cuenta desde el primer ingrediente. Para
    sacarlo, clic con **botellas de cristal**: una por lote. Con la mano vacía ves qué hay dentro; con **Mayús** y la mano
-   vacía, lo vacías y recuperas lo echado.
+   vacía, lo vacías y recuperas lo echado. Si el caldero se queda sin agua o lo cambian por otra cosa, lo que había
+   dentro sale al suelo (lo mismo con el soporte).
 2. **Destilar:** clic derecho a un **soporte para pociones** con las mezclas en la mano. Cada pasada tarda medio minuto;
    luego, otro clic para recogerlas. Se repite tantas veces como diga la receta.
-3. **Curar:** deja las mezclas en un **barril** de la guarida. Cuenta el tiempo que pasan dentro (en tiempo real).
+3. **Curar:** deja las mezclas en un **barril** de la guarida. Cuenta el tiempo que pasan dentro (en tiempo real) con
+   el barril **cerrado**: mientras alguien lo tiene abierto, no cuenta.
 4. **Envasar:** con Walter Brick → **Producir** → **Envasar mezclas**. Las mezclas que lleves se convierten en mercancía.
 
 Cada mezcla lleva apuntado lo que le has hecho. **El orden de los pasos importa**, y si los ingredientes no son de
@@ -190,7 +192,7 @@ Se investigan y se fabrican con Walter Brick. Son **ilegales** (la Policía las 
 Cada aldea con [Juzgado](justicia.md) tiene Policía: **el Juez es el jefe** y nombra **agentes** (Juez → Policía).
 El Juez y los agentes **no pueden ser de ninguna organización** (si lo eran, la dejan).
 
-- **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca. Él lo ve venir (2 segundos), pero en ese
+- **Cachear:** **Mayús + clic derecho** a un jugador que esté cerca (solo en el mundo de las aldeas, y no a presos). Él lo ve venir (2 segundos), pero en ese
   tiempo **no puede tocar su inventario** (ni tirar nada, ni abrir cofres). Se mira todo: el inventario, lo que lleve
   en el cursor, la rejilla de fabricar y **dentro de shulkers y sacos**. Si lleva algo ilegal, se le quita, **paga multa al Tesoro** (si no le llega, se le queda como [deuda](justicia.md#las-deudas)) y
   se abre **un caso en el Juzgado**, por si el Juez quiere añadir cárcel.
