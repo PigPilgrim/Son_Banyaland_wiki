@@ -91,7 +91,7 @@ Cada pista tiene **un solo ranking: la vuelta más rápida** de cada uno, la hag
 - Con **neumáticos blandos** nuevos el hielo va más rápido: el récord suele salir en Gestión.
 
 **Al acabar la semana**, el top 3 de cada pista cobra chips y **el 1.º se lleva la copa de la pista** (una cabeza de
-trofeo; te llega cuando vuelves a la aldea).
+trofeo; te llega cuando sales de los minijuegos).
 
 Las regatas también cuentan para algunas [misiones del Pregonero](misiones.md).
 
@@ -138,6 +138,7 @@ solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran 
 ### Premios de la semana
 
 El **lunes a las 00:00** se cierra la semana, se entregan los premios y los puntos vuelven a cero. Los trofeos te
-llegan cuando vuelves a la aldea, y si no te caben, esperan.
+llegan cuando sales de los minijuegos, y si no te caben, esperan. Las chips de ganar una carrera se cobran en
+tu aldea; si no tienes aldea, van a tu mochila.
 
 --8<-- "_generado/liga_premios.md"
