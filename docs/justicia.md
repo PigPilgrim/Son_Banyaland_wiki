@@ -21,7 +21,7 @@ las partes, el Juez y la Policía. Todo en [Seguridad y cámaras](seguridad.md#l
 
 ### Defenderse
 
-El **acusado** puede elegir un **abogado** (otro vecino), y él o su abogado escriben la **defensa**.
+El **acusado** puede elegir un **abogado** (otro vecino que no sea el Juez), y él o su abogado escriben la **defensa**.
 
 ## Quién decide
 
@@ -29,7 +29,8 @@ El **acusado** puede elegir un **abogado** (otro vecino), y él o su abogado esc
   o para el denunciante) y/o **minutos de cárcel**.
 - **Un jurado de vecinos**, si no hay Juez o si el Juez es parte del caso. Durante **24 horas**, los ciudadanos de la
   aldea que no sean parte del caso votan **culpable** o **inocente**. Sale culpable si hay **al menos 2 votos de
-  culpable y más culpables que inocentes**. La pena del jurado es una multa fija.
+  culpable y más culpables que inocentes**. La pena del jurado es una multa fija. Si en 24 horas **nadie vota**, el
+  plazo se alarga **otras 24 horas**; si sigue sin votos, lo decide el staff.
 
 --8<-- "_generado/justicia_numeros.md"
 
