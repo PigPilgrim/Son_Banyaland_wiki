@@ -26,7 +26,8 @@ El **acusado** puede elegir un **abogado** (otro vecino que no sea el Juez), y �
 ## Quién decide
 
 - **El Juez de la aldea:** lo nombra el **Alcalde** desde su Despacho (Justicia). Puede poner **multa** (para el Tesoro
-  o para el denunciante) y/o **minutos de cárcel**.
+  o para el denunciante) y/o **minutos de cárcel**. Tiene **7 días** para decidir cada caso: si no lo hace, el caso pasa
+  a un jurado de vecinos.
 - **Un jurado de vecinos**, si no hay Juez o si el Juez es parte del caso. Durante **24 horas**, los ciudadanos de la
   aldea que no sean parte del caso votan **culpable** o **inocente**. Sale culpable si hay **al menos 2 votos de
   culpable y más culpables que inocentes**. La pena del jurado es una multa fija. Si en 24 horas **nadie vota**, el
@@ -54,7 +55,7 @@ El Alcalde marca dónde está **la celda** (desde su Despacho → Justicia).
 Si te condenan a cárcel:
 
 - **No puedes alejarte más de 6 bloques** de la celda, y si mueres reapareces en ella.
-- **No puedes usar perlas de Ender ni comandos** (salvo los de entrar en el servidor, mensajes privados y los botones
-  del chat).
+- **No puedes usar perlas de Ender ni comandos**. Solo valen los de entrar en el servidor, los mensajes privados,
+  `/puente fianza`, `/puente cartas` y los botones para votar (elecciones y leyes).
 - Los minutos **solo cuentan mientras estás conectado**.
 - Puedes **salir antes pagando la fianza** (botón en el chat, o `/puente fianza`).

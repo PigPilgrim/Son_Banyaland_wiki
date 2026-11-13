@@ -19,7 +19,8 @@ Se fabrica en la mesa de trabajo:
   **hacia abajo**. En el suelo no se puede poner.
 - **De quién es**: de **tu casa** (la llevan el dueño y su familia, ver [Casas](casas.md)), de **tu empresa** (el
   dueño y los empleados, ver [Empresas](empresas.md)) o, si eres **el Juez o un agente** y la aldea tiene
-  **Comisaría**, **de la aldea** (cámara pública). Si puedes elegir, al colgarla sale un menú.
+  **Comisaría**, **de la aldea** (cámara pública). Si puedes elegir, al colgarla sale un menú; si lo
+  cierras o te desconectas sin elegir, la cámara vuelve a tu inventario.
 - **Nombre**: al principio se llama «Cámara 1», «Cámara 2»... Cámbiaselo con **`/puente camaras`** (por ejemplo,
   «Entrada de la taberna»).
 - **Recogerla**: solo los suyos. Al romperla, vuelve a ser el objeto.

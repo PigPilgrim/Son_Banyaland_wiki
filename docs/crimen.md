@@ -233,7 +233,8 @@ la puede usar cualquiera. La receta no se publica: pregunta en los bajos fondos.
   agachado** unos segundos. Si te mueves, te levantas o te hacen daño, lo dejas.
 - **Se gasta siempre**, abra o no. Si no abre, puede que **se parta y un trozo se quede en el suelo**: si lo encuentra la
   Policía, sabrá de qué organización eres.
-- Si abre, **no ves todo**: solo unos pocos huecos al azar, y de las chips y los diamantes, solo una parte. Tienes unos
+- Si abre, **no ves todo**: solo unos pocos huecos al azar, y de las chips y los diamantes, solo una parte (también
+  lo que haya dentro de shulkers y sacos: una shulker llena de chips no se la lleva entera). Tienes unos
   segundos para coger lo que quieras antes de que se cierre.
 - **Te van a oír.** El dueño (o la familia de la casa, o quien lleve la llave del vehículo) se entera al momento,
   aunque no sabe quién eres. Los que estén cerca oyen el forcejeo, la Policía de la aldea recibe la denuncia con la
