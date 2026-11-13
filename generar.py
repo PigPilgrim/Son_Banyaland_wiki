@@ -809,7 +809,8 @@ def vehiculos_tablas():
     E = vehiculos.ESTADO
     escribir("llave_inglesa.md", f"Cada uso gasta **{L['gasto']} de durabilidad**, de las {L['durabilidad']} que tiene: da para {(L['durabilidad'] - 1) // L['gasto']} usos. "
              f"Mientras le falte vida, cada uso cura **{L['cura']} de vida**, gratis. Con la vida llena, cada uso arregla **hasta {E['por_uso']} puntos de estado**, "
-             f"y gasta **1 repuesto por punto**. Los repuestos los compra el Concesionario en su Ordenador, a **{E['repuesto_precio']} chips I** cada uno.\n")
+             f"y gasta **1 repuesto por punto**. Los repuestos los compra el Concesionario en su Ordenador, a **{E['repuesto_precio']} chips I** cada uno. "
+             f"Gastada no se repara: el Concesionario compra **otra en su Ordenador por {en_chips(L['precio'])}**.\n")
     escribir("gasolinas.md", tabla(["Gasolina", "Gasta", "Da", "Tarda", "Rendimiento", "Más velocidad"], filas))
     T = vehiculos.TUNEO
     armaduras = {"COPPER_HORSE_ARMOR": "cobre", "IRON_HORSE_ARMOR": "hierro", "GOLDEN_HORSE_ARMOR": "oro", "DIAMOND_HORSE_ARMOR": "diamante", "NETHERITE_HORSE_ARMOR": "netherita"}
