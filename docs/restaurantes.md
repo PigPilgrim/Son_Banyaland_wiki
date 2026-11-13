@@ -119,6 +119,8 @@ vuestros platos **a cualquiera**, al **precio que ponga el dueño**. Lo que paga
 Cada día llegan **comensales** a cada aldea, repartidos a lo largo del día entre sus restaurantes abiertos. **Compiten:**
 si en la aldea hay más restaurantes, os toca a menos. Cada uno come un plato de vuestra **Carta** y paga **en la caja**.
 Lo que pagan depende del plato, sus **estrellas** y su **estilo**.
+Mientras alguien tiene **la Carta abierta** (para cargarla o cambiarla), no se sirve a nadie de ese restaurante: no la
+dejéis abierta más de lo necesario.
 
 --8<-- "_generado/restaurantes_comensales.md"
 

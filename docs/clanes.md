@@ -368,3 +368,4 @@ Con **Decorar** eliges bloques (flores, setos, vallas, faroles, caminos, lanas..
 - **Clic derecho**: poner el bloque. Los caminos (tierra de camino, grava...) sustituyen la hierba del suelo.
 - **Clic izquierdo** con un bloque de decoración en la mano: quitar decoración.
 - No se puede decorar **encima de un edificio ni pegado a uno** (queda un bloque de paso alrededor).
+- En el fortín **no se fabrica nada**: la rejilla 2×2 del inventario está bloqueada.
