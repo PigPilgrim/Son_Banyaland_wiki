@@ -444,6 +444,8 @@ def arte():
     escribir("caballete.md", tabla(["Qué", "Cuánto"], [
         ("Pintar un cuadro", f"{java_int(c, 'PRECIO')} chip I (si la imagen no se puede usar, se devuelve)"),
         ("Tamaños (mapas de ancho × alto)", tam),
+        ("Imagen", f"como mucho {java_int(c, 'MAX_BYTES') >> 20} MB y {java_int(java('AuditoriaCuentas'), 'IMAGEN_MAX_LADO')}×"
+                   f"{java_int(java('AuditoriaCuentas'), 'IMAGEN_MAX_LADO')} píxeles; solo de webs de internet"),
         ("Tiempo pintando", f"{java_int(c, 'PINTA') // 20} segundos"),
         ("**Obra maestra** ★★★", f"seguir la bola al menos el {p((c, 'MAESTRA'))} del tiempo"),
         ("**Buen cuadro** ★★", f"al menos el {p((c, 'BUENA'))}"),

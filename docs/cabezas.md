@@ -18,7 +18,8 @@ decoración y quitar** sin perder nada.
 ## El álbum
 
 Ábrelo con **Mayús + clic derecho al Maestro de Juegos**, con el botón del lobby, en un [Atril de colecciones](crafteos.md#atril-de-colecciones) o con `/puente album`. Una cabeza
-cuenta para el álbum **en cuanto la llevas en el inventario**.
+cuenta para el álbum **en cuanto la llevas en el inventario**. Cada cabeza cuenta para **una sola persona**: la
+primera que la lleva. Si se la pasas a otro, a él no le cuenta (le tiene que tocar la suya).
 
 En el álbum ves cuánto llevas de cada set (las que te faltan salen como *???*) y el **top 5 de coleccionistas**.
 También tiene el botón de tus **[cosméticos](casino.md#cosmeticos)**.

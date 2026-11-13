@@ -42,6 +42,7 @@ Ponlo en el suelo y dale **clic derecho**:
 1. Elige el **tamaño** del cuadro.
 2. **Pega en el chat el enlace** de la imagen. Tiene que ser **directo a la imagen** (`.png`, `.jpg` o `.gif`; en
    la mayoría de webs: clic derecho en la imagen → *Copiar dirección de la imagen*). Para dejarlo, escribe `cancelar`.
+   Si en ese momento se están preparando otros lienzos, te pedirá que pruebes un poco después (sin cobrarte).
 3. Te sientas delante de un **lienzo** (el marco blanco) y, tras una cuenta atrás, aparece una **bola amarilla** que se
    mueve por él. **Síguela con la mira**: donde la sigues, va saliendo la pintura. Cada vez va más rápida.
 4. Al terminar te llevas el cuadro en **mapas**, para ponerlos en **marcos**. Si son varios, cada mapa dice en qué

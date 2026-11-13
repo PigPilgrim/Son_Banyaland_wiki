@@ -63,7 +63,8 @@ Son **de tu cuenta**: no se pierden, no se tiran y no se pueden pasar a otros. S
   (*Rey del Casino* o *Reina del Casino*).
 - **Rastros al andar:** unas pocas partículas cuando andas (no cuando estás quieto).
 - **Al ganar:** un efecto cuando te toca algo en las tragaperras (en las dos).
-- **Sombreros:** clic y te dan uno para ponértelo; si lo pierdes, pides otro.
+- **Sombreros:** clic y te dan uno para ponértelo; si lo pierdes, pides otro. Solo vale **el último que pediste** y
+  solo **en ti**: si alguien lleva uno tuyo, o tú uno viejo guardado, se desvanece.
 
 En el mismo menú puedes **dejar de ver las partículas** (los rastros y los efectos de todos).
 
