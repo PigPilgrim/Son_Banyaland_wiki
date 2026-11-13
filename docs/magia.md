@@ -5,6 +5,8 @@ Todo lo que vende o fabrica el **Mago**, que llega con el **nivel 4** de la alde
 
 Pergaminos y varitas **se usan con clic derecho**.
 
+El Mago también vende el **Polvo arcano**, que piden las runas II y III del [Taller de runas](runas.md).
+
 ## Pergaminos
 
 Se gastan al usarlos (uno cada vez). Se apilan hasta 16.

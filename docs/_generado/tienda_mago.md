@@ -20,5 +20,6 @@
 | 1 × Grimorio: Báculo del Invierno + 3 × Cristal de Hielo Eterno | 1 × Báculo del Invierno | 99 |
 | 1 × Grimorio: Grimorio del Innombrable + 1 × Máscara de Oni | 1 × Grimorio del Innombrable | 99 |
 | 1 × Grimorio: Dado Arcano + 1 × Escarabajo Sagrado | 1 × Dado Arcano | 99 |
+| 4 × Chip I | 1 × Polvo arcano | 16 |
 
 Las existencias se reponen solas cada 40 minutos con el servidor encendido.

@@ -1254,10 +1254,87 @@ def empresas_tablas():
         (f"**{n}**", "sí" if k in E.COMUN["permisos_empleado"] else "no") for k, n in E.COMUN["permisos"].items()]))
 
 
+def runas_tablas():
+    """Taller de runas (empresa_runas.py): la empresa, huecos, servicios de la Mesa, runas y lo que se fabrica."""
+    import empresa_runas as ER
+    T, H, S = ER.TIPO, ER.HUECOS, ER.SERVICIOS
+
+    def ing(i):
+        a, b = i.split(":", 1)
+        if a == "mazmorra": return build.MATERIALES[b][0]
+        if a == "runas": return "Mesa de runas" if b == "mesa" else ER.OBJETOS[b]["nombre"]
+        return ER.NOMBRES.get(b, b.replace("_", " ").capitalize())
+
+    def mats(lista):
+        return ", ".join(f"{n} × {ing(i)}" for i, n in lista)
+
+    def tiempo(m):
+        return f"{m} min" if m < 60 else f"{m // 60} h" if m % 60 == 0 else f"{m / 60:.1f} h".replace(".", ",")
+
+    al = T["aldea"]["max_por_nivel"]
+    escribir("runas_numeros.md", tabla(["Qué", "Cuánto"], [
+        ("Nivel de aldea", f"{T['aldea']['nivel']} o más"),
+        ("Talleres por aldea", ", ".join(f"nivel {k}: {v}" for k, v in enumerate(al) if v)),
+        ("Alquiler", f"{T['alquiler']} chips I cada lunes, de la caja"),
+        ("Runas de mazmorra", f"desde la edad del {('cobre', 'hierro', 'diamante', 'netherita')[ER.EDAD_MAZMORRA - 1]} (fabricarlas y engastarlas)")]))
+
+    nombres_mat = {"madera": "Madera", "piedra": "Piedra", "oro": "Oro", "cobre": "Cobre", "cuero": "Cuero", "hierro": "Hierro",
+                   "malla": "Malla", "tortuga": "Caparazón de tortuga", "diamante": "Diamante", "netherita": "Netherita"}
+    nombres_clase = {"cana": "Caña de pescar", "tijeras": "Tijeras", "arco": "Arco", "ballesta": "Ballesta", "tridente": "Tridente", "maza": "Maza"}
+    por = {}
+    for k, v in H["material"].items(): por.setdefault(v, []).append(nombres_mat[k])
+    for k, v in H["clase"].items(): por.setdefault(v, []).append(nombres_clase[k])
+    filas = [(f"**{n}**", ", ".join(l)) for n, l in sorted(por.items())]
+    filas.append((f"**{H['forja']}**", "Armas con plano y piezas de los sets de la Forja (solo runas de mazmorra)"))
+    escribir("runas_huecos.md", tabla(["Huecos como mucho", "Objetos"], filas))
+
+    filas = []
+    for k, x in enumerate(S["abrir"]):
+        filas.append((f"Abrir el {k + 1}.º hueco", f"{x['prob']} %", f"{x['chips']} chips I" + (f" + {mats(x['items'])}" if x["items"] else ""), "se pierde lo pagado"))
+    for k, x in enumerate(S["engastar"]):
+        filas.append((f"Engastar una runa {ROMANO[k + 1]}", f"{x['prob']} %", f"{x['chips']} chips I" + (f" + {mats(x['items'])}" if x["items"] else ""),
+                      f"la runa se rompe y deja {S['polvo_al_romper']} Polvo de runa"))
+    x = S["extraer"]
+    filas.append(("Extraer una runa (que salga entera)", f"{x['prob']} %", f"{x['chips']} chips I", "la runa se rompe; el hueco queda vacío"))
+    escribir("runas_servicios.md", tabla(["Servicio", "Probabilidad", "Cuesta (al Taller)", "Si falla"], filas))
+
+    filas = []
+    for rid, r in ER.OFICIO.items():
+        fab = T["runas"][rid]["fabricar"]
+        filas.append((f"**{r['nombre']}**", ER.CATEGORIAS[r["categoria"]]["nombre"], r["desc"],
+                      "<br>".join(f"{ROMANO[n + 1]}: {t}" for n, t in enumerate(r["niveles"])),
+                      "<br>".join(f"{ROMANO[n + 1]}: {mats(l)}" for n, l in enumerate(fab))))
+    escribir("runas_oficio.md", tabla(["Runa", "Familia", "Qué hace", "Niveles", "Para fabricarla"], filas))
+
+    filas = []
+    for rid, r in ER.MAZMORRA.items():
+        donde = ", ".join({"espada": "espadas", "hacha": "hachas", "lanza": "lanzas", "tridente": "tridentes", "maza": "mazas", "arco": "arcos",
+                           "ballesta": "ballestas", "casco": "casco", "pechera": "pechera", "pantalones": "pantalones", "botas": "botas"}[o] for o in r["objetos"])
+        filas.append((f"**{r['nombre']}**", donde, r["desc"], mats(T["runas"][rid]["fabricar"][2])))
+    escribir("runas_mazmorra.md", tabla(["Runa", "Va en", "Qué hace", "Para fabricarla"], filas))
+
+    filas = [(f"**{ER.OBJETOS[k]['nombre']}**", mats(t["items"]), t["sale"]) for k, t in ER.TALLER.items()]
+    escribir("runas_taller.md", tabla(["Qué", "Materiales", "Salen"], filas))
+
+    filas = []
+    for n, v in ER.NIVEL.items():
+        p = v["prob"]
+        cat = "; ".join(f"{c[1]} × {ing(c[0])}: +{c[2]} %" for c in v.get("catalizadores", [])) or "—"
+        filas.append((f"Nivel {ROMANO[n]}" + (" y runas de mazmorra" if n == 3 else ""), f"{v['chips']} chips I", tiempo(v["min"]),
+                      f"{p['base']} %, +{p['fallo']} % por fallo (hasta {p['max']} %); seguro al {p['garantizado']}.º intento", cat))
+    escribir("runas_investigacion.md", tabla(["Proyecto", "Cuesta", "Tarda", "Probabilidad", "Catalizador"], filas))
+
+    filas = []
+    for m in T["mejoras"].values():
+        for k, n in enumerate(m["niveles"]):
+            filas.append((f"**{m['nombre']}** {k}", n["texto"], "de partida" if not n["coste"] else f"{n['coste']} chips I" + (f" + {mats(n['items'])}" if n.get("items") else "")))
+    escribir("runas_mejoras.md", tabla(["Mejora", "Qué da", "Cuesta"], filas))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas(); runas_tablas()
     print("Tablas generadas en", SALIDA)
 
 

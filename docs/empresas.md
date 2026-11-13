@@ -22,6 +22,9 @@ que lo registra se lo queda. Al registrarlo recibes sus herramientas, y al cerra
 Los **Restaurantes** necesitan una aldea de nivel 2 o más, y cada aldea puede tener unos pocos según su nivel. Cocinan,
 tienen dependientes y reciben comensales: ver [Restaurantes](restaurantes.md).
 
+El **Taller de runas** necesita una aldea de nivel 4. Su Encantador abre huecos en herramientas, armas y armaduras y
+les engasta runas: ver [Taller de runas](runas.md).
+
 ## La caja
 
 - **Solo la abren el dueño y sus empleados.** No se puede romper (ni por explosiones), y las tolvas no la vacían.
@@ -45,7 +48,7 @@ En el SEPE también están la **Guía de empresas** (por estrellas) y **Las más
 
 ## El Ordenador y la investigación
 
-Algunos tipos de empresa (de momento, el [Restaurante](restaurantes.md)) tienen un **Ordenador**: una cabeza que te dan
+Algunos tipos de empresa (de momento, el [Restaurante](restaurantes.md) y el [Taller de runas](runas.md)) tienen un **Ordenador**: una cabeza que te dan
 al elegir la caja y que se pone **cerca de la caja**. Desde él se lleva la empresa.
 
 - Solo lo **ponen, usan y quitan** el dueño y los empleados con permiso. No lo rompen explosiones, pistones ni agua.
