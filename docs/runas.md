@@ -14,9 +14,8 @@ Hay dos familias de runas:
 Ninguna runa da más minerales, diamantes ni chips, y ninguna repara objetos.
 
 !!! warning "⚠️ PENDIENTE"
-    El Taller de runas está **a medias** y **aún no ha llegado al servidor**. Ya están el Taller, la Mesa de runas, los
-    huecos, los servicios y los efectos de las **runas de oficio**; las **runas de mazmorra todavía no hacen nada**.
-    Todos los números pueden cambiar.
+    El Taller de runas **aún no ha llegado al servidor**: está hecho, pero falta probarlo en el juego. Todos los
+    números pueden cambiar.
 
 ## El Taller de runas
 
@@ -139,10 +138,15 @@ Tienen tres niveles. **No funcionan en los minijuegos**, ni en la cárcel, ni en
 - Siempre son de **nivel III**: se investigan con la probabilidad más difícil, se fabrican con materiales de mazmorra y
   se engastan con la probabilidad de las runas III.
 - Se pueden fabricar y engastar desde **la edad del diamante**.
-- Como mucho cuentan **3 a la vez** por jugador, sumando arma y armadura. Si llevas más, cuentan en este orden: casco,
-  pechera, pantalones, botas y lo de la mano.
-- **Topes**, sumando runas, sets y armas: esquivar, como mucho un **25 %** (el set Samurái ya da un 15 %); curarte con el
-  daño, como mucho un **10 %**.
+- Como mucho cuentan **unas pocas a la vez** por jugador, sumando arma y armadura (mira la tabla). Si llevas más, cuentan
+  en orden y te sale un aviso con las que se quedan sin efecto.
+- Las de **arma** cuentan con el arma en la mano y **cuerpo a cuerpo**. **Eco** cuenta con el arco o la ballesta en la
+  mano; su flecha de más solo hace daño a monstruos y no se puede recoger.
+- **Barrera** salta al dar o recibir el primer golpe de una pelea con un monstruo; **Segundo aliento**, cuando un
+  monstruo te deja con poca vida. Las dos tienen recarga.
+- **Piel de piedra** baja el daño de las explosiones y de las flechas que vienen de monstruos.
 - Ninguna da más botín, cofres, chips ni materiales de mazmorra.
+
+--8<-- "_generado/runas_mazmorra_reglas.md"
 
 --8<-- "_generado/runas_mazmorra.md"

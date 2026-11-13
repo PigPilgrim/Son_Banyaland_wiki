@@ -26,9 +26,8 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   cambia cada una en los [bajos fondos](crimen.md#a-mano-en-la-guarida) pueden cambiar.
 - **Restaurantes:** ⚠️ PENDIENTE: están hechos pero aún no han llegado al servidor; falta probarlos en el juego. Los precios, tiempos, efectos, comensales y el Mayorista de los
   [Restaurantes](restaurantes.md) pueden cambiar.
-- **Taller de runas:** ⚠️ PENDIENTE: a medias y aún no ha llegado al servidor. Están el Taller, la Mesa, los huecos y
-  los servicios y los efectos de las [runas](runas.md) de oficio; los de las runas de mazmorra todavía no. Falta
-  probarlo todo en el juego.
+- **Taller de runas:** ⚠️ PENDIENTE: hecho pero aún no ha llegado al servidor; falta probar en el juego el
+  [Taller de runas](runas.md) entero (Mesa, servicios y los efectos de las runas de oficio y de mazmorra).
 - **Helados y el calor:** ⚠️ PENDIENTE: los [helados](restaurantes.md#ramas-y-platos) solo dan Resistencia al fuego;
   falta un efecto propio de «aguante del calor».
 - **Retos del Árbitro:** ⚠️ PENDIENTE: los [retos](retos.md) están hechos pero aún no han llegado al servidor; falta

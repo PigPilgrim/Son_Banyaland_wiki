@@ -1254,6 +1254,12 @@ def empresas_tablas():
         (f"**{n}**", "sí" if k in E.COMUN["permisos_empleado"] else "no") for k, n in E.COMUN["permisos"].items()]))
 
 
+def RC_esquivar(runa, set_, tope):
+    """Lo mismo que RunasCuentas.esquivarRuna: la runa se recorta para que, con el set, no pase del tope."""
+    if set_ >= tope: return 0
+    return max(0, min(runa, (1 - (1 - tope / 100) / (1 - set_ / 100)) * 100))
+
+
 def runas_tablas():
     """Taller de runas (empresa_runas.py): la empresa, huecos, servicios de la Mesa, runas y lo que se fabrica."""
     import empresa_runas as ER
@@ -1310,8 +1316,28 @@ def runas_tablas():
     for rid, r in ER.MAZMORRA.items():
         donde = ", ".join({"espada": "espadas", "hacha": "hachas", "lanza": "lanzas", "tridente": "tridentes", "maza": "mazas", "arco": "arcos",
                            "ballesta": "ballestas", "casco": "casco", "pechera": "pechera", "pantalones": "pantalones", "botas": "botas"}[o] for o in r["objetos"])
-        filas.append((f"**{r['nombre']}**", donde, r["desc"], mats(T["runas"][rid]["fabricar"][2])))
-    escribir("runas_mazmorra.md", tabla(["Runa", "Va en", "Qué hace", "Para fabricarla"], filas))
+        v = r["valores"]
+        cuanto = {"faraon": lambda: f"+{v['dano']} % de daño",
+                  "tsuchigumo": lambda: f"+{v['dano']} % de daño y {v['lentitud_s']} s de Lentitud I",
+                  "shogun": lambda: f"{v['prob']} %: el golpe hace ×{str(v['multiplica']).replace('.', ',')}",
+                  "quebrantajefes": lambda: f"+{v['dano']} % de daño a jefes",
+                  "sed_sangre": lambda: f"Cura el {v['cura']} % del daño",
+                  "eco": lambda: f"{v['prob']} % de los disparos",
+                  "barrera": lambda: f"{v['segundos']} s de Absorción I; recarga {v['recarga_s']} s",
+                  "segundo_aliento": lambda: f"Bajo {v['vida'] // 2} corazones: {v['segundos']} s de Regeneración II; recarga {v['recarga_s'] // 60} min",
+                  "paso_sombra": lambda: f"{v['esquivar']} %",
+                  "piel_piedra": lambda: f"−{v['menos']} %"}[rid]()
+        filas.append((f"**{r['nombre']}**", donde, r["desc"], cuanto, mats(T["runas"][rid]["fabricar"][2])))
+    escribir("runas_mazmorra.md", tabla(["Runa", "Va en", "Qué hace", "Cuánto", "Para fabricarla"], filas))
+
+    RM = ER.REGLAS_MAZMORRA
+    sam = RM["esquivar_sets"].get("samurai", 0)
+    con_sam = RC_esquivar(ER.MAZMORRA["paso_sombra"]["valores"]["esquivar"], sam, RM["tope_esquivar"])
+    filas = [("Runas que cuentan a la vez", f"{RM['max_activas']}, en este orden: casco, pechera, pantalones, botas y lo de la mano"),
+             ("Esquivar, como mucho", f"{RM['tope_esquivar']} % entre todo. El set Samurái completo ya esquiva un {sam} %: con él, Paso de sombra "
+                                      f"esquiva un {str(round(con_sam, 1)).replace('.', ',')} % de los golpes que el set no ha esquivado (en total, {RM['tope_esquivar']} %)"),
+             ("Curarte con el daño, como mucho", f"{RM['tope_robo']} % del daño, sumando runas, sets y armas")]
+    escribir("runas_mazmorra_reglas.md", tabla(["Regla", "Cuánto"], filas))
 
     filas = [(f"**{ER.OBJETOS[k]['nombre']}**", mats(t["items"]), t["sale"]) for k, t in ER.TALLER.items()]
     escribir("runas_taller.md", tabla(["Qué", "Materiales", "Salen"], filas))
