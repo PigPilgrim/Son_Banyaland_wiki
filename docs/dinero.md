@@ -7,7 +7,8 @@ diamantes: **cambiad entre vosotros**.
 ## Chips
 
 Las chips son **la moneda fuerte** del servidor. Salen sobre todo de **las mazmorras** (que son lo más difícil del
-juego, y por eso es lo que más paga) y de los premios de los minijuegos.
+juego, y por eso es lo que más paga) y de los premios de los minijuegos. Las empresas también las ganan: los
+[encargos del Mago](runas.md#encargos-del-mago) pagan chips al Taller de runas, y los restaurantes cobran a sus comensales.
 
 Hay **6 niveles**, y cada uno vale **64 del anterior**:
 
@@ -27,7 +28,7 @@ Salen de **minar** y de algunos premios, y son el dinero de la aldea. El **Tesor
 | Moneda | Qué |
 |---|---|
 | **Diamantes** | Escrituras de casa y Carta de fundación, cartas, fundar una religión, registrar una empresa, Receta sellada, pergaminos, tridente |
-| **Chips** | Bebidas de la Taberna, cajas de premios, reparaciones, Vale de barbería, Encargo a ciegas, set de Archimago, proyectos de la Oficina (además de sus materiales), multas y fianzas, bajos fondos |
+| **Chips** | Bebidas de la Taberna, cajas de premios, reparaciones, Vale de barbería, Encargo a ciegas, set de Archimago, proyectos de la Oficina (además de sus materiales), multas y fianzas, bajos fondos, servicios de la Mesa de runas (abrir huecos, poner runas...) |
 | **Las dos a la vez** | Encargo maestro |
 
 Las tiendas tienen existencias limitadas y **se reponen solas cada 40 minutos** mientras el servidor está encendido (la

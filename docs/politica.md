@@ -92,5 +92,6 @@ Si no estáis contentos con el Alcalde, cualquier ciudadano puede abrir una **mo
 
 ## Tablón de quejas
 
-En el **Funcionario** también hay un **tablón de quejas**: se escribe en un yunque y se anuncia a todos. Cada uno
+En el **Funcionario** también hay un **tablón de quejas**: se escribe en un yunque y se anuncia a todos los
+vecinos de la aldea. Cada uno
 puede quejarse **una vez cada 10 minutos**.

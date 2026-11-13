@@ -75,7 +75,7 @@ Cada vehículo tiene **vida** y **estado** (de 0 a 100). Los ves en la barra de 
 puede montar y ya no recibe más daño. El maletero sí se puede abrir. Si es el Ghastla y vas montado, **baja despacio
 hasta el suelo** contigo encima.
 
-Solo se pierde de verdad si **cae al vacío**: entonces suelta lo que llevaba en el maletero y la llave deja de servir.
+Solo se pierde de verdad si **cae al vacío** (o si el staff lo quita con un comando): entonces suelta lo que llevaba en el maletero y la llave deja de servir.
 Tampoco se pueden criar.
 
 **No se curan solos ni dándoles de comer**: hay que llevarlos al **Concesionario**, que tiene la **Llave inglesa**.

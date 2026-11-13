@@ -253,7 +253,7 @@ Funcionan como los [asedios](guerra.md): a la hora acordada, **el Alijo brilla**
 - Si no, hay una zona alrededor del Alijo: **con policías (o vecinos de su aldea) dentro y nadie de la organización,
   avanza la requisa**. Si llega al final, gana la Policía; si se acaba el tiempo, aguanta la organización.
 - **Quien muere en la zona no pierde nada.**
-- Si gana la Policía, **se lleva lo ilegal del Alijo** y **detiene a Walter Brick** unas horas. Si aguanta la
+- Si gana la Policía, **se lleva del Alijo las drogas, las plantas, las armas y las fichas** y **detiene a Walter Brick** unas horas. Si aguanta la
   organización, eso cuenta para llegar a **Cartel**.
 
 --8<-- "_generado/crimen_redadas.md"
