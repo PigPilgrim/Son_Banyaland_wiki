@@ -57,8 +57,10 @@ Es **gratis**. Se avisa a los vecinos de las dos aldeas, y desde ese momento:
 
 - **Cada enemigo que matas suma un punto** a tu aldea (sale en la barra de abajo).
 - **Morir a manos de un enemigo no te hace perder nada**: ni el inventario ni la experiencia.
-- **No se puede romper ni poner bloques dentro de la aldea enemiga** (en toda su zona segura). Las casas están a
-  salvo: la guerra es entre personas.
+- **No se puede romper ni poner bloques dentro de la aldea enemiga** (en toda su zona segura), ni vaciar cubos.
+  Las casas están a salvo: la guerra es entre personas. Mientras dura, dentro de las dos aldeas **no rompen nada** las
+  explosiones (TNT, cristales del End, creepers...), el fuego, la lava o el agua que entra desde fuera, ni los
+  pistones que empujan o tiran desde fuera.
 
 --8<-- "_generado/guerra_numeros.md"
 
