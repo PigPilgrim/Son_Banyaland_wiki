@@ -15,8 +15,8 @@ Ninguna runa da más minerales, diamantes ni chips, y ninguna repara objetos.
 
 !!! warning "⚠️ PENDIENTE"
     El Taller de runas está **a medias** y **aún no ha llegado al servidor**. Ya están el Taller, la Mesa de runas, los
-    huecos y los servicios, pero **las runas todavía no hacen nada**: sus efectos llegarán más adelante. Todos los
-    números pueden cambiar.
+    huecos, los servicios y los efectos de las **runas de oficio**; las **runas de mazmorra todavía no hacen nada**.
+    Todos los números pueden cambiar.
 
 ## El Taller de runas
 
@@ -112,7 +112,23 @@ El Encantador también puede usar la Mesa **para lo suyo**, sin cliente.
 
 ## Runas de oficio
 
-Tienen tres niveles. **No funcionan en los minijuegos.**
+Tienen tres niveles. **No funcionan en los minijuegos**, ni en la cárcel, ni en creativo.
+
+- **Cuenta el objeto que usas.** Las de pico, hacha, azada y caña, con esa herramienta en la mano. Las de armadura,
+  con la pieza puesta.
+- **Imán y Sabiduría** cuentan en cualquier objeto: en la mano o en la armadura puesta. Si las llevas en varios, cuenta
+  **la de nivel más alto**; no se suman.
+- **Autofundido** no hace nada con **Toque de seda**. Con **Fortuna** da los lingotes que darías **sin** Fortuna: no
+  sirve para tener más material.
+- **Replantar** y **Hojarasca** solo funcionan en **árboles de verdad**, no en casas de troncos ni en árboles con hojas
+  puestas a mano. En los árboles de 2×2, Replantar pone un brote por cada tronco de abajo que rompas.
+- **Sembrador** usa una semilla de lo que suelta el cultivo, nunca de tu inventario. **Nunca** replanta plantas
+  ilegales.
+- **Picada rápida** y **Atracción** se suman, pero con un tope: con Atracción III, la runa ya casi no añade nada.
+- **Pescador experto** nunca da más tesoros: solo más experiencia y, a veces, un pez normal más.
+- **Andarín** se apaga unos segundos cada vez que golpeas a un jugador o te golpea uno.
+- **Imán** no recoge lo que alguien acaba de tirar (tampoco lo tuyo, para que puedas soltar cosas) ni lo que suelta
+  otro jugador al morir. Pasado un rato, sí.
 
 --8<-- "_generado/runas_oficio.md"
 
