@@ -329,8 +329,8 @@ demás premios de minijuegos. Las copas de la [temporada](#temporadas) y los pre
 
 Cada **mes** es una temporada: empieza el **día 1 a las 0:00** (hora de España).
 
-- Al acabar, los **tres con más trofeos** se llevan una copa: **Gold Chalice** (1.º), **Iron Chalice** (2.º) y
-  **Bronze Chalice** (3.º).
+- Al acabar, los **tres con más trofeos** se llevan una copa: **Cáliz de oro** (1.º), **Cáliz de hierro** (2.º) y
+  **Cáliz de bronce** (3.º).
 - Después, los **trofeos de todos vuelven al número de inicio** (ver arriba) y se eligen **bandos nuevos**. Tu fortín, tus tropas, tus héroes y
   tus niveles **no se tocan**.
 - El cartel del lobby enseña el top de **esta semana** y el de **la temporada**.
@@ -358,7 +358,7 @@ Cada temporada hay **dos bandos de colores** (por ejemplo, Rojo contra Azul; la 
 **Premios** (el domingo a las 24:00):
 
 - **Ambrosia**: una para **cada uno del bando ganador**, aunque no haya atacado.
-- **Ice Chalice**: para **el mejor de la guerra** (el que más estrellas ha sacado; si empatan, el de más %).
+- **Cáliz de hielo**: para **el mejor de la guerra** (el que más estrellas ha sacado; si empatan, el de más %).
 - Si nadie ataca en todo el fin de semana, no hay premios.
 - Los premios se dan en el **mundo normal**: si no estás conectado o estás en los minijuegos, te esperan y te llegan al
   volver.
