@@ -124,7 +124,7 @@ nuevas: sale el podio de ayer y el Gran Premio de hoy.
 ### Escuderías
 
 En el menú salen **las escuderías que ya existen**: entra en una o pulsa **Crear escudería nueva**. Al crearla eliges
-su barco entre los que no tengan ya escudería (blanco, rosa, mangrove, bambú, roble, abeto, abedul, jungla, acacia o
+su barco entre los que no tengan ya escudería (blanco, rosa, mangle, bambú, roble, abeto, abedul, jungla, acacia o
 roble oscuro) y le pones nombre. Corres con el barco de tu escudería **en todos los modos**, con cofre o sin él (es
 solo estética, y el cofre no se abre). Sin escudería no puedes correr el Gran Premio.
 
