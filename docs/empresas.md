@@ -99,6 +99,8 @@ intentos han fallado ya y cuántos faltan para el que sale **seguro**.
   uno al que se le debe sueldo, primero se le paga de la caja.
 - El **alquiler** se paga cada lunes de la caja. Si no hay bastantes chips, la empresa **cierra** hasta que las haya (el
   dueño puede pagarlo desde el Ordenador, en **Estado**).
+- **Empresa en pausa:** si en **7 días** nadie abre el Ordenador ni entra nada en la caja, la empresa **no paga alquiler
+  ni sueldos** hasta que se vuelva a usar. Así unas vacaciones no la arruinan.
 - Mientras la empresa está **cerrada** (alquiler sin pagar, sin caja, sin Ordenador, precintada o tras un accidente) no
   se compran mejoras ni prestigio, no se contrata y no se cocina. Lo que ya estaba en una estación sí se puede sacar.
 - Si el dueño cambia un precio mientras compras a un dependiente, la compra no se hace: te enseña el precio nuevo y

@@ -21,7 +21,8 @@ Ninguna runa da más minerales, diamantes ni chips, y ninguna repara objetos.
 ### Abrir uno
 
 1. Registra la empresa en el **SEPE** con el tipo **Taller de runas**.
-2. Elige la **caja**. Te dan el **Ordenador del Taller de runas** y la **Mesa de runas**.
+2. Elige la **caja**. Te dan el **Ordenador del Taller de runas** y la **Mesa de runas** (la Mesa, gratis solo la
+   primera vez: si cierras el Taller y abres otro, usa la que ya tienes; al romperla, la recuperas).
 3. Pon el **Ordenador** cerca de la caja y la **Mesa** cerca del Ordenador.
 
 --8<-- "_generado/runas_numeros.md"

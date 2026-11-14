@@ -2,6 +2,10 @@
 
 Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al admin.
 
+- **Ajustes de equilibrio (noviembre):** ⚠️ PENDIENTE de probar en el juego: las chips de los jefes una vez al día
+  ([Mazmorras](mazmorras.md)), los topes que se guardan 2 días ([misiones](misiones.md), [retos](retos.md),
+  [regatas](regatas.md) y [Cod Zombies](zombies.md)), el [Encargo maestro](forja.md) y la constancia que se eligen,
+  la [Receta sellada](taberna.md) sin repetidas y las empresas en pausa ([Empresas](empresas.md)). Pueden cambiar.
 - **Llave inglesa:** ⚠️ PENDIENTE: ya no se repara; falta decidir cómo consigue otra el Concesionario cuando se gasta (ver [Vehículos](vehiculos.md)).
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
 - **Cod Zombies:** ⚠️ PENDIENTE: la campaña entera (T0-T9) está hecha pero sin probar en el juego; en el servidor

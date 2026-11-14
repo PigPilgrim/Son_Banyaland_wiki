@@ -22,6 +22,8 @@ uno **normal** y uno **difícil**, que son **los mismos para todos**. **Cada jug
 
 --8<-- "_generado/retos_premios.md"
 
+- **Si ayer no hiciste el reto de una dificultad**, el de hoy de esa dificultad da **el doble** (chips y llaves). Solo
+  se guarda un día.
 - **Las chips** se cobran **al volver a la aldea**, como los demás premios de los minijuegos (con el
   [impuesto sobre premios](hacienda.md#hacienda-los-impuestos) si tu aldea lo tiene). Si no eres de ninguna aldea,
   llegan a tu [mochila 🎒](minijuegos.md#tu-inventario-y-la-mochila).

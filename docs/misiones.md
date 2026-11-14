@@ -13,6 +13,9 @@ y una **difícil**, que son **las mismas para todos**. **Cada jugador puede hace
   preguntarle qué pide sin darle nada. También puedes pulsar **[Entregar]** en el chat estando a su lado.
 - **Misiones de "Mata / Mina / Camina...":** se cuentan solas **desde que empieza el día**. Al llegar a la cifra, te
   dan los sellos.
+- **Si un día no puedes jugar, no lo pierdes del todo:** si ayer no hiciste la misión fácil (o la normal, o la
+  difícil), la de hoy de esa casilla te da **el doble de sellos**. Solo se guarda un día: faltar una semana no da una
+  semana de sellos.
 - **Las misiones cambian cada día a las 0:00** (hora de España). Si el servidor está apagado a medianoche, cambian
   en cuanto se enciende. Ese momento lo avisa **un solo mensaje en el chat**, «🕛 ¡Nuevo día!», con el botón del
   tablón, el Gran Premio de barcos del día, el podio del de ayer y, cuando toca, la guerra de bandos o la temporada

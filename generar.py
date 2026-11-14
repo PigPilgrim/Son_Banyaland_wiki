@@ -341,6 +341,14 @@ def forja_tablas():
         n_sets = sum(1 for o in objetos if "set" in o["components"].get("minecraft:custom_data", {}))
         if n_sets: filas.append((f"**Una pieza de set al azar** ({n_sets} posibles: 4 de cada uno de los {n_sets // 4} sets)",
                                  f"{pct(n_sets / len(objetos))} en total"))
+        if clave == "maestro" and hasattr(forja, "MAESTRO_OPCIONES"):
+            # Se elige: un set (una de sus 4 piezas al azar) o una obra suelta (una de las 6 al azar)
+            obras = [o for o in objetos if "set" not in o["components"].get("minecraft:custom_data", {})]
+            filas = [(f"**{nombre(o)}**", encantamientos(o)) for o in obras]
+            escribir(f"encargo_{clave}.md", f"Al abrirlo **eliges**: una **pieza de un set** (el que quieras de los {n_sets // 4}; "
+                     f"te toca una de sus 4 piezas al azar) o una **obra suelta del maestro** (una de estas {len(obras)}, al azar):\n\n"
+                     + tabla(["Obra suelta", "Encantamientos"], filas))
+            continue
         escribir(f"encargo_{clave}.md", f"Cada objeto tiene la misma probabilidad: **{pct(1 / len(objetos))}** "
                  f"(1 entre {len(objetos)}).\n\n" + tabla(["Puede salir", "Encantamientos"], filas))
 
@@ -708,7 +716,8 @@ def crimen_tablas():
         ("Walter Brick detenido", f"{R['alquimista_pausa_h']} h sin trabajar y la investigación pierde un {R['alquimista_pierde_pct']} %"),
         ("Después", f"{R['redada_proteccion_h']} h sin redadas, gane quien gane")]))
     escribir("crimen_blanqueo.md", tabla(["Qué", "Cuánto"], [
-        ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa esa semana"),
+        ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa esa semana; "
+                                          "es **por organización**: lo que blanquea una empresa de un miembro se descuenta de las demás"),
         ("Lo que vuelve", f"el {R['blanqueo_limpio_pct']} % en chips I a la caja ({R['blanqueo_tesoro_pct']} % al Tesoro, el resto se pierde)"),
         ("La empresa", f"con más de {R['blanqueo_empresa_dias']} días"),
         ("Si Hacienda la pilla", f"fichas requisadas, empresa precintada {R['blanqueo_cierre_dias']} días y un caso en el Juzgado"),
@@ -1304,7 +1313,8 @@ def runas_tablas():
 
     filas = []
     for k, x in enumerate(S["abrir"]):
-        filas.append((f"Abrir el {k + 1}.º hueco", f"{x['prob']} %", f"{x['chips']} chips I" + (f" + {mats(x['items'])}" if x["items"] else ""), "se pierde lo pagado"))
+        filas.append((f"Abrir el {k + 1}.º hueco", f"{x['prob']} %", f"{x['chips']} chips I" + (f" + {mats(x['items'])}" if x["items"] else ""),
+                      "se pierden las chips" + (f"; vuelve el {S['abrir_devuelve']} % del lapislázuli" if S.get("abrir_devuelve") and x["items"] else "")))
     for k, x in enumerate(S["engastar"]):
         filas.append((f"Engastar una runa {ROMANO[k + 1]}", f"{x['prob']} %", f"{x['chips']} chips I" + (f" + {mats(x['items'])}" if x["items"] else ""),
                       f"la runa se rompe y deja {S['polvo_al_romper']} Polvo de runa"))

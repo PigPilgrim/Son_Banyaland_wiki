@@ -119,7 +119,8 @@ Las dos **bajan solas con el tiempo**. Con la borrachera pasan cosas al azar, m�
 ## Las recetas son secretas
 
 **Las recetas no se publican a propósito:** descubrirlas es parte del juego. Para eso existe la **Receta sellada**, que
-vende el Tabernero. Al abrirla te sale la receta de una bebida al azar, con **los números aproximados** (por ejemplo,
+vende el Tabernero. Al abrirla te sale la receta de una bebida al azar, **sin repetir las que ya te han salido**
+(cuando las tienes todas, salen repetidas), con **los números aproximados** (por ejemplo,
 *"5 a 7 de trigo"*, *"unos 3 a 5 minutos"*). Los materiales de mazmorra sí vienen siempre exactos. La receta exacta,
 la que da calidad excelente, hay que encontrarla probando.
 

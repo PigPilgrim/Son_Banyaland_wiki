@@ -249,7 +249,7 @@ la puede usar cualquiera. La receta no se publica: pregunta en los bajos fondos.
 Funcionan como los [asedios](guerra.md): a la hora acordada, **el Alijo brilla** y la Policía sabe dónde está.
 
 - A la organización le llega **un chivatazo** un poco antes.
-- Si **no hay nadie de la organización conectado**, es un **registro sin combate**: se llevan la mitad del Alijo.
+- Si **no hay nadie de la organización conectado**, la Policía **no se lleva nada**: cuenta como una prueba más y puede pedir otra orden.
 - Si no, hay una zona alrededor del Alijo: **con policías (o vecinos de su aldea) dentro y nadie de la organización,
   avanza la requisa**. Si llega al final, gana la Policía; si se acaba el tiempo, aguanta la organización.
 - **Quien muere en la zona no pierde nada.**

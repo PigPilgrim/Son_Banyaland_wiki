@@ -23,7 +23,7 @@ comunicado** por el chat.
 
 - El Alcalde vuelve a casa y recupera sus poderes.
 - Trae **recuerdos del crucero** para el Tesoro: la cuarta parte del rescate (25 sellos y 96 chips I).
-- Todos los que aportaron algo reciben el título **«Rescatador»** (o «Rescatadora»), que sale en el chat. Se pone en
+- Los que aportaron al menos el **5 %** del rescate (sellos y chips cuentan juntos: por ejemplo, 5 sellos o 20 chips I) reciben el título **«Rescatador»** (o «Rescatadora»), que sale en el chat. Se pone en
   tus cosméticos (en un [Tocador](crafteos.md#tocador) o con `/puente cosmeticos`).
 
 **Si no se paga:**

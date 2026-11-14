@@ -51,7 +51,7 @@ llegar.**
 
 En cada pista hay **una partida online a la vez**; cuando empieza, los que estaban en solitario en esa pista
 vuelven al lobby. **El ganador se lleva chips** si corrían **2 o más**, con un **tope de premios al día** (sumando
-todos los modos). Si corres solo, tus vueltas cuentan igual para el ranking.
+todos los modos). El tope **se guarda 2 días**: si ayer no llegaste, hoy puedes cobrar lo que te faltó. Si corres solo, tus vueltas cuentan igual para el ranking.
 
 Si caes **al agua**, vuelves al último punto de control y **esa vuelta no cuenta** para el ranking. Para salir
 de una regata en cualquier momento: `/puente barcos salir`.

@@ -44,7 +44,8 @@ además, **Caída de pluma III**). **Con las 4 puestas** tienes su bonus:
 
 --8<-- "_generado/sets.md"
 
-**De dónde salen las piezas:** cualquier pieza puede salir en el *Encargo maestro*. Además, el Tesoro del Faraón da
+**De dónde salen las piezas:** en el *Encargo maestro* **eliges de qué set** quieres la pieza (te toca una de sus 4 al
+azar), o una obra suelta del maestro. Si cierras el chat sin elegir, el menú vuelve a salir. Además, el Tesoro del Faraón da
 piezas del set **Faraónico** y **del Sol**; el del Shōgun, del **Samurái** y **del Innombrable**; y los Guerreros y
 Mineros Enanos, a veces, del **Enano** (ver [Mazmorras](mazmorras.md)).
 

@@ -1,6 +1,6 @@
-Cada objeto tiene la misma probabilidad: **2,38 %** (1 entre 42).
+Al abrirlo **eliges**: una **pieza de un set** (el que quieras de los 9; te toca una de sus 4 piezas al azar) o una **obra suelta del maestro** (una de estas 6, al azar):
 
-| Puede salir | Encantamientos |
+| Obra suelta | Encantamientos |
 |---|---|
 | **Espada del maestro** | Afilado VI, Irrompibilidad III |
 | **Hacha verdugo** | Afilado VII |
@@ -8,4 +8,3 @@ Cada objeto tiene la misma probabilidad: **2,38 %** (1 entre 42).
 | **Ballesta de asedio** | Perforación V, Carga rápida IV |
 | **Peto del guardián** | Protección V, Irrompibilidad III |
 | **Yelmo del guardián** | Protección V, Irrompibilidad III |
-| **Una pieza de set al azar** (36 posibles: 4 de cada uno de los 9 sets) | 85,7 % en total |

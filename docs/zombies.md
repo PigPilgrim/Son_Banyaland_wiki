@@ -107,7 +107,8 @@ aeropuerto... La ropa es solo de adorno: no los protege.
 ## Premios y números
 
 Los premios se cobran **al volver a la aldea**, como los de los demás minijuegos (con el impuesto sobre premios, si tu
-aldea lo tiene).
+aldea lo tiene). El tope de premios de repetir **se guarda 2 días**: si ayer no llegaste, hoy puedes cobrar lo que te
+faltó.
 
 --8<-- "_generado/zombies_numeros.md"
 

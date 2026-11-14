@@ -47,6 +47,10 @@ bibliotecarios); por eso existe [la reparación del Herrero](aldeanos.md#reparac
   recibe su premio. Solo se pueden hacer una vez hasta que la mazmorra se reinicia.
 - **Matando al jefe:** suelta su botín y, además, cada jugador de la sala recibe una **llave** para abrir **el Tesoro**
   (una vez por persona y partida; a cada uno le toca su propio botín).
+- **Las chips de cada jefe, una vez al día:** las chips del Faraón y del Shōgun (las que suelta y las de tu Tesoro) solo
+  te tocan en **tu primera victoria del día** contra ese jefe. Si lo vuelves a matar ese día, lo demás sale igual
+  (recetas, planos, piezas de set y materiales), pero sin chips. Las chips del suelo salen si a alguien de la sala aún
+  le tocaban.
 
 Los monstruos salen de **spawners**: en los normales salen cada 5 a 15 segundos mientras haya un jugador a menos de 16
 bloques (hasta 6 a la vez). En las **zonas de farmeo** salen más rápido (cada 3 a 8 segundos, hasta 8 a la vez).
@@ -118,7 +122,8 @@ Son los ingredientes de las **armas con plano**, las **varitas** y algunas **beb
 
 Tres cofres que **se abren con una chip** de su nivel. Cuanto más cara la chip, mejores premios. Además, cuentan
 **tus aperturas**: cada cierto número, te toca **un premio seguro** (la *constancia*), para que la mala suerte no te
-deje sin nada. El progreso sale abajo en la pantalla.
+deje sin nada. El progreso sale abajo en la pantalla. En el Cofre del Veterano y en el del Campeón, el premio seguro
+**lo eliges tú** de su lista de planos y grimorios (si cierras sin elegir, lo eliges luego con `/puente constancia`).
 
 --8<-- "_generado/cofres.md"
 
