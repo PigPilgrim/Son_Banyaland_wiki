@@ -18,8 +18,8 @@
 | **Tequila José Cuervo** | rara | 30 | 10 | Prisa III · 240 s<br>Velocidad I · 240 s | Hambre III · 60 s<br>Náuseas I · 10 s | — |
 | **Coronita** | épica | 20 | 6,7 | Velocidad III · 360 s<br>Fuerza II · 360 s<br>Resistencia I · 360 s | — | Hambre III · 120 s<br>Debilidad I · 120 s |
 | **Jägermeister** | épica | 35 | 11,7 | Fuerza III · 360 s | — | Debilidad II · 120 s<br>Lentitud II · 120 s<br>Oscuridad I · 30 s |
-| **La recompensa** | épica | 30 | 10 | Resistencia III · 180 s | — | Wither I · 10 s |
-| **Johnnie Walker Blue Label** | legendaria | 40 | 13,3 | Regeneración III · 60 s<br>Absorción VI · 600 s<br>Resistencia II · 600 s<br>Fuerza II · 600 s | — | Debilidad III · 60 s<br>Lentitud III · 60 s |
-| **Limoncello de Raúl** | legendaria | 35 | 11,7 | Fuerza III · 600 s<br>Velocidad II · 600 s<br>Resistencia II · 600 s<br>Regeneración II · 120 s<br>Resistencia al fuego I · 600 s<br>+4 corazones de vida máxima · 600 s | — | Náuseas I · 20 s<br>Hambre III · 120 s<br>Debilidad II · 120 s<br>Lentitud II · 120 s |
+| **La recompensa** | épica | 30 | 10 | Resistencia II · 180 s | — | Wither I · 10 s |
+| **Johnnie Walker Blue Label** | legendaria | 40 | 13,3 | Regeneración III · 60 s<br>Absorción III · 300 s<br>Resistencia II · 600 s<br>Fuerza II · 600 s | — | Debilidad III · 60 s<br>Lentitud III · 60 s |
+| **Limoncello de Raúl** | legendaria | 35 | 11,7 | Fuerza II · 600 s<br>Velocidad II · 600 s<br>Resistencia I · 600 s<br>Regeneración II · 120 s<br>Resistencia al fuego I · 600 s<br>+4 corazones de vida máxima · 600 s | — | Náuseas I · 20 s<br>Hambre III · 120 s<br>Debilidad II · 120 s<br>Lentitud II · 120 s |
 
 La duración de los efectos depende de la calidad con la que te salga: mala ×0.5, buena ×1, excelente ×1.5 (la tabla muestra la buena). *Al beber* llega en el momento; la *resaca*, cuando se acaba el efecto principal.

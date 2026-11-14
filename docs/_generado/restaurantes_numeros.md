@@ -2,7 +2,7 @@
 |---|---|
 | Para registrar uno | aldea de nivel 2 o más |
 | Restaurantes por aldea | nivel 2: 1 · nivel 3: 2 · nivel 4: 3 · nivel 5: 3 |
-| Alquiler | 16 chips I a la semana (el lunes, de la caja); sin pagar, cerrado hasta pagarlo |
+| Alquiler | 8 chips I a la semana (el lunes, de la caja); sin pagar, cerrado hasta pagarlo |
 | Ordenador | a 8 bloques de la caja como mucho |
 | Cocina | estaciones, cámaras, dependientes y Mayorista a 16 bloques del Ordenador como mucho |
 | Rama secundaria | hasta Casera; investigar cuesta ×1,5 chips y ×2 tiempo |
