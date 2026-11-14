@@ -4,8 +4,8 @@ En el **lobby de minijuegos** está el **Árbitro**. Cada día propone **3 retos
 uno **normal** y uno **difícil**, que son **los mismos para todos**. **Cada jugador puede hacer los tres**.
 
 !!! warning "En pruebas"
-    Los retos están hechos pero **aún no han llegado al servidor**: de momento solo están en el servidor de pruebas.
-    Los retos, las cifras y los premios pueden cambiar.
+    **Recién llegados al servidor (14 de noviembre), falta probarlos jugando.** Los retos, las cifras y los premios
+    pueden cambiar.
 
 ## Cómo funcionan
 

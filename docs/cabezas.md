@@ -6,8 +6,7 @@ del casino). Cuanto más alto el cofre, más fácil que salgan raras:
 
 --8<-- "_generado/cofres_cabezas.md"
 
-La **Llave del Cofre de Cabezas II** es un premio de los [Retos del Árbitro](retos.md) (⚠️ aún en pruebas, no ha
-llegado al servidor).
+La **Llave del Cofre de Cabezas II** es un premio de los [Retos del Árbitro](retos.md).
 
 Cada cabeza lleva su nombre, su rareza y su número dentro del set (*Set · n.º 3 de 20*). Se pueden **poner como
 decoración y quitar** sin perder nada.

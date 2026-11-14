@@ -25,14 +25,14 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Elaboración a mano de la mercancía:** ⚠️ PENDIENTE de probar en el juego. Los tiempos, las estrellas y lo que
   cambia cada una en los [bajos fondos](crimen.md#a-mano-en-la-guarida) pueden cambiar.
-- **Restaurantes:** ⚠️ PENDIENTE: están hechos pero aún no han llegado al servidor; falta probarlos en el juego. Los precios, tiempos, efectos, comensales y el Mayorista de los
+- **Restaurantes:** ⚠️ PENDIENTE de probar en el juego (llegaron al servidor el 14 de noviembre). Los precios, tiempos, efectos, comensales y el Mayorista de los
   [Restaurantes](restaurantes.md) pueden cambiar.
-- **Taller de runas:** ⚠️ PENDIENTE: hecho pero aún no ha llegado al servidor; falta probar en el juego el
+- **Taller de runas:** ⚠️ PENDIENTE (llegó al servidor el 14 de noviembre): falta probar en el juego el
   [Taller de runas](runas.md) entero (Mesa, servicios y los efectos de las runas de oficio y de mazmorra).
 - **Helados y el calor:** ⚠️ PENDIENTE: los [helados](restaurantes.md#ramas-y-platos) solo dan Resistencia al fuego;
   falta un efecto propio de «aguante del calor».
-- **Retos del Árbitro:** ⚠️ PENDIENTE: los [retos](retos.md) están hechos pero aún no han llegado al servidor; falta
-  probarlos en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
+- **Retos del Árbitro:** ⚠️ PENDIENTE (llegaron al servidor el 14 de noviembre): falta
+  probar los [retos](retos.md) en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
   pueden cambiar.
 - **Casino:** ⚠️ PENDIENTE: falta probar en el juego la nueva Tragaperras de objetos (cabezas de La Feria del Azar y
   cosméticos). Los premios del [casino](casino.md) pueden cambiar cuando se vea cómo va el bote.

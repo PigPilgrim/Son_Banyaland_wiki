@@ -14,8 +14,7 @@ Hay dos familias de runas:
 Ninguna runa da más minerales, diamantes ni chips, y ninguna repara objetos.
 
 !!! warning "⚠️ PENDIENTE"
-    El Taller de runas **aún no ha llegado al servidor**: está hecho, pero falta probarlo en el juego. Todos los
-    números pueden cambiar.
+    **Recién llegado al servidor (14 de noviembre), falta probarlo jugando.** Todos los números pueden cambiar.
 
 ## El Taller de runas
 

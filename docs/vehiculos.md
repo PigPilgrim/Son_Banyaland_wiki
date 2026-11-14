@@ -85,7 +85,7 @@ Con ella en la mano, clic derecho al vehículo: primero cura la vida y, cuando e
 --8<-- "_generado/llave_inglesa.md"
 
 La llave **no se rompe**, pero cuando está gastada ya no sirve: **no se repara** en ningún sitio. Lo que cobres a tus
-clientes por las reparaciones **lo negocias con ellos**. ⚠️ PENDIENTE: cómo se consigue otra llave cuando se gasta.
+clientes por las reparaciones **lo negocias con ellos**.
 
 ## El Concesionario
 

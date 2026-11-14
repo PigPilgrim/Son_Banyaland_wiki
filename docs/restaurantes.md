@@ -5,8 +5,8 @@ los compran a vuestros **dependientes** y cada día llegan **comensales** a la a
 pagan en la caja. Cada restaurante elige una **rama** de cocina (marisquería, trattoria, heladería...) y la investiga.
 
 !!! warning "⚠️ PENDIENTE"
-    Los restaurantes están hechos pero **aún no han llegado al servidor** y están **sin probar en el juego**. Los precios, tiempos, efectos y comensales
-    pueden cambiar.
+    **Recién llegados al servidor (14 de noviembre), falta probarlos jugando.** Los precios, tiempos, efectos y
+    comensales pueden cambiar.
 
 ## Restaurantes
 

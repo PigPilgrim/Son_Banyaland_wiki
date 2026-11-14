@@ -32,7 +32,7 @@ En el mundo de minijuegos (el lobby, las pistas y los demás juegos) **siempre e
 ## Retos del Árbitro
 
 Cada día, 3 retos de los minijuegos (fácil, normal y difícil) con premio en chips o en llaves del Cofre de Cabezas II,
-y un reto de la semana para todos. ⚠️ Aún en pruebas. Ver [Retos del Árbitro](retos.md).
+y un reto de la semana para todos. ⚠️ Recién llegados: pueden cambiar. Ver [Retos del Árbitro](retos.md).
 
 ## Las regatas
 

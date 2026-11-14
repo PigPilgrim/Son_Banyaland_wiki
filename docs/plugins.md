@@ -57,9 +57,6 @@ El servidor **apunta quién pone y rompe cada bloque** y **quién mete y saca co
 admin lo usa cuando alguien **se salta las [normas](primeros-pasos.md#normas-del-servidor)**: puede ver quién fue y
 dejarlo todo como estaba.
 
-!!! warning "En pruebas"
-    El registro **aún no ha llegado al servidor**: de momento solo está en el servidor de pruebas.
-
 ## Otros comandos útiles
 
 | Comando | Para qué |
