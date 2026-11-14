@@ -7,7 +7,8 @@ construyas alrededor es cosa tuya.
 
 1. **Consigue una Escritura de casa.** La primera te la **regala el Secretario** la primera vez que hablas con él
    (si la aldea tiene nivel 2 o más). Las siguientes cuestan **10 diamantes** en el Secretario.
-2. **Con la escritura en la mano, haz clic derecho a un cofre o barril.** Ese será el buzón de la casa.
+2. **Con la escritura en la mano, haz clic derecho a un cofre o barril.** Ese será el buzón de la casa. Tiene que
+   ser tuyo y estar **vacío** (no vale una tolva, un horno, una shulker...).
 3. **Ponle nombre** (se abre un yunque).
 
 Encima del buzón sale un cartel con **el nombre de la casa, el dueño, su nivel y su fortuna exacta**.
@@ -40,7 +41,7 @@ En el Funcionario hay un ranking de **las casas más ricas**.
 
 - **Cartas** recibidas y **escribir una carta**.
 - **Familia:** invitar o echar a alguien. La familia puede abrir el buzón.
-- **Mover el buzón** a otro cofre.
+- **Mover el buzón** a otro cofre o barril (vacío).
 - **Abandonar la casa.**
 
 ## Cartas

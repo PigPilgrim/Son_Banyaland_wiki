@@ -15,7 +15,7 @@ Escribe **`/puente crimen`** → **Fundar una organización**:
 
 1. Ponle **nombre** (yunque).
 2. Haz **clic derecho al cofre o barril** que será **el Alijo**: el almacén de la organización. Tienes 2 minutos;
-   si tardas más, hay que volver a empezar.
+   si tardas más, hay que volver a empezar. Solo vale un **cofre, cofre trampa o barril**, y tiene que estar **vacío**.
 3. Al lado aparece **Walter Brick**, el alquimista de la organización. Con él se hace todo lo demás.
 
 --8<-- "_generado/crimen_fundar.md"

@@ -9,7 +9,7 @@ El **SEPE** también es un proyecto de la Oficina. Cuando se termina, el **Funci
 2. Elige el **tipo**: taberna, restaurante, construcción, gasolinera, concesionario u otro. Si eliges *otro*, también eliges un bloque
    que será su dibujo en los menús.
 3. Paga la **tasa** (va al Tesoro).
-4. Haz **clic derecho al cofre o barril** que será **la caja** de la empresa.
+4. Haz **clic derecho al cofre o barril** que será **la caja** de la empresa (un cofre, cofre trampa o barril, **vacío**).
 
 --8<-- "_generado/sepe_numeros.md"
 
