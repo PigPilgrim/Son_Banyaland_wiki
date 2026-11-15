@@ -50,7 +50,7 @@ necesita ayuda.
 - Al empezar un tramo salen **zombis por oleadas**. Abajo de la pantalla ves cuántos quedan y la munición del arma
   que llevas en la mano.
 - Cuando no queda ninguno, el tramo está **despejado**: se abre el cordón hacia el siguiente, una **flecha** te dice
-  hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino. Si te alejas
+  hacia dónde ir y a cuántos metros, y una **línea de puntos verdes** en el suelo te marca el camino (donde hay dos entradas, la línea se divide en dos). Si te alejas
   mucho de él, te avisa (*«Creo que no es por ahí...»*). En cuanto alguien del grupo
   entra en el siguiente tramo, empieza, los demás van con él y el cordón se cierra detrás.
 - No hay hambre, pero **la vida no se recupera sola**: para eso están los botiquines.
