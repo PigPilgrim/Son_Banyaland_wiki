@@ -79,7 +79,7 @@ Todos los pasos pueden llevar:
 | `dialogo` | Solo habla (`al_empezar`) | Se ha dicho todo |
 | `esperar` | — (`segundos`) | Pasa el tiempo |
 | `curar` | Cura a todo el grupo | Al momento |
-| `dar` | Da el `arma` (`escopeta`, `rifle`, `pistola`, `machete`, `hacha`) con su munición a quien no la tenga | Al momento |
+| `dar` | Da el `arma` (`escopeta`, `rifle`, `pistola`, `machete`, `hacha`) con su munición a quien no la tenga. Solo en el tutorial: en las dificultades no da nada (las armas se compran) | Al momento |
 | `abrir` | Quita el grupo de `bloques` y abre las `puertas` (que dejan de estar atrancadas) | Al momento |
 
 Cuando se acaban los pasos, si quedan zombis hay que acabar con ellos, y el tramo queda despejado como siempre.
