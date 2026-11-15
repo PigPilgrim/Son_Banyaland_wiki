@@ -8,7 +8,7 @@ ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tram
     La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
     zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
-    zombis, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
+    zombis (con su paquete de recursos), el fuego del cóctel, poder abrir puertas con un arma en la mano, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
     fuera de la partida y las **dificultades con puntos y tienda** llegan al servidor junto con la campaña.
 
 ## Entrar y salir
@@ -120,14 +120,18 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 --8<-- "_generado/zombies_armas.md"
 
 - **Disparos a la cabeza:** con la pistola, la escopeta, el rifle o el arco, un disparo en la cabeza hace **el doble
-  de daño** (sale *«¡En la cabeza!»*).
+  de daño** (sale *«¡En la cabeza!»* y, si lo rematas, los puntos que te da).
 - **Pistola, escopeta y rifle:** clic derecho para disparar. Cuando se vacía el cargador recargan solas si llevas su
   munición (**balas**, **cartuchos** o **balas de rifle**); también puedes recargar con la tecla de **cambiar de
   mano** (F). La escopeta echa varios perdigones abiertos (de cerca); el rifle atraviesa a varios zombis en fila.
+- **Con un arma en la mano** puedes abrir puertas y trampillas, pulsar botones y mover palancas: el clic derecho sobre
+  ellas las usa y no dispara. Si quieres disparar mirando a una puerta, **agáchate**. Los cofres y demás cosas del mapa
+  siguen cerrados (ahí el clic derecho dispara).
 - **Botiquín:** clic derecho y quédate **quieto 2 segundos**. Si te mueves o te dan, se cancela.
 - **Adrenalina:** clic derecho; cura al momento y corres más durante unos segundos.
-- **Cóctel incendiario y granada:** clic derecho para lanzarlos. El cóctel deja fuego unos segundos donde cae; la
-  granada explota al caer. Solo hacen daño a los zombis y no rompen nada.
+- **Cóctel incendiario y granada:** clic derecho para lanzarlos. El cóctel deja un círculo de fuego unos segundos
+  donde cae, que quema a los zombis que estén dentro; la granada explota al caer. Solo hacen daño a los zombis (el
+  fuego a vosotros no os quema) y no rompen nada: el fuego se apaga sin dejar marca.
 - En la tienda, las armas de cuerpo a cuerpo **ocupan el sitio** de las de antes: la tubería pasa a machete y luego a
   hacha de bombero. Las mejoras se ven en el nombre (**+1**, **+2**, **+3**). El **chaleco** lo llevas puesto.
 - La **munición** se puede tirar al suelo para pasársela a otro del grupo. Los zombis a veces sueltan munición del
@@ -140,6 +144,9 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol. Los
 **tanques** (con peto y perneras de hierro, y mucha más vida) aparecen desde El centro. Lo que llevan puesto es solo de
 adorno: no los protege.
+
+Al entrar en Cod Zombies el servidor te ofrece un **paquete de recursos** muy pequeño (no es obligatorio): con él,
+las **caras** de los zombis (médicos, policías, presos...) se ven del tamaño de su cabeza; sin él, algo más grandes.
 
 Van vestidos según el sitio: marineros y turistas en el puerto, médicos, enfermeros y pacientes en el hospital,
 oficinistas en el centro, policías en la comisaría, bomberos en el parque de bomberos, pilotos y azafatas en el
