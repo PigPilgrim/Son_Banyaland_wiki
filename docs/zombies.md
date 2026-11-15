@@ -165,8 +165,8 @@ el primer tramo: los puntos que llevaras se apuntan igual. Si un admin intervien
 cambia de tramo...), avisa y esa partida ya no cuenta. Se apunta al superar cada tramo, al caer y al salir, así que no
 se pierde si cierras el juego.
 
-Para verla: el **lingote de oro** del menú de Cod Zombies o **`/puente zombies ranking`** (puedes añadir el número
-de la dificultad). Te dice el top 10, **tu puesto** y cuánto falta para el cierre. Al salir de una partida también te
+Para verla: el **tablón encima del portal de Cod Zombies** en el lobby (los 3 primeros de cada dificultad), el
+**lingote de oro** del menú de Cod Zombies o **`/puente zombies ranking`** (puedes añadir el número de la dificultad). Te dice el top 10, **tu puesto** y cuánto falta para el cierre. Al salir de una partida también te
 avisa de cómo vas.
 
 La semana **se cierra el lunes a las 0:00** (hora de España). Entonces:
