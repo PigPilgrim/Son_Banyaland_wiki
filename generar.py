@@ -1044,9 +1044,21 @@ def casino_tablas():
 def zombies_tablas():
     import zombies as Z
     cor = lambda m: (str(m // 2) if m % 2 == 0 else f"{m / 2:g}".replace(".", ",")) + " ♥"
-    escribir("zombies_tramos.md", tabla(["Tramo", "Dónde", "Al superarlo", "Se puede jugar"], [
-        (f"**{t['id']} · {t['nombre']}**" + (" (tutorial)" if t.get("tutorial") else ""), t["lugar"], t["desbloquea"],
+    escribir("zombies_tramos.md", tabla(["Tramo", "Dónde", "Se puede jugar"], [
+        (f"**{t['id']} · {t['nombre']}**" + (" (tutorial)" if t.get("tutorial") else ""), t["lugar"],
          "sí" if t["hecho"] else "próximamente") for t in Z.TRAMOS]))
+    T = Z.TIENDA
+    pts = lambda n: f"{n:,}".replace(",", ".") + " puntos"
+    def en_tienda(k):
+        """Cómo se consigue en las dificultades."""
+        if k == Z.EQUIPO_INICIAL["cuerpo"] or k in Z.EQUIPO_INICIAL["armas"]: return "al empezar"
+        paso = next((c for c in T["cuerpo"] if c["arma"] == k and not c.get("nivel")), None)
+        if paso: return pts(paso["precio"])
+        if k in T["armas"]: return pts(T["armas"][k]["precio"])
+        if k in T["objetos"]:
+            o = T["objetos"][k]
+            return pts(o["precio"]) + (" (una vez)" if o.get("una_vez") else f" (+{o['sube']} cada vez)" if o.get("sube") else "")
+        return "solo en el tutorial"
     filas = []
     for k, a in Z.ARMAS.items():
         if a["tipo"] == "curación": efecto = f"cura {cor(a['cura'])}"
@@ -1055,8 +1067,43 @@ def zombies_tablas():
         elif a["tipo"] == "lanzable": efecto = f"{cor(a['dano'])} en un radio de {a['radio']}" + (" cada segundo" if "segundos" in a else "")
         elif a["tipo"] == "cuerpo a cuerpo": efecto = f"{cor(a['dano'])} por golpe"
         else: efecto = f"{cor(a['dano'])} por " + ("perdigón" if "perdigones" in a else "disparo")
-        filas.append((f"**{a['nombre']}**", a["tipo"], efecto, a["detalle"], a["consigue"]))
-    escribir("zombies_armas.md", tabla(["Arma", "Tipo", "Efecto", "Detalles", "Se consigue"], filas))
+        filas.append((f"**{a['nombre']}**", a["tipo"], efecto, a["detalle"], en_tienda(k)))
+    escribir("zombies_armas.md", tabla(["Arma", "Tipo", "Efecto", "Detalles", "En las dificultades"], filas))
+    # dificultades
+    escribir("zombies_dificultades.md", tabla(["Dificultad", "Zombis a la vez", "Zombis por oleada", "Vida de los zombis",
+                                                "Daño de los zombis", "Puntos", "Se abre"], [
+        (f"**{d['nombre']}**", f"×{d['zombis']:g}", f"×{d['total']:g}", f"×{d['vida']:g}", f"×{d['dano']:g}", f"×{d['puntos']:g}",
+         "al acabar el tutorial" if i == 0 else f"al despegar en la {Z.DIFICULTADES[i - 1]['nombre'].lower()}")
+        for i, d in enumerate(Z.DIFICULTADES)]).replace(".", ","))
+    P_ = Z.PUNTOS
+    escribir("zombies_puntos.md", tabla(["Zombi", "Puntos al rematarlo", "A la cabeza"], [
+        (f"**{z['nombre']}**", P_.get(k, 0), f"+{P_['cabeza']}") for k, z in Z.ZOMBIS.items()]))
+    # tienda: cuerpo a cuerpo, armas con sus mejoras, munición y objetos
+    def mejora(arma, nivel):
+        m = Z.MEJORAS[arma][nivel - 1]
+        dice = {"dano": lambda v: f"daño {cor(v)}", "cargador": lambda v: f"cargador {v}", "recarga": lambda v: f"recarga {v / 20:g} s".replace(".", ","),
+                "alcance": lambda v: f"alcance {v}", "poder": lambda v: f"Poder {ROMANO[v]}"}
+        return ", ".join(dice[k](v) for k, v in m.items())
+    filas = []
+    for i, c in enumerate(T["cuerpo"]):
+        if i == 0: continue
+        nombre = Z.ARMAS[c["arma"]]["nombre"] + (f" +{c['nivel']}" if c.get("nivel") else "")
+        filas.append(("Cuerpo a cuerpo", f"**{nombre}**", pts(c["precio"]),
+                      mejora(c["arma"], c["nivel"]) if c.get("nivel") else f"cambia {Z.ARMAS[T['cuerpo'][i - 1]['arma']]['nombre'].lower()} por esta"))
+    for k, a in T["armas"].items():
+        nombre = Z.ARMAS[k]["nombre"]
+        if a["precio"] > 0:
+            mun = "flechas" if k == "arco" else Z.MUNICIONES[Z.ARMAS[k]["municion"]]["nombre"].lower()
+            filas.append((nombre, f"**{nombre}**", pts(a["precio"]), f"con {a['municion']} {mun}"))
+        for n, precio in enumerate(a["mejoras"], 1):
+            filas.append((nombre, f"**Mejora +{n}**", pts(precio), mejora(k, n)))
+    for k, m in T["municion"].items():
+        nom = "Flechas" if k == "flechas" else Z.MUNICIONES[k]["nombre"]
+        filas.append(("Munición", f"**{nom}** ×{m['cantidad']}", pts(m["precio"]) + f" (+{m['sube']} cada vez)", ""))
+    for k, o in T["objetos"].items():
+        filas.append(("Objetos", f"**{Z.ARMAS[k]['nombre']}**" + (f" ×{o['cantidad']}" if o["cantidad"] > 1 else ""),
+                      pts(o["precio"]) + (" (una vez)" if o.get("una_vez") else f" (+{o['sube']} cada vez)" if o.get("sube") else ""), ""))
+    escribir("zombies_tienda.md", tabla(["Fila", "Artículo", "Precio", "Qué da"], filas))
     m = Z.MUNICION
     def aspecto(z):
         cosas = []
@@ -1073,17 +1120,19 @@ def zombies_tablas():
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Jugadores por partida", f"de 1 a {L['jugadores']}"),
-        ("Munición al empezar cada tramo", " · ".join(f"{a['nombre']}: {a['por_tramo']} {Z.MUNICIONES[a['municion']]['nombre'].lower()}"
-                                                       for a in Z.ARMAS.values() if "por_tramo" in a) + " (además del cargador lleno)"),
+        ("Equipo al empezar una dificultad", ", ".join([Z.ARMAS[Z.EQUIPO_INICIAL["cuerpo"]]["nombre"]] + [Z.ARMAS[a]["nombre"] for a in Z.EQUIPO_INICIAL["armas"]]
+                                                       + [f"{n} {Z.MUNICIONES[k]['nombre'].lower()}" for k, n in Z.EQUIPO_INICIAL["municion"].items()])),
         ("Munición que suelta un zombi", f"una de cada {round(1 / m['soltar_probabilidad'])} veces, del arma que lleves en la mano: "
          + " · ".join(f"{n} {Z.MUNICIONES[k]['nombre'].lower()}" for k, n in m["soltar"].items())),
         ("Disparo a la cabeza", f"×{Z.CABEZA:g} de daño (pistola, escopeta, rifle y arco)"),
         ("Un zombi brilla", f"si lleva más de {L['brillo']} s vivo, o si quedan {L['brillo_ultimos']} o menos y nadie ha matado ninguno en {L['brillo_espera']} s"),
-        ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador ({L['max_partida']} en total)"),
+        ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador, por la dificultad (nunca más de {L['max_partida']})"),
         ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
         ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),
         ("Repetir un tramo", f"{P['repetir']} chip I ({P['repetir_sin_muertes']} si nadie del grupo cae); como mucho {P['tope_dia']} premios al día"),
-    ]))
+    ] + ([("Puntos al salir, caer o despegar", f"cada {pts(Z.PUNTOS['conversion']['puntos_por_chip'])} valen 1 chip I (como mucho "
+                                                  f"{Z.PUNTOS['conversion']['max_chips']}); gasta uno de los premios del día")]
+         if Z.PUNTOS["conversion"]["activa"] else [])))
 
 def crafteos_tablas():
     """Cada receta de crafteos.py como una mesa de trabajo (iconos en docs/img/items/, sacados del Minecraft del PC)."""

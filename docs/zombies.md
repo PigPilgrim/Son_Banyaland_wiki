@@ -1,23 +1,23 @@
 # Cod Zombies
 
 Una **ruta por una ciudad llena de zombis**: llegas en un crucero a Port Vance y tienes que cruzarla, **tramo a
-tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y lo que vas superando es tuyo.
+tramo**, hasta el aeropuerto para escapar en avión. Se juega solo o en grupo, en **5 dificultades**: matando zombis
+ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tramo y tramo.
 
 !!! warning "En pruebas"
     La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
     zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
-    zombis, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan y que al caer quedes
-    fuera de la partida llegan al servidor junto con la campaña.
+    zombis, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
+    fuera de la partida y las **dificultades con puntos y tienda** llegan al servidor junto con la campaña.
 
 ## Entrar y salir
 
 - Se entra desde el **lobby de minijuegos** (ver [Ir y volver](minijuegos.md#ir-y-volver)), por el **portal lima**.
   Se abre un menú:
-    - **Tutorial**: el crucero y la terminal. La primera vez hay que hacerlo.
-    - **Continuar**: el siguiente tramo que te toca.
-    - **Rejugar** un tramo que ya has superado.
-    - **Unirte** a la partida de otro (si ya has llegado a ese tramo).
+    - **Tutorial**: el crucero y la terminal. La primera vez hay que hacerlo; al acabarlo se abre la dificultad 1.
+    - **Dificultad 1 a 5**: la campaña entera, de Sandy Heights al aeropuerto. Las que aún no has abierto salen en gris.
+    - **Unirte** a la partida de otro (si ya has abierto esa dificultad).
 - Quien crea la partida la arranca con **[Empezar]** en el chat, aunque esté solo. Caben **4 jugadores**.
 - Como en los demás minijuegos, lo que llevabas se queda en la [mochila](minijuegos.md#tu-inventario-y-la-mochila) y
   vuelve al salir. Dentro te dan el equipo del juego, que **no sale** de la partida.
@@ -60,25 +60,60 @@ necesita ayuda.
   de las paredes.
 - Un zombi que se queda atascado lejos (en un garaje, detrás de una valla...) y no consigue acercarse, al rato
   desaparece y sale en otro sitio.
-- **Si caes, quedas fuera de la partida** y vuelves al lobby. Para volver a intentarlo, entra otra vez: empiezas en
-  el tramo siguiente al último que hayas superado. Los demás del grupo siguen jugando.
-- Al empezar cada tramo te **rellenan** el equipo: munición, flechas, curas y lanzables. Lo que ya has superado
-  cuenta: cada tramo te da armas nuevas para los siguientes (ver la tabla de abajo).
+- **Si caes, quedas fuera de la partida** y vuelves al lobby, sin tus puntos ni lo que hayas comprado. Para volver a
+  intentarlo, entra otra vez: la dificultad empieza de nuevo en Sandy Heights. Los demás del grupo siguen jugando.
 - Al despejar el Tranvía de Badoc se abren las puertas del **tranvía**. En cuanto sube alguien empieza una cuenta
   atrás de 10 segundos (arriba de la pantalla, con cuántos habéis subido)... y el tranvía **descarrila**. Todo el
   grupo acaba junto a los restos, algo magullado, y sale por el hueco de la valla hacia las pistas.
 - En el **Aeropuerto**, la última oleada la trae **El Piloto**, el jefe final, con su barra de vida arriba de la
   pantalla. Cuando caiga y no quede ningún zombi, subid al **avión**. Os siguen más zombis, y a esos no hay quien
   los tumbe: **encerraos en la cabina del piloto** y pulsad los mandos. El avión solo despega si la puerta de la
-  cabina sigue cerrada y hay alguien dentro. Al despegar, la campaña está completada. Después puedes rejugar
-  cualquier tramo.
+  cabina sigue cerrada y hay alguien dentro. Al despegar habéis superado la dificultad, y se abre la siguiente.
+
+## Dificultades
+
+Después del tutorial, cada partida es **una dificultad**: la campaña entera de un tirón, de Sandy Heights hasta el
+despegue. Empiezas solo con lo básico y el resto lo compras. Cuanto más alta, más zombis a la vez, más zombis por
+oleada, más aguantan y más pegan... pero también dan más puntos.
+
+--8<-- "_generado/zombies_dificultades.md"
+
+## Puntos
+
+- Cada zombi que **rematas** te da puntos (a quien da el último golpe). Si ese golpe es un **disparo a la cabeza**,
+  alguno más. La dificultad los multiplica.
+- Tus puntos y los de tu grupo se ven siempre a la **derecha de la pantalla**, con la dificultad y el tramo.
+- Son **de cada uno** y solo valen en esa partida: no tienen nada que ver con los chips. **Si caes o sales, se
+  pierden.**
+- Al salir, caer o despegar, algunos se pueden convertir en unos pocos chips I (ver los números de abajo), solo si
+  aún te queda algún premio de zombis ese día.
+
+--8<-- "_generado/zombies_puntos.md"
+
+## La tienda
+
+- Se abre con la **esmeralda** de tu barra (hueco 8), **solo con el tramo despejado**: nunca en plena oleada. En
+  cuanto alguien entra en el siguiente tramo, se cierra.
+- Arriba ves tus puntos. Cada artículo dice qué cambia (cómo está ahora y cómo queda) y cuánto cuesta:
+    - **verde** (brilla): te llega, clic para comprarlo;
+    - **rojo**: te faltan puntos;
+    - **gris**: ya lo tienes, o antes tienes que comprar el paso anterior.
+- **Cuerpo a cuerpo:** tubería → machete → hacha de bombero → hacha mejorada. Cada paso cambia tu arma por la nueva.
+- **Armas:** la escopeta, el rifle y el arco se compran (traen algo de munición). Cada arma, la pistola incluida,
+  tiene **3 mejoras**, una detrás de otra.
+- **Munición y objetos** (botiquines, adrenalina, cócteles, granadas): cada vez que compras el mismo, cuesta un poco
+  más. El chaleco, una sola vez.
+- Si jugáis en grupo, arriba a la derecha puedes elegir **para quién compras**: pagas tú y se lo lleva tu compañero.
+- Lo comprado te dura **toda la partida**: el inventario se queda de un tramo al siguiente (ya no se rellena).
+
+--8<-- "_generado/zombies_tienda.md"
 
 ## Los tramos
 
 --8<-- "_generado/zombies_tramos.md"
 
-El **tutorial** (el crucero y la terminal) enseña a coger el arma, disparar, recargar y curarse. Al acabarlo puedes
-seguir hasta Sandy Heights sin salir. Superar un tramo te deja empezar en el siguiente la próxima vez.
+El **tutorial** (el crucero y la terminal) enseña a coger el arma, disparar, recargar y curarse. Al acabarlo vuelves
+al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **dificultad 1**.
 
 ## Armas
 
@@ -93,8 +128,8 @@ seguir hasta Sandy Heights sin salir. Superar un tramo te deja empezar en el sig
 - **Adrenalina:** clic derecho; cura al momento y corres más durante unos segundos.
 - **Cóctel incendiario y granada:** clic derecho para lanzarlos. El cóctel deja fuego unos segundos donde cae; la
   granada explota al caer. Solo hacen daño a los zombis y no rompen nada.
-- Las armas mejores **ocupan el sitio** de las de antes: la tubería pasa a machete y luego a hacha de bombero, y el
-  botiquín pasa a botiquín grande. El **chaleco** lo llevas puesto.
+- En la tienda, las armas de cuerpo a cuerpo **ocupan el sitio** de las de antes: la tubería pasa a machete y luego a
+  hacha de bombero. Las mejoras se ven en el nombre (**+1**, **+2**, **+3**). El **chaleco** lo llevas puesto.
 - La **munición** se puede tirar al suelo para pasársela a otro del grupo. Los zombis a veces sueltan munición del
   arma que llevas en la mano.
 
