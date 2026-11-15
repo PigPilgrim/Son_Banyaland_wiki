@@ -160,9 +160,10 @@ aeropuerto... La ropa es solo de adorno: no los protege.
 ## Clasificación semanal
 
 Cada semana hay una **clasificación por dificultad**. Cuenta **tu mejor partida de la semana**: los puntos que
-**ganas matando** zombis en ella (lo que gastes en la tienda no te los quita). Para que cuente tienes que superar al
-menos un tramo en esa partida; si un admin interviene en ella (te da puntos, os cambia de tramo...), avisa y esa
-partida ya no cuenta. Se apunta al superar cada tramo y al salir, así que no se pierde si cierras el juego.
+**ganas matando** zombis en ella (lo que gastes en la tienda no te los quita). **Cuenta aunque caigas**, también en
+el primer tramo: los puntos que llevaras se apuntan igual. Si un admin interviene en la partida (te da puntos, os
+cambia de tramo...), avisa y esa partida ya no cuenta. Se apunta al superar cada tramo, al caer y al salir, así que no
+se pierde si cierras el juego.
 
 Para verla: el **lingote de oro** del menú de Cod Zombies o **`/puente zombies ranking`** (puedes añadir el número
 de la dificultad). Te dice el top 10, **tu puesto** y cuánto falta para el cierre. Al salir de una partida también te
