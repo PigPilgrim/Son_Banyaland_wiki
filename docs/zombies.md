@@ -64,8 +64,9 @@ necesita ayuda.
   el tramo siguiente al último que hayas superado. Los demás del grupo siguen jugando.
 - Al empezar cada tramo te **rellenan** el equipo: munición, flechas, curas y lanzables. Lo que ya has superado
   cuenta: cada tramo te da armas nuevas para los siguientes (ver la tabla de abajo).
-- En la valla del aeropuerto no hay puertas: al despejar el Tranvía de Badoc se **abre una brecha** para pasar a las
-  pistas.
+- Al despejar el Tranvía de Badoc se abren las puertas del **tranvía**. En cuanto sube alguien empieza una cuenta
+  atrás de 10 segundos (arriba de la pantalla, con cuántos habéis subido) y al acabar el tranvía lleva **a todo el
+  grupo** a la entrada del aeropuerto, a las pistas.
 - En el **Aeropuerto**, la última oleada la trae **El Piloto**, el jefe final, con su barra de vida arriba de la
   pantalla. Cuando caiga y no quede ningún zombi, corred a la **parada de autobús** delante de la terminal: os
   **evacúan** y la campaña está completada. Después puedes rejugar cualquier tramo.
