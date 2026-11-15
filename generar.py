@@ -1149,8 +1149,10 @@ def zombies_tablas():
         if e.get("variantes"): cosas.append(f"{'la mitad' if e['variantes'] == 0.5 else 'algunos'}: otra cara (médicos, policías, presos...)")
         return ", ".join(cosas) or "—"
     def rompe(z):
-        s = Z.ROMPER["segundos"] / z.get("rompe", 1)
-        return f"{round(s, 1):g} s".replace(".", ",")
+        def seg(s): return f"{round(s / z.get('rompe', 1), 1):g} s".replace(".", ",")
+        nombres = {".*glass(_pane)?": "cristales", ".*_leaves": "setos"}
+        partes = [f"{nombres.get(pat, pat)} {seg(s)}" for pat, s in Z.ROMPER.get("segundos_bloque", [])]
+        return " · ".join([f"puertas, vallas y barrotes {seg(Z.ROMPER['segundos'])}"] + partes)
     escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad", "Rompe una barrera en", "Cómo se reconoce"], [
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
          "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido", rompe(z), aspecto(z))

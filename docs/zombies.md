@@ -144,9 +144,10 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 
 Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol, pero **si
 no tienen otro camino hasta vosotros, rompen lo que les corta el paso**: ventanas y cristales, barrotes, vallas, setos
-y puertas. Tardan unos segundos (se ve cómo se agrieta); si son varios, menos, y los grandes rompen mucho más rápido.
+y puertas. Tardan poco, y los cristales y los setos casi nada (se ve cómo se agrieta); si son varios, menos, y los grandes rompen mucho más rápido.
 Los muros del borde de la zona, lo que pone la historia (barricadas, puertas atrancadas), el tranvía y el avión no se
-rompen nunca. Al empezar cada tramo, todo lo roto vuelve a estar como antes. Los
+rompen nunca. Al empezar cada tramo, todo lo roto (y las puertas que hayáis abierto) vuelve a estar como antes,
+menos lo que tengáis justo al lado, que se arregla más tarde; al acabar la partida, todo. Los
 **tanques** (con peto y perneras de hierro, y mucha más vida) aparecen desde El centro. Lo que llevan puesto es solo de
 adorno: no los protege.
 
