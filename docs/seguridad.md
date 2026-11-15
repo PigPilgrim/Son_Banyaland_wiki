@@ -45,7 +45,8 @@ Una cámara graba a alguien si se cumplen **todas** estas cosas:
 4. **No está cegada** (ver [Sabotaje](#sabotaje)).
 
 Lo que graba: **abrir cofres, barriles y demás**, **romper y poner bloques**, **abrir puertas, trampillas y
-puertas de valla**, **pulsar botones y palancas**, **pegar, disparar o matar a otro jugador**, los **cacheos de la
+puertas de valla**, **pulsar botones y palancas**, **pegar, disparar o matar a otro jugador**, **matar
+cualquier bicho** (animales, aldeanos, monstruos...), los **cacheos de la
 Policía** y a quien **fuerza una cerradura** con una [Ganzúa](crimen.md#ganzua). Si alguien hace lo mismo varias veces seguidas (abrir y cerrar el mismo cofre...), sale **una sola
 grabación** con cuántas veces lo hizo.
 
