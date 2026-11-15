@@ -3,6 +3,9 @@
 Un minijuego aparte del juego normal: tienes tu propio **fortín**, lo llenas de edificios y los vas mejorando. Las
 mejoras tardan **tiempo de verdad** (minutos al principio, horas después) y siguen avanzando aunque no estés conectado.
 
+!!! danger "Cerrado por ahora"
+    Desde el 15 de noviembre Craft of Clans está **cerrado**: su portal no deja entrar. ⚠️ PENDIENTE: cuándo vuelve.
+
 !!! warning "⚠️ PENDIENTE"
     Está en pruebas: ya se puede construir, entrenar tropas y **atacar los fortines de los demás**, pero los números
     de abajo (vidas, daños, botín, trofeos...) pueden cambiar cuando se pruebe más.

@@ -4,8 +4,8 @@ Dos equipos, **azul** y **rojo**, cada uno en su base con su **cama**, y un abis
 camino hasta la base rival, **romperle la cama** y eliminarlo. Se juega **1 contra 1** o **2 contra 2**.
 
 !!! warning "En pruebas"
-    The Bridge está hecho pero aún **no se ha probado en el juego** ni está en el servidor. Los tiempos, el kit y los
-    premios pueden cambiar.
+    The Bridge está hecho pero aún **no se ha probado en el juego**: en el servidor está **cerrado** hasta que se
+    pruebe. Los tiempos, el kit y los premios pueden cambiar.
 
 ## Entrar
 

@@ -40,7 +40,8 @@ Barcos sobre hielo, con neumáticos, boxes y la Liga. Ver [Regatas y Liga](regat
 
 ## Craft of Clans
 
-Tu propio **fortín** para construir y mejorar con tiempo real. Ver [Craft of Clans](clanes.md).
+Tu propio **fortín** para construir y mejorar con tiempo real. **Cerrado por ahora** (desde el 15 de noviembre). Ver
+[Craft of Clans](clanes.md).
 
 ## Casino
 
@@ -52,11 +53,11 @@ Los tres Cofres de Cabezas del lobby, el álbum y las repetidas. Ver [Cabezas co
 
 ## The Bridge
 
-Dos equipos con su cama: construye el camino, rompe la cama del rival y elimínalo. En 1v1 o 2v2. Aún en pruebas. Ver
+Dos equipos con su cama: construye el camino, rompe la cama del rival y elimínalo. En 1v1 o 2v2. Aún en pruebas: **cerrado** hasta que se pruebe. Ver
 [The Bridge](bridge.md).
 
 ## Cod Zombies
 
 Una ruta por una ciudad llena de zombis, tramo a tramo, solo o en grupo, hasta la evacuación en el aeropuerto. Está
-abierto como **DEMO** (los tres primeros tramos; la campaña entera llegará pronto), por el portal lima. Ver
+abierto entero (del crucero al aeropuerto, con 5 dificultades y clasificación semanal), por el portal lima. Ver
 [Cod Zombies](zombies.md).

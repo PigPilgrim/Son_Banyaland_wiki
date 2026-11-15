@@ -8,12 +8,10 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   la [Receta sellada](taberna.md) sin repetidas y las empresas en pausa ([Empresas](empresas.md)). Pueden cambiar.
 - **Llave inglesa:** ⚠️ PENDIENTE: ya no se repara; falta decidir cómo consigue otra el Concesionario cuando se gasta (ver [Vehículos](vehiculos.md)).
 - **Música:** ⚠️ PENDIENTE de probar en el juego que los discos con canciones suenen para todos (ver [Comandos y extras](plugins.md#musica-discos-con-canciones-de-verdad)).
-- **Cod Zombies:** ⚠️ PENDIENTE: la campaña entera (T0-T9) está hecha pero sin probar en el juego; en el servidor
-  sigue la DEMO con solo el tutorial y Sandy Heights. La vida de los zombis, el daño de las armas y la munición de
+- **Cod Zombies:** ⚠️ PENDIENTE: la campaña entera (T0-T9) llegó al servidor el 15 de noviembre y casi no se ha
+  jugado todavía. La vida de los zombis, el daño de las armas y la munición de
   [Cod Zombies](zombies.md) pueden cambiar. Falta la Supervivencia. Falta también confirmar con el autor del
   mapa (Port Vance, de Eivisxp) que se puede usar en el servidor.
-- **Cabezas «Zombis de Port Vance»:** ⚠️ PENDIENTE: el set nuevo de [cabezas coleccionables](cabezas.md) llega al
-  servidor junto con la campaña de Cod Zombies; hasta entonces no sale en los Cofres de Cabezas.
 - **Craft of Clans:** ⚠️ PENDIENTE de probar en el juego, sobre todo los **ataques**. Falta equilibrar vidas, daños,
   botín y trofeos; los números de [Craft of Clans](clanes.md) pueden cambiar y el aspecto de los edificios lo cambiará
   el admin. Las temporadas, la guerra de bandos y sus premios en cabezas están sin estrenar.
@@ -35,7 +33,7 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   [Taller de runas](runas.md) entero (Mesa, servicios y los efectos de las runas de oficio y de mazmorra).
 - **Helados y el calor:** ⚠️ PENDIENTE: los [helados](restaurantes.md#ramas-y-platos) solo dan Resistencia al fuego;
   falta un efecto propio de «aguante del calor».
-- **The Bridge:** ⚠️ PENDIENTE de probar en el juego (hecho el 15 de noviembre, aún no está en el servidor). El kit, los
+- **The Bridge:** ⚠️ PENDIENTE de probar en el juego (llegó al servidor el 15 de noviembre, pero cerrado hasta probarlo). El kit, los
   tiempos, los premios y los mapas de [The Bridge](bridge.md) pueden cambiar.
 - **Retos del Árbitro:** ⚠️ PENDIENTE (llegaron al servidor el 14 de noviembre): falta
   probar los [retos](retos.md) en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios

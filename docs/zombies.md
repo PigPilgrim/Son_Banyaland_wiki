@@ -4,13 +4,10 @@ Una **ruta por una ciudad llena de zombis**: llegas en un crucero a Port Vance y
 tramo**, hasta el aeropuerto para escapar en avión. Se juega solo o en grupo, en **5 dificultades**: matando zombis
 ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tramo y tramo.
 
-!!! warning "En pruebas"
-    La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
-    sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
-    zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
-    zombis (con su paquete de recursos), el fuego del cóctel, poder abrir puertas con un arma en la mano, que los
-    zombis rompan barreras, la clasificación semanal, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
-    fuera de la partida y las **dificultades con puntos y tienda** llegan al servidor junto con la campaña.
+!!! note "Recién llegado"
+    La **campaña entera** (del crucero a la evacuación en el aeropuerto) está en el servidor desde el 15 de
+    noviembre. La vida de los zombis, el daño de las armas, la munición, los puntos y los precios de la tienda pueden
+    cambiar según cómo vaya.
 
 ## Entrar y salir
 
@@ -39,7 +36,7 @@ necesita ayuda.
 - Si ya te la sabes: **`/historia saltar`** corta el diálogo cuando lo pide todo el grupo.
 
 !!! note "En pruebas"
-    De momento solo tienen historia el **Hospital** y la **Comisaría** (y solo en el servidor de pruebas). El resto
+    De momento solo tienen historia el **Hospital** y la **Comisaría**. El resto
     de tramos siguen siendo oleadas.
 
 ## Cómo se juega
