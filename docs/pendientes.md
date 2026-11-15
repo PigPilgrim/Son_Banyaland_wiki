@@ -35,6 +35,8 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   [Taller de runas](runas.md) entero (Mesa, servicios y los efectos de las runas de oficio y de mazmorra).
 - **Helados y el calor:** ⚠️ PENDIENTE: los [helados](restaurantes.md#ramas-y-platos) solo dan Resistencia al fuego;
   falta un efecto propio de «aguante del calor».
+- **The Bridge:** ⚠️ PENDIENTE de probar en el juego (hecho el 15 de noviembre, aún no está en el servidor). El kit, los
+  tiempos, los premios y los mapas de [The Bridge](bridge.md) pueden cambiar.
 - **Retos del Árbitro:** ⚠️ PENDIENTE (llegaron al servidor el 14 de noviembre): falta
   probar los [retos](retos.md) en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
   pueden cambiar.

@@ -50,6 +50,11 @@ Tragaperras y lotería con un bote que se sortea cada lunes. Ver [Casino y loter
 
 Los tres Cofres de Cabezas del lobby, el álbum y las repetidas. Ver [Cabezas coleccionables](cabezas.md).
 
+## The Bridge
+
+Dos equipos con su cama: construye el camino, rompe la cama del rival y elimínalo. En 1v1 o 2v2. Aún en pruebas. Ver
+[The Bridge](bridge.md).
+
 ## Cod Zombies
 
 Una ruta por una ciudad llena de zombis, tramo a tramo, solo o en grupo, hasta la evacuación en el aeropuerto. Está

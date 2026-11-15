@@ -1041,6 +1041,39 @@ def casino_tablas():
     ]))
 
 
+def bridge_tablas():
+    import bridge as B
+    T, K, S, P = B.TIEMPOS, B.KIT, B.MUERTE_SUBITA, B.PREMIOS
+
+    def mmss(s):
+        return f"{s // 60} min" + (f" {s % 60} s" if s % 60 else "")
+    filas = [("Cuenta atrás al llenarse la sala", f"{T['cuenta_atras']} s"),
+             ("Quietos en el spawn antes de empezar", f"{T['preparados']} s"),
+             ("Para reaparecer (con cama)", f"{T['reaparecer']} s"),
+             ("Muerte súbita", f"a los {mmss(S['a_los'])}" if S["activa"] else "no hay"),
+             ("Límite de la partida", mmss(T["duracion"])),
+             ("Para volver si te desconectas", f"{T['gracia']} s"),
+             ("Un golpe cuenta como «te ha tirado» durante", f"{T['golpe']} s")]
+    escribir("bridge_tiempos.md", tabla(["Qué", "Cuánto"], filas))
+    NOMBRES = {"iron_sword": "Espada de hierro", "stone_sword": "Espada de piedra", "iron_pickaxe": "Pico de hierro",
+               "stone_pickaxe": "Pico de piedra", "diamond_pickaxe": "Pico de diamante"}
+    filas = [(NOMBRES.get(K["espada"], K["espada"]), "1")]
+    if K["arco"]: filas += [("Arco", "1"), ("Flechas", str(K["flechas"]))]
+    filas.append((NOMBRES.get(K["pico"], K["pico"]) + (f" (Eficiencia {K['pico_eficiencia']})" if K["pico_eficiencia"] else ""), "1"))
+    filas += [("Manzanas doradas", str(K["manzanas"])), ("Bloques de tu color (terracota)", str(64 * K["bloques"])),
+              ("Armadura de cuero de tu color", "completa")]
+    escribir("bridge_kit.md", tabla(["Objeto", "Cuántos"], filas))
+    escribir("bridge_mapas.md", tabla(["Mapa", "Tamaño (ancho × largo)", "Partidas a la vez"],
+                                      [(f"**{m['nombre']}**", f"{m['tam'][0]} × {m['tam'][2]}", str(m["copias"])) for m in B.MAPAS.values()]))
+    filas = []
+    for modo, n in B.MODOS.items():
+        filas.append((modo, f"{P['ganar'] + P['por_rival'] * n} chips I", f"{P['participar']} chip I" if P["participar"] else "—"))
+    escribir("bridge_premios.md", tabla(["Modo", "Cada uno del equipo que gana", "Por jugar hasta el final (pierdes o empatas)"], filas)
+             + f"\nComo mucho **{P['tope_dia']} premios al día** (de ganar o de jugar); lo que no cobres un día se guarda para el "
+               f"siguiente (2 días). Con los mismos rivales, solo **{P['tope_rival_dia']} partidas con premio al día**. "
+               f"La partida tiene que durar al menos **{P['min_segundos']} s**. Si abandonas, **{P['castigo_minutos']} min** sin jugar.\n")
+
+
 def zombies_tablas():
     import zombies as Z
     cor = lambda m: (str(m // 2) if m % 2 == 0 else f"{m / 2:g}".replace(".", ",")) + " ♥"
@@ -1465,7 +1498,7 @@ def runas_tablas():
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas(); runas_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); bridge_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas(); runas_tablas()
     print("Tablas generadas en", SALIDA)
 
 
