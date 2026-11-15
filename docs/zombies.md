@@ -138,7 +138,8 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 --8<-- "_generado/zombies_zombis.md"
 
 Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol. Los
-**tanques** (más grandes y con más vida) aparecen desde El centro.
+**tanques** (con peto y perneras de hierro, y mucha más vida) aparecen desde El centro. Lo que llevan puesto es solo de
+adorno: no los protege.
 
 Van vestidos según el sitio: marineros y turistas en el puerto, médicos, enfermeros y pacientes en el hospital,
 oficinistas en el centro, policías en la comisaría, bomberos en el parque de bomberos, pilotos y azafatas en el
