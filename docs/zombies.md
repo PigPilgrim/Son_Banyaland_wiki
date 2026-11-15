@@ -58,6 +58,8 @@ necesita ayuda.
   gráficos en «Detallados» o mejores).
 - Si un zombi tarda mucho en aparecer, o quedan pocos y no hay manera de encontrarlos, **brillan** y se ven a través
   de las paredes.
+- Un zombi que se queda atascado lejos (en un garaje, detrás de una valla...) y no consigue acercarse, al rato
+  desaparece y sale en otro sitio.
 - **Si caes, quedas fuera de la partida** y vuelves al lobby. Para volver a intentarlo, entra otra vez: empiezas en
   el tramo siguiente al último que hayas superado. Los demás del grupo siguen jugando.
 - Al empezar cada tramo te **rellenan** el equipo: munición, flechas, curas y lanzables. Lo que ya has superado
