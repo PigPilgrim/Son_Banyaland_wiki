@@ -1077,7 +1077,7 @@ def zombies_tablas():
         for i, d in enumerate(Z.DIFICULTADES)]).replace(".", ","))
     P_ = Z.PUNTOS
     escribir("zombies_puntos.md", tabla(["Zombi", "Puntos al rematarlo", "A la cabeza"], [
-        (f"**{z['nombre']}**", P_.get(k, 0), f"+{P_['cabeza']}") for k, z in Z.ZOMBIS.items()]))
+        (f"**{z['nombre']}**", z["puntos"], f"+{P_['cabeza']}") for k, z in Z.ZOMBIS.items()]))
     # tienda: cuerpo a cuerpo, armas con sus mejoras, munición y objetos
     def mejora(arma, nivel):
         m = Z.MEJORAS[arma][nivel - 1]
@@ -1105,13 +1105,15 @@ def zombies_tablas():
                       pts(o["precio"]) + (" (una vez)" if o.get("una_vez") else f" (+{o['sube']} cada vez)" if o.get("sube") else ""), ""))
     escribir("zombies_tienda.md", tabla(["Fila", "Artículo", "Precio", "Qué da"], filas))
     m = Z.MUNICION
+    PIEZAS = {"GOLDEN_BOOTS": "botas doradas", "CHAINMAIL_HELMET": "casco de malla", "IRON_CHESTPLATE": "peto de hierro",
+              "IRON_LEGGINGS": "perneras de hierro"}
     def aspecto(z):
-        cosas = []
-        if z.get("botas") == "GOLDEN_BOOTS": cosas.append("botas doradas")
-        if z.get("casco"): cosas.append("casco")
-        if z.get("escala"): cosas.append("más grande" if z["escala"] < 1.5 else "enorme")
+        e = z["equipo"]
+        cosas = [PIEZAS.get(e[k], e[k].lower().replace("_", " ")) for k in ("cabeza", "pecho", "piernas", "botas") if k in e]
+        if z["escala"] > 1.05: cosas.append("más grande" if z["escala"] < 1.5 else "enorme")
         if z.get("jefe"): cosas.append("nombre y barra de vida")
-        if z.get("variantes"): cosas.append(f"{'la mitad' if z['variantes'] == 0.5 else 'algunos'}: otra cara (médicos, policías, presos...)")
+        if e.get("ropa"): cosas.append(f"vestido de {Z.ROPAS[e['ropa']]['nombre'].lower()}")
+        if e.get("variantes"): cosas.append(f"{'la mitad' if e['variantes'] == 0.5 else 'algunos'}: otra cara (médicos, policías, presos...)")
         return ", ".join(cosas) or "—"
     escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad", "Cómo se reconoce"], [
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
