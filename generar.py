@@ -1015,7 +1015,7 @@ def casino_tablas():
     filas = []
     for r, p in casino.RAREZAS.items():
         cab = sum(1 for c in feria["cabezas"] if c["rareza"] == r)
-        cos = sum(1 for c in cosmeticos.COSMETICOS if c["rareza"] == r)
+        cos = sum(1 for c in cosmeticos.COSMETICOS if c["rareza"] == r and not c.get("evento"))   # los de eventos no salen
         filas.append((f"**{r.capitalize()}**: " + ("la cabeza" if cab == 1 else f"una de sus {cab} cabezas") + f" o uno de sus {cos} cosméticos", sale(p),
                       f"+{casino.REPETIDA[r]} tirada{'s' if casino.REPETIDA[r] > 1 else ''} gratis"))
     filas += [("Una tirada gratis", sale(casino.TIRADA_GRATIS), ""),

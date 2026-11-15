@@ -22,6 +22,12 @@ Para separar épocas (por ejemplo, cada edad de la armadura), un apartado con "#
 
 ## La Edad del Hierro
 
+### 16 de noviembre de 2026 · 444DobleD444, «El Hereje»
+
+**444DobleD444** recibe el título **«El Hereje»**. El 10 de noviembre entró en el infierno y cargó con la ira de los
+dioses: brilló y fue señalado durante dos días, con todo el servidor dándole caza, y aguantó hasta el final, el 12 de
+noviembre, sin morir ni una vez.
+
 ### 9 de noviembre de 2026 · LinkVEEM, «El Inmortal»
 
 **LinkVEEM** recibe el título **«El Inmortal»**: fue el único que pasó toda la primera edad sin morir ni una vez.
