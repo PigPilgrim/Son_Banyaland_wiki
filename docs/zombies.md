@@ -7,7 +7,7 @@ tramo**, hasta el aeropuerto para que te evacúen. Se juega solo o en grupo, y l
     La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
     zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
-    zombis, las botas doradas de los corredores, la pared roja del borde, los zombis que brillan y que al caer quedes
+    zombis, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan y que al caer quedes
     fuera de la partida llegan al servidor junto con la campaña.
 
 ## Entrar y salir
@@ -43,9 +43,9 @@ necesita ayuda.
 
 ## Cómo se juega
 
-- Cada **tramo** es un trozo de la ciudad cerrado con **cordones de cuarentena** (vallas de barrotes). Durante las
-  oleadas, cuando te acercas al borde de la zona ves una **pared de puntos rojos**: si la cruzas, vuelves a donde
-  estabas.
+- Cada **tramo** es un trozo de la ciudad cerrado con **cordones de cuarentena** (vallas de barrotes): los que dan al
+  siguiente tramo se abren al despejarlo; los de los lados no se abren nunca. Si aun así sales de la zona (por un
+  tejado, por ejemplo), vuelves a donde estabas.
 - Al empezar un tramo salen **zombis por oleadas**. Abajo de la pantalla ves cuántos quedan y la munición del arma
   que llevas en la mano.
 - Cuando no queda ninguno, el tramo está **despejado**: se abre el cordón hacia el siguiente, una **flecha** te dice
