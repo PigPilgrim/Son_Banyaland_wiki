@@ -8,7 +8,8 @@ ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tram
     La **campaña entera** (del crucero a la evacuación en el aeropuerto) está hecha, pero en el servidor de momento
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
     zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
-    zombis (con su paquete de recursos), el fuego del cóctel, poder abrir puertas con un arma en la mano, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
+    zombis (con su paquete de recursos), el fuego del cóctel, poder abrir puertas con un arma en la mano, que los
+    zombis rompan barreras, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
     fuera de la partida y las **dificultades con puntos y tienda** llegan al servidor junto con la campaña.
 
 ## Entrar y salir
@@ -141,7 +142,11 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 
 --8<-- "_generado/zombies_zombis.md"
 
-Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol. Los
+Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol, pero **si
+no tienen otro camino hasta vosotros, rompen lo que les corta el paso**: ventanas y cristales, barrotes, vallas, setos
+y puertas. Tardan unos segundos (se ve cómo se agrieta); si son varios, menos, y los grandes rompen mucho más rápido.
+Los muros del borde de la zona, lo que pone la historia (barricadas, puertas atrancadas), el tranvía y el avión no se
+rompen nunca. Al empezar cada tramo, todo lo roto vuelve a estar como antes. Los
 **tanques** (con peto y perneras de hierro, y mucha más vida) aparecen desde El centro. Lo que llevan puesto es solo de
 adorno: no los protege.
 

@@ -1115,9 +1115,12 @@ def zombies_tablas():
         if e.get("ropa"): cosas.append(f"vestido de {Z.ROPAS[e['ropa']]['nombre'].lower()}")
         if e.get("variantes"): cosas.append(f"{'la mitad' if e['variantes'] == 0.5 else 'algunos'}: otra cara (médicos, policías, presos...)")
         return ", ".join(cosas) or "—"
-    escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad", "Cómo se reconoce"], [
+    def rompe(z):
+        s = Z.ROMPER["segundos"] / z.get("rompe", 1)
+        return f"{round(s, 1):g} s".replace(".", ",")
+    escribir("zombies_zombis.md", tabla(["Zombi", "Vida", "Daño por golpe", "Velocidad", "Rompe una barrera en", "Cómo se reconoce"], [
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
-         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido", aspecto(z))
+         "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido", rompe(z), aspecto(z))
         for z in Z.ZOMBIS.values()]))
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
@@ -1128,6 +1131,8 @@ def zombies_tablas():
          + " · ".join(f"{n} {Z.MUNICIONES[k]['nombre'].lower()}" for k, n in m["soltar"].items())),
         ("Disparo a la cabeza", f"×{Z.CABEZA:g} de daño (pistola, escopeta, rifle y arco)"),
         ("Un zombi brilla", f"si lleva más de {L['brillo']} s vivo, o si quedan {L['brillo_ultimos']} o menos y nadie ha matado ninguno en {L['brillo_espera']} s"),
+        ("Romper una barrera", f"lo que pone la tabla de los zombis; cada zombi más que ayuda suma un {Z.ROMPER["varios"] * 100:g} % de lo que rompería él solo. "
+         f"Rompen si no tienen camino hasta vosotros y están a {Z.ROMPER['cerca']} bloques o menos, o si llevan {Z.ROMPER['atascado']} s atascados"),
         ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador, por la dificultad (nunca más de {L['max_partida']})"),
         ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
         ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),

@@ -57,6 +57,8 @@ tramos:
 - **`bloques`**: grupos de bloques que se ponen al empezar el tramo (barricadas, camillas...). Se apunta lo que había
   y se devuelve al acabar, incluso si el servidor se cae a medias.
 - **`atrancadas`**: puertas que no se abren (sale el `texto`) hasta que un paso `abrir` las abra.
+- Los zombis no rompen nunca lo de `bloques` ni las puertas `atrancadas`, ni las ventanas o vallas que sirvan para
+  saltárselas: si se cambian, hay que volver a ejecutar `zombies_puntos.py` (calcula qué barreras se pueden romper).
 - **`pasos`**: lo que pasa, en orden. Un paso no empieza hasta que se ha dicho todo lo del anterior.
 
 ## Pasos
