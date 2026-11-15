@@ -9,7 +9,7 @@ ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tram
     sigue la **DEMO**: solo se pueden jugar los tres primeros tramos (el tutorial y Sandy Heights). La vida de los
     zombis, el daño de las armas y la munición pueden cambiar. Los disparos a la cabeza, la ropa y las caras de los
     zombis (con su paquete de recursos), el fuego del cóctel, poder abrir puertas con un arma en la mano, que los
-    zombis rompan barreras, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
+    zombis rompan barreras, la clasificación semanal, las botas doradas de los corredores, los cordones de los lados, los zombis que brillan, que al caer quedes
     fuera de la partida y las **dificultades con puntos y tienda** llegan al servidor junto con la campaña.
 
 ## Entrar y salir
@@ -156,6 +156,31 @@ las **caras** de los zombis (médicos, policías, presos...) se ven del tamaño 
 Van vestidos según el sitio: marineros y turistas en el puerto, médicos, enfermeros y pacientes en el hospital,
 oficinistas en el centro, policías en la comisaría, bomberos en el parque de bomberos, pilotos y azafatas en el
 aeropuerto... La ropa es solo de adorno: no los protege.
+
+## Clasificación semanal
+
+Cada semana hay una **clasificación por dificultad**. Cuenta **tu mejor partida de la semana**: los puntos que
+**ganas matando** zombis en ella (lo que gastes en la tienda no te los quita). Para que cuente tienes que superar al
+menos un tramo en esa partida; si un admin interviene en ella (te da puntos, os cambia de tramo...), avisa y esa
+partida ya no cuenta. Se apunta al superar cada tramo y al salir, así que no se pierde si cierras el juego.
+
+Para verla: el **lingote de oro** del menú de Cod Zombies o **`/puente zombies ranking`** (puedes añadir el número
+de la dificultad). Te dice el top 10, **tu puesto** y cuánto falta para el cierre. Al salir de una partida también te
+avisa de cómo vas.
+
+La semana **se cierra el lunes a las 0:00** (hora de España). Entonces:
+
+- Los primeros de cada dificultad ganan **chips I**, que se cobran **al volver a la aldea**, como los demás premios
+  (con el impuesto sobre premios, si tu aldea lo tiene; sin aldea, van a la mochila). Te llegan aunque no estés
+  conectado.
+- Solo se cobra **un premio a la semana**: si estás en el podio de varias dificultades, cobras el mayor.
+- El **podio** de cada dificultad se lleva un **trofeo**, la cabeza de un zombi decapitado, con el nombre del color de
+  su puesto (oro, plata y bronce) y, en la descripción, el puesto, la dificultad, la semana y la puntuación. Es de
+  colección: no se gasta y se puede poner de adorno. Te llega cuando estés fuera de los minijuegos y tengas un hueco
+  en el inventario.
+- La clasificación empieza de cero.
+
+--8<-- "_generado/zombies_semanal.md"
 
 ## Premios y números
 

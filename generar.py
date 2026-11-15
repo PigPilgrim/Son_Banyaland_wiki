@@ -1122,6 +1122,28 @@ def zombies_tablas():
         (f"**{z['nombre']}**" + (" (jefe final)" if z.get("jefe") else ""), cor(z["vida"]), f"{z['dano'] * 1.5 / 2:g} ♥".replace(".", ","),
          "lento" if z["velocidad"] < 0.21 else "normal" if z["velocidad"] <= 0.27 else "rápido", rompe(z), aspecto(z))
         for z in Z.ZOMBIS.values()]))
+    S = Z.SEMANAL
+    pr = S["premios"]
+    if pr["modo"] == "fijo":
+        f = pr["factor"]
+        nd = len(Z.DIFICULTADES)
+        filas = []
+        for i in range(pr["puestos"]):
+            filas.append((f"**{i + 1}.º**",) + tuple(
+                f"{max(1, int(pr['fijo'][i] * f[min(len(f), d) - 1] + 0.5)) if pr['fijo'][i] > 0 else 0} chips I" for d in range(1, nd + 1))
+                + ("sí" if i < S["trofeo"]["puestos"] else "—",))
+        for i in range(pr["puestos"], S["trofeo"]["puestos"]):
+            filas.append((f"**{i + 1}.º**",) + ("—",) * nd + ("sí",))
+        semanal = tabla(["Puesto"] + [f"Dificultad {d}" for d in range(1, nd + 1)] + ["Trofeo"], filas)
+    else:
+        b = pr["bote"]
+        semanal = (f"Premio: un **bote** por dificultad de {b['base']} chips I más {b['por_partida']} por cada partida "
+                   f"que cuente esa semana (como mucho {b['max']}), repartido así: "
+                   + ", ".join(f"{i + 1}.º {p} %" for i, p in enumerate(b["porcentajes"][:pr["puestos"]]))
+                   + f". Trofeo para los {S['trofeo']['puestos']} primeros.\n")
+    if S["minimo_jugadores"] > 1:
+        semanal += f"\nUna dificultad da premios si esa semana han jugado al menos {S['minimo_jugadores']} personas.\n"
+    escribir("zombies_semanal.md", semanal)
     P, L = Z.PREMIOS, Z.LIMITES
     escribir("zombies_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Jugadores por partida", f"de 1 a {L['jugadores']}"),
