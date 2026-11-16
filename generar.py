@@ -1189,7 +1189,7 @@ def zombies_tablas():
         ("Disparo a la cabeza", f"×{Z.CABEZA:g} de daño (pistola, escopeta, rifle y arco)"),
         ("Un zombi brilla", f"si lleva más de {L['brillo']} s vivo, o si quedan {L['brillo_ultimos']} o menos y nadie ha matado ninguno en {L['brillo_espera']} s"),
         ("Romper una barrera", f"lo que pone la tabla de los zombis; cada zombi más que ayuda suma un {Z.ROMPER["varios"] * 100:g} % de lo que rompería él solo. "
-         f"Rompen si no tienen camino hasta vosotros y están a {Z.ROMPER['cerca']} bloques o menos, o si llevan {Z.ROMPER['atascado']} s atascados"),
+         f"Rompen lo que tienen alrededor si llevan {Z.ROMPER['sin_acercarse']:g} s sin acercarse a vosotros y no os ven o no tienen camino"),
         ("Zombis a la vez", f"como mucho {L['base']} + {L['por_jugador']} por jugador, por la dificultad (nunca más de {L['max_partida']})"),
         ("Completar el tutorial", f"{P['tutorial']} chips I (una vez)"),
         ("Primera vez que superas cada tramo", " · ".join(f"{k}: {v}" for k, v in P["primera"].items()) + " chips I"),

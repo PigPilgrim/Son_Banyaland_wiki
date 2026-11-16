@@ -14,7 +14,7 @@ ganas **puntos** y con ellos compras armas y mejoras en la **tienda** entre tram
 - Se entra desde el **lobby de minijuegos** (ver [Ir y volver](minijuegos.md#ir-y-volver)), por el **portal lima**.
   Se abre un menú:
     - **Tutorial**: el crucero y la terminal. La primera vez hay que hacerlo; al acabarlo se abre la dificultad 1.
-    - **Dificultad 1 a 5**: la campaña entera, de Sandy Heights al aeropuerto. Las que aún no has abierto salen en gris.
+    - **Dificultad 1 a 5**: la campaña entera, del crucero al aeropuerto. Las que aún no has abierto salen en gris.
     - **Unirte** a la partida de otro (si ya has abierto esa dificultad).
 - Quien crea la partida la arranca con **[Empezar]** en el chat, aunque esté solo. Caben **4 jugadores**.
 - Como en los demás minijuegos, lo que llevabas se queda en la [mochila](minijuegos.md#tu-inventario-y-la-mochila) y
@@ -56,10 +56,11 @@ necesita ayuda.
   gráficos en «Detallados» o mejores).
 - Si un zombi tarda mucho en aparecer, o quedan pocos y no hay manera de encontrarlos, **brillan** y se ven a través
   de las paredes.
-- Un zombi que se queda atascado lejos (en un garaje, detrás de una valla...) y no consigue acercarse, al rato
-  desaparece y sale en otro sitio.
+- Los zombis salen, siempre que se pueda, **a vuestra altura**: no en un garaje o un túnel debajo de vosotros.
+- Un zombi que se queda atascado (en un garaje debajo de vosotros, detrás de una valla...) y no consigue acercarse,
+  al rato desaparece y sale en otro sitio; si además no os ve, enseguida.
 - **Si caes, quedas fuera de la partida** y vuelves al lobby, sin tus puntos ni lo que hayas comprado. Para volver a
-  intentarlo, entra otra vez: la dificultad empieza de nuevo en Sandy Heights. Los demás del grupo siguen jugando.
+  intentarlo, entra otra vez: la dificultad empieza de nuevo en el crucero. Los demás del grupo siguen jugando.
 - Al despejar el Tranvía de Badoc se abren las puertas del **tranvía**. En cuanto sube alguien empieza una cuenta
   atrás de 10 segundos (arriba de la pantalla, con cuántos habéis subido)... y el tranvía **descarrila**. Todo el
   grupo acaba junto a los restos, algo magullado, y sale por el hueco de la valla hacia las pistas.
@@ -70,8 +71,9 @@ necesita ayuda.
 
 ## Dificultades
 
-Después del tutorial, cada partida es **una dificultad**: la campaña entera de un tirón, de Sandy Heights hasta el
-despegue. Empiezas solo con lo básico y el resto lo compras. Cuanto más alta, más zombis a la vez, más zombis por
+Después del tutorial, cada partida es **una dificultad**: la campaña entera de un tirón, del crucero hasta el
+despegue. En el crucero y la terminal ya no hay cofre ni consejos: se juegan como los demás tramos, con puntos y
+tienda (pero sin premio en chips). Empiezas solo con lo básico y el resto lo compras. Cuanto más alta, más zombis a la vez, más zombis por
 oleada, más aguantan y más pegan... pero también dan más puntos.
 
 --8<-- "_generado/zombies_dificultades.md"
@@ -140,8 +142,8 @@ al lobby con el equipo vacío (se puede repetir cuando quieras) y se abre la **d
 --8<-- "_generado/zombies_zombis.md"
 
 Salen siempre **a cierta distancia** de vosotros, nunca encima. No abren puertas ni se queman con el sol, pero **si
-no tienen otro camino hasta vosotros, rompen lo que les corta el paso**: ventanas y cristales, barrotes, vallas, setos
-y puertas. Tardan poco, y los cristales y los setos casi nada (se ve cómo se agrieta); si son varios, menos, y los grandes rompen mucho más rápido.
+no os ven o no pueden llegar hasta vosotros y no consiguen acercarse, rompen lo que tienen alrededor** (primero lo que
+queda hacia vosotros): ventanas y cristales, barrotes, vallas, setos y puertas. Tardan poco, y los cristales y los setos casi nada (se ve cómo se agrieta); si son varios, menos, y los grandes rompen mucho más rápido.
 Los muros del borde de la zona, lo que pone la historia (barricadas, puertas atrancadas), el tranvía y el avión no se
 rompen nunca. Al empezar cada tramo, todo lo roto (y las puertas que hayáis abierto) vuelve a estar como antes,
 menos lo que tengáis justo al lado, que se arregla más tarde; al acabar la partida, todo. Los
