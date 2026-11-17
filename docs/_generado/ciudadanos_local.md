@@ -1,14 +1,14 @@
-| Qué cuenta | Peso en Restaurante | Peso en Taller de runas |
-|---|---|---|
-| Asientos | 3 | 1 |
-| Mesas y mobiliario | 3 | 2 |
-| Iluminación | 1,5 | 2 |
-| Plantas y decoración | 1,5 | 1,5 |
-| Cuadros e imágenes | 1 | 1,5 |
-| Tocadiscos | 1 | 0,5 |
-| Alfombras | 1 | 1 |
-| Máquinas e instalaciones | 1,5 | 3 |
-| Prestigio (Ordenador) | 2 | 2 |
+| Qué cuenta | Peso en Restaurante | Peso en Taller de runas | Peso en Casino |
+|---|---|---|---|
+| Asientos | 3 | 1 | 0,5 |
+| Mesas y mobiliario | 3 | 2 | 2,5 |
+| Iluminación | 1,5 | 2 | 3 |
+| Plantas y decoración | 1,5 | 1,5 | 1 |
+| Cuadros e imágenes | 1 | 1,5 | 1 |
+| Tocadiscos | 1 | 0,5 | 2 |
+| Alfombras | 1 | 1 | 1,5 |
+| Máquinas e instalaciones | 1,5 | 3 | 3 |
+| Prestigio (Ordenador) | 2 | 2 | 2 |
 
 Cuantas más cosas de una categoría, más puntos, pero cada una vale menos que la anterior. Los tipos distintos de bloque suman hasta 10 puntos más.
 

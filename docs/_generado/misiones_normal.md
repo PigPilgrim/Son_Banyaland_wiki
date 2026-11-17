@@ -29,3 +29,5 @@
 | Mata 2 Tsuchigumo | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
 | Mata 3 Tengu | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
 | Compra una runa en un Taller de runas (que no sea tuyo) | 3 | Si alguna aldea con Padrón tiene un Taller de runas abierto |
+| Gana una mano de blackjack en un Casino (que no sea tuyo) | 3 | Si hay una empresa de tipo casino_blackjack abierta |
+| Puja en la subasta de un Casino (que no sea tuyo) | 3 | Si hay una empresa de tipo casino_subasta abierta |
