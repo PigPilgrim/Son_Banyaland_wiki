@@ -135,3 +135,10 @@ deje sin nada. El progreso sale abajo en la pantalla. En el Cofre del Veterano y
 
 ??? note "Cofre del Campeón (1 Chip III): todos los premios"
     --8<-- "_generado/cofre_raro.md"
+
+## Las Trial Chambers del mundo normal
+
+Las **Trial Chambers** que salen en el mundo normal (las de las bóvedas que se abren con una *llave de desafío*) dan
+**más diamantes** que en el Minecraft de siempre (sueltos y alguna vez en bloque), algún **bloque de esmeralda** y
+menos hierro. Las bóvedas siniestras dan además más bloques de diamante. Lo que no dan nunca es el libro de
+**Reparación**.

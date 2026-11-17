@@ -1,35 +1,38 @@
 | Rareza | Probabilidad | Premio |
 |---|---|---|
 | **Común** | **38 %** |  |
-|  | 3,17 % | 8 Diamantes |
-|  | 3,17 % | 4 Bloques de hierro |
-|  | 3,17 % | 2 Manzanas doradas |
-|  | 3,17 % | 24 Chips (nivel 1) |
-|  | 3,17 % | 2 Encargo a ciegas |
-|  | 3,17 % | 3 Pociones de curación II arrojadizas |
-|  | 3,17 % | 4 Pergamino de Regreso |
-|  | 3,17 % | 4 Pergamino de Curación |
-|  | 3,17 % | 4 Pergamino de Purificación |
-|  | 3,17 % | 4 Pergamino de Escudo |
-|  | 3,17 % | 4 Pergamino del Viento |
-|  | 3,17 % | 4 Pergamino de Visión |
+|  | 2,71 % | 12 Diamantes |
+|  | 2,71 % | 2 Bloques de hierro |
+|  | 2,71 % | 64 Ladrillos de piedra |
+|  | 2,71 % | 64 Piedra lisa |
+|  | 2,71 % | 2 Manzanas doradas |
+|  | 2,71 % | 24 Chips (nivel 1) |
+|  | 2,71 % | 2 Encargo a ciegas |
+|  | 2,71 % | 3 Pociones de curación II arrojadizas |
+|  | 2,71 % | 4 Pergamino de Regreso |
+|  | 2,71 % | 4 Pergamino de Curación |
+|  | 2,71 % | 4 Pergamino de Purificación |
+|  | 2,71 % | 4 Pergamino de Escudo |
+|  | 2,71 % | 4 Pergamino del Viento |
+|  | 2,71 % | 4 Pergamino de Visión |
 | **Poco común** | **34 %** |  |
-|  | 2,12 % | 1 Encargo maestro |
-|  | 2,12 % | 48 Chips (nivel 1) |
-|  | 2,12 % | Libro: Protección IV |
-|  | 2,12 % | Libro: Afilado V |
-|  | 2,12 % | Libro: Eficiencia V |
-|  | 2,12 % | Libro: Irrompibilidad III |
-|  | 2,12 % | 2 Fragmentos de netherite |
-|  | 2,12 % | Capucha del Archimago |
-|  | 2,12 % | Túnica del Archimago |
-|  | 2,12 % | Faldones del Archimago |
-|  | 2,12 % | Botas del Archimago |
-|  | 2,12 % | 2 Arena del Faraón |
-|  | 2,12 % | 2 Hierro Enano |
-|  | 2,12 % | 2 Cristal de Hielo Eterno |
-|  | 2,12 % | 2 Seda de Tsuchigumo |
-|  | 2,12 % | 2 Acero Tamahagane |
+|  | 2 % | 1 Encargo maestro |
+|  | 2 % | 48 Chips (nivel 1) |
+|  | 2 % | Libro: Protección IV |
+|  | 2 % | Libro: Afilado V |
+|  | 2 % | Libro: Eficiencia V |
+|  | 2 % | Libro: Irrompibilidad III |
+|  | 2 % | 2 Fragmentos de netherite |
+|  | 2 % | 2 Bloques de diamante |
+|  | 2 % | Capucha del Archimago |
+|  | 2 % | Túnica del Archimago |
+|  | 2 % | Faldones del Archimago |
+|  | 2 % | Botas del Archimago |
+|  | 2 % | 2 Arena del Faraón |
+|  | 2 % | 2 Hierro Enano |
+|  | 2 % | 2 Cristal de Hielo Eterno |
+|  | 2 % | 2 Seda de Tsuchigumo |
+|  | 2 % | 2 Acero Tamahagane |
 | **Rara** | **20 %** |  |
 |  | 0,36 % | Plano: Katana |
 |  | 0,36 % | Plano: Lanza Solar |

@@ -1,19 +1,21 @@
 | Rareza | Probabilidad | Premio |
 |---|---|---|
 | **Común** | **62 %** |  |
-|  | 5,64 % | 12 Filetes cocinados |
-|  | 5,64 % | 16 Pan |
-|  | 5,64 % | 8 Lingotes de hierro |
-|  | 5,64 % | 6 Lingotes de oro |
-|  | 5,64 % | 24 Flechas |
-|  | 5,64 % | 8 Botellas de experiencia |
-|  | 5,64 % | 2 Pociones de curación II |
-|  | 5,64 % | 2 Chips (nivel 1) |
-|  | 5,64 % | Pergamino de Curación |
-|  | 5,64 % | Pergamino de Escudo |
-|  | 5,64 % | Pergamino de Visión |
+|  | 4,77 % | 12 Filetes cocinados |
+|  | 4,77 % | 16 Pan |
+|  | 4,77 % | 4 Lingotes de hierro |
+|  | 4,77 % | 6 Lingotes de oro |
+|  | 4,77 % | 32 Ladrillos de piedra |
+|  | 4,77 % | 32 Ladrillos |
+|  | 4,77 % | 24 Flechas |
+|  | 4,77 % | 8 Botellas de experiencia |
+|  | 4,77 % | 2 Pociones de curación II |
+|  | 4,77 % | 2 Chips (nivel 1) |
+|  | 4,77 % | Pergamino de Curación |
+|  | 4,77 % | Pergamino de Escudo |
+|  | 4,77 % | Pergamino de Visión |
 | **Poco común** | **28 %** |  |
-|  | 2,33 % | 2 Diamantes |
+|  | 2,33 % | 3 Diamantes |
 |  | 2,33 % | 6 Esmeraldas |
 |  | 2,33 % | Poción de regeneración |
 |  | 2,33 % | Poción de fuerza II |

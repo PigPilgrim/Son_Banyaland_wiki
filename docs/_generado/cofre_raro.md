@@ -1,37 +1,38 @@
 | Rareza | Probabilidad | Premio |
 |---|---|---|
 | **Rara** | **45 %** |  |
-|  | 1,18 % | Plano: Katana |
-|  | 1,18 % | Plano: Lanza Solar |
-|  | 1,18 % | Plano: Hoja Maldita |
-|  | 1,18 % | Plano: Dado de Hierro |
-|  | 1,18 % | Plano: Khopesh |
-|  | 1,18 % | Plano: Martillo Enano |
-|  | 1,18 % | Plano: Tridente de las Mareas |
-|  | 1,18 % | Plano: Ballesta del Francotirador |
-|  | 1,18 % | Plano: Trabuco |
-|  | 1,18 % | Plano: Arco del Viento |
-|  | 1,18 % | Plano: Arco Gemelo |
-|  | 1,18 % | Plano: Maza Meteoro |
-|  | 1,18 % | Plano: Rompescudos |
-|  | 1,18 % | Plano: Arpón |
-|  | 1,18 % | Plano: Tridente Glacial |
-|  | 1,18 % | Grimorio: Varita de Fuego |
-|  | 1,18 % | Grimorio: Varita de Escarcha |
-|  | 1,18 % | Grimorio: Varita del Trueno |
-|  | 1,18 % | Grimorio: Bastón del Sol |
-|  | 1,18 % | Grimorio: Bastón de Sanación |
-|  | 1,18 % | Grimorio: Bastón del Parpadeo |
-|  | 1,18 % | Grimorio: Báculo del Enjambre |
-|  | 1,18 % | Grimorio: Báculo del Invierno |
-|  | 1,18 % | 6 Arena del Faraón |
-|  | 1,18 % | 6 Hierro Enano |
-|  | 1,18 % | 6 Cristal de Hielo Eterno |
-|  | 1,18 % | 6 Seda de Tsuchigumo |
-|  | 1,18 % | 6 Acero Tamahagane |
-|  | 4,74 % | 24 Chips (nivel 2) |
-|  | 3,55 % | 3 Tótems de la inmortalidad |
-|  | 3,55 % | 4 Lingotes de netherite |
+|  | 1,1 % | Plano: Katana |
+|  | 1,1 % | Plano: Lanza Solar |
+|  | 1,1 % | Plano: Hoja Maldita |
+|  | 1,1 % | Plano: Dado de Hierro |
+|  | 1,1 % | Plano: Khopesh |
+|  | 1,1 % | Plano: Martillo Enano |
+|  | 1,1 % | Plano: Tridente de las Mareas |
+|  | 1,1 % | Plano: Ballesta del Francotirador |
+|  | 1,1 % | Plano: Trabuco |
+|  | 1,1 % | Plano: Arco del Viento |
+|  | 1,1 % | Plano: Arco Gemelo |
+|  | 1,1 % | Plano: Maza Meteoro |
+|  | 1,1 % | Plano: Rompescudos |
+|  | 1,1 % | Plano: Arpón |
+|  | 1,1 % | Plano: Tridente Glacial |
+|  | 1,1 % | Grimorio: Varita de Fuego |
+|  | 1,1 % | Grimorio: Varita de Escarcha |
+|  | 1,1 % | Grimorio: Varita del Trueno |
+|  | 1,1 % | Grimorio: Bastón del Sol |
+|  | 1,1 % | Grimorio: Bastón de Sanación |
+|  | 1,1 % | Grimorio: Bastón del Parpadeo |
+|  | 1,1 % | Grimorio: Báculo del Enjambre |
+|  | 1,1 % | Grimorio: Báculo del Invierno |
+|  | 1,1 % | 6 Arena del Faraón |
+|  | 1,1 % | 6 Hierro Enano |
+|  | 1,1 % | 6 Cristal de Hielo Eterno |
+|  | 1,1 % | 6 Seda de Tsuchigumo |
+|  | 1,1 % | 6 Acero Tamahagane |
+|  | 4,39 % | 24 Chips (nivel 2) |
+|  | 3,29 % | 3 Tótems de la inmortalidad |
+|  | 3,29 % | 4 Lingotes de netherite |
+|  | 3,29 % | 8 Bloques de diamante |
 | **Épica** | **40 %** |  |
 |  | 3,64 % | 2 Escarabajo Sagrado |
 |  | 3,64 % | 2 Vendas de Momia |
