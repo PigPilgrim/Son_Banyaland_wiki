@@ -20,6 +20,16 @@ Para separar épocas (por ejemplo, cada edad de la armadura), un apartado con "#
 
 ## La crónica
 
+## La Edad del Diamante
+
+### 17 de noviembre de 2026 · Payoland, nivel 3
+
+Con la **taberna** terminada y todo el encargo entregado, **Payoland** sube al **nivel 3**.
+
+### 17 de noviembre de 2026 · Empieza la Edad del Diamante
+
+Se abre la tercera edad: ya se puede usar el diamante.
+
 ## La Edad del Hierro
 
 ### 16 de noviembre de 2026 · 444DobleD444, «El Hereje»
