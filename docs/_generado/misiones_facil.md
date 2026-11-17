@@ -27,3 +27,4 @@
 | Brinda con un vino o un calimocho | 2 | Con la Taberna (aldea nivel 2 o más) |
 | Bebe un licor en la taberna | 2 | Con la Taberna (aldea nivel 2 o más) |
 | Corre en los barcos: una vuelta de clasificación, una gestión o una carrera (vale la Liga) | 2 | Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas |
+| Cómprale algo de comer a un restaurante (que no sea tuyo) | 2 | Si alguna aldea con Padrón tiene un restaurante abierto |

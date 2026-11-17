@@ -12,6 +12,7 @@ HERRAMIENTAS = os.path.normpath(os.path.join(AQUI, "..", "mazmorras-tools"))
 sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
+import ciudadanos  # noqa: E402
 import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos, seguridad, retos  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
@@ -146,7 +147,8 @@ def proyectos():
     for k, (nom, desc, costes, _) in oficina.PROYECTOS.items():
         mats = "<br>".join(f"{n} × {oficina.NOMBRE_COSTE.get(t, t)}" for t, n in costes)
         req = oficina.REQUIERE.get(k)
-        filas.append((f"**{nom}**", " ".join(desc), mats, oficina.PROYECTOS[req][0] if req else "—"))
+        antes = ([oficina.PROYECTOS[req][0]] if req else []) + ([f"Aldea nivel {oficina.NIVEL[k]}"] if k in getattr(oficina, "NIVEL", {}) else [])
+        filas.append((f"**{nom}**", " ".join(desc), mats, "<br>".join(antes) or "—"))
     escribir("proyectos.md", tabla(["Proyecto", "Qué trae", "Materiales", "Necesita antes"], filas))
 
 
@@ -372,7 +374,11 @@ def misiones_tablas():
         for clave, d, txt, _, _, c in misiones.MISIONES:
             if d != dif or c == misiones.NUNCA: continue                                   # quitadas
             if c and "abierto_" in c and c.split("abierto_")[1].split()[0] not in mj_comun.JUEGOS: continue  # juego retirado
-            if c and "abierto" in c: cuando = "Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas"
+            if c and "#emp_" in c:
+                tipo = c.split("#emp_")[1].split()[0]
+                cuando = {"restaurante": "Si alguna aldea con Padrón tiene un restaurante abierto",
+                          "runas": "Si alguna aldea con Padrón tiene un Taller de runas abierto"}.get(tipo, f"Si hay una empresa de tipo {tipo} abierta")
+            elif c and "abierto" in c: cuando = "Con el Maestro de Juegos (aldea nivel 2 o más), si las regatas están abiertas"
             else: cuando = cond.get(c, "Siempre") if c else "Siempre"
             filas.append((txt, misiones.SELLOS_MISION.get(clave, misiones.SELLOS[dif]), cuando))
         escribir(f"misiones_{dif}.md", tabla(["Misión", "Sellos", "Puede salir"], filas))
@@ -504,7 +510,11 @@ def justicia():
                f"{java_int(java('Oficina'), 'MAX_TABLON')} chips I por anuncio). Cada cambio se anuncia a todos.\n")
     escribir("sepe_numeros.md", tabla(["Qué", "Cuánto"], [
         ("Registrar una empresa", f"{oficina.SEPE_PRECIO} diamantes (van al Tesoro)"),
-        ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I + la Placa de la Empresa de la Semana")]))
+        ("Premio de la Empresa de la semana", f"{oficina.PREMIO_EMPRESA} chips I"
+         + (" del Tesoro de la aldea (si no hay tantas, las que haya)" if ciudadanos.EMPRESA_SEMANA["premio_del_tesoro"] else "")
+         + " + la Placa de la Empresa de la Semana"),
+        ("Quién gana", f"la de más clientela de la semana: visitas de ciudadanos + {ciudadanos.EMPRESA_SEMANA['peso_comprador']} "
+                       "por cada jugador distinto que le ha comprado")]))
 
 
 MOB_ASEDIO = {"zombi": "Zombi", "esqueleto_comun": "Esqueleto", "arana": "Araña", "zombi_acorazado": "Zombi acorazado"}
@@ -676,7 +686,8 @@ def crimen_tablas():
 
     def tiempo(m):
         return f"{m // 60} h" if m % 60 == 0 else f"{m // 60} h {m % 60} min" if m > 60 else f"{m} min"
-    nombres = {**{d["id"]: d["nombre"] for d in crimen.DROGAS}, **{a["id"]: a["nombre"] for a in crimen.ARMAS}}
+    nombres = {**{d["id"]: d["nombre"] for d in crimen.DROGAS}, **{a["id"]: a["nombre"] for a in crimen.ARMAS},
+               crimen.PUNTOS_VENTA["investigacion"]: crimen.PUNTOS_VENTA["nombre"]}
     escribir("crimen_investigacion.md", tabla(["Qué", "Hace falta ser", "Tarda", "Cuesta"], [
         (f"**{nombres[i['id']]}**", niveles[i["nivel"]], tiempo(i["min"]), coste(i)) for i in crimen.INVESTIGACION]))
     escribir("crimen_plantas.md", tabla(["Sale", "Al cortar", "Probabilidad", "Hace falta haber investigado"], [
@@ -716,7 +727,8 @@ def crimen_tablas():
         ("Walter Brick detenido", f"{R['alquimista_pausa_h']} h sin trabajar y la investigación pierde un {R['alquimista_pierde_pct']} %"),
         ("Después", f"{R['redada_proteccion_h']} h sin redadas, gane quien gane")]))
     escribir("crimen_blanqueo.md", tabla(["Qué", "Cuánto"], [
-        ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa esa semana; "
+        ("Cuánto se blanquea por semana", f"{R['blanqueo_base']} FM + {R['blanqueo_estrella']} por cada estrella de la empresa (1 por cada "
+         f"{ciudadanos.BLANQUEO['puntos_por_estrella']} puntos de atractivo, como mucho {ciudadanos.BLANQUEO['tope']}); "
                                           "es **por organización**: lo que blanquea una empresa de un miembro se descuenta de las demás"),
         ("Lo que vuelve", f"el {R['blanqueo_limpio_pct']} % en chips I a la caja ({R['blanqueo_tesoro_pct']} % al Tesoro, el resto se pierde)"),
         ("La empresa", f"con más de {R['blanqueo_empresa_dias']} días"),
@@ -1338,12 +1350,14 @@ def restaurantes_tablas():
         (f"{g['max']}", f"{g['bloqueo_min']} minutos sin poder comer comida Rápida"),
         ("Baja sola", f"de {g['max']} a 0 en {g['baja_h']} horas")]))
 
+    CT = ciudadanos.TIPOS["restaurante"]
     escribir("restaurantes_comensales.md", tabla(["Qué", "Cuánto"], [
-        ("Comensales al día en cada aldea", f"{C['por_nivel']} por cada nivel de la aldea" + (f" + {C['base']}" if C["base"] else "")),
-        ("Como mucho, por restaurante", f"{C['tope_restaurante']} al día (sin contar los extra)"),
-        ("Extra por las estrellas del SEPE", f"+{coma(C['por_estrella'])} al día por cada ★ de la semana (como mucho {C['estrellas_tope']} ★)"),
-        ("Extra si sois la Empresa de la semana", f"+{C['empresa_semana']} al día"),
+        ("Quiénes son", "los ciudadanos de la aldea (hace falta el [Padrón](ciudadanos.md))"),
+        ("Comensales al día en cada aldea", f"el {round(ciudadanos.ACTIVIDADES['comida']['tasa'] * 100)} % de sus ciudadanos, repartidos entre los restaurantes abiertos"),
+        ("A cuál van", "más a los más atractivos (ver [Atractivo](ciudadanos.md#el-atractivo-de-una-empresa))"),
+        ("Como mucho, por restaurante", f"{CT['tope_dia']} al día + los del Comedor"),
         ("Extra por el Comedor", "según la mejora (abajo)"),
+        ("Cuándo", "de día: más a mediodía y al atardecer"),
         ("El mismo plato muchas veces", f"cada uno que vendéis lo baja un {round(C['baja'] * 100)} % (como mucho hasta la mitad); se recupera en {C['recupera_h']} h"),
         ("Variedad", "prefieren la rama que menos han comido hoy en la aldea" if C["variedad"] else "no")]))
 
@@ -1497,10 +1511,88 @@ def runas_tablas():
     escribir("runas_mejoras.md", tabla(["Mejora", "Qué da", "Cuesta"], filas))
 
 
+def ciudadanos_tablas():
+    """Ciudadanos (ciudadanos.py) y puntos de venta del crimen (crimen.py PUNTOS_VENTA)."""
+    P, V, A, E, L, T = ciudadanos.POBLACION, ciudadanos.VIVIENDAS, ciudadanos.ATRACTIVO_ALDEA, ciudadanos.EMPRESA, ciudadanos.LOCAL, ciudadanos.TIPOS
+    pad = ciudadanos.PADRON
+    mats = "<br>".join(f"{n} × {oficina.NOMBRE_COSTE.get(t, t)}" for t, n in pad["costes"])
+    escribir("ciudadanos_padron.md", tabla(["Qué", "Cuánto"], [
+        ("Padrón municipal", f"proyecto de la Oficina, desde la aldea nivel {pad['nivel']}"),
+        ("Materiales", mats),
+        ("Trae", f"al {ciudadanos.EMPADRONADOR[0]}")]))
+    cap = P["capacidad_nivel"]
+    escribir("ciudadanos_poblacion.md", tabla(["Qué", "Cuánto"], [
+        ("Ciudadanos en todo el servidor", f"{P['base']} + {P['por_jugador']} por cada jugador activo"),
+        ("Jugador activo", f"ha entrado en los últimos {P['activo_dias']} días y lleva {P['activo_horas']} h jugadas o más"),
+        ("Cómo se reparten", "entre las aldeas con Padrón, más que en proporción a su atractivo (la más atractiva se lleva bastante más)"),
+        ("Cambio al día", f"como mucho un {round(P['cambio_max'] * 100)} % (o {P['cambio_min']} ciudadanos)"),
+        ("Al terminar el Padrón", f"empieza con el {round(P['inicial'] * 100)} % de los que querrían vivir allí"),
+        ("Sitio sin viviendas, por nivel de aldea", " · ".join(f"nivel {k}: {c}" for k, c in enumerate(cap) if k >= 1)),
+        ("Viviendas", f"1 plaza por cama con techo, como mucho {V['max_plazas']} por edificio y {V['max_por_aldea']} edificios por aldea"),
+        ("Tamaño de una vivienda", f"de {V['volumen_min']} a {V['volumen_max']} bloques, como mucho {V['lado_max']} de lado")]))
+    nombres = {"nivel": "Nivel de la aldea", "proyectos": "Proyectos de la Oficina terminados", "empresas": "Empresas abiertas",
+               "variedad": "Variedad de empresas (tipos distintos)", "locales": "Lo bonitos que son los locales de las empresas",
+               "impuestos": "Impuestos bajos (cuanto más altos, menos)", "seguridad": "Seguridad (los delitos recientes restan; tener Policía suma)",
+               "actividad": "Vecinos activos en los últimos 7 días"}
+    escribir("ciudadanos_atractivo_aldea.md", tabla(["Cuenta", "Puntos (de 100)"], [(nombres[k], v) for k, v in A["pesos"].items()])
+             + f"\nCada delito (robo con ganzúa, redada, condena, punto de venta localizado o desmantelado) resta seguridad: "
+               f"mucho al principio y nada a los {A['seguridad']['dias']} días.\n")
+    nombres_e = {"local": "El local (lo bonito que es)", "calidad": "La calidad de lo que ofrece (estrellas de los platos, nivel de las runas...)",
+                 "precios": "Precios justos (más caro que lo normal, menos puntos)",
+                 "reputacion": f"Jugadores distintos que le han comprado en los últimos {E['reputacion_dias']} días (con {E['reputacion_horas']} h jugadas o más)"}
+    escribir("ciudadanos_atractivo_empresa.md", tabla(["Cuenta", "Puntos (de 100)"], [(nombres_e[k], v) for k, v in E["pesos"].items()])
+             + f"\nSin el local marcado, el local cuenta como {E['sin_local']} de 100.\n")
+    cats = L["categorias"]
+    tipos = [t for t in L["pesos"] if T.get(t, {}).get("activo")]
+    nom_t = {"restaurante": "Restaurante", "runas": "Taller de runas", "casino": "Casino", "laboratorio": "Laboratorio"}
+    filas = [(cats[k]["nombre"], *[f"{L['pesos'][t].get(k, 1):g}".replace(".", ",") for t in tipos]) for k in cats]
+    escribir("ciudadanos_local.md", tabla(["Qué cuenta", *[f"Peso en {nom_t.get(t, t)}" for t in tipos]], filas)
+             + f"\nCuantas más cosas de una categoría, más puntos, pero cada una vale menos que la anterior. Los tipos distintos de "
+               f"bloque suman hasta {L['variedad']['max']} puntos más.\n\n"
+               f"Restan: estar **oscuro** (más de un {round(L['penalizaciones']['oscuro_umbral'] * 100)} % del suelo con poca luz, hasta "
+               f"−{L['penalizaciones']['oscuro_max']}), ser **muy pequeño** (menos de {L['suelo_min']} bloques de suelo, hasta "
+               f"−{L['penalizaciones']['pequeno_max']}) y tener **agua o lava** dentro (hasta −{L['penalizaciones']['liquido_max']}).\n\n"
+               f"El local: como mucho {L['volumen_max']} bloques y {L['lado_max']} de lado. Se inspecciona solo una vez al día, y se puede pedir "
+               f"una inspección cada {L['espera_min']} minutos.\n")
+    act = ciudadanos.ACTIVIDADES
+    filas = []
+    for t, c in T.items():
+        if not c.get("activo"): continue
+        filas.append((nom_t.get(t, t), f"{act[c['actividad']]['nombre']} ({round(act[c['actividad']]['tasa'] * 100)} % de los ciudadanos al día)",
+                      f"{c['tope_dia']} al día", "comen un plato de la Carta" if t == "restaurante" else "compran una runa del escaparate de un dependiente"))
+    pre = ciudadanos.VISITAS["presupuesto"]
+    escribir("ciudadanos_visitas.md", tabla(["Empresa", "Visitas", "Como mucho, por empresa", "Qué hacen"], filas)
+             + f"\nLo que pagan todas las visitas de una aldea en un día tiene un tope: {pre['base']} chips I + "
+               f"{pre['por_ciudadano']:g} por ciudadano.".replace(".", ",", 1) + " Las empresas cerradas no reciben a nadie.\n")
+    if "restaurante" in ciudadanos.TIPOS and "runas" in T:
+        r = T["runas"]
+        escribir("ciudadanos_runas.md", tabla(["Runa", "Lo más que paga un ciudadano"],
+                                             [(f"Nivel {n}", f"{x} chips I") for n, x in zip(("I", "II", "III"), r["referencia_nivel"])]
+                                             + [("De mazmorra", f"{r['referencia_mazmorra']} chips I")]))
+    am = ciudadanos.AMBIENTE
+    escribir("ciudadanos_ambiente.md", tabla(["Qué", "Cuánto"], [
+        ("Se ven si hay alguien a menos de", f"{am['distancia']} bloques"),
+        ("Como mucho", f"{am['max_empresa']} por empresa, {am['max_aldea']} por aldea y {am['max_jugador']} alrededor de cada jugador"),
+        ("Horario", "con la hora del mundo de Minecraft" if am["hora"] == "mundo" else "con la hora de España")]))
+    pv = crimen.PUNTOS_VENTA
+    niv = [n["nombre"] for n in crimen.NIVELES]
+    escribir("crimen_puntos.md", tabla(["Qué", "Cuánto"], [
+        ("Puntos a la vez", " · ".join(f"{n}: {m}" for n, m in zip(niv, pv["max"]))),
+        ("Dónde", f"a más de {pv['distancia_alijo']} bloques del Alijo, fuera de las aldeas, a más de {pv['distancia_otra_org']} de los "
+                  f"de otras organizaciones y a más de {pv['distancia_propio']} entre los vuestros"),
+        ("Moverlo", f"cada {pv['mover_h']} h"),
+        ("Precio", f"el del Perista + un {round(pv['extra_precio'] * 100)} % (gasta la misma demanda)"),
+        ("Vender", f"a menos de {pv['radio']} bloques del punto"),
+        ("La Policía lo localiza", f"si un agente o el Juez pasa {pv['localizar_s']} s a menos de {pv['localizar_radio']} bloques: "
+                                   f"1 prueba (como mucho 1 por punto cada {pv['localizar_dias']} días)"),
+        ("La Policía lo desmantela", f"un agente agachado al lado {pv['desmantelar_s']} s: cerrado {pv['desmantelar_dias']} días y otra prueba"),
+        ("Los clientes se van", f"si hay un agente a menos de {pv['dispersar_radio']} bloques")]))
+
+
 def main():
     dinero(); niveles(); campana(); tiendas(); proyectos(); taberna()
     mobs(); jefes(); trials(); cofres(); mercader(); forja_tablas(); magia_tablas(); misiones_tablas(); retos_tablas(); politica(); iglesia(); justicia()
-    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); bridge_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas(); runas_tablas()
+    asedios(); guerra(); regatas(); cabezas_tablas(); crimen_tablas(); vehiculos_tablas(); arte(); clanes(); guias(); casino_tablas(); zombies_tablas(); bridge_tablas(); crafteos_tablas(); seguridad_tablas(); restaurantes_tablas(); empresas_tablas(); runas_tablas(); ciudadanos_tablas()
     print("Tablas generadas en", SALIDA)
 
 

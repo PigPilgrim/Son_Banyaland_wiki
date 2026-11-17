@@ -258,6 +258,24 @@ Funcionan como los [asedios](guerra.md): a la hora acordada, **el Alijo brilla**
 
 --8<-- "_generado/crimen_redadas.md"
 
+## Puntos de venta
+
+Con la investigación **Puntos de venta**, Walter Brick os da el **Marcador**. Con él se monta un **punto de venta en la
+calle**: allí los clientes pagan **más** que el Perista.
+
+1. **Clic derecho en el suelo** con el Marcador: pone el punto (hace falta algo de suelo libre alrededor).
+2. **Clic derecho** con el Marcador **al lado del punto**: se abre el menú de vender, como el del Perista.
+3. **Mayús + clic derecho** al lado: lo quitas (pasado un tiempo desde que lo pusiste).
+
+--8<-- "_generado/crimen_puntos.md"
+
+- La demanda es **la misma** que la del Perista: lo que vendéis en la calle ya no lo quiere él.
+- Cuanto más se vende en un punto, **más clientes** se ven alrededor.
+- **La Policía** puede **localizarlo** (quedarse cerca un rato) y luego **desmantelarlo** (un agente agachado al lado):
+  se cierra unos días, la organización se entera y cuenta como **prueba**. Cada punto localizado o desmantelado baja la
+  **seguridad** de la aldea (ver [Atractivo](ciudadanos.md#el-atractivo-de-la-aldea)).
+- Un punto **nunca** dice dónde está el Alijo.
+
 ## Blanquear
 
 Las Fichas marcadas se pueden convertir en **chips I limpias** dejándolas en **la caja de una empresa**

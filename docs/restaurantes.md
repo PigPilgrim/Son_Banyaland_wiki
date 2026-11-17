@@ -2,7 +2,7 @@
 
 Un **Restaurante** es un tipo de [empresa del SEPE](empresas.md). Se cocinan platos con efectos, los vecinos
 los compran a vuestros **dependientes** y cada día llegan **comensales** a la aldea que comen de vuestra **Carta** y
-pagan en la caja. Cada restaurante elige una **rama** de cocina (marisquería, trattoria, heladería...) y la investiga.
+pagan en la caja (hace falta el [Padrón](ciudadanos.md)). Cada restaurante elige una **rama** de cocina (marisquería, trattoria, heladería...) y la investiga.
 
 !!! warning "⚠️ PENDIENTE"
     **Recién llegados al servidor (14 de noviembre), falta probarlos jugando.** Los precios, tiempos, efectos y
@@ -120,8 +120,10 @@ vuestros platos **a cualquiera**, al **precio que ponga el dueño**. Lo que paga
 
 ### Comensales
 
-Cada día llegan **comensales** a cada aldea, repartidos a lo largo del día entre sus restaurantes abiertos. **Compiten:**
-si en la aldea hay más restaurantes, os toca a menos. Cada uno come un plato de vuestra **Carta** y paga **en la caja**.
+Los comensales son los **ciudadanos** de la aldea: sin el [Padrón](ciudadanos.md) no viene nadie. Cada día van
+repartidos entre los restaurantes abiertos, y más a los **más atractivos** (local, estrellas, precios y jugadores que os
+compran: ver [Atractivo](ciudadanos.md#el-atractivo-de-una-empresa)). **Compiten:** si en la aldea hay más
+restaurantes, os toca a menos. Cada uno come un plato de vuestra **Carta** y paga **en la caja**.
 Lo que pagan depende del plato, sus **estrellas** y su **estilo**.
 Mientras alguien tiene **la Carta abierta** (para cargarla o cambiarla), no se sirve a nadie de ese restaurante: no la
 dejéis abierta más de lo necesario.

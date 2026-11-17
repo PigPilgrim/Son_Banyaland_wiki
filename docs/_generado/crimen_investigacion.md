@@ -16,3 +16,4 @@
 | **La Viuda** | Cartel | 24 h | 2 FM II, 1 × Vendas de Momia |
 | **Arco del Padrino** | Cartel | 24 h | 3 FM II, 1 × Corazón de la Montaña |
 | **Ballesta de Humo** | Cartel | 16 h | 2 FM II, 1 × Máscara de Oni |
+| **Puntos de venta** | Camello | 4 h | 16 FM |

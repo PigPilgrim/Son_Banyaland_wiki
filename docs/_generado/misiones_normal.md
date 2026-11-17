@@ -28,3 +28,4 @@
 | Mata 3 Samuráis | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
 | Mata 2 Tsuchigumo | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
 | Mata 3 Tengu | 3 | Con el Guía de las Mazmorras (aldea nivel 3 o más) |
+| Compra una runa en un Taller de runas (que no sea tuyo) | 3 | Si alguna aldea con Padrón tiene un Taller de runas abierto |

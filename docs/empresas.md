@@ -20,7 +20,7 @@ que lo registra se lo queda. Al registrarlo recibes sus herramientas, y al cerra
 [Vehículos](vehiculos.md).
 
 Los **Restaurantes** necesitan una aldea de nivel 2 o más, y cada aldea puede tener unos pocos según su nivel. Cocinan,
-tienen dependientes y reciben comensales: ver [Restaurantes](restaurantes.md).
+tienen dependientes y reciben comensales (los ciudadanos de la aldea): ver [Restaurantes](restaurantes.md).
 
 El **Taller de runas** necesita una aldea de nivel 4. Su Encantador abre huecos en herramientas, armas y armaduras y
 les engasta runas: ver [Taller de runas](runas.md).
@@ -28,7 +28,7 @@ les engasta runas: ver [Taller de runas](runas.md).
 ## La caja
 
 - **Solo la abren el dueño y sus empleados.** No se puede romper (ni por explosiones), y las tolvas no la vacían.
-- Encima sale un cartel con el nombre, el tipo, el dueño, lo que hay en la caja y sus estrellas.
+- Encima sale un cartel con el nombre, el tipo, el dueño, lo que hay en la caja y su clientela de la semana.
 - Lo que hay en la caja es lo que **paga el impuesto a empresas**.
 - Si Hacienda encuentra **Fichas marcadas** en la caja, la **precinta** unos días: nadie la puede abrir. Ver
   [Blanquear](crimen.md#blanquear).
@@ -39,12 +39,19 @@ les engasta runas: ver [Taller de runas](runas.md).
   **cerrar** la empresa.
 - Un **empleado** puede dejar el trabajo cuando quiera.
 
-## Estrellas y Empresa de la semana
+## Clientes y atractivo
 
-Cada vecino puede **dar 1 estrella por semana** a una empresa que no sea la suya. La más votada de la semana es la
-**Empresa de la semana**, y su dueño se lleva el premio (si no está conectado, al entrar).
+Con el [Padrón](ciudadanos.md) la aldea tiene **ciudadanos**, que visitan las empresas abiertas y pagan en la caja.
+Van más a las empresas **más atractivas**: un local bonito, buena calidad, precios justos y jugadores que os compran.
+Ver [Ciudadanos y Padrón](ciudadanos.md#el-atractivo-de-una-empresa).
 
-En el SEPE también están la **Guía de empresas** (por estrellas) y **Las más ricas** (por lo que hay en la caja).
+## Empresa de la semana
+
+Ya **no se vota**. La **Empresa de la semana** es la que ha tenido **más clientela** esa semana: las visitas de
+ciudadanos más los jugadores distintos que le han comprado (sin contar a los de la propia empresa). Su dueño se lleva el
+premio, que sale del **Tesoro de la aldea** (si no está conectado, al entrar).
+
+En el SEPE también están la **Guía de empresas** (por clientela) y **Las más ricas** (por lo que hay en la caja).
 
 ## El Ordenador y la investigación
 
