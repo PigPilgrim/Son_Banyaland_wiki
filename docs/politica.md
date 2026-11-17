@@ -78,6 +78,9 @@ El fundador de una aldea nueva es su **Alcalde provisional** hasta que haya elec
 Las leyes aprobadas van al **Libro de Leyes** (`/puente boton ley 6`). **Las aplica el admin**: avísale si una ley no
 se está cumpliendo.
 
+Si no estabas conectado cuando acabó una votación (una ley o un proyecto), el **Secretario te cuenta el resultado al
+entrar**. Si te has perdido varias, te las dice todas juntas en un solo mensaje.
+
 ---
 
 ## Moción de censura

@@ -5,7 +5,8 @@ edificios públicos construir: Hacienda, SEPE, Juzgado, Cárcel, Comisaría, Igl
 
 ## Cómo sale adelante un proyecto
 
-1. **El Alcalde lo propone.** El proyecto va a **referéndum** en el parlamento, como una ley: todos votan.
+1. **El Alcalde lo propone.** El proyecto va a **referéndum** en el parlamento, como una ley: todos votan durante
+   unas horas (ver [Política](politica.md)). Quien no estaba conectado se entera del resultado al entrar.
 2. **Si se aprueba**, los vecinos **aportan los materiales** en la Oficina (habla con el Funcionario → *Proyectos de
    la aldea* → el proyecto → aportar). El Alcalde puede pagar **las chips con el dinero del Tesoro**.
 3. **Hay que construir el edificio** (hablando con el admin).
