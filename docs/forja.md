@@ -80,6 +80,7 @@ normal*, pega lo mismo que el objeto de base.
 ## Reparaciones
 
 El encantamiento **Reparación está prohibido** en el servidor. El Herrero te arregla lo que quieras: ponte a su lado
-con el objeto gastado en la mano y escribe `/puente boton reparar 1`. Cuesta:
+con el objeto gastado en la mano y escribe `/puente boton reparar 1`, o haz clic derecho a
+un yunque que tenga cerca ([con experiencia o con chips](aldeanos.md#reparar-en-el-yunque-del-herrero)). Cuesta:
 
 --8<-- "_generado/reparar.md"

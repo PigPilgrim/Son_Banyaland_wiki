@@ -85,14 +85,19 @@ Cuesta:
 
 --8<-- "_generado/reparar.md"
 
-### Reparar con experiencia
+### Reparar en el yunque del Herrero
 
 !!! warning "⚠️ PENDIENTE"
     **Recién llegado al servidor, falta probarlo jugando.** Los números pueden cambiar.
 
-**Un yunque a 6 bloques o menos del Herrero** también repara, gastando **solo tu experiencia**: con el objeto gastado en
-la mano, clic derecho al yunque. Cada punto de experiencia repara 2 de durabilidad, igual que el encantamiento
-*Reparación*, y si no te llega, repara lo que pueda. Con la mano vacía o con algo sin gastar, es un yunque normal.
+**Un yunque a 6 bloques o menos del Herrero** también repara: con el objeto gastado en la mano, clic derecho al yunque.
+Se abre un menú para elegir cómo pagar:
+
+- **Con experiencia**: cada punto de experiencia repara 2 de durabilidad, igual que el encantamiento *Reparación*, y si
+  no te llega, repara lo que pueda.
+- **Con chips**: lo deja como nuevo por lo mismo que cobra el Herrero (ver la tabla de arriba).
+
+Con la mano vacía, con algo sin gastar o agachado, es un yunque normal.
 
 !!! warning "Lo que cuenta sus usos no se repara"
     La **Ruleta Rusa**, la **Lupa de cultivo**, la **Llave inglesa** y todo lo que gasta un uso cada vez no se repara
@@ -124,7 +129,7 @@ Vende pergaminos, el **set de Archimago** y fabrica **varitas y bastones** si le
 materiales de las mazmorras.
 
 **Una mesa de encantar a 6 bloques o menos del Mago** repara con experiencia igual que
-[el yunque del Herrero](#reparar-con-experiencia).
+[el yunque del Herrero](#reparar-en-el-yunque-del-herrero), pero solo con experiencia.
 
 --8<-- "_generado/tienda_mago.md"
 

@@ -42,5 +42,5 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   cosméticos). Los premios del [casino](casino.md) pueden cambiar cuando se vea cómo va el bote.
 - **Guías (tecla L):** ⚠️ PENDIENTE de probar en el juego que cada [logro de las guías](guias.md) salga cuando toca,
   también los de lo que ya se había hecho antes.
-- **Reparar con experiencia:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-con-experiencia)
-  llegaron con los vehículos.
+- **Reparar con experiencia o con chips:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-en-el-yunque-del-herrero)
+  llegaron con los vehículos; el menú del yunque para elegir experiencia o chips, el 2026-11-17.
