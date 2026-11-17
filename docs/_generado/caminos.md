@@ -4,7 +4,7 @@
 | Matar jugadores | +15 |
 | Abrir cajas (mazmorra, forja, minijuegos) | +5 |
 | Recoger chips que suelta un monstruo al morir (las que tira alguien no cuentan) | +1 |
-| Jugar a las tragaperras del casino (tiradas pagadas) | +1 |
+| Apostar en un Casino que no es tuyo (cada apuesta pagada) | +1 |
 | Cosechar cultivos maduros | +1 |
 | Criar animales | +2 |
 | Matar no-muertos de día | +2 |

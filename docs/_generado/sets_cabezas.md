@@ -15,4 +15,4 @@
 | **Dinosaurios** | 12 | 48 chips I + Trofeo | Cofres de Cabezas |
 | **Gemas y tesoros** | 12 | 48 chips I + Trofeo | Cofres de Cabezas |
 | **Among Us** | 11 | 44 chips I + Trofeo | Cofres de Cabezas |
-| **La Feria del Azar** | 15 | 60 chips I + Trofeo | solo en la Tragaperras de objetos del casino |
+| **La Feria del Azar** | 15 | 60 chips I + Trofeo | solo en la Máquina de la Feria de los Casinos |

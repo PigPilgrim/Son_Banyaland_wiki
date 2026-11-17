@@ -14,7 +14,7 @@ Los minijuegos tienen **su propio inventario**, y en ellos **no pierdes nada al 
 - **Lo que llevabas se queda guardado en la aldea** y lo recuperas al volver.
 - **Tus chips viajan en la mochila 🎒:** aparecen en el lobby (para abrir los [Cofres de Cabezas](cabezas.md))
   y vuelven contigo con lo que te quede.
-- Lo que saques de los cofres del lobby y lo que ganes en el [casino](casino.md) también vuelve contigo.
+- Lo que saques de los cofres del lobby también vuelve contigo.
 - Si al volver no te cabe todo, la mochila espera: **haz hueco** y aparece sola.
 
 Los **premios** de los minijuegos (chips) se cobran **al volver a la aldea**, y pagan el
@@ -42,10 +42,6 @@ Barcos sobre hielo, con neumáticos, boxes y la Liga. Ver [Regatas y Liga](regat
 
 Tu propio **fortín** para construir y mejorar con tiempo real. **Cerrado por ahora** (desde el 15 de noviembre). Ver
 [Craft of Clans](clanes.md).
-
-## Casino
-
-Tragaperras y lotería con un bote que se sortea cada lunes. Ver [Casino y lotería](casino.md).
 
 ## Cabezas coleccionables
 

@@ -1,4 +1,4 @@
-| Tiradas pagadas | Regalo |
+| Tiradas pagadas (en cualquier Feria) | Regalo |
 |---|---|
 | 25 tiradas | algo nuevo de rareza **común** |
 | 50 tiradas | algo nuevo de rareza **poco común** |

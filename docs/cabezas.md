@@ -1,8 +1,8 @@
 # Cabezas coleccionables
 
 En el lobby hay **tres Cofres de Cabezas**. Cada uno se abre con **una chip** de su nivel y da **una cabeza** al azar
-de cualquier set (menos **La Feria del Azar**, que solo sale en la [Tragaperras de objetos](casino.md#tragaperras-de-objetos)
-del casino). Cuanto más alto el cofre, más fácil que salgan raras:
+de cualquier set (menos **La Feria del Azar**, que solo sale en la [Máquina de la Feria](casino.md#maquina-de-la-feria)
+de los Casinos). Cuanto más alto el cofre, más fácil que salgan raras:
 
 --8<-- "_generado/cofres_cabezas.md"
 
@@ -33,4 +33,4 @@ Desde el álbum puedes **cambiar cabezas repetidas por chips**:
 
 --8<-- "_generado/reciclar_cabezas.md"
 
-Las de **La Feria del Azar** no se reciclan (en la tragaperras, una repetida ya te da tiradas gratis).
+Las de **La Feria del Azar** no se reciclan (en la Máquina de la Feria, una repetida ya te la pagan en chips).

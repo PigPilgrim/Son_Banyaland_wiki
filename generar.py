@@ -13,7 +13,7 @@ sys.path.insert(0, HERRAMIENTAS)
 os.chdir(HERRAMIENTAS)
 
 import ciudadanos  # noqa: E402
-import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, casino, crafteos, seguridad, retos  # noqa: E402
+import aldea, asedio, bebidas, casas, misiones, barberia, oficina, forja, magia, build, cofres_mazmorra, elecciones, parlamento, mj_comun, votacion, crimen, vehiculos, fortines, guia, crafteos, seguridad, retos  # noqa: E402
 
 SALIDA = os.path.join(AQUI, "docs", "_generado")
 ROMANO = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII", 9: "IX", 10: "X"}
@@ -625,7 +625,7 @@ def cabezas_tablas():
         for n in sorted(cabezas.PESOS)]))
     escribir("sets_cabezas.md", tabla(["Set", "Cabezas", "Premio al completarlo", "Dónde sale"], [
         (f"**{s['nombre']}**", len(s["cabezas"]), f"{len(s['cabezas']) * cabezas.PREMIO_POR_CABEZA} chips I + Trofeo",
-         "solo en la Tragaperras de objetos del casino" if s.get("casino") else "Cofres de Cabezas")
+         "solo en la Máquina de la Feria de los Casinos" if s.get("casino") else "Cofres de Cabezas")
         for s in sorted(cabezas.CATALOGO.values(), key=lambda s: (bool(s.get("casino")), -len(s["cabezas"])))]))
 
     def chips(cuartos):
@@ -1012,44 +1012,96 @@ def guias():
 
 
 def casino_tablas():
-    """Casino del lobby de minijuegos: premios de las tragaperras y la lotería (mazmorras-tools/casino.py)."""
-    e = casino.estadisticas()
-    filas = []
-    for clave, nombre, _, _, trio, par in casino.SIMBOLOS:
-        tres = f"**bote gordo**: el {casino.BOTE_GORDO} % del bote" if trio is None else f"{trio * casino.PRECIO} chips I"
-        filas.append((nombre, tres, (f"{par * casino.PRECIO} chip{'s' if par * casino.PRECIO > 1 else ''} I" if par else "—"), f"1 de cada {round(1 / e['trio'][clave]):,}".replace(",", ".")))
-    escribir("casino_chips.md", tabla(["Símbolo", "Tres iguales", "Dos iguales", "Tres iguales sale"], filas) +
-             f"\nDe media, la máquina devuelve el **{round(e['media'] * 100)} %** de lo que se juega, más el bote gordo. Hay premio en "
-             f"**1 de cada {round(1 / e['gana'])}** tiradas.\n")
+    """El Casino (tipo de empresa: mazmorras-tools/empresa_casino.py). Los números de las máquinas, mesas y eventos."""
     import cabezas, cosmeticos
-    sale = lambda p: "1 de cada " + f"{round(1 / p):,}".replace(",", ".")
-    feria = next(s for s in cabezas.CATALOGO.values() if s.get("casino"))
+    import empresa_casino as C
+    R = C.RETORNO
+    sale = lambda p: ("1 de cada " + f"{round(1 / p):,}".replace(",", ".")) if p > 0 else "—"
+    proy = {d: (k, x) for k, x in C.PROYECTOS.items() for d in x["desbloquea"]}
+    # Máquinas y mesas
     filas = []
-    for r, p in casino.RAREZAS.items():
+    for k, p in C.PUESTOS.items():
+        pk, pr = proy[f"puesto:{k}"]
+        ap = p["apuesta"]
+        filas.append((f"**{p['nombre']}**", p["desc"], f"{ap[0]}" + (f"-{ap[1]}" if ap[1] > ap[0] else "") + " chips I",
+                      f"lo elige el dueño ({R['min']}-{R['max']} %)" if p["retorno"] else "por sus reglas (abajo)",
+                      f"{C.CATEGORIAS[p['categoria']]['nombre']}, nivel {pr['nivel']}" + (f" (aldea de nivel {pr['aldea']})" if pr.get("aldea") else "")))
+    escribir("casino_puestos.md", tabla(["Máquina o mesa", "Qué es", "Apuesta", "Retorno", "Se investiga en"], filas))
+    # Tragaperras
+    for k in ("pequena", "grande"):
+        p = C.PUESTOS[k]
+        base, bote, _ = C.rtp_tragaperras(p["simbolos"])
+        extra = p.get("bote_pct", 0) / 100
+        juega = (R["defecto"] / 100 - extra) / base   # parte de las tiradas que no se pierden a propósito, al retorno por defecto
+        w = sum(x[3] for x in p["simbolos"])
+        filas = []
+        for clave, nombre, _, peso, trio, par in sorted(p["simbolos"], key=lambda x: -(1000 if x[4] < 0 else x[4])):
+            tres = "**el bote de la máquina**" if trio < 0 else f"× {trio}"
+            filas.append((nombre, tres, f"× {par}" if par else "—", sale((peso / w) ** 3 * juega)))
+        nota = (f"\nCada tirada aparta un {p['bote_pct']} % de la apuesta, de la banca, al **bote** de la máquina (se ve en su cartel). "
+                f"Tres chips se lo llevan entero.\n" if p.get("bote_pct") else "")
+        escribir(f"casino_{k}.md", tabla(["Símbolo", "Tres iguales", "Dos iguales", f"Tres iguales sale (al {R['defecto']} %)"], filas)
+                 + "\n× = veces lo apostado (la apuesta incluida). Con un retorno más bajo, los premios salen menos.\n" + nota)
+    # Feria
+    feria = next(s for s in cabezas.CATALOGO.values() if s.get("casino"))
+    e, _ = C.rtp_feria()
+    f = R["defecto"] / 100 / e
+    filas = []
+    for r, (pr, valor) in C.FERIA["rarezas"].items():
         cab = sum(1 for c in feria["cabezas"] if c["rareza"] == r)
-        cos = sum(1 for c in cosmeticos.COSMETICOS if c["rareza"] == r and not c.get("evento"))   # los de eventos no salen
-        filas.append((f"**{r.capitalize()}**: " + ("la cabeza" if cab == 1 else f"una de sus {cab} cabezas") + f" o uno de sus {cos} cosméticos", sale(p),
-                      f"+{casino.REPETIDA[r]} tirada{'s' if casino.REPETIDA[r] > 1 else ''} gratis"))
-    filas += [("Una tirada gratis", sale(casino.TIRADA_GRATIS), ""),
-              ("Un boleto de lotería gratis (no cuenta para el máximo de la semana)", sale(casino.BOLETO), "")]
-    filas += [(n, sale(p), "") for n, _, _, p in casino.OBJETOS]
-    hitos = [(f"{n} tiradas", f"algo nuevo de rareza **{r}**") for n, r in sorted(casino.HITOS.items())]
-    hitos.append((f"y cada {casino.HITOS_CADA} ({casino.HITOS_CADA}, {2 * casino.HITOS_CADA}, {3 * casino.HITOS_CADA}…)",
-                  f"algo nuevo de rareza **{casino.HITOS_CADA_RAREZA}**"))
-    escribir("casino_objetos.md", f"Hay premio en el **{round(e['obj_gana'] * 100)} %** de las tiradas. En chips, diamantes y tótems "
-             f"solo devuelve de media el **{e['obj_media'] * 100:.1f} %** de lo jugado: es una máquina para coleccionar.\n\n"
-             + tabla(["Premio", "Sale", "Si ya lo tenías"], filas))
-    escribir("casino_hitos.md", tabla(["Tiradas pagadas", "Regalo"], hitos))
+        cos = sum(1 for c in cosmeticos.COSMETICOS if c["rareza"] == r and not c.get("evento"))
+        filas.append((f"**{r.capitalize()}**: " + ("la cabeza" if cab == 1 else f"una de sus {cab} cabezas") + f" o uno de sus {cos} cosméticos",
+                      sale(pr * f), f"{valor} chip{'s' if valor > 1 else ''} I"))
+    filas += [(f"{n} chip{'s' if n > 1 else ''} I", sale(pr * f), "") for n, pr in C.FERIA["chips"]]
+    escribir("casino_objetos.md", tabla(["Premio", f"Sale (al {R['defecto']} %)", "Si ya lo tenías, te pagan"], filas)
+             + "\nCon otro retorno, todo sale más o menos a menudo en la misma proporción.\n")
+    h = C.FERIA
+    hitos = [(f"{n} tiradas", f"algo nuevo de rareza **{r}**") for n, r in sorted(h["hitos"].items(), key=lambda x: int(x[0]))]
+    hitos.append((f"y cada {h['hitos_cada']} ({h['hitos_cada']}, {2 * h['hitos_cada']}, {3 * h['hitos_cada']}…)", f"algo nuevo de rareza **{h['hitos_cada_rareza']}**"))
+    escribir("casino_hitos.md", tabla(["Tiradas pagadas (en cualquier Feria)", "Regalo"], hitos))
     escribir("cosmeticos.md", tabla(["Tipo", "Nombre", "Rareza", "Cómo es"], [
         (cosmeticos.TIPOS[c["tipo"]], f"**{c['nombre']}**" + (f" (o «{c['textos'][1]}»)" if len(c.get("textos", [])) > 1 else ""),
          c["rareza"].capitalize(), c.get("desc", "Sale detrás de tu nombre en el chat." if c["tipo"] == "titulo" else "Un sombrero para ponerte."))
         for c in cosmeticos.COSMETICOS]))
-    escribir("casino_loteria.md", tabla(["", ""], [
-        ("Precio", f"{casino.PRECIO} chip I la tirada y {casino.PRECIO} chip I el boleto"),
-        ("Boletos", f"como mucho {casino.BOLETOS_MAX} comprados por persona y semana"),
-        ("Boleto gratis", f"cada {casino.BOLETO_GRATIS_CADA} tiradas en las tragaperras (no cuenta para el máximo)"),
-        ("Sorteo", "los lunes a las 0:00 (hora de España)"),
-        ("Premios", " · ".join(f"{i}.º el {p} % del bote" for i, p in enumerate(casino.REPARTO, 1))),
+    # Ruleta y blackjack
+    ru = C.RULETA
+    filas = []
+    for v in (1, 2, 3):
+        rc, rv = C.rtp_ruleta(v)
+        filas.append((f"{v} verde{'s' if v > 1 else ''}", f"{ru['rojas']} rojas, {ru['negras']} negras y {v} verde{'s' if v > 1 else ''}",
+                      f"× {ru['pago_color']} ({round(rc * 100)} %)", f"× {ru['pago_verde'][str(v)]} ({round(rv * 100)} %)"))
+    escribir("casino_ruleta.md", tabla(["La elige el dueño", "Casillas", "Rojo o negro paga (retorno)", "Verde paga (retorno)"], filas)
+             + f"\nLa primera apuesta abre {ru['apostar_s']} segundos para apostar; luego gira unos {ru['giro_s']} segundos y todos los que miran ven el mismo giro.\n")
+    bj = C.BLACKJACK
+    escribir("casino_blackjack.md", tabla(["", ""], [
+        ("Blackjack de salida", "paga **3:2** o **6:5** (lo elige el dueño; 6:5 es peor para ti)"),
+        ("Con 17 blando", "el crupier **se planta** o **pide** (lo elige el dueño; pedir es algo peor para ti)"),
+        ("Se puede", "pedir, plantarse y doblar (con dos cartas)" + (" y separar una pareja (una vez)" if bj["separar"] else "")),
+        ("Ganar", "te devuelven el doble; empate, tu apuesta"),
+        ("Si el crupier tiene blackjack", "se ve al repartir (no hay seguro)"),
+    ]))
+    # Eventos
+    rf, sb, co = C.RIFA, C.SUBASTA, C.CONCURSOS
+    escribir("casino_rifa.md", tabla(["Nivel investigado", "Boletos por persona", "El casino puede aportar hasta"],
+                                     [(f"Rifa del casino {'I' * n}", rf["boletos_por_persona"][n - 1], f"{rf['aportacion_max'][n - 1]} chips I") for n in (1, 2, 3)])
+             + f"\nBoleto de {rf['precio'][0]} a {rf['precio'][1]} chips I · comisión del casino hasta el {rf['comision_max']} % · premios "
+             + " / ".join(f"{p} %" for p in rf["reparto"]) + " del bote.\n")
+    escribir("casino_subasta.md", tabla(["", ""], [
+        ("Duraciones", " · ".join(f"{h} h" for h in sb["duraciones_h"])),
+        ("Cada puja", f"al menos un {sb['subida_min_pct']} % más que la anterior (y 1 chip)"),
+        ("Último minuto", f"una puja en el último minuto alarga la subasta {sb['prorroga_s']} segundos"),
+        ("Comisión del casino", f"la elige el dueño, hasta el {sb['comision_max']} % (empieza en {sb['comision_defecto']} %)"),
+        ("Lotes a la vez", f"{sb['lotes_jugador']} por jugador en cada casino; el casino, {sb['lotes_casino']}"),
+    ]))
+    escribir("casino_catalogo.md", tabla(["Cosa", "Precio (chips I de la caja)", "Existencias por semana"],
+                                         [(x["nombre"], x["precio"], x["existencias"]) for x in C.CATALOGO["lista"]])
+             + f"\nCada lunes salen {C.CATALOGO['cuantos']} de esta lista. Las existencias son para todos los casinos del servidor.\n")
+    escribir("casino_numeros.md", tabla(["", ""], [
+        ("Para apostar", f"llevar {C.JUGAR['horas_min']} h jugadas en el servidor; nunca en tu casino ni en el que trabajas"),
+        ("Retorno de las máquinas", f"de {R['min']} a {R['max']} % en pasos de {R['paso']} (al ponerla, {R['defecto']} %); se puede cambiar como mucho una vez cada {R['espera_min']} min"),
+        ("Concursos", f"premio de hasta {co['premio_max']} chips I; como mucho {co['pendientes_max']} esperando al staff"),
+        ("Premios que se anuncian", f"{C.ANUNCIO['premio']} chips I o más"),
+        ("Devoción del Dios del Azar", f"{C.JUGAR['devocion']} por cada apuesta pagada (y por boleto de rifa)"),
     ]))
 
 

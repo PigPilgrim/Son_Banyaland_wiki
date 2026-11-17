@@ -155,9 +155,9 @@ sea un fallo**: avisa al admin.
 
     ### <span class="sb-slot">:material-sail-boat:</span> [Minijuegos](minijuegos.md)
 
-    Regatas de barcos sobre hielo, con neumáticos, boxes y la Liga, tu fortín en Craft of Clans, el casino y las cabezas coleccionables del lobby.
+    Regatas de barcos sobre hielo, con neumáticos, boxes y la Liga, tu fortín en Craft of Clans y las cabezas coleccionables del lobby.
 
-    [Regatas](regatas.md){ .sb-chip } [Liga](regatas.md#la-liga){ .sb-chip } [Craft of Clans](clanes.md){ .sb-chip } [Casino](casino.md){ .sb-chip } [Cabezas](cabezas.md){ .sb-chip }
+    [Regatas](regatas.md){ .sb-chip } [Liga](regatas.md#la-liga){ .sb-chip } [Craft of Clans](clanes.md){ .sb-chip } [Cabezas](cabezas.md){ .sb-chip }
 
     [Entrar →](minijuegos.md){ .sb-entrar }
 

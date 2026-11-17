@@ -98,6 +98,7 @@ nav:
       - Empresas (SEPE): empresas.md
       - Restaurantes: restaurantes.md
       - Taller de runas: runas.md
+      - Casino: casino.md
       - Vehículos: vehiculos.md
       - Bajos fondos: crimen.md
   - Mazmorras y objetos:
@@ -111,7 +112,6 @@ nav:
       - Craft of Clans: clanes.md
       - Cod Zombies: zombies.md
       - The Bridge: bridge.md
-      - Casino y lotería: casino.md
       - Cabezas coleccionables: cabezas.md
   - Arte y extras:
       - Estudio y Caballete: arte.md

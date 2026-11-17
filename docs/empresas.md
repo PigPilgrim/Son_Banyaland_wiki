@@ -25,6 +25,9 @@ tienen dependientes y reciben comensales (los ciudadanos de la aldea): ver [Rest
 El **Taller de runas** necesita una aldea de nivel 4. Su Encantador abre huecos en herramientas, armas y armaduras y
 les engasta runas: ver [Taller de runas](runas.md).
 
+El **Casino** necesita una aldea de nivel 3. Tiene máquinas y mesas con su propia banca, rifas, concursos y subastas:
+ver [Casino](casino.md) (⚠️ PENDIENTE: todavía no está en el servidor).
+
 ## La caja
 
 - **Solo la abren el dueño y sus empleados.** No se puede romper (ni por explosiones), y las tolvas no la vacían.
@@ -55,7 +58,7 @@ En el SEPE también están la **Guía de empresas** (por clientela) y **Las más
 
 ## El Ordenador y la investigación
 
-Algunos tipos de empresa (de momento, el [Restaurante](restaurantes.md) y el [Taller de runas](runas.md)) tienen un **Ordenador**: una cabeza que te dan
+Algunos tipos de empresa (de momento, el [Restaurante](restaurantes.md), el [Taller de runas](runas.md) y el [Casino](casino.md)) tienen un **Ordenador**: una cabeza que te dan
 al elegir la caja y que se pone **cerca de la caja**. Desde él se lleva la empresa.
 
 - Solo lo **ponen, usan y quitan** el dueño y los empleados con permiso. No lo rompen explosiones, pistones ni agua.

@@ -42,8 +42,9 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
 - **Retos del Árbitro:** ⚠️ PENDIENTE (llegaron al servidor el 14 de noviembre): falta
   probar los [retos](retos.md) en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
   pueden cambiar.
-- **Casino:** ⚠️ PENDIENTE: falta probar en el juego la nueva Tragaperras de objetos (cabezas de La Feria del Azar y
-  cosméticos). Los premios del [casino](casino.md) pueden cambiar cuando se vea cómo va el bote.
+- **Casino:** ⚠️ PENDIENTE: el [Casino](casino.md) como empresa (máquinas, mesas, rifa, concursos y subasta) está hecho
+  pero **todavía no está en el servidor** ni se ha probado jugando. Todos sus números pueden cambiar. El casino del lobby
+  cierra al subirlo (último sorteo de la lotería el lunes siguiente).
 - **Guías (tecla L):** ⚠️ PENDIENTE de probar en el juego que cada [logro de las guías](guias.md) salga cuando toca,
   también los de lo que ya se había hecho antes.
 - **Reparar con experiencia o con chips:** ⚠️ PENDIENTE de probar en el juego. El [yunque del Herrero y la mesa del Mago](aldeanos.md#reparar-en-el-yunque-del-herrero)
