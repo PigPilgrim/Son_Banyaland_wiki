@@ -3,17 +3,6 @@
 El **Casino** es un tipo de [empresa del SEPE](empresas.md). Lo abre un jugador en su aldea, pone **máquinas y mesas**
 en su local y la gente va a jugar. El casino gana lo que la suerte le da; los jugadores, a veces, mucho más.
 
-!!! warning "⚠️ PENDIENTE"
-    **Todavía no está en el servidor:** se está probando y llegará más adelante. Todos los números de esta página pueden
-    cambiar.
-
-!!! info "Adiós al casino del lobby"
-    El casino del **lobby de minijuegos** cierra. Sus tragaperras se quitan, y las **tiradas gratis** que te quedaran
-    se cambian por **chips I** (una por tirada; si no estás conectado, te llegan al entrar). La lotería hace su
-    **último sorteo** el lunes siguiente a las 0:00 con **el bote entero** (60/25/15 %); hasta entonces todavía se
-    pueden comprar boletos. Tus **cosméticos** y las **cabezas de La Feria del Azar** se quedan contigo, y la
-    [Máquina de la Feria](#maquina-de-la-feria) pasa a los Casinos.
-
 ## Jugar
 
 **Clic derecho** a una máquina o una mesa. Cada una tiene un **cartel** encima que dice lo que es, cuánto se apuesta y

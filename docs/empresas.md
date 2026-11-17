@@ -26,7 +26,7 @@ El **Taller de runas** necesita una aldea de nivel 4. Su Encantador abre huecos 
 les engasta runas: ver [Taller de runas](runas.md).
 
 El **Casino** necesita una aldea de nivel 3. Tiene máquinas y mesas con su propia banca, rifas, concursos y subastas:
-ver [Casino](casino.md) (⚠️ PENDIENTE: todavía no está en el servidor).
+ver [Casino](casino.md).
 
 ## La caja
 
