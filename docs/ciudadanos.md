@@ -5,8 +5,8 @@ restaurantes, compra en las tiendas y pasea por los locales** de las empresas. S
 [empresas](empresas.md): sin ciudadanos, una empresa solo vende a jugadores.
 
 !!! warning "⚠️ PENDIENTE"
-    **Todavía no están en el servidor:** se están probando y llegarán más adelante. Los números de esta página (y lo
-    que se cuenta de la Empresa de la semana sin votos) pueden cambiar.
+    **Recién llegados al servidor (18 de noviembre), falta probarlos jugando.** Los números de esta página (y lo que se
+    cuenta de la Empresa de la semana sin votos) pueden cambiar.
 
 ## El Padrón municipal
 

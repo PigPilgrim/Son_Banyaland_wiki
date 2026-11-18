@@ -27,7 +27,7 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
   de momento no se puede hacer, y puede cambiar o quitarse.
 - **Elaboración a mano de la mercancía:** ⚠️ PENDIENTE de probar en el juego. Los tiempos, las estrellas y lo que
   cambia cada una en los [bajos fondos](crimen.md#a-mano-en-la-guarida) pueden cambiar.
-- **Ciudadanos y Padrón:** ⚠️ PENDIENTE de probar en el juego (aún no están en el servidor; se están probando). Cuántos
+- **Ciudadanos y Padrón:** ⚠️ PENDIENTE de probar en el juego (llegaron al servidor el 18 de noviembre). Cuántos
   ciudadanos hay, el atractivo, la nota de los locales, las visitas, las viviendas, la gente que se ve por la aldea y los
   [puntos de venta](crimen.md#puntos-de-venta) pueden cambiar (ver [Ciudadanos y Padrón](ciudadanos.md)). Falta comprobar
   que la gente se sienta bien en todo tipo de sillas y cuántos se pueden ver a la vez sin que vaya lento.
@@ -42,7 +42,7 @@ Lo que aún falta en la wiki o en el servidor. Si sabes algo de esto, avisa al a
 - **Retos del Árbitro:** ⚠️ PENDIENTE (llegaron al servidor el 14 de noviembre): falta
   probar los [retos](retos.md) en el juego (sobre todo abrir el Cofre de Cabezas II con la llave). Los retos, las cifras y los premios
   pueden cambiar.
-- **Casino:** ⚠️ PENDIENTE de probar jugando el [Casino](casino.md) (máquinas, mesas, rifa, concursos y subasta). Sus
+- **Casino:** ⚠️ PENDIENTE de probar jugando el [Casino](casino.md) (llegó al servidor el 18 de noviembre) (máquinas, mesas, rifa, concursos y subasta). Sus
   números pueden cambiar.
 - **Guías (tecla L):** ⚠️ PENDIENTE de probar en el juego que cada [logro de las guías](guias.md) salga cuando toca,
   también los de lo que ya se había hecho antes.

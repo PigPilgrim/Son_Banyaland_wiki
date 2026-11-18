@@ -22,6 +22,16 @@ Para separar épocas (por ejemplo, cada edad de la armadura), un apartado con "#
 
 ## La Edad del Diamante
 
+### 18 de noviembre de 2026 · Cierra el casino del lobby
+
+El casino del lobby de minijuegos cierra para dejar sitio a los **Casinos** de las aldeas. El último sorteo de la
+lotería se lo lleva **MFmisteri** con su boleto gratis: **8 chips I**, el bote entero.
+
+### 18 de noviembre de 2026 · Llegan los ciudadanos
+
+Las aldeas con el **Padrón municipal** empiezan a recibir **ciudadanos**: clientes de los restaurantes, los talleres
+de runas y los casinos.
+
 ### 17 de noviembre de 2026 · Payoland, nivel 3
 
 Con la **taberna** terminada y todo el encargo entregado, **Payoland** sube al **nivel 3**.
